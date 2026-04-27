@@ -57,4 +57,19 @@ export const personalizedBookLists: PersonalizedBookList[] = [
     title: "优秀传记实例",
     url: "https://www.douban.com/doulist/148375452/",
   },
+  {
+    id: "how-to-write-biography",
+    title: "如何写传记",
+    url: "https://www.douban.com/doulist/148333736/",
+  },
+  {
+    id: "wise-people-list",
+    title: "寻找牛人与智者清单",
+    url: "https://www.douban.com/doulist/3217178/",
+  },
+  {
+    id: "openmind-cognitive-writing",
+    title: "开智学堂认知写作学书单",
+    url: "https://www.douban.com/doulist/39820236/",
+  },
 ]
