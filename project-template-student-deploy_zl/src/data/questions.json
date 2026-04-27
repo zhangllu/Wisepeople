@@ -3,7 +3,7 @@
     "code": "Q01",
     "number": 1,
     "title": "知识的知识",
-    "dimension": "元问题",
+    "dimension": "heaven",
     "subtitle": "所有大问题的前置问题——关于知识本身的知识。认识论、方法论与创新学。",
     "subTopicCodes": [
       "1.1",
@@ -11,13 +11,17 @@
       "1.3",
       "1.4",
       "1.5"
-    ]
+    ],
+    "id": "q-1",
+    "summary": "所有大问题的前置问题——关于知识本身的知识。认识论、方法论与创新学。",
+    "relatedWisePersonSlugs": [],
+    "relatedWorkSlugs": []
   },
   {
     "code": "Q02",
     "number": 2,
     "title": "如何理解世界",
-    "dimension": "天",
+    "dimension": "heaven",
     "subtitle": "世界观——认识我们所处的物质世界与生命世界。",
     "subTopicCodes": [
       "2.1",
@@ -25,13 +29,17 @@
       "2.3",
       "2.4",
       "2.5"
-    ]
+    ],
+    "id": "q-2",
+    "summary": "世界观——认识我们所处的物质世界与生命世界。",
+    "relatedWisePersonSlugs": [],
+    "relatedWorkSlugs": []
   },
   {
     "code": "Q03",
     "number": 3,
     "title": "如何理解历史",
-    "dimension": "天",
+    "dimension": "heaven",
     "subtitle": "从历史中汲取智慧——理解文明的兴衰脉络。",
     "subTopicCodes": [
       "3.1",
@@ -39,13 +47,17 @@
       "3.3",
       "3.4",
       "3.5"
-    ]
+    ],
+    "id": "q-3",
+    "summary": "从历史中汲取智慧——理解文明的兴衰脉络。",
+    "relatedWisePersonSlugs": [],
+    "relatedWorkSlugs": []
   },
   {
     "code": "Q04",
     "number": 4,
     "title": "如何理解时代",
-    "dimension": "地",
+    "dimension": "earth",
     "subtitle": "时代诊断——识别我们所处时代的核心挑战与危机。",
     "subTopicCodes": [
       "4.1",
@@ -53,13 +65,17 @@
       "4.3",
       "4.4",
       "4.5"
-    ]
+    ],
+    "id": "q-4",
+    "summary": "时代诊断——识别我们所处时代的核心挑战与危机。",
+    "relatedWisePersonSlugs": [],
+    "relatedWorkSlugs": []
   },
   {
     "code": "Q05",
     "number": 5,
     "title": "如何理解社会",
-    "dimension": "地",
+    "dimension": "earth",
     "subtitle": "人类社会的基本运作逻辑——交换、交易、博弈与多样性。",
     "subTopicCodes": [
       "5.1",
@@ -67,13 +83,17 @@
       "5.3",
       "5.4",
       "5.5"
-    ]
+    ],
+    "id": "q-5",
+    "summary": "人类社会的基本运作逻辑——交换、交易、博弈与多样性。",
+    "relatedWisePersonSlugs": [],
+    "relatedWorkSlugs": []
   },
   {
     "code": "Q06",
     "number": 6,
     "title": "如何理解组织",
-    "dimension": "地",
+    "dimension": "earth",
     "subtitle": "现代社会的组织逻辑——如何创建和管理组织。",
     "subTopicCodes": [
       "6.1",
@@ -81,13 +101,17 @@
       "6.3",
       "6.4",
       "6.5"
-    ]
+    ],
+    "id": "q-6",
+    "summary": "现代社会的组织逻辑——如何创建和管理组织。",
+    "relatedWisePersonSlugs": [],
+    "relatedWorkSlugs": []
   },
   {
     "code": "Q07",
     "number": 7,
     "title": "如何理解家庭",
-    "dimension": "地",
+    "dimension": "earth",
     "subtitle": "人生最基本的亲密关系单元——从建立到告别。",
     "subTopicCodes": [
       "7.1",
@@ -95,13 +119,17 @@
       "7.3",
       "7.4",
       "7.5"
-    ]
+    ],
+    "id": "q-7",
+    "summary": "人生最基本的亲密关系单元——从建立到告别。",
+    "relatedWisePersonSlugs": [],
+    "relatedWorkSlugs": []
   },
   {
     "code": "Q08",
     "number": 8,
     "title": "如何理解人性",
-    "dimension": "人",
+    "dimension": "human",
     "subtitle": "人何以为人——从生理基础到文学表达的人性探索。",
     "subTopicCodes": [
       "8.1",
@@ -109,13 +137,17 @@
       "8.3",
       "8.4",
       "8.5"
-    ]
+    ],
+    "id": "q-8",
+    "summary": "人何以为人——从生理基础到文学表达的人性探索。",
+    "relatedWisePersonSlugs": [],
+    "relatedWorkSlugs": []
   },
   {
     "code": "Q09",
     "number": 9,
     "title": "如何理解身体",
-    "dimension": "人",
+    "dimension": "human",
     "subtitle": "身体是灵魂的居所——身心健康与环境适应。",
     "subTopicCodes": [
       "9.1",
@@ -123,13 +155,17 @@
       "9.3",
       "9.4",
       "9.5"
-    ]
+    ],
+    "id": "q-9",
+    "summary": "身体是灵魂的居所——身心健康与环境适应。",
+    "relatedWisePersonSlugs": [],
+    "relatedWorkSlugs": []
   },
   {
     "code": "Q10",
     "number": 10,
     "title": "如何理解信仰",
-    "dimension": "人",
+    "dimension": "human",
     "subtitle": "超越性追问——理解不同文明的精神传统。",
     "subTopicCodes": [
       "10.1",
@@ -137,6 +173,10 @@
       "10.3",
       "10.4",
       "10.5"
-    ]
+    ],
+    "id": "q-10",
+    "summary": "超越性追问——理解不同文明的精神传统。",
+    "relatedWisePersonSlugs": [],
+    "relatedWorkSlugs": []
   }
 ]

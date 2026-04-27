@@ -2,17 +2,18 @@
 
 import { useParams, notFound } from "next/navigation"
 import Link from "next/link"
-import { useWisePersonStore } from "@/lib/stores"
-import { getAllQuestions, getTopicByCode, getBookCount, getBooksByTopic } from "@/lib/data"
+import { getAllQuestions, getTopicByCode, getBookCount } from "@/lib/data"
 import { DIMENSION_LABELS, ROUTES } from "@/constants"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
+import { WisePersonCard } from "@/components/wise-person/WisePersonCard"
+import { useWisePersonStore } from "@/lib/stores"
 
 export default function QuestionDetailPage() {
   const params = useParams()
   const questionId = params.questionId as string
+  const { getWisePersonBySlug } = useWisePersonStore()
 
-  // Support both "q-1" style IDs and "Q01" codes
   const questions = getAllQuestions()
   const question =
     questions.find((q) => q.code === questionId) ||
@@ -22,12 +23,10 @@ export default function QuestionDetailPage() {
     notFound()
   }
 
-  const { getWisePersonBySlug } = useWisePersonStore()
   const relatedWisePersons = question.relatedWisePersonSlugs
     .map((slug) => getWisePersonBySlug(slug))
     .filter(Boolean)
 
-  // Get sub-topics with book counts
   const subTopics = question.subTopicCodes
     .map((code) => {
       const topic = getTopicByCode(code)
@@ -51,7 +50,6 @@ export default function QuestionDetailPage() {
         <p className="text-sm text-muted-foreground leading-relaxed">{question.subtitle}</p>
       </div>
 
-      {/* Sub-topics */}
       <section className="mb-8">
         <h2 className="text-lg font-semibold mb-4">主题方向</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -85,6 +83,3 @@ export default function QuestionDetailPage() {
     </div>
   )
 }
-
-// Lazy import to avoid circular dependency
-import { WisePersonCard } from "@/components/wise-person/WisePersonCard"

@@ -1,16 +1,16 @@
+"use client"
+
+import { useParams, notFound } from "next/navigation"
 import Link from "next/link"
-import { notFound } from "next/navigation"
 import { getTopicByCode, getQuestionByTopicCode, getBooksByTopic, getDimensionByQuestionNumber } from "@/lib/data"
 import { DIMENSION_LABELS, ROUTES } from "@/constants"
 import { Badge } from "@/components/ui/badge"
 import { BookGrid } from "@/components/book/BookGrid"
 
-interface Props {
-  params: Promise<{ topicCode: string }>
-}
+export default function TopicDetailPage() {
+  const params = useParams()
+  const topicCode = params.topicCode as string
 
-export default async function TopicDetailPage({ params }: Props) {
-  const { topicCode } = await params
   const topic = getTopicByCode(topicCode)
 
   if (!topic) {
