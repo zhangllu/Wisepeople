@@ -37,4 +37,24 @@ export const personalizedBookLists: PersonalizedBookList[] = [
     title: "认知叙事学",
     url: "https://www.douban.com/doulist/160402999/",
   },
+  {
+    id: "psychobiography-narrative",
+    title: "心理传记学、生命叙事、叙事治疗与社会治疗",
+    url: "https://www.douban.com/doulist/120296366/",
+  },
+  {
+    id: "we-live-by",
+    title: "我们赖以生存的……",
+    url: "https://www.douban.com/doulist/160049298/",
+  },
+  {
+    id: "moreno-psychodrama",
+    title: "莫雷诺的心理剧",
+    url: "https://www.douban.com/doulist/146481951/",
+  },
+  {
+    id: "excellent-biography",
+    title: "优秀传记实例",
+    url: "https://www.douban.com/doulist/148375452/",
+  },
 ]
