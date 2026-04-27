@@ -72,4 +72,34 @@ export const personalizedBookLists: PersonalizedBookList[] = [
     title: "开智学堂认知写作学书单",
     url: "https://www.douban.com/doulist/39820236/",
   },
+  {
+    id: "start-writing",
+    title: "开始写作吧",
+    url: "https://www.douban.com/doulist/1269878/",
+  },
+  {
+    id: "innovation-algorithm",
+    title: "创新算法书单",
+    url: "https://www.douban.com/doulist/151268379/",
+  },
+  {
+    id: "become-innovator",
+    title: "成为创新者：诞生伟大设计与产品的新模式",
+    url: "https://www.douban.com/doulist/1237682/",
+  },
+  {
+    id: "think-tank-research",
+    title: "智库研究",
+    url: "https://www.douban.com/doulist/160653073/",
+  },
+  {
+    id: "song-lyric-writing",
+    title: "歌与词创作指南",
+    url: "https://www.douban.com/doulist/161524003/",
+  },
+  {
+    id: "life-dev-counselor-books-1",
+    title: "人生发展咨询师共读书单（一）",
+    url: "https://www.douban.com/doulist/151942427/",
+  },
 ]
