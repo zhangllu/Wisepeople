@@ -1,0 +1,359 @@
+[
+  {
+    "code": "0",
+    "title": "元典：人类文明十三经",
+    "coreField": "人类文明源头",
+    "representativeDiscipline": "经典",
+    "questionNumber": 0
+  },
+  {
+    "code": "1.1",
+    "title": "总论",
+    "coreField": "认识论、知识论",
+    "representativeDiscipline": "哲学",
+    "questionNumber": 1
+  },
+  {
+    "code": "1.2",
+    "title": "笛卡儿信徒",
+    "coreField": "数学思维、问题解决",
+    "representativeDiscipline": "数学",
+    "questionNumber": 1
+  },
+  {
+    "code": "1.3",
+    "title": "讲故事的人",
+    "coreField": "符号系统、叙事结构",
+    "representativeDiscipline": "符号学、叙事学、修辞学",
+    "questionNumber": 1
+  },
+  {
+    "code": "1.4",
+    "title": "达尔文信徒",
+    "coreField": "行动哲学、实践智慧",
+    "representativeDiscipline": "行动科学",
+    "questionNumber": 1
+  },
+  {
+    "code": "1.5",
+    "title": "成为创新者",
+    "coreField": "创造力、设计思维",
+    "representativeDiscipline": "创新学、设计学",
+    "questionNumber": 1
+  },
+  {
+    "code": "2.1",
+    "title": "总论",
+    "coreField": "世界观、本体论",
+    "representativeDiscipline": "哲学",
+    "questionNumber": 2
+  },
+  {
+    "code": "2.2",
+    "title": "进化论与复杂科学",
+    "coreField": "演化、复杂系统",
+    "representativeDiscipline": "进化生物学、复杂科学",
+    "questionNumber": 2
+  },
+  {
+    "code": "2.3",
+    "title": "宇宙天文、山川地理",
+    "coreField": "宇宙、地球、生态",
+    "representativeDiscipline": "天文学、地理学、生态学",
+    "questionNumber": 2
+  },
+  {
+    "code": "2.4",
+    "title": "物质规律",
+    "coreField": "物理、化学基本规律",
+    "representativeDiscipline": "物理学、化学",
+    "questionNumber": 2
+  },
+  {
+    "code": "2.5",
+    "title": "生物奥秘",
+    "coreField": "生命科学",
+    "representativeDiscipline": "生物学、神经科学",
+    "questionNumber": 2
+  },
+  {
+    "code": "3.1",
+    "title": "总论",
+    "coreField": "史学理论、历史哲学",
+    "representativeDiscipline": "历史学",
+    "questionNumber": 3
+  },
+  {
+    "code": "3.2",
+    "title": "中国通史",
+    "coreField": "中国文明通史",
+    "representativeDiscipline": "中国史",
+    "questionNumber": 3
+  },
+  {
+    "code": "3.3",
+    "title": "世界通史",
+    "coreField": "全球文明通史",
+    "representativeDiscipline": "世界史",
+    "questionNumber": 3
+  },
+  {
+    "code": "3.4",
+    "title": "中国断代史与专题史",
+    "coreField": "中国各朝代与专题",
+    "representativeDiscipline": "中国断代史",
+    "questionNumber": 3
+  },
+  {
+    "code": "3.5",
+    "title": "西方断代史与专题史",
+    "coreField": "西方各时期与专题",
+    "representativeDiscipline": "西方史",
+    "questionNumber": 3
+  },
+  {
+    "code": "4.1",
+    "title": "总论",
+    "coreField": "时代诊断、文明批判",
+    "representativeDiscipline": "社会学、哲学",
+    "questionNumber": 4
+  },
+  {
+    "code": "4.2",
+    "title": "直接暴力",
+    "coreField": "军事、法律与控制",
+    "representativeDiscipline": "军事学、法学",
+    "questionNumber": 4
+  },
+  {
+    "code": "4.3",
+    "title": "间接暴力",
+    "coreField": "结构性暴力、制度不公",
+    "representativeDiscipline": "政治学、社会学",
+    "questionNumber": 4
+  },
+  {
+    "code": "4.4",
+    "title": "互联时代",
+    "coreField": "信息、网络与数字社会",
+    "representativeDiscipline": "传播学、网络科学",
+    "questionNumber": 4
+  },
+  {
+    "code": "4.5",
+    "title": "对抗异化",
+    "coreField": "人的异化与解放",
+    "representativeDiscipline": "批判理论、文化研究",
+    "questionNumber": 4
+  },
+  {
+    "code": "5.1",
+    "title": "总论",
+    "coreField": "社会学基础",
+    "representativeDiscipline": "社会学",
+    "questionNumber": 5
+  },
+  {
+    "code": "5.2",
+    "title": "社会交换",
+    "coreField": "社会网络、信任、合作",
+    "representativeDiscipline": "社会心理学",
+    "questionNumber": 5
+  },
+  {
+    "code": "5.3",
+    "title": "经济交易",
+    "coreField": "市场、价值、分配",
+    "representativeDiscipline": "经济学",
+    "questionNumber": 5
+  },
+  {
+    "code": "5.4",
+    "title": "政治博弈",
+    "coreField": "权力、制度、治理",
+    "representativeDiscipline": "政治学",
+    "questionNumber": 5
+  },
+  {
+    "code": "5.5",
+    "title": "人类的多样性",
+    "coreField": "文化、族群、性别",
+    "representativeDiscipline": "人类学、文化研究",
+    "questionNumber": 5
+  },
+  {
+    "code": "6.1",
+    "title": "总论",
+    "coreField": "组织理论",
+    "representativeDiscipline": "组织行为学、管理学",
+    "questionNumber": 6
+  },
+  {
+    "code": "6.2",
+    "title": "组织中的人",
+    "coreField": "人力资源、领导力",
+    "representativeDiscipline": "组织心理学",
+    "questionNumber": 6
+  },
+  {
+    "code": "6.3",
+    "title": "组织中的钱",
+    "coreField": "财务、会计、资本",
+    "representativeDiscipline": "财务学",
+    "questionNumber": 6
+  },
+  {
+    "code": "6.4",
+    "title": "组织中的事",
+    "coreField": "运营、项目、流程",
+    "representativeDiscipline": "运营管理",
+    "questionNumber": 6
+  },
+  {
+    "code": "6.5",
+    "title": "创建组织",
+    "coreField": "创业、企业家精神",
+    "representativeDiscipline": "创业学",
+    "questionNumber": 6
+  },
+  {
+    "code": "7.1",
+    "title": "总论",
+    "coreField": "家庭社会学",
+    "representativeDiscipline": "社会学、心理学",
+    "questionNumber": 7
+  },
+  {
+    "code": "7.2",
+    "title": "创建家庭：婚姻与恋爱",
+    "coreField": "亲密关系",
+    "representativeDiscipline": "社会心理学",
+    "questionNumber": 7
+  },
+  {
+    "code": "7.3",
+    "title": "扩大家庭：生儿育女",
+    "coreField": "育儿、教育",
+    "representativeDiscipline": "发展心理学、教育学",
+    "questionNumber": 7
+  },
+  {
+    "code": "7.4",
+    "title": "改善家庭：家庭治疗",
+    "coreField": "家庭沟通、修复",
+    "representativeDiscipline": "家庭治疗",
+    "questionNumber": 7
+  },
+  {
+    "code": "7.5",
+    "title": "离开家庭：安度晚年与告别世界",
+    "coreField": "老龄化、死亡",
+    "representativeDiscipline": "老年学、临终关怀",
+    "questionNumber": 7
+  },
+  {
+    "code": "8.1",
+    "title": "总论",
+    "coreField": "人性论",
+    "representativeDiscipline": "哲学、心理学",
+    "questionNumber": 8
+  },
+  {
+    "code": "8.2",
+    "title": "人性的生理基础",
+    "coreField": "大脑、基因、进化",
+    "representativeDiscipline": "神经科学、进化心理学",
+    "questionNumber": 8
+  },
+  {
+    "code": "8.3",
+    "title": "人性的心理学理解",
+    "coreField": "认知、情感、行为",
+    "representativeDiscipline": "心理学",
+    "questionNumber": 8
+  },
+  {
+    "code": "8.4",
+    "title": "人性的语言学理解",
+    "coreField": "语言、思维、文化",
+    "representativeDiscipline": "语言学",
+    "questionNumber": 8
+  },
+  {
+    "code": "8.5",
+    "title": "人性的文学理解",
+    "coreField": "文学中的人性洞察",
+    "representativeDiscipline": "文学",
+    "questionNumber": 8
+  },
+  {
+    "code": "9.1",
+    "title": "总论",
+    "coreField": "身体哲学、医学哲学",
+    "representativeDiscipline": "哲学、医学",
+    "questionNumber": 9
+  },
+  {
+    "code": "9.2",
+    "title": "生理健康",
+    "coreField": "运动、营养、生活方式",
+    "representativeDiscipline": "医学、运动科学",
+    "questionNumber": 9
+  },
+  {
+    "code": "9.3",
+    "title": "心理健康",
+    "coreField": "情绪管理、心理调适",
+    "representativeDiscipline": "临床心理学",
+    "questionNumber": 9
+  },
+  {
+    "code": "9.4",
+    "title": "环境健康",
+    "coreField": "人与环境的关系",
+    "representativeDiscipline": "环境科学",
+    "questionNumber": 9
+  },
+  {
+    "code": "9.5",
+    "title": "疾病与治疗",
+    "coreField": "疾病认知、医疗决策",
+    "representativeDiscipline": "医学",
+    "questionNumber": 9
+  },
+  {
+    "code": "10.1",
+    "title": "总论",
+    "coreField": "宗教哲学、信仰研究",
+    "representativeDiscipline": "宗教学、哲学",
+    "questionNumber": 10
+  },
+  {
+    "code": "10.2",
+    "title": "儒家",
+    "coreField": "儒家传统",
+    "representativeDiscipline": "中国哲学",
+    "questionNumber": 10
+  },
+  {
+    "code": "10.3",
+    "title": "东方宗教",
+    "coreField": "佛教、道教、印度教",
+    "representativeDiscipline": "东方哲学",
+    "questionNumber": 10
+  },
+  {
+    "code": "10.4",
+    "title": "西方宗教",
+    "coreField": "基督教、伊斯兰教",
+    "representativeDiscipline": "西方哲学",
+    "questionNumber": 10
+  },
+  {
+    "code": "10.5",
+    "title": "新道学",
+    "coreField": "现代灵性探索",
+    "representativeDiscipline": "比较宗教学",
+    "questionNumber": 10
+  }
+]
