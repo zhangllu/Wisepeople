@@ -5,6 +5,8 @@ import { Badge } from "@/components/ui/badge"
 import { mockBookLists } from "@/lib/stores/mock-data"
 import { getAllQuestions, getBooksByQuestion, getMinimumBookList, getClassicsBooks } from "@/lib/data"
 import { ROUTES, DIMENSION_LABELS } from "@/constants"
+import { personalizedBookLists } from "@/data/personalized-booklists"
+import { DoubanListCard } from "@/components/book-list/DoubanListCard"
 
 export default function BookListsPage() {
   const questions = getAllQuestions()
@@ -112,6 +114,19 @@ export default function BookListsPage() {
           </div>
         </section>
       )}
+
+      {/* 个性化书单（豆瓣豆列） */}
+      <section className="mb-10">
+        <div className="mb-4">
+          <h2 className="text-lg font-semibold">个性化书单</h2>
+          <p className="text-xs text-muted-foreground mt-0.5">来自豆瓣的个性化主题书单</p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {personalizedBookLists.map((bl) => (
+            <DoubanListCard key={bl.id} list={bl} />
+          ))}
+        </div>
+      </section>
     </div>
   )
 }
