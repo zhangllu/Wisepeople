@@ -1,9 +1,9 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import Link from "next/link"
-import { useWisePersonStore } from "@/lib/stores"
 import { BookmarkButton } from "@/components/shared/BookmarkButton"
+import type { WisePerson } from "@/types"
 
 type TabType = "introduction" | "basicInfo" | "cognitiveStyle"
 
@@ -21,54 +21,13 @@ const TAB_LABELS: Record<TabType, string> = {
 
 interface Props {
   slug: string
+  person: WisePerson
+  preloadedContent: WisePersonContent
 }
 
-export function WisePersonDetailTabs({ slug }: Props) {
-  const { getWisePersonBySlug } = useWisePersonStore()
-
+export function WisePersonDetailTabs({ person, preloadedContent }: Props) {
   const [activeTab, setActiveTab] = useState<TabType>("introduction")
-  const [content, setContent] = useState<WisePersonContent>({
-    introduction: null,
-    basicInfo: null,
-    cognitiveStyle: null,
-  })
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState<string | null>(null)
-
-  const person = getWisePersonBySlug(slug)
-
-  useEffect(() => {
-    async function loadContent() {
-      setLoading(true)
-      setError(null)
-      try {
-        const response = await fetch(`/api/wise-persons/${slug}`)
-        if (!response.ok) {
-          throw new Error('Failed to load content')
-        }
-        const data = await response.json()
-        setContent(data)
-      } catch (err) {
-        console.error('Error loading content:', err)
-        setError('加载内容失败')
-      } finally {
-        setLoading(false)
-      }
-    }
-
-    if (slug) {
-      loadContent()
-    }
-  }, [slug])
-
-  if (!person) {
-    return (
-      <div className="container mx-auto max-w-4xl px-4 py-8">
-        <p className="text-muted-foreground">智者不存在</p>
-      </div>
-    )
-  }
-
+  const content = preloadedContent
   const tabContent = content[activeTab]
 
   return (
@@ -126,11 +85,7 @@ export function WisePersonDetailTabs({ slug }: Props) {
 
       {/* Content */}
       <div className="prose prose-sm max-w-none">
-        {loading ? (
-          <p className="text-muted-foreground">加载中…</p>
-        ) : error ? (
-          <p className="text-red-500">{error}</p>
-        ) : tabContent ? (
+        {tabContent ? (
           <div dangerouslySetInnerHTML={{ __html: tabContent }} />
         ) : (
           <p className="text-muted-foreground">
