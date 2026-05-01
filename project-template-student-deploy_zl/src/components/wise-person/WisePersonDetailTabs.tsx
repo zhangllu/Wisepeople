@@ -14,7 +14,7 @@ interface WisePersonContent {
 }
 
 const TAB_LABELS: Record<TabType, string> = {
-  "introduction": "介绍",
+  "introduction": "简介",
   "basicInfo": "基本信息",
   "cognitiveStyle": "认知方式",
 }
