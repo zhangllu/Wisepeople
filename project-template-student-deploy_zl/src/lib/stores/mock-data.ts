@@ -2,6 +2,7 @@ import type { WisePerson, Work, Question, BookList } from "@/types"
 
 // ========== 著作 ==========
 export const mockWorks: Work[] = [
+  // [0] w-1
   {
     id: "w-1",
     slug: "the-republic",
@@ -13,61 +14,7 @@ export const mockWorks: Work[] = [
     genre: "monograph",
     category: "core",
   },
-  {
-    id: "w-7",
-    slug: "das-kapital",
-    title: "资本论",
-    authorName: "马克思",
-    summary: "马克思的代表作，系统阐述了剩余价值理论和资本主义经济危机理论。",
-    description: "《资本论》是马克思的代表作，第一卷于1867年出版。书中系统阐述了剩余价值理论，揭示了资本主义剥削的秘密，论证了资本主义经济危机的必然性。",
-    recommendation: "理解马克思主义经济学的核心著作。",
-    genre: "monograph",
-    category: "core",
-  },
-  {
-    id: "w-8",
-    slug: "communist-manifesto",
-    title: "共产党宣言",
-    authorName: "马克思、恩格斯",
-    summary: "马克思主义的纲领性文件，阐述了阶级斗争理论和共产主义理想。",
-    description: "《共产党宣言》是马克思和恩格斯合著的著作，发表于1848年。书中阐述了历史唯物主义的基本原理，提出了阶级斗争理论，号召「全世界无产者，联合起来！」",
-    recommendation: "理解马克思主义的入门读物。",
-    genre: "monograph",
-    category: "core",
-  },
-  {
-    id: "w-9",
-    slug: "the-protestant-ethic",
-    title: "新教伦理与资本主义精神",
-    authorName: "马克斯·韦伯",
-    summary: "韦伯的代表作，探讨新教伦理如何促进了资本主义精神的兴起。",
-    description: "《新教伦理与资本主义精神》是马克斯·韦伯的代表作，发表于1904-1905年。韦伯在书中论证：加尔文主义的「天职」观念和入世禁欲主义，为资本主义精神的兴起提供了伦理基础。",
-    recommendation: "理解文化因素如何影响经济发展的经典著作。",
-    genre: "monograph",
-    category: "core",
-  },
-  {
-    id: "w-10",
-    slug: "the-wealth-of-nations",
-    title: "国富论",
-    authorName: "亚当·斯密",
-    summary: "亚当·斯密的代表作，古典经济学的奠基之作。",
-    description: "《国富论》全名《国民财富的性质和原因的研究》，是亚当·斯密的代表作，发表于1776年。书中系统阐述了劳动价值论、分工理论和自由市场经济的重要性。",
-    recommendation: "理解古典经济学的必读经典。",
-    genre: "monograph",
-    category: "core",
-  },
-  {
-    id: "w-11",
-    slug: "social-contract",
-    title: "社会契约论",
-    authorName: "卢梭",
-    summary: "卢梭的代表作，阐述社会契约理论和人民主权思想。",
-    description: "《社会契约论》是卢梭的代表作，发表于1762年。书中提出了「公意」理论和「人生而自由，却无往不在枷锁之中」的著名论断，深刻影响了现代民主思想。",
-    recommendation: "理解现代政治哲学的必读经典。",
-    genre: "monograph",
-    category: "core",
-  },
+  // [1] w-2
   {
     id: "w-2",
     slug: "critique-of-pure-reason",
@@ -79,6 +26,7 @@ export const mockWorks: Work[] = [
     genre: "monograph",
     category: "core",
   },
+  // [2] w-3
   {
     id: "w-3",
     slug: "the-origin-of-species",
@@ -90,6 +38,7 @@ export const mockWorks: Work[] = [
     genre: "monograph",
     category: "core",
   },
+  // [3] w-4
   {
     id: "w-4",
     slug: "dream-of-the-red-chamber",
@@ -101,6 +50,7 @@ export const mockWorks: Work[] = [
     genre: "monograph",
     category: "core",
   },
+  // [4] w-5
   {
     id: "w-5",
     slug: "tao-te-ching",
@@ -112,6 +62,7 @@ export const mockWorks: Work[] = [
     genre: "monograph",
     category: "core",
   },
+  // [5] w-6
   {
     id: "w-6",
     slug: "on-the-origin-of-inequality",
@@ -120,6 +71,66 @@ export const mockWorks: Work[] = [
     summary: "卢梭探讨人类社会不平等起源的经典著作，对现代政治哲学影响深远。",
     description: "《论人类不平等的起源》是卢梭应第戎科学院的征文而作。卢梭在书中探讨了人类从自然状态到社会状态的转变过程，以及私有制的产生如何导致了社会不平等。",
     recommendation: "理解社会契约论和现代民主思想的重要基础。",
+    genre: "monograph",
+    category: "core",
+  },
+  // [6] w-7
+  {
+    id: "w-7",
+    slug: "das-kapital",
+    title: "资本论",
+    authorName: "马克思",
+    summary: "马克思的代表作，系统阐述了剩余价值理论和资本主义经济危机理论。",
+    description: "《资本论》是马克思的代表作，第一卷于1867年出版。书中系统阐述了剩余价值理论，揭示了资本主义剥削的秘密，论证了资本主义经济危机的必然性。",
+    recommendation: "理解马克思主义经济学的核心著作。",
+    genre: "monograph",
+    category: "core",
+  },
+  // [7] w-8
+  {
+    id: "w-8",
+    slug: "communist-manifesto",
+    title: "共产党宣言",
+    authorName: "马克思、恩格斯",
+    summary: "马克思主义的纲领性文件，阐述了阶级斗争理论和共产主义理想。",
+    description: "《共产党宣言》是马克思和恩格斯合著的著作，发表于1848年。书中阐述了历史唯物主义的基本原理，提出了阶级斗争理论，号召「全世界无产者，联合起来！」",
+    recommendation: "理解马克思主义的入门读物。",
+    genre: "monograph",
+    category: "core",
+  },
+  // [8] w-9
+  {
+    id: "w-9",
+    slug: "the-protestant-ethic",
+    title: "新教伦理与资本主义精神",
+    authorName: "马克斯·韦伯",
+    summary: "韦伯的代表作，探讨新教伦理如何促进了资本主义精神的兴起。",
+    description: "《新教伦理与资本主义精神》是马克斯·韦伯的代表作，发表于1904-1905年。韦伯在书中论证：加尔文主义的「天职」观念和入世禁欲主义，为资本主义精神的兴起提供了伦理基础。",
+    recommendation: "理解文化因素如何影响经济发展的经典著作。",
+    genre: "monograph",
+    category: "core",
+  },
+  // [9] w-10
+  {
+    id: "w-10",
+    slug: "the-wealth-of-nations",
+    title: "国富论",
+    authorName: "亚当·斯密",
+    summary: "亚当·斯密的代表作，古典经济学的奠基之作。",
+    description: "《国富论》全名《国民财富的性质和原因的研究》，是亚当·斯密的代表作，发表于1776年。书中系统阐述了劳动价值论、分工理论和自由市场经济的重要性。",
+    recommendation: "理解古典经济学的必读经典。",
+    genre: "monograph",
+    category: "core",
+  },
+  // [10] w-11
+  {
+    id: "w-11",
+    slug: "social-contract",
+    title: "社会契约论",
+    authorName: "卢梭",
+    summary: "卢梭的代表作，阐述社会契约理论和人民主权思想。",
+    description: "《社会契约论》是卢梭的代表作，发表于1762年。书中提出了「公意」理论和「人生而自由，却无往不在枷锁之中」的著名论断，深刻影响了现代民主思想。",
+    recommendation: "理解现代政治哲学的必读经典。",
     genre: "monograph",
     category: "core",
   },
