@@ -314,8 +314,8 @@ export const mockWisePersons: WisePerson[] = [
     relatedWisePersonSlugs: ["plato", "immanuel-kant"],
     wikipediaLink: "https://zh.wikipedia.org/wiki/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7",
     personalIntroduction: "亚里士多德是西方第一位百科全书式的学者，他几乎凭一己之力为后世西方知识体系奠定了基础。从逻辑学到物理学、从伦理学到政治学、从生物学到诗学——他的研究覆盖了人类知识的全部疆域。在通识教育的语境下，亚里士多德最重要的遗产是他的分类思维和因果分析方法：「四因说」提供了一个理解万物的通用框架——追问事物的质料、形式、动力和目的。他还提出了「人是政治动物」的命题，提醒我们：理解社会与组织（Q05、Q06）不能脱离人的天性。亚里士多德教会我们以系统化的方式思考世界——不是零散地获取知识，而是建立有机的知识结构。",
-    questionNumbers: [1],
-    topicCodes: ["1.1"],
+    questionNumbers: [1, 5],
+    topicCodes: ["1.1", "5.1"],
   },
   {
     id: "wp-8",

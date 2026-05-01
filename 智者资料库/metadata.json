@@ -50,6 +50,18 @@
       "has_introduction": true,
       "has_sources": true,
       "has_cognitive_style": true
+    },
+    {
+      "slug": "aristotle",
+      "name": "亚里士多德",
+      "english_name": "Aristotle",
+      "years": "公元前384—前322",
+      "questions": ["Q01", "Q05"],
+      "topics": ["四因说", "中庸之道", "人是政治动物", "三段论", "幸福", "潜能与现实"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": true
     }
   ],
   "questions": [
