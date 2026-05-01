@@ -86,7 +86,7 @@ export function WisePersonDetailTabs({ person, preloadedContent }: Props) {
       {/* Content */}
       <div className="prose prose-sm max-w-none">
         {tabContent ? (
-          <div dangerouslySetInnerHTML={{ __html: tabContent }} />
+          <pre className="whitespace-pre-wrap text-sm">{tabContent}</pre>
         ) : (
           <p className="text-muted-foreground">
             此内容暂未完善
