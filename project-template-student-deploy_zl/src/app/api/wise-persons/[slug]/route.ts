@@ -10,13 +10,17 @@ export async function GET(
   context: { params: Promise<{ slug: string }> }
 ) {
   const { slug } = await context.params;
+  const slugs = Object.keys(wiseContent);
+  const found = slugs.includes(slug);
   const entry = wiseContent[slug];
 
   if (!entry) {
-    return NextResponse.json(
-      { introduction: null, basicInfo: null, cognitiveStyle: null },
-      { status: 404 }
-    );
+    return NextResponse.json({
+      introduction: null,
+      basicInfo: null,
+      cognitiveStyle: null,
+      _debug: { slug, slugs, found, slugsLength: slugs.length },
+    }, { status: 404 });
   }
 
   // Render markdown to HTML in parallel
