@@ -26,3 +26,5 @@ build/
 
 # 用户习惯忽略的文件夹
 source/
+.vercel
+.env*.local
