@@ -1,0 +1,101 @@
+{
+  "zh_title": "智者资料库",
+  "zh_description": "为成年人打造的通识教育地图",
+  "title": "Wise People Library",
+  "wise_people": [
+    {
+      "slug": "karl-marx",
+      "name": "卡尔·马克思",
+      "english_name": "Karl Marx",
+      "years": "1818—1883",
+      "questions": ["Q05"],
+      "topics": ["阶级斗争", "历史唯物主义", "剩余价值", "异化", "共产主义"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": true
+    },
+    {
+      "slug": "max-weber",
+      "name": "马克斯·韦伯",
+      "english_name": "Max Weber",
+      "years": "1864—1920",
+      "questions": ["Q05"],
+      "topics": ["理性化", "新教伦理", "科层制", "权威类型", "解释社会学"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": true
+    },
+    {
+      "slug": "adam-smith",
+      "name": "亚当·斯密",
+      "english_name": "Adam Smith",
+      "years": "1723—1790",
+      "questions": ["Q05"],
+      "topics": ["看不见的手", "分工", "同情心", "自由贸易", "道德情操"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": true
+    },
+    {
+      "slug": "jean-jacques-rousseau",
+      "name": "卢梭",
+      "english_name": "Jean-Jacques Rousseau",
+      "years": "1712—1778",
+      "questions": ["Q05"],
+      "topics": ["社会契约", "公意", "自然状态", "人类不平等", "自然教育"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": true
+    },
+    {
+      "slug": "aristotle",
+      "name": "亚里士多德",
+      "english_name": "Aristotle",
+      "years": "公元前384—前322",
+      "questions": ["Q01", "Q05"],
+      "topics": ["四因说", "中庸之道", "人是政治动物", "三段论", "幸福", "潜能与现实"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": true
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q01",
+      "zh_title": "如何理解自己",
+      "description": "认知自我、理解人格、探索意义"
+    },
+    {
+      "id": "Q02",
+      "zh_title": "如何理解他人",
+      "description": "共情、沟通、理解人际关系"
+    },
+    {
+      "id": "Q03",
+      "zh_title": "如何理解关系",
+      "description": "亲密关系、家庭、友谊、爱"
+    },
+    {
+      "id": "Q04",
+      "zh_title": "如何理解知识",
+      "description": "学习、思考、科学、哲学"
+    },
+    {
+      "id": "Q05",
+      "zh_title": "如何理解社会",
+      "description": "交换、交易、博弈与多样性",
+      "subcategories": [
+        {"id": "sociology-foundation", "zh_title": "社会学基础", "count": 10},
+        {"id": "social-exchange", "zh_title": "社会交换", "count": 21},
+        {"id": "economic-transaction", "zh_title": "经济交易", "count": 19},
+        {"id": "political-game", "zh_title": "政治博弈", "count": 16},
+        {"id": "human-diversity", "zh_title": "人类的多样性", "count": 15}
+      ]
+    }
+  ]
+}

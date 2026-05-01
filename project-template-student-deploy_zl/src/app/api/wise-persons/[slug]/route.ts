@@ -6,7 +6,7 @@ import { unified } from 'unified';
 import fs from 'fs';
 import path from 'path';
 
-const WISE_PEOPLE_BASE_PATH = '/Users/zhanglu/Desktop/Wisepeople/智者资料库';
+const WISE_PEOPLE_BASE_PATH = path.join(process.cwd(), '智者资料库');
 
 export async function GET(
   request: NextRequest,
