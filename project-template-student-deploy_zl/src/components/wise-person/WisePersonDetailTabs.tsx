@@ -2,6 +2,8 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import ReactMarkdown from "react-markdown"
+import remarkGfm from "remark-gfm"
 import { BookmarkButton } from "@/components/shared/BookmarkButton"
 import type { WisePerson } from "@/types"
 
@@ -86,7 +88,7 @@ export function WisePersonDetailTabs({ person, preloadedContent }: Props) {
       {/* Content */}
       <div className="prose prose-sm max-w-none">
         {tabContent ? (
-          <pre className="whitespace-pre-wrap text-sm">{tabContent}</pre>
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{tabContent}</ReactMarkdown>
         ) : (
           <p className="text-muted-foreground">
             此内容暂未完善
