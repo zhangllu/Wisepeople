@@ -5,8 +5,33 @@ import rehypeStringify from 'rehype-stringify';
 import { unified } from 'unified';
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
-const WISE_PEOPLE_BASE_PATH = path.join(process.cwd(), '智者资料库');
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+/** Find the 智者资料库 base directory, trying multiple path strategies for Vercel and local dev */
+function findWisePeopleBasePath(): string {
+  const candidates = [
+    // Local dev: cwd = project root
+    path.join(process.cwd(), '智者资料库'),
+    // Fallback: relative to this source file
+    path.resolve(__dirname, '..', '..', '..', '..', '..', '..', '智者资料库'),
+    // Relative to .next/server
+    path.resolve(__dirname, '..', '..', '..', '..', '..', '智者资料库'),
+    // From project root using resolve
+    path.resolve('./智者资料库'),
+  ];
+  for (const p of candidates) {
+    try {
+      if (fs.existsSync(p)) return p;
+    } catch { /* continue */ }
+  }
+  // Default fallback
+  return candidates[0];
+}
+
+const WISE_PEOPLE_BASE_PATH = findWisePeopleBasePath();
 
 export async function GET(
   request: NextRequest,
