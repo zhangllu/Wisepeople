@@ -3,25 +3,14 @@ import remarkGfm from 'remark-gfm';
 import remarkParse from 'remark-parse';
 import rehypeStringify from 'rehype-stringify';
 import { unified } from 'unified';
-import wiseContent from '@/data/wise-content.json';
-
-type WiseContent = Record<
-  string,
-  {
-    introduction: string | null;
-    basicInfo: string | null;
-    cognitiveStyle: string | null;
-  }
->;
-
-const contentMap = wiseContent as WiseContent;
+import { wiseContent } from '@/data/wise-content';
 
 export async function GET(
   _request: NextRequest,
   context: { params: Promise<{ slug: string }> }
 ) {
   const { slug } = await context.params;
-  const entry = contentMap[slug];
+  const entry = wiseContent[slug];
 
   if (!entry) {
     return NextResponse.json(
