@@ -5,17 +5,17 @@ import Link from "next/link"
 import { useWisePersonStore } from "@/lib/stores"
 import { BookmarkButton } from "@/components/shared/BookmarkButton"
 
-type TabType = "introduction" | "sources" | "cognitiveStyle"
+type TabType = "introduction" | "basicInfo" | "cognitiveStyle"
 
 interface WisePersonContent {
   introduction: string | null
-  sources: string | null
+  basicInfo: string | null
   cognitiveStyle: string | null
 }
 
 const TAB_LABELS: Record<TabType, string> = {
   "introduction": "介绍",
-  "sources": "原始资料",
+  "basicInfo": "基本信息",
   "cognitiveStyle": "认知方式",
 }
 
@@ -29,7 +29,7 @@ export function WisePersonDetailTabs({ slug }: Props) {
   const [activeTab, setActiveTab] = useState<TabType>("introduction")
   const [content, setContent] = useState<WisePersonContent>({
     introduction: null,
-    sources: null,
+    basicInfo: null,
     cognitiveStyle: null,
   })
   const [loading, setLoading] = useState(true)
@@ -100,15 +100,15 @@ export function WisePersonDetailTabs({ slug }: Props) {
             {TAB_LABELS["introduction"]}
           </button>
           <button
-            onClick={() => setActiveTab("sources")}
+            onClick={() => setActiveTab("basicInfo")}
             className={`px-4 py-2 rounded-t-lg transition-colors ${
-              activeTab === "sources"
+              activeTab === "basicInfo"
                 ? "bg-blue-500 text-white"
                 : "hover:bg-gray-100"
             }`}
-            disabled={!content.sources}
+            disabled={!content.basicInfo}
           >
-            {TAB_LABELS["sources"]}
+            {TAB_LABELS["basicInfo"]}
           </button>
           <button
             onClick={() => setActiveTab("cognitiveStyle")}

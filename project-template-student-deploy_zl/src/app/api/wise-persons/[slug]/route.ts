@@ -17,11 +17,11 @@ export async function GET(
 
   const content: {
     introduction: string | null;
-    sources: string | null;
+    basicInfo: string | null;
     cognitiveStyle: string | null;
   } = {
     introduction: null,
-    sources: null,
+    basicInfo: null,
     cognitiveStyle: null,
   };
 
@@ -36,13 +36,13 @@ export async function GET(
   }
 
   try {
-    const sourcesPath = path.join(basePath, '02-原始资料.md');
-    if (fs.existsSync(sourcesPath)) {
-      const markdown = fs.readFileSync(sourcesPath, 'utf-8');
-      content.sources = await renderMarkdown(markdown);
+    const basicInfoPath = path.join(basePath, '02-基本信息.md');
+    if (fs.existsSync(basicInfoPath)) {
+      const markdown = fs.readFileSync(basicInfoPath, 'utf-8');
+      content.basicInfo = await renderMarkdown(markdown);
     }
   } catch (error) {
-    console.error(`Error reading sources for ${slug}:`, error);
+    console.error(`Error reading basicInfo for ${slug}:`, error);
   }
 
   try {
