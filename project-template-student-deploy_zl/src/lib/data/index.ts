@@ -227,14 +227,23 @@ export function getWisePersonsByQuestion(): { question: Question; wisePersons: W
     }
   }
 
-  // Deduplicate per question
+  // Deduplicate per question: mock persons take priority over stubs with same name
   for (const [qn, list] of personsByQuestion) {
-    const seen = new Set<string>()
-    personsByQuestion.set(qn, list.filter((p) => {
-      if (seen.has(p.slug)) return false
-      seen.add(p.slug)
-      return true
-    }))
+    const seenSlugs = new Set<string>()
+    // First pass: collect mock person names
+    const mockNames = new Set(
+      list.filter((p) => !p.isStub).map((p) => p.name)
+    )
+    personsByQuestion.set(
+      qn,
+      list.filter((p) => {
+        if (seenSlugs.has(p.slug)) return false
+        // Skip stub if a mock person with the same name exists in this question
+        if (p.isStub && mockNames.has(p.name)) return false
+        seenSlugs.add(p.slug)
+        return true
+      })
+    )
   }
 
   return questions
@@ -274,14 +283,14 @@ export function getWisePersonsByTopicInQuestion(
   const topics = getTopicsByQuestion(questionNumber)
 
   return topics.map((topic) => {
-    const seen = new Set<string>()
+    const seenSlugs = new Set<string>()
     const wisePersons: WisePerson[] = []
 
     // Stub authors matching this topic code
     for (const author of allAuthors) {
       if (author.topicCodes.includes(topic.code)) {
-        if (!seen.has(author.slug)) {
-          seen.add(author.slug)
+        if (!seenSlugs.has(author.slug)) {
+          seenSlugs.add(author.slug)
           wisePersons.push(authorToStubWisePerson(author))
         }
       }
@@ -290,13 +299,21 @@ export function getWisePersonsByTopicInQuestion(
     // Mock persons matching this topic code
     for (const mock of mockWisePersons) {
       if (mock.topicCodes?.includes(topic.code)) {
-        if (!seen.has(mock.slug)) {
-          seen.add(mock.slug)
+        if (!seenSlugs.has(mock.slug)) {
+          seenSlugs.add(mock.slug)
           wisePersons.push(mock)
         }
       }
     }
 
-    return { topic, wisePersons }
+    // Remove stub entries shadowed by a mock person with the same name within this topic
+    const mockNamesInTopic = new Set(
+      wisePersons.filter((p) => !p.isStub).map((p) => p.name)
+    )
+    const filtered = wisePersons.filter(
+      (p) => !(p.isStub && mockNamesInTopic.has(p.name))
+    )
+
+    return { topic, wisePersons: filtered }
   })
 }
