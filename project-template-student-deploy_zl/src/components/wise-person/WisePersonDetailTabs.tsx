@@ -96,39 +96,6 @@ export function WisePersonDetailTabs({ person, preloadedContent }: Props) {
         )}
       </div>
 
-      {/* Works Section */}
-      {person.works && person.works.length > 0 && (
-        <div className="mt-8 pt-6 border-t border-gray-200">
-          <h2 className="text-xl font-semibold mb-4">相关著作</h2>
-          <div className="space-y-4">
-            {person.works.map((work) => (
-              <div
-                key={work.id}
-                className="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-              >
-                <div className="flex items-start justify-between">
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-foreground mb-1">
-                      {work.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      {work.authorName}
-                    </p>
-                    <p className="text-sm text-gray-700 mb-2">
-                      {work.summary}
-                    </p>
-                    <p className="text-xs text-muted-foreground">
-                      {work.recommendation}
-                    </p>
-                  </div>
-                  <BookmarkButton targetId={work.slug} targetType="work" />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
       {/* Back link */}
       <div className="mt-8 pt-4 border-t border-gray-200">
         <Link
