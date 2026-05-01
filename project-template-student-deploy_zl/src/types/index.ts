@@ -21,10 +21,16 @@ export interface WisePerson {
   bookSlugs?: string[]
   /** Topic codes this person is associated with */
   topicCodes?: string[]
+  /** 维基百科链接 */
+  wikipediaLink?: string
+  /** 个性化介绍（待更新） */
+  personalIntroduction?: string
+  /** 关联的大问题编号（1-10），用于按问题分类展示 */
+  questionNumbers?: number[]
 }
 
 export type Era = "ancient" | "modern" | "contemporary"
-export type Discipline = "philosophy" | "science" | "literature" | "social-science" | "art" | "education" | "history" | "psychology"
+export type Discipline = "philosophy" | "science" | "literature" | "social-science" | "art" | "education" | "history" | "psychology" | "sociology" | "economics"
 export type Region = "eastern" | "western"
 
 export interface Work {
@@ -68,7 +74,7 @@ export interface Question {
   relatedWorkSlugs: string[]
 }
 
-export type Dimension = "heaven" | "earth" | "human"
+export type Dimension = "meta" | "heaven" | "earth" | "human"
 
 /** Book entity from the 通识千书 Excel data */
 export interface Book {
@@ -155,7 +161,7 @@ export interface Bookmark {
   id: string
   userId: string
   targetId: string
-  targetType: "wise-person" | "book-list"
+  targetType: "wise-person" | "book-list" | "work"
   createdAt: string
 }
 

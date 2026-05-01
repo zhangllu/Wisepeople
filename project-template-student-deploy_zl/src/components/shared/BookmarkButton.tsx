@@ -7,7 +7,7 @@ import { toast } from "sonner"
 
 interface BookmarkButtonProps {
   targetId: string
-  targetType: "wise-person" | "book-list"
+  targetType: "wise-person" | "book-list" | "work"
 }
 
 export function BookmarkButton({ targetId, targetType }: BookmarkButtonProps) {

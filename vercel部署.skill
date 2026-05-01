@@ -1,0 +1,191 @@
+---
+name: vercel-deploy
+version: 1.0.0
+description: "Vercel 部署经验与最佳实践，包括 Next.js 项目配置、静态文件部署、环境变量设置、域名绑定等"
+---
+
+# Vercel 部署指南
+
+## 前置准备
+
+### 安装 Vercel CLI
+
+```bash
+bun add -g vercel
+# 或
+npm install -g vercel
+```
+
+### 登录
+
+```bash
+vercel login
+```
+
+## 部署方式
+
+### 方式一：Vercel CLI 部署
+
+```bash
+# 在项目根目录
+vercel                # 首次部署（交互式）
+vercel --prod         # 部署到生产环境
+vercel --prod --yes   # 跳过确认，直接部署
+```
+
+### 方式二：GitHub/GitLab 集成
+
+在 Vercel Dashboard 中导入 Git 仓库，自动部署。
+
+## 项目配置
+
+### vercel.json
+
+核心配置文件，放在项目根目录。
+
+```json
+{
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api/:path*" },
+    { "source": "/(.*)", "destination": "/ruth_v2.html" }
+  ]
+}
+```
+
+**关键要点：**
+- `rewrites` 中 API 路由的规则必须放在 `/(.*)` 通配符**之前**，否则 API 请求会被 HTML 文件截获
+- `redirects` 配置永久重定向（301），`rewrites` 配置内部重写（对用户透明）
+
+### build.command 和 output 配置
+
+对于 Next.js 项目，Vercel 会自动检测框架。如需手动指定：
+
+```json
+{
+  "buildCommand": "bun run build",
+  "outputDirectory": ".next",
+  "installCommand": "bun install"
+}
+```
+
+## 环境变量
+
+### CLI 方式设置
+
+```bash
+# 预览环境
+vercel env add VARIABLE_NAME
+
+# 生产环境
+vercel env add VARIABLE_NAME production
+
+# 拉取远程环境变量到本地
+vercel env pull .env.local
+```
+
+### Dashboard 方式设置
+
+Vercel Dashboard → Project → Settings → Environment Variables
+
+**环境级别：**
+- `production` — 生产环境
+- `preview` — 预览分支
+- `development` — 本地开发
+
+## 域名绑定
+
+### CLI 方式
+
+```bash
+# 添加域名
+vercel domains add your-domain.com
+
+# 移除域名
+vercel domains rm your-domain.com
+
+# 查看域名列表
+vercel domains ls
+```
+
+### DNS 配置
+
+推荐使用 Vercel DNS（自动管理 SSL）：
+1. 在域名注册商处将 Nameserver 指向 Vercel
+2. 或在 Vercel Dashboard 添加域名后，配置 CNAME 记录指向 `cname.vercel-dns.com`
+
+## 常见问题
+
+### 1. 部署后页面空白 / 404
+
+- 检查 `vercel.json` 中 `rewrites` 规则是否正确
+- 确认输出文件路径与 `destination` 匹配
+- 运行 `vercel build` 本地构建测试
+
+### 2. API 路由不工作
+
+- 确认 API 路由的 rewrite 规则在通配符规则**之前**
+- 检查 API 文件的路径是否正确（如 `/api/hello.ts` → `/api/hello`）
+- 本地测试：`vercel dev`
+
+### 3. 构建失败
+
+```bash
+# 本地模拟 Vercel 构建环境
+vercel build
+
+# 查看详细日志
+vercel logs
+```
+
+### 4. SSL 证书问题
+
+Vercel 自动管理 SSL 证书，但自定义域名需要：
+- DNS 解析正确指向 Vercel
+- 等待证书下发（通常几分钟）
+- 状态可在 Dashboard → Domains 查看
+
+### 5. 环境变量未生效
+
+- 部署后需重新部署才会使用新的环境变量
+- 区分好 `production` / `preview` / `development` 三个级别
+- 本地开发使用 `.env.local`
+
+## 项目类型专项
+
+### Next.js 项目
+
+Vercel 原生支持，零配置部署。关键点：
+- 确保 `next.config.js` 配置正确
+- `@vercel/analytics` 可添加访问统计
+- Image 优化需要配置 `remotePatterns`（如使用外部图片）
+
+### 静态 HTML 项目
+
+适用于纯前端项目或 HTML 原型：
+- `vercel.json` 中通过 `rewrites` 将所有路由指向入口 HTML
+- 静态资源（CSS/JS/图片）放在 `public` 目录或与 HTML 同目录
+- 不需要 `build` 命令，Vercel 会自动托管静态文件
+
+## 部署检查清单
+
+- [ ] `vercel.json` 配置完整
+- [ ] API 路由的 rewrite 规则优先于通配符
+- [ ] 环境变量已设置（生产/预览/开发）
+- [ ] `vercel build` 本地构建通过
+- [ ] 自定义域名 DNS 已配置
+- [ ] SSL 证书状态正常
+- [ ] 部署后测试 API 和页面均正常
+
+## 常用命令速查
+
+```bash
+vercel                    # 部署到预览环境
+vercel --prod             # 部署到生产环境
+vercel env add <key>      # 添加环境变量
+vercel env pull           # 拉取环境变量到本地
+vercel domains add <url>  # 添加自定义域名
+vercel logs               # 查看部署日志
+vercel list               # 查看所有部署
+vercel rm <project>       # 删除项目
+vercel dev                # 本地开发（模拟 Vercel 环境）
+```

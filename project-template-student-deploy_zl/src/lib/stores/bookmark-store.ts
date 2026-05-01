@@ -4,7 +4,7 @@ import type { Bookmark } from "@/types"
 
 interface BookmarkState {
   bookmarks: Bookmark[]
-  addBookmark: (targetId: string, targetType: "wise-person" | "book-list") => void
+  addBookmark: (targetId: string, targetType: "wise-person" | "book-list" | "work") => void
   removeBookmark: (targetId: string) => void
   isBookmarked: (targetId: string) => boolean
   getUserBookmarks: (userId: string) => Bookmark[]

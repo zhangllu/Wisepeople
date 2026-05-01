@@ -4,12 +4,13 @@
  * Imports JSON files from src/data/ and provides typed query functions.
  * All functions are synchronous — the JSON is bundled at build time.
  */
-import type { Book, Author, SubTopic, Question, MinimumBook, Dimension } from "@/types"
+import type { Book, Author, SubTopic, Question, MinimumBook, Dimension, WisePerson } from "@/types"
 import booksData from "@/data/books.json"
 import authorsData from "@/data/authors.json"
 import topicsData from "@/data/topics.json"
 import questionsData from "@/data/questions.json"
 import minimumBooksData from "@/data/minimum_books.json"
+import { mockWisePersons } from "@/lib/stores/mock-data"
 
 // ── Books ────────────────────────────────────────────────────────────────
 
@@ -154,10 +155,11 @@ export function getQuestionByTopicCode(topicCode: string): Question | undefined 
 
 /** Get dimension info for a question number */
 export function getDimensionByQuestionNumber(n: number): Dimension {
-  if (n >= 2 && n <= 3) return "heaven"
-  if (n >= 4 && n <= 7) return "earth"
+  if (n === 1) return "meta"
+  if (n >= 2 && n <= 4) return "heaven"
+  if (n >= 5 && n <= 7) return "earth"
   if (n >= 8 && n <= 10) return "human"
-  return "heaven" // 元典 / 元问题 treated as heaven
+  return "heaven"
 }
 
 /** Get the 元典 topic (code "0") */
@@ -168,4 +170,133 @@ export function getClassicsTopic(): SubTopic | undefined {
 /** Get 元典 books */
 export function getClassicsBooks(): Book[] {
   return getBooksByTopic("0")
+}
+
+// ── Wise persons by question ────────────────────────────────────────────
+
+/** Get all wise persons (mock + stub) grouped by question number */
+export function getWisePersonsByQuestion(): { question: Question; wisePersons: WisePerson[] }[] {
+  const allAuthors = getAllAuthors()
+  const personsByQuestion = new Map<number, WisePerson[]>()
+  const questions = getAllQuestions()
+
+  // Initialize with all questions
+  for (const q of questions) {
+    personsByQuestion.set(q.number, [])
+  }
+
+  // Map stub authors by their topicCodes
+  for (const author of allAuthors) {
+    const qNumbers = new Set<number>()
+    for (const tc of author.topicCodes) {
+      const qn = parseInt(tc.split(".")[0])
+      if (qn >= 1 && qn <= 10) qNumbers.add(qn)
+    }
+    if (qNumbers.size === 0) continue
+
+    const stub: WisePerson = {
+      id: `stub-${author.slug}`,
+      slug: author.slug,
+      name: author.name,
+      summary: "",
+      biography: "",
+      coreThoughts: "",
+      era: "contemporary",
+      discipline: "philosophy",
+      region: "western",
+      tags: [],
+      works: [],
+      relatedWisePersonSlugs: [],
+      isStub: true,
+      bookSlugs: author.bookSlugs,
+      topicCodes: author.topicCodes,
+    }
+
+    for (const qn of qNumbers) {
+      const list = personsByQuestion.get(qn)
+      if (list) list.push(stub)
+    }
+  }
+
+  // Map mock wise persons by their questionNumbers field
+  for (const mock of mockWisePersons) {
+    const qNumbers = mock.questionNumbers || [1]
+    for (const qn of qNumbers) {
+      const list = personsByQuestion.get(qn)
+      if (list) list.push(mock)
+    }
+  }
+
+  // Deduplicate per question
+  for (const [qn, list] of personsByQuestion) {
+    const seen = new Set<string>()
+    personsByQuestion.set(qn, list.filter((p) => {
+      if (seen.has(p.slug)) return false
+      seen.add(p.slug)
+      return true
+    }))
+  }
+
+  return questions
+    .filter((q) => (personsByQuestion.get(q.number)?.length || 0) > 0)
+    .map((q) => ({
+      question: q,
+      wisePersons: personsByQuestion.get(q.number) || [],
+    }))
+}
+
+/** Convert an Author to a stub WisePerson */
+function authorToStubWisePerson(author: Author): WisePerson {
+  return {
+    id: `stub-${author.slug}`,
+    slug: author.slug,
+    name: author.name,
+    summary: "",
+    biography: "",
+    coreThoughts: "",
+    era: "contemporary",
+    discipline: "philosophy",
+    region: "western",
+    tags: [],
+    works: [],
+    relatedWisePersonSlugs: [],
+    isStub: true,
+    bookSlugs: author.bookSlugs,
+    topicCodes: author.topicCodes,
+  }
+}
+
+/** Get wise persons (mock + stub) grouped by sub-topic within a question */
+export function getWisePersonsByTopicInQuestion(
+  questionNumber: number
+): { topic: SubTopic; wisePersons: WisePerson[] }[] {
+  const allAuthors = getAllAuthors()
+  const topics = getTopicsByQuestion(questionNumber)
+
+  return topics.map((topic) => {
+    const seen = new Set<string>()
+    const wisePersons: WisePerson[] = []
+
+    // Stub authors matching this topic code
+    for (const author of allAuthors) {
+      if (author.topicCodes.includes(topic.code)) {
+        if (!seen.has(author.slug)) {
+          seen.add(author.slug)
+          wisePersons.push(authorToStubWisePerson(author))
+        }
+      }
+    }
+
+    // Mock persons matching this topic code
+    for (const mock of mockWisePersons) {
+      if (mock.topicCodes?.includes(topic.code)) {
+        if (!seen.has(mock.slug)) {
+          seen.add(mock.slug)
+          wisePersons.push(mock)
+        }
+      }
+    }
+
+    return { topic, wisePersons }
+  })
 }

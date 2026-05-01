@@ -3,7 +3,7 @@
     "code": "Q01",
     "number": 1,
     "title": "知识的知识",
-    "dimension": "heaven",
+    "dimension": "meta",
     "subtitle": "所有大问题的前置问题——关于知识本身的知识。认识论、方法论与创新学。",
     "subTopicCodes": [
       "1.1",
@@ -57,7 +57,7 @@
     "code": "Q04",
     "number": 4,
     "title": "如何理解时代",
-    "dimension": "earth",
+    "dimension": "heaven",
     "subtitle": "时代诊断——识别我们所处时代的核心挑战与危机。",
     "subTopicCodes": [
       "4.1",

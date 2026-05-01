@@ -52,6 +52,7 @@ export const REGION_OPTIONS: CategoryOption[] = [
 
 // 维度标签
 export const DIMENSION_LABELS: Record<string, string> = {
+  meta: "元",
   heaven: "天",
   earth: "地",
   human: "人",
@@ -67,6 +68,8 @@ export const DISCIPLINE_LABELS: Record<Discipline, string> = {
   education: "教育",
   history: "历史",
   psychology: "心理学",
+  sociology: "社会学",
+  economics: "经济学",
 }
 
 // 时代标签映射
