@@ -1,1 +1,0 @@
-../../.42plugin/42edu/dev-deployment-v1/SKILL.md

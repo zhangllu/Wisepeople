@@ -2,8 +2,8 @@
 
 ## 项目信息
 
-**项目名称**: 教学设计项目
-**项目类型**: 教育教学设计系统
+**项目名称**: 智者网 (Wisepeople)
+**项目类型**: 通识教育网站
 **主要语言**: 中文
 
 ## 开发环境
@@ -113,14 +113,16 @@ git show v0.0.2
 Wisepeople/
 ├── CLAUDE.md                      # Claude Code 配置文件
 ├── .gitignore                     # Git 忽略文件
-├── metadata.json                  # 项目元信息
-└── project-template-student-deploy_zl/  # AI 原生项目模板
-    ├── .42cog/                    # 认知敏捷法核心文件
-    ├── .42plugin/                 # 活水插件技能库
-    ├── spec/                      # 规约文档
-    ├── src/                       # 源代码
-    ├── notes/                     # 学习笔记
-    └── chat/                      # 对话记录
+├── src/                           # Next.js 源代码
+├── 智者资料库/                    # 智者 Markdown 数据文件
+├── scripts/                       # 构建脚本
+├── public/                        # 静态资源
+├── package.json                   # 依赖配置
+├── next.config.ts                 # Next.js 配置
+├── vercel.json                    # Vercel 部署配置
+├── CONTRIBUTING.md                # 贡献指南
+├── tsconfig.json                  # TypeScript 配置
+└── bun.lock                       # 依赖锁文件
 ```
 
 ## 开发命令
@@ -148,11 +150,11 @@ uv run python scripts/脚本名.py
 
 ## 项目目标
 
-本项目旨在创建一个完整的教学设计系统，包括但不限于：
-- 教学目标设计
-- 教学内容组织
-- 教学方法选择
-- 教学评估设计
+本项目旨在创建一个通识教育网站「智者网」，包括：
+- 智者资料库展示
+- 认知方式分析
+- 书单系统
+- 通识教育内容
 
 ## Claude Code 使用规范
 
@@ -164,7 +166,7 @@ uv run python scripts/脚本名.py
 
 ## 注意事项
 
-- 本项目为教育用途，专注于教学设计领域
+- 本项目为教育用途，专注于通识教育领域
 - 所有文档和代码注释使用中文
 - 保持代码简洁，遵循 KISS 原则
 - 定期提交代码，避免大量未提交的更改
