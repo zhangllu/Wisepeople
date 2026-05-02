@@ -62,6 +62,102 @@
       "has_introduction": true,
       "has_sources": true,
       "has_cognitive_style": true
+    },
+    {
+      "slug": "plato",
+      "name": "柏拉图",
+      "english_name": "Plato",
+      "years": "约公元前427—前347",
+      "questions": ["Q01"],
+      "topics": ["理念论", "理想国", "灵魂不朽", "洞穴寓言"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": true
+    },
+    {
+      "slug": "immanuel-kant",
+      "name": "康德",
+      "english_name": "Immanuel Kant",
+      "years": "1724—1804",
+      "questions": ["Q01"],
+      "topics": ["批判哲学", "先验唯心论", "绝对命令", "哥白尼式革命"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": true
+    },
+    {
+      "slug": "socrates",
+      "name": "苏格拉底",
+      "english_name": "Socrates",
+      "years": "公元前469—前399",
+      "questions": ["Q01"],
+      "topics": ["精神助产术", "反诘追问", "无知之知", "美德即知识"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": true
+    },
+    {
+      "slug": "zhuangzi",
+      "name": "庄子",
+      "english_name": "Zhuangzi",
+      "years": "约公元前369—前286",
+      "questions": ["Q01", "Q10"],
+      "topics": ["逍遥游", "齐物论", "寓言思维", "无用之用"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": true
+    },
+    {
+      "slug": "laozi",
+      "name": "老子",
+      "english_name": "Laozi",
+      "years": "约公元前6世纪",
+      "questions": ["Q01", "Q10"],
+      "topics": ["道法自然", "无为", "对立统一"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": true
+    },
+    {
+      "slug": "charles-darwin",
+      "name": "达尔文",
+      "english_name": "Charles Darwin",
+      "years": "1809—1882",
+      "questions": ["Q02"],
+      "topics": ["自然选择", "共同祖先", "演化论"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": true
+    },
+    {
+      "slug": "cao-xueqin",
+      "name": "曹雪芹",
+      "english_name": "Cao Xueqin",
+      "years": "约1715—约1763",
+      "questions": ["Q08"],
+      "topics": ["现实主义", "红楼梦", "悲剧意识"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": true
+    },
+    {
+      "slug": "sigmuend-freud",
+      "name": "弗洛伊德",
+      "english_name": "Sigmund Freud",
+      "years": "1856—1939",
+      "questions": ["Q08"],
+      "topics": ["潜意识", "精神分析", "梦的解析", "人格结构", "防御机制"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": true
     }
   ],
   "questions": [
