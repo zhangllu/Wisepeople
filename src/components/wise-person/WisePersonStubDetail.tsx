@@ -22,22 +22,6 @@ export function WisePersonStubDetail({ person, books }: Props) {
       <div className="mb-8">
         <div>
           <h1 className="text-3xl font-bold mb-1">{person.name}</h1>
-          <div className="flex flex-wrap gap-2 mt-2">
-            {(person.links?.length ? person.links : person.wikipediaLink ? [{ label: "维基百科", url: person.wikipediaLink }] : []).map(
-              (link, i) => (
-                <a
-                  key={i}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-800 border border-blue-200 rounded-full px-2.5 py-0.5 hover:bg-blue-50 transition-colors"
-                >
-                  <ExternalLink className="h-3 w-3 shrink-0" />
-                  {link.label}
-                </a>
-              )
-            )}
-          </div>
         </div>
       </div>
 
@@ -45,6 +29,41 @@ export function WisePersonStubDetail({ person, books }: Props) {
       <div className="mb-8 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">
         此智者的详细介绍尚未完善。当前仅展示基本信息。
       </div>
+
+      {/* Source links */}
+      {(person.links?.length || person.wikipediaLink) && (
+        <div className="mb-8">
+          <h2 className="flex items-center gap-2 text-lg font-semibold mb-4">
+            <ExternalLink className="h-4 w-4" />
+            相关链接
+          </h2>
+          <div className="space-y-3">
+            {(person.links?.length ? person.links : [{ label: "维基百科", url: person.wikipediaLink!, description: "完整的生平与核心思想介绍" }]).map(
+              (link, i) => (
+                <a
+                  key={i}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block rounded-lg border border-gray-200 p-4 hover:border-blue-200 hover:bg-blue-50/30 transition-colors group"
+                >
+                  <div className="flex items-start justify-between">
+                    <div>
+                      <span className="font-medium text-blue-700 group-hover:text-blue-800 text-sm">
+                        {link.label}
+                      </span>
+                      {link.description && (
+                        <p className="text-xs text-muted-foreground mt-0.5">{link.description}</p>
+                      )}
+                    </div>
+                    <ExternalLink className="h-4 w-4 shrink-0 text-gray-400 group-hover:text-blue-500 mt-0.5" />
+                  </div>
+                </a>
+              )
+            )}
+          </div>
+        </div>
+      )}
 
       {/* Books */}
       {books.length > 0 && (

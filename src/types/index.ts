@@ -53,6 +53,7 @@ export interface Work {
 export interface WisePersonLink {
   label: string
   url: string
+  description?: string
 }
 
 export type WorkGenre = "monograph" | "anthology" | "paper"
