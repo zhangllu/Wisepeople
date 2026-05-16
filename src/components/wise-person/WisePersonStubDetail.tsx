@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import { ExternalLink, BookOpen, Library, Tags } from "lucide-react"
 import type { WisePerson } from "@/types"
