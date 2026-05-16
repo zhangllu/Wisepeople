@@ -158,6 +158,42 @@
       "has_introduction": true,
       "has_sources": true,
       "has_cognitive_style": true
+    },
+    {
+      "slug": "james-march",
+      "name": "詹姆斯·马奇",
+      "english_name": "James G. March",
+      "years": "1928—2018",
+      "questions": ["Q06"],
+      "topics": ["有限理性", "探索与利用", "组织学习", "垃圾桶模型", "决策科学"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": true
+    },
+    {
+      "slug": "kevin-kelly",
+      "name": "凯文·凯利",
+      "english_name": "Kevin Kelly",
+      "years": "1952—",
+      "questions": ["Q04"],
+      "topics": ["技术元素", "失控", "必然", "科技哲学", "未来学"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": true
+    },
+    {
+      "slug": "paul-graham",
+      "name": "保罗·格雷厄姆",
+      "english_name": "Paul Graham",
+      "years": "1964—",
+      "questions": ["Q01"],
+      "topics": ["独立思考", "黑客与画家", "创造者品味", "创业", "写作"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": true
     }
   ],
   "questions": [

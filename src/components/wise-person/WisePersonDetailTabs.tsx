@@ -5,6 +5,7 @@ import Link from "next/link"
 import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import { BookmarkButton } from "@/components/shared/BookmarkButton"
+import { ExternalLink } from "lucide-react"
 import type { WisePerson } from "@/types"
 
 type TabType = "introduction" | "basicInfo" | "cognitiveStyle"
@@ -41,6 +42,17 @@ export function WisePersonDetailTabs({ person, preloadedContent }: Props) {
             <h1 className="text-3xl font-bold mb-1">{person.name}</h1>
             {person.nameEn && (
               <p className="text-sm text-muted-foreground">{person.nameEn}</p>
+            )}
+            {person.wikipediaLink && (
+              <a
+                href={person.wikipediaLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-800 mt-1"
+              >
+                <ExternalLink className="h-3 w-3" />
+                资料来源：维基百科
+              </a>
             )}
           </div>
           <BookmarkButton targetId={person.slug} targetType="wise-person" />
