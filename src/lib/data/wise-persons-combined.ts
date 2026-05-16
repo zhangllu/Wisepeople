@@ -7,6 +7,16 @@ import type { WisePerson } from "@/types"
 import { mockWisePersons } from "@/lib/stores/mock-data"
 import { getAllAuthors, getBooksByTopic } from "@/lib/data"
 
+/** Guess Wikipedia link from author name */
+function guessWikipediaLink(name: string): string {
+  // If name contains CJK characters, use Chinese Wikipedia
+  const hasCJK = /[\u4e00-\u9fff\u3400-\u4dbf]/.test(name)
+  const base = hasCJK
+    ? "https://zh.wikipedia.org/wiki/"
+    : "https://en.wikipedia.org/wiki/"
+  return base + encodeURIComponent(name)
+}
+
 /** Generate stub WisePerson objects from Excel author data */
 function generateAuthorStubs(): WisePerson[] {
   const authors = getAllAuthors()
@@ -32,6 +42,7 @@ function generateAuthorStubs(): WisePerson[] {
       isStub: true,
       bookSlugs: author.bookSlugs,
       topicCodes: author.topicCodes,
+      wikipediaLink: guessWikipediaLink(author.name),
     })
   }
 
