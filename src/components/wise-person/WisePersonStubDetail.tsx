@@ -45,7 +45,11 @@ export function WisePersonStubDetail({ person, books }: Props) {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block rounded-lg border border-gray-200 p-4 hover:border-blue-200 hover:bg-blue-50/30 transition-colors group"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    window.open(link.url, "_blank", "noopener,noreferrer")
+                  }}
+                  className="block rounded-lg border border-gray-200 p-4 hover:border-blue-200 hover:bg-blue-50/30 transition-colors group cursor-pointer"
                 >
                   <div className="flex items-start justify-between">
                     <div>
