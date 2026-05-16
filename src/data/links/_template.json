@@ -1,0 +1,13 @@
+{
+  "_meta": {
+    "batch": 1,
+    "date": "2026-05-16",
+    "range": "slugs starting with a-b",
+    "count": 48
+  },
+  "example-author-slug": [
+    { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Author_Name", "description": "完整的生平与核心思想介绍" },
+    { "label": "Google Scholar", "url": "https://scholar.google.com/scholar?q=Author+Name", "description": "学术论文与引用数据" },
+    { "label": "Stanford Encyclopedia", "url": "https://plato.stanford.edu/entries/author-name/", "description": "权威的学术性哲学分析" }
+  ]
+}

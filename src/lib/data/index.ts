@@ -11,6 +11,8 @@ import topicsData from "@/data/topics.json"
 import questionsData from "@/data/questions.json"
 import minimumBooksData from "@/data/minimum_books.json"
 import { mockWisePersons } from "@/lib/stores/mock-data"
+import { guessWikipediaLink } from "@/lib/data/guess-wikipedia-link"
+import { getCuratedLinks } from "@/lib/data/curated-links"
 
 // ── Books ────────────────────────────────────────────────────────────────
 
@@ -194,6 +196,7 @@ export function getWisePersonsByQuestion(): { question: Question; wisePersons: W
     }
     if (qNumbers.size === 0) continue
 
+    const curatedLinks = getCuratedLinks(author.slug)
     const stub: WisePerson = {
       id: `stub-${author.slug}`,
       slug: author.slug,
@@ -210,6 +213,8 @@ export function getWisePersonsByQuestion(): { question: Question; wisePersons: W
       isStub: true,
       bookSlugs: author.bookSlugs,
       topicCodes: author.topicCodes,
+      wikipediaLink: guessWikipediaLink(author.name),
+      links: curatedLinks.length > 0 ? curatedLinks : undefined,
     }
 
     for (const qn of qNumbers) {
@@ -256,6 +261,7 @@ export function getWisePersonsByQuestion(): { question: Question; wisePersons: W
 
 /** Convert an Author to a stub WisePerson */
 function authorToStubWisePerson(author: Author): WisePerson {
+  const curatedLinks = getCuratedLinks(author.slug)
   return {
     id: `stub-${author.slug}`,
     slug: author.slug,
@@ -272,6 +278,8 @@ function authorToStubWisePerson(author: Author): WisePerson {
     isStub: true,
     bookSlugs: author.bookSlugs,
     topicCodes: author.topicCodes,
+    wikipediaLink: guessWikipediaLink(author.name),
+    links: curatedLinks.length > 0 ? curatedLinks : undefined,
   }
 }
 
