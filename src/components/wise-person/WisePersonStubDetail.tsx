@@ -1,6 +1,11 @@
 import Link from "next/link"
-import { ExternalLink, BookOpen } from "lucide-react"
+import { ExternalLink, BookOpen, Library, Tags } from "lucide-react"
 import type { WisePerson } from "@/types"
+import { DISCIPLINE_LABELS, ERA_LABELS, REGION_LABELS } from "@/constants"
+import { Badge } from "@/components/ui/badge"
+import topicsData from "@/data/topics.json"
+import questionsData from "@/data/questions.json"
+import type { SubTopic, Question } from "@/types"
 
 interface StubBook {
   slug: string
@@ -15,19 +20,96 @@ interface Props {
   books: StubBook[]
 }
 
+const topics: SubTopic[] = topicsData as SubTopic[]
+const questions: Question[] = questionsData as Question[]
+
+const topicByCode = new Map<string, SubTopic>()
+for (const t of topics) topicByCode.set(t.code, t)
+
+function getQuestionNumber(topicCode: string): number | null {
+  const n = parseInt(topicCode.split(".")[0])
+  return n >= 1 && n <= 10 ? n : null
+}
+
 export function WisePersonStubDetail({ person, books }: Props) {
+  const topicNames = (person.topicCodes || [])
+    .map((code) => topicByCode.get(code))
+    .filter((t): t is SubTopic => !!t)
+
+  const questionNumbers = new Set<number>()
+  for (const code of person.topicCodes || []) {
+    const qn = getQuestionNumber(code)
+    if (qn !== null) questionNumbers.add(qn)
+  }
+
   return (
     <div className="container mx-auto max-w-4xl px-4 py-8">
       {/* Header */}
       <div className="mb-8">
-        <div>
-          <h1 className="text-3xl font-bold mb-1">{person.name}</h1>
+        <h1 className="text-3xl font-bold mb-3">{person.name}</h1>
+        <div className="flex flex-wrap items-center gap-2 mb-4">
+          <Badge variant="secondary" className="text-xs">
+            {ERA_LABELS[person.era] || "当代"}
+          </Badge>
+          <Badge variant="outline" className="text-xs">
+            {DISCIPLINE_LABELS[person.discipline] || "哲学"}
+          </Badge>
+          <Badge variant="outline" className="text-xs">
+            {REGION_LABELS[person.region] || "西方"}
+          </Badge>
+          {person.bookSlugs && person.bookSlugs.length > 0 && (
+            <Badge variant="secondary" className="text-xs">
+              {person.bookSlugs.length} 本著作
+            </Badge>
+          )}
+          <Badge variant="outline" className="text-xs text-muted-foreground">
+            待完善
+          </Badge>
         </div>
+
+        {/* Topics */}
+        {topicNames.length > 0 && (
+          <div className="flex flex-wrap items-center gap-1.5">
+            <Tags className="h-3.5 w-3.5 text-muted-foreground shrink-0" />
+            {topicNames.map((t) => {
+              const qn = getQuestionNumber(t.code)
+              return (
+                <Link
+                  key={t.code}
+                  href={`/topics/${t.code}`}
+                  className="text-xs bg-blue-50 text-blue-700 px-2 py-0.5 rounded-full hover:bg-blue-100 transition-colors"
+                >
+                  {qn ? `Q${qn} · ` : ""}{t.title}
+                </Link>
+              )
+            })}
+          </div>
+        )}
+
+        {/* Question context */}
+        {questionNumbers.size > 0 && (
+          <div className="mt-3 text-sm text-muted-foreground">
+            属于
+            {[...questionNumbers].sort().map((qn) => {
+              const q = questions.find((q) => q.number === qn)
+              return q ? (
+                <Link
+                  key={qn}
+                  href={`/wise-persons/question/${qn}`}
+                  className="text-blue-600 hover:text-blue-800 mx-1"
+                >
+                  「{q.title}」
+                </Link>
+              ) : null
+            })}
+            大问题
+          </div>
+        )}
       </div>
 
       {/* Notice */}
-      <div className="mb-8 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">
-        此智者的详细介绍尚未完善。当前仅展示基本信息。
+      <div className="mb-8 rounded-lg border border-amber-200 bg-amber-50 p-3 text-sm text-amber-800">
+        此智者的详细介绍尚未完善。当前仅展示基本信息和相关著作。
       </div>
 
       {/* Source links */}
