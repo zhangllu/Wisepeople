@@ -1,0 +1,19 @@
+{
+  "total_authors": 762,
+  "batches": [
+    {
+      "batch": 1,
+      "file": "curated-links-001.json",
+      "date": "2026-05-16",
+      "range": "名字排序前48位（阿～爱）",
+      "count": 48,
+      "links": 99,
+      "status": "done"
+    }
+  ],
+  "summary": {
+    "done": 48,
+    "remaining": 714,
+    "progress": "6.3%"
+  }
+}
