@@ -68,6 +68,11 @@
       "label": "Britannica",
       "url": "https://www.britannica.com/biography/Albert-Einstein",
       "description": "权威百科全书的详细介绍"
+    },
+    {
+      "label": "Einstein Papers Project",
+      "url": "https://www.einstein.caltech.edu/",
+      "description": "加州理工学院爱因斯坦档案项目，收录20,000页手稿和8,000份文档"
     }
   ],
   "a-08672430": [
@@ -104,6 +109,11 @@
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=%E9%98%BF%E5%B0%94%E5%BC%97%E9%9B%B7%E5%BE%B7%C2%B7%E9%98%BF%E5%BE%B7%E5%8B%92",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Library of Congress",
+      "url": "https://search.worldcat.org/zh-cn/title/70982945",
+      "description": "美国国会图书馆阿尔弗雷德·阿德勒档案（1885-2001），含与爱因斯坦通信"
     }
   ],
   "a-99976f20": [
@@ -140,6 +150,11 @@
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=%E9%98%BF%E8%8E%89%C2%B7%E6%8B%89%E5%A1%9E%E5%B0%94%C2%B7%E9%9C%8D%E8%B5%AB%E5%B8%8C%E5%B0%94%E5%BE%B7",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "UC Berkeley Profile",
+      "url": "https://sociology.berkeley.edu/faculty/arlie-russell-hochschild",
+      "description": "加州大学伯克利分校社会学系个人页面"
     }
   ],
   "a-d87694fa": [
@@ -193,6 +208,11 @@
       "label": "Britannica",
       "url": "https://www.britannica.com/biography/Arnold-Toynbee",
       "description": "权威百科全书的详细介绍"
+    },
+    {
+      "label": "Bodleian Archives",
+      "url": "https://archives.bodleian.ox.ac.uk/repositories/2/resources/9601",
+      "description": "牛津大学博德利图书馆藏汤因比档案（1895-1978）"
     }
   ],
   "a-497405ea": [
@@ -258,6 +278,11 @@
       "label": "Stanford Encyclopedia",
       "url": "https://plato.stanford.edu/entries/husserl/",
       "description": "权威的学术性哲学分析"
+    },
+    {
+      "label": "Husserl Archives Leuven",
+      "url": "https://hiw.kuleuven.be/digitalhusserl/",
+      "description": "鲁汶大学胡塞尔档案馆，约40,000页手稿数字化保存"
     }
   ],
   "a-28677074": [
@@ -318,6 +343,11 @@
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=%E5%9F%83%E9%87%8C%E5%85%8B%C2%B7%E5%9F%83%E9%87%8C%E5%85%8B%E6%A3%AE",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Erikson Papers (Harvard)",
+      "url": "https://hollisarchives.lib.harvard.edu/repositories/24/resources/3122",
+      "description": "哈佛大学霍顿图书馆藏埃里克·埃里克森档案"
     }
   ],
   "a-9f645c64": [
@@ -330,6 +360,11 @@
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=%E5%9F%83%E9%87%8C%E5%85%8B%C2%B7%E6%96%B9%E7%BA%B3",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Columbia University Profile",
+      "url": "https://history.columbia.edu/faculty/foner-eric/",
+      "description": "哥伦比亚大学历史系个人页面"
     }
   ],
   "a-caf5ee7d": [
@@ -342,6 +377,11 @@
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=%E5%9F%83%E9%87%8C%E5%85%8B%C2%B7%E5%9D%8E%E5%BE%B7%E5%B0%94",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Nobel Prize Page",
+      "url": "https://www.nobelprize.org/prizes/medicine/2000/kandel/facts/",
+      "description": "诺贝尔奖官网 — 埃里克·坎德尔自传与学术贡献"
     }
   ],
   "a-19e778b7": [
@@ -450,6 +490,11 @@
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=%E5%9F%83%E7%B1%B3%E5%B0%94%C2%B7%E6%B6%82%E5%B0%94%E5%B9%B2",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Durkheim Home Page",
+      "url": "https://durkheim.uchicago.edu",
+      "description": "涂尔干学术资源综合网站，含生平、著作全文和参考文献"
     }
   ],
   "a-ea78b3e8": [
@@ -486,6 +531,11 @@
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=%E8%89%BE%E4%BC%AF%E7%89%B9-%E6%8B%89%E6%96%AF%E6%B4%9B%C2%B7%E5%B7%B4%E6%8B%89%E5%B7%B4%E8%A5%BF",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Barabási Lab",
+      "url": "https://barabasi.com/",
+      "description": "巴拉巴西实验室官网，网络科学前沿研究"
     }
   ],
   "a-6004314e": [
@@ -498,6 +548,11 @@
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=%E8%89%BE%E8%8E%89%E6%A3%AE%C2%B7%E9%AB%98%E6%99%AE%E5%B0%BC%E5%85%8B",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Gopnik Lab",
+      "url": "https://www.gopniklab.berkeley.edu/",
+      "description": "加州大学伯克利分校高普尼克实验室 — 儿童学习与发展研究"
     }
   ],
   "a-431b9133": [
@@ -534,6 +589,11 @@
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=%E8%89%BE%E7%B1%B3%E8%8E%89%C2%B7%E7%8B%84%E9%87%91%E6%A3%AE",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Emily Dickinson Archive",
+      "url": "https://curiosity.lib.harvard.edu/emily-dickinson-archive",
+      "description": "哈佛大学艾米莉·狄金森档案馆，诗歌手稿高清影像和转录"
     }
   ],
   "a-294f433e": [
@@ -546,6 +606,11 @@
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=%E8%89%BE%E8%90%A8%E5%85%8B%C2%B7%E9%98%BF%E8%A5%BF%E8%8E%AB%E5%A4%AB",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Asimov Archive (BU)",
+      "url": "https://web.archive.org/web/20220125141250/http://hgar-srv3.bu.edu/collections/collection?id=121382",
+      "description": "波士顿大学阿西莫夫档案馆，藏有近470部著作的手稿和通信"
     }
   ],
   "a-837395e3": [
@@ -558,6 +623,11 @@
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=%E8%89%BE%E8%90%A8%E5%85%8B%C2%B7%E7%89%9B%E9%A1%BF",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Cambridge Digital Library",
+      "url": "https://cudl.lib.cam.ac.uk/collections/newton/1",
+      "description": "剑桥数字图书馆 — 牛顿手稿在线阅览"
     }
   ],
   "a-5f6bb3e6": [
@@ -570,6 +640,11 @@
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=%E7%88%B1%E5%BE%B7%E5%8D%8E%C2%B7%E5%BE%B7%E8%A5%BF",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Self-Determination Theory",
+      "url": "https://selfdeterminationtheory.org/",
+      "description": "自我决定理论官方网站，爱德华·德西创立"
     }
   ],
   "a-e970b4aa": [
@@ -582,6 +657,11 @@
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=%E7%88%B1%E5%BE%B7%E5%8D%8E%C2%B7%E5%BE%B7%E8%A5%BF",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Self-Determination Theory",
+      "url": "https://selfdeterminationtheory.org/",
+      "description": "自我决定理论官方网站，爱德华·德西创立"
     }
   ],
   "a-99c3eb5a": [
