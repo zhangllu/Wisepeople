@@ -23,6 +23,8 @@ export interface WisePerson {
   topicCodes?: string[]
   /** 维基百科链接 */
   wikipediaLink?: string
+  /** 多来源链接（如个人档案馆、Google Scholar、学会页面等） */
+  links?: WisePersonLink[]
   /** 个性化介绍（待更新） */
   personalIntroduction?: string
   /** 关联的大问题编号（1-10），用于按问题分类展示 */
@@ -45,6 +47,12 @@ export interface Work {
   genre: WorkGenre
   category: WorkCategory
   coverImage?: string
+}
+
+/** 链接来源 */
+export interface WisePersonLink {
+  label: string
+  url: string
 }
 
 export type WorkGenre = "monograph" | "anthology" | "paper"

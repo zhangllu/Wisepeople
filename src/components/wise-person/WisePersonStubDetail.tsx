@@ -22,17 +22,22 @@ export function WisePersonStubDetail({ person, books }: Props) {
       <div className="mb-8">
         <div>
           <h1 className="text-3xl font-bold mb-1">{person.name}</h1>
-          {person.wikipediaLink && (
-            <a
-              href={person.wikipediaLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-800 mt-1"
-            >
-              <ExternalLink className="h-3 w-3" />
-              资料来源：维基百科
-            </a>
-          )}
+          <div className="flex flex-wrap gap-2 mt-2">
+            {(person.links?.length ? person.links : person.wikipediaLink ? [{ label: "维基百科", url: person.wikipediaLink }] : []).map(
+              (link, i) => (
+                <a
+                  key={i}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-800 border border-blue-200 rounded-full px-2.5 py-0.5 hover:bg-blue-50 transition-colors"
+                >
+                  <ExternalLink className="h-3 w-3 shrink-0" />
+                  {link.label}
+                </a>
+              )
+            )}
+          </div>
         </div>
       </div>
 
