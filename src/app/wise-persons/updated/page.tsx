@@ -1,0 +1,81 @@
+import Link from "next/link"
+import { ChevronRight } from "lucide-react"
+import authorsData from "@/data/authors.json"
+import batch001 from "@/data/links/curated-links-001.json"
+import batch002 from "@/data/links/curated-links-002.json"
+import batch003 from "@/data/links/curated-links-003.json"
+import progress from "@/data/links/PROGRESS.json"
+import type { WisePersonLink } from "@/types"
+
+interface BatchMeta {
+  batch: number
+  date: string
+  range: string
+  count: number
+}
+
+interface BatchModule {
+  _meta: BatchMeta
+  [slug: string]: BatchMeta | WisePersonLink[] | unknown
+}
+
+const BATCHES: BatchModule[] = [batch001, batch002, batch003]
+const authorSlugMap = new Map<string, string>()
+for (const a of authorsData) {
+  authorSlugMap.set(a.slug, a.name)
+}
+
+function getDisplayName(slug: string): string {
+  return authorSlugMap.get(slug) ?? slug
+}
+
+function formatDate(dateStr: string): string {
+  const d = new Date(dateStr)
+  return `${d.getMonth() + 1}月${d.getDate()}日`
+}
+
+export default function UpdatedPage() {
+  const allBatches = BATCHES.map((batch) => {
+    const meta = batch._meta as BatchMeta
+    const entries = Object.entries(batch).filter(
+      ([key]) => key !== "_meta"
+    ) as [string, WisePersonLink[]][]
+    const authors = entries
+      .filter(([, links]) => links.length > 0)
+      .map(([slug, links]) => ({ slug, name: getDisplayName(slug), count: links.length }))
+    return { meta, authors }
+  }).filter((b) => b.authors.length > 0)
+
+  const total = allBatches.reduce((s, b) => s + b.authors.length, 0)
+
+  return (
+    <div className="container mx-auto max-w-4xl px-4 py-8">
+      <h1 className="text-2xl font-bold mb-1">已更新智者</h1>
+      <p className="text-sm text-muted-foreground mb-6">
+        已完善精选链接的 {total} 位智者。点击姓名查看人物故事和相关链接。
+      </p>
+
+      <div className="space-y-6">
+        {allBatches.map(({ meta, authors }) => (
+          <section key={meta.batch} className="rounded-lg border border-gray-200 overflow-hidden">
+            <div className="bg-gray-50 px-4 py-2 border-b border-gray-200 text-sm font-medium">
+              第 {meta.batch} 批 · {formatDate(meta.date)} · {authors.length} 位
+            </div>
+            <div className="divide-y divide-gray-100">
+              {authors.map((a) => (
+                <Link
+                  key={a.slug}
+                  href={`/wise-persons/${a.slug}`}
+                  className="flex items-center justify-between px-4 py-2.5 hover:bg-blue-50/30 transition-colors group text-sm"
+                >
+                  <span className="group-hover:text-blue-700 transition-colors">{a.name}</span>
+                  <span className="text-xs text-muted-foreground">{a.count} 条链接</span>
+                </Link>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    </div>
+  )
+}
