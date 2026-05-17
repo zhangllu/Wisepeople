@@ -1,16 +1,4 @@
 {
-  "agneta-rahikainen": [
-    {
-      "label": "Tove Jansson Archive",
-      "url": "https://tovejansson.fi/",
-      "description": "图韦·扬松官方档案（Rahikainen 为扬松传记作者）"
-    },
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Agneta+Rahikainen",
-      "description": "学术论文与引用数据"
-    }
-  ],
   "agnieszka-gajewska": [
     {
       "label": "Wikipedia",
@@ -20,18 +8,6 @@
     {
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=Agnieszka+Gajewska",
-      "description": "学术论文与引用数据"
-    }
-  ],
-  "ananyo-bhattacharya": [
-    {
-      "label": "The Man from the Future",
-      "url": "https://wwnorton.com/books/The-Man-from-the-Future/",
-      "description": "Ananyo 代表作——冯·诺伊曼传记官网"
-    },
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Ananyo+Bhattacharya",
       "description": "学术论文与引用数据"
     }
   ],
@@ -69,30 +45,6 @@
       "label": "PhilPapers Profile",
       "url": "https://philpapers.org/s/Andrius%20Gali%C5%A1anka",
       "description": "哲学学术文献与个人页面"
-    }
-  ],
-  "anita-burdman-feferman-solomon-feferman": [
-    {
-      "label": "Wikipedia (Solomon Feferman)",
-      "url": "https://en.wikipedia.org/wiki/Solomon_Feferman",
-      "description": "所罗门·费弗曼——斯坦福大学数学家，递归论与证明论先驱"
-    },
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Anita+Burdman+Feferman+Solomon+Feferman",
-      "description": "学术论文与引用数据"
-    }
-  ],
-  "arthur-donovan-knight-david": [
-    {
-      "label": "Wikipedia (Arthur Donovan)",
-      "url": "https://en.wikipedia.org/wiki/Arthur_Donovan",
-      "description": "Arthur Donovan 科学史家简介"
-    },
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Arthur+Donovan+history+science",
-      "description": "学术论文与引用数据"
     }
   ],
   "arturo-ezquerro": [
@@ -257,18 +209,6 @@
       "description": "鲍文家庭系统理论中心——Daniel Papero 为核心研究者"
     }
   ],
-  "daniel-w-bjork": [
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Daniel+W+Bjork",
-      "description": "学术论文与引用数据"
-    },
-    {
-      "label": "B.F. Skinner Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/B._F._Skinner",
-      "description": "Daniel Bjork 为斯金纳传记作者，此为传主维基百科"
-    }
-  ],
   "david-bornstein": [
     {
       "label": "Wikipedia",
@@ -329,18 +269,6 @@
       "description": "VIAF 规范文档"
     }
   ],
-  "emile-gauvreau-et-al": [
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Emile+Gauvreau",
-      "description": "学术论文与引用数据"
-    },
-    {
-      "label": "VIAF",
-      "url": "https://viaf.org/viaf/",
-      "description": "VIAF 规范文档"
-    }
-  ],
   "fay-fransella": [
     {
       "label": "Google Scholar",
@@ -351,18 +279,6 @@
       "label": "PCP Association",
       "url": "https://www.pcp-net.org/",
       "description": "个人建构心理学（PCP）协会——Fay Fransella 为该领域权威"
-    }
-  ],
-  "francine-mary-netter": [
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Francine+Mary+Netter",
-      "description": "学术论文与引用数据"
-    },
-    {
-      "label": "Netter Biography",
-      "url": "https://www.netterimages.com/",
-      "description": "Frank H. Netter 医学插画档案（Francine Netter 为其传记作者）"
     }
   ],
   "franz-m-wuketits": [
@@ -387,30 +303,6 @@
       "label": "ResearchGate",
       "url": "https://www.researchgate.net/profile/Gemelli-Giuliana",
       "description": "学术文献与研究网络"
-    }
-  ],
-  "gerald-l-alexanderson-george-p-lya": [
-    {
-      "label": "Wikipedia (George Pólya)",
-      "url": "https://en.wikipedia.org/wiki/George_P%C3%B3lya",
-      "description": "乔治·波利亚——20世纪最杰出的数学家之一"
-    },
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Gerald+L+Alexanderson",
-      "description": "学术论文与引用数据"
-    }
-  ],
-  "grifiths-a-b-wenley-r-m": [
-    {
-      "label": "Wikipedia (R. M. Wenley)",
-      "url": "https://en.wikipedia.org/wiki/R._M._Wenley",
-      "description": "R. M. Wenley——密歇根大学哲学教授"
-    },
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Grifiths+Wenley+philosophy",
-      "description": "学术论文与引用数据"
     }
   ],
   "james-d-watson": [
@@ -510,18 +402,6 @@
       "description": "学术论文与引用数据"
     }
   ],
-  "manfred-vogt-heinrich-n-dreesen-peter-sundman-ferdinand-wolf": [
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Manfred+Vogt+psychology",
-      "description": "学术论文与引用数据"
-    },
-    {
-      "label": "WorldCat",
-      "url": "https://search.worldcat.org/",
-      "description": "全球图书馆目录检索"
-    }
-  ],
   "marcel-fournier": [
     {
       "label": "Wikipedia",
@@ -537,18 +417,6 @@
       "label": "University of Bordeaux",
       "url": "https://www.u-bordeaux.fr/en/about-us/honoris-causa/marcel-fournier-university-montreal",
       "description": "波尔多大学名誉博士页面"
-    }
-  ],
-  "margaret-m-caffrey": [
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Margaret+M+Caffrey",
-      "description": "学术论文与引用数据"
-    },
-    {
-      "label": "Ruth Benedict Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Ruth_Benedict",
-      "description": "Caffrey 为露丝·本尼迪克特传记作者，此为传主维基百科"
     }
   ],
   "marjorie-e-weishaar": [
@@ -659,7 +527,7 @@
     "batch": 2,
     "date": "2026-05-17",
     "range": "Agneta~Richard Fardon（英文名前48位）",
-    "count": 48,
+    "count": 37,
     "links": 113
   }
 }

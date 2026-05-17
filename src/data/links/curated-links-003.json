@@ -3,20 +3,8 @@
     "batch": 3,
     "date": "2026-05-17",
     "range": "Richard Isadore Evans ~ Henry Scott Stokes（第49-96位）",
-    "count": 48
+    "count": 37
   },
-  "richard-isadore-evans": [
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Richard%20Isadore%20Evans",
-      "description": "学术论文与引用数据"
-    },
-    {
-      "label": "B.F. Skinner Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/B._F._Skinner",
-      "description": "Richard Evans 为斯金纳传记作者与合作者"
-    }
-  ],
   "rob-moore": [
     {
       "label": "Wikipedia",
@@ -94,18 +82,6 @@
       "description": "学术论文与引用数据"
     }
   ],
-  "sue-erikson-bloland": [
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Sue%20Erikson%20Bloland",
-      "description": "学术论文与引用数据"
-    },
-    {
-      "label": "Erik Erikson Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Erik_Erikson",
-      "description": "Sue Bloland 为埃里克·埃里克森之女与传记作者"
-    }
-  ],
   "thomas-r-guskey": [
     {
       "label": "Google Scholar",
@@ -133,18 +109,6 @@
       "label": "Author Site",
       "url": "https://williampoundstone.net/",
       "description": "William Poundstone 个人网站"
-    }
-  ],
-  "william-taussig-scott-martin-x-moleski": [
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=William%20Taussig%20Scott%20Martin%20X.%20Moleski",
-      "description": "学术论文与引用数据"
-    },
-    {
-      "label": "Wikipedia (John von Neumann)",
-      "url": "https://en.wikipedia.org/wiki/John_von_Neumann",
-      "description": "William Scott 为冯·诺伊曼传记作者"
     }
   ],
   "a-382d8f78": [
@@ -188,18 +152,6 @@
       "description": "学术论文与引用数据"
     }
   ],
-  "a-67b868c0": [
-    {
-      "label": "维基百科",
-      "url": "https://zh.wikipedia.org/wiki/%E4%B8%A5%E8%80%95%E6%9C%9B%E5%85%88%E7%94%9F%E7%BA%AA%E5%BF%B5%E9%9B%86%E7%BC%96%E8%BE%91%E5%A7%94%E5%91%98%E4%BC%9A",
-      "description": "完整的生平与核心思想介绍"
-    },
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=%E4%B8%A5%E8%80%95%E6%9C%9B%E5%85%88%E7%94%9F%E7%BA%AA%E5%BF%B5%E9%9B%86%E7%BC%96%E8%BE%91%E5%A7%94%E5%91%98%E4%BC%9A",
-      "description": "学术论文与引用数据"
-    }
-  ],
   "a-d1e5dda4": [
     {
       "label": "维基百科",
@@ -209,18 +161,6 @@
     {
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=%E4%B8%B9%E5%B0%BC%E5%B0%94.%E8%8E%B1%E6%96%87%E6%A3%AE%20Daniel%20J.%20Levinson",
-      "description": "学术论文与引用数据"
-    }
-  ],
-  "a-83d60faf": [
-    {
-      "label": "维基百科",
-      "url": "https://zh.wikipedia.org/wiki/%E4%B8%B9%E5%B0%BC%E5%B0%94.%E8%8E%B1%E6%96%87%E6%A3%AE%20Daniel%20J.%20Levinson%3B%20Charlotte%20N.%20Darrow%3B%20Edward%20B.%20Klein",
-      "description": "完整的生平与核心思想介绍"
-    },
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=%E4%B8%B9%E5%B0%BC%E5%B0%94.%E8%8E%B1%E6%96%87%E6%A3%AE%20Daniel%20J.%20Levinson%20Charlotte%20N.%20Darrow%20Edward%20B.%20Klein",
       "description": "学术论文与引用数据"
     }
   ],
@@ -256,18 +196,6 @@
       "label": "Nobel Prize Page",
       "url": "https://www.nobelprize.org/prizes/economic-sciences/2002/kahneman/facts/",
       "description": "诺贝尔奖官网 — 丹尼尔·卡尼曼自传与学术贡献"
-    }
-  ],
-  "a-034bbd14": [
-    {
-      "label": "维基百科",
-      "url": "https://zh.wikipedia.org/wiki/%E4%B8%B9%E5%B0%BC%E5%B0%94%C2%B7%E5%8D%A1%E5%B0%BC%E6%9B%BC%3B%20%E9%98%BF%E8%8E%AB%E6%96%AF%C2%B7%E7%89%B9%E6%B2%83%E6%96%AF%E5%9F%BA",
-      "description": "完整的生平与核心思想介绍"
-    },
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=%E4%B8%B9%E5%B0%BC%E5%B0%94%C2%B7%E5%8D%A1%E5%B0%BC%E6%9B%BC%20%E9%98%BF%E8%8E%AB%E6%96%AF%C2%B7%E7%89%B9%E6%B2%83%E6%96%AF%E5%9F%BA",
-      "description": "学术论文与引用数据"
     }
   ],
   "a-80a39902": [
@@ -497,30 +425,6 @@
       "description": "加州大学伯克利分校语言学系名誉教授个人页面"
     }
   ],
-  "a-f5499c10": [
-    {
-      "label": "维基百科",
-      "url": "https://zh.wikipedia.org/wiki/%E4%B9%94%E6%B2%BB%C2%B7%E8%8E%B1%E8%80%83%E5%A4%AB%3B%20%E9%A9%AC%E5%85%8B%C2%B7%E7%BA%A6%E7%BF%B0%E9%80%8A",
-      "description": "完整的生平与核心思想介绍"
-    },
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=%E4%B9%94%E6%B2%BB%C2%B7%E8%8E%B1%E8%80%83%E5%A4%AB%20%E9%A9%AC%E5%85%8B%C2%B7%E7%BA%A6%E7%BF%B0%E9%80%8A",
-      "description": "学术论文与引用数据"
-    }
-  ],
-  "a-95149db4": [
-    {
-      "label": "维基百科",
-      "url": "https://zh.wikipedia.org/wiki/%E4%B9%94%E6%B2%BB%C2%B7%E8%8E%B1%E8%80%83%E5%A4%AB%3B%20%E9%A9%AC%E5%85%8B%C2%B7%E7%BA%A6%E7%BF%B0%E9%80%8A%3B%20%E9%82%B1%E9%9B%AA%E7%8E%AB%20%E5%AE%A1%E8%AE%A2",
-      "description": "完整的生平与核心思想介绍"
-    },
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=%E4%B9%94%E6%B2%BB%C2%B7%E8%8E%B1%E8%80%83%E5%A4%AB%20%E9%A9%AC%E5%85%8B%C2%B7%E7%BA%A6%E7%BF%B0%E9%80%8A%20%E9%82%B1%E9%9B%AA%E7%8E%AB%20%E5%AE%A1%E8%AE%A2",
-      "description": "学术论文与引用数据"
-    }
-  ],
   "a-c7818ee1": [
     {
       "label": "维基百科",
@@ -579,30 +483,6 @@
       "description": "权威百科全书的详细介绍"
     }
   ],
-  "a-f230f391": [
-    {
-      "label": "维基百科",
-      "url": "https://zh.wikipedia.org/wiki/%E4%BA%9A%E5%BE%B7%E9%87%8C%E5%AE%89%C2%B7%E6%96%AF%E8%8E%B1%E6%B2%83%E6%96%AF%E5%9F%BA%20%E7%AD%89",
-      "description": "完整的生平与核心思想介绍"
-    },
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=%E4%BA%9A%E5%BE%B7%E9%87%8C%E5%AE%89%C2%B7%E6%96%AF%E8%8E%B1%E6%B2%83%E6%96%AF%E5%9F%BA%20%E7%AD%89",
-      "description": "学术论文与引用数据"
-    }
-  ],
-  "a-a0e231c3": [
-    {
-      "label": "维基百科",
-      "url": "https://zh.wikipedia.org/wiki/%E4%BA%9A%E5%BE%B7%E9%87%8C%E5%AE%89%C2%B7%E6%96%AF%E8%8E%B1%E6%B2%83%E6%96%AF%E5%9F%BA%3B%20%E5%A4%A7%E5%8D%AB%C2%B7%E8%8E%AB%E9%87%8C%E6%A3%AE%3B%20%E7%89%B9%E5%BE%B7%C2%B7%E8%8E%AB%E6%B3%BD%3B%20%E5%87%AF%E6%96%87%C2%B7%E8%92%99%E7%89%B9%3B%20%E8%A9%B9%E5%A7%86%E6%96%AF%C2%B7%E5%A5%8E%E6%8B%89",
-      "description": "完整的生平与核心思想介绍"
-    },
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=%E4%BA%9A%E5%BE%B7%E9%87%8C%E5%AE%89%C2%B7%E6%96%AF%E8%8E%B1%E6%B2%83%E6%96%AF%E5%9F%BA%20%E5%A4%A7%E5%8D%AB%C2%B7%E8%8E%AB%E9%87%8C%E6%A3%AE%20%E7%89%B9%E5%BE%B7%C2%B7%E8%8E%AB%E6%B3%BD%20%E5%87%AF%E6%96%87%C2%B7%E8%92%99%E7%89%B9%20%E8%A9%B9%E5%A7%86%E6%96%AF%C2%B7%E5%A5%8E%E6%8B%89",
-      "description": "学术论文与引用数据"
-    }
-  ],
   "a-e0759726": [
     {
       "label": "维基百科",
@@ -634,18 +514,6 @@
     {
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=%E4%BA%A8%E5%88%A9%C2%B7%E5%A8%81%E5%B0%94%E6%9B%BC%20Henry%20M.%20Wellman",
-      "description": "学术论文与引用数据"
-    }
-  ],
-  "a-8270f2e3": [
-    {
-      "label": "维基百科",
-      "url": "https://zh.wikipedia.org/wiki/%E4%BA%A8%E5%88%A9%C2%B7%E5%A8%81%E5%B0%94%E6%9B%BC%3B%20%E5%87%AF%E4%BC%A6%C2%B7%E7%90%B3%E5%BE%B7",
-      "description": "完整的生平与核心思想介绍"
-    },
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=%E4%BA%A8%E5%88%A9%C2%B7%E5%A8%81%E5%B0%94%E6%9B%BC%20%E5%87%AF%E4%BC%A6%C2%B7%E7%90%B3%E5%BE%B7",
       "description": "学术论文与引用数据"
     }
   ],
