@@ -8,6 +8,7 @@ import type { WisePersonLink } from "@/types"
 
 // ── Import batches here (one line per batch) ───────────────────────────────
 import batch001 from "@/data/links/curated-links-001.json"
+import batch002 from "@/data/links/curated-links-002.json"
 
 // ── Loader ─────────────────────────────────────────────────────────────────
 
@@ -18,6 +19,7 @@ const _allCuratedLinks = new Map<string, WisePersonLink[]>()
 function _init(): void {
   const batches: LinksMap[] = [
     batch001,
+    batch002,
   ]
   for (const batch of batches) {
     for (const [key, links] of Object.entries(batch)) {

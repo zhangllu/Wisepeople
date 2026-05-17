@@ -23,11 +23,39 @@
         "艾伦·艾伯斯坦", "艾米莉·狄金森", "艾萨克·阿西莫夫",
         "艾萨克·牛顿", "爱德华·德西", "爱德华·霍夫曼"
       ]
+    },
+    {
+      "batch": 2,
+      "file": "curated-links-002.json",
+      "date": "2026-05-17",
+      "range": "Agneta Rahikainen～Richard Fardon（英文名前48位）",
+      "count": 48,
+      "links": 106,
+      "status": "done",
+      "authors": [
+        "Agneta Rahikainen", "Agnieszka Gajewska", "Ananyo Bhattacharya",
+        "Andrea Köhler-Ludescher", "Andreas D. Bold", "Andrius Gališanka",
+        "Anita Burdman Feferman; Solomon Feferman", "Arthur Donovan; Knight, David",
+        "Arturo Ezquerro", "Barry Katz", "Bart Schultz", "Betty Jean Craige",
+        "Carlos Baker", "Catherine M. Rakow", "Christopher Zurn",
+        "Claire Tomalin", "Cynthia L. Haven", "Dale Jacquette",
+        "Daniel V. Papero", "Daniel W. Bjork", "David Bornstein",
+        "Desmond MacHale", "Desmond Clarke", "Donald J. Albers",
+        "Douglass Merrell", "Emile Gauvreau et al.", "Fay Fransella",
+        "Francine Mary Netter", "Franz M. Wuketits", "Gemelli Giuliana",
+        "Gerald L. Alexanderson; George Pólya", "Grifiths, A. B.; Wenley, R. M.",
+        "James D. Watson", "John H. Flavell", "Joseph Brent",
+        "Lawrence Principe", "Leopold Damrosch", "Makoto Ueda",
+        "Manfred Vogt; Heinrich N. Dreesen; Peter Sundman; Ferdinand Wolf",
+        "Marcel Fournier", "Margaret M. Caffrey", "Marjorie E. Weishaar",
+        "Mary Catherine Bateson", "Matt Doeden", "Morton N. Cohen",
+        "Nathan Houser", "Perez Zagorin", "Richard Fardon"
+      ]
     }
   ],
   "summary": {
-    "done": 48,
-    "remaining": 714,
-    "progress": "6.3%"
+    "done": 96,
+    "remaining": 666,
+    "progress": "12.6%"
   }
 }
