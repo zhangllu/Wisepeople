@@ -165,11 +165,20 @@
         "亨利·威尔曼; 凯伦·琳德",
         "亨利·斯各特·斯托克斯"
       ]
+    },
+    {
+      "batch": 4,
+      "file": "curated-links-004.json",
+      "date": "2026-05-17",
+      "range": "亨利·明茨伯格 ~ 凯博文（名字排序第97-144位）",
+      "count": 48,
+      "links": 142,
+      "status": "done"
     }
   ],
   "summary": {
-    "done": 111,
-    "remaining": 651,
-    "progress": "14.6%"
+    "done": 159,
+    "remaining": 603,
+    "progress": "20.9%"
   }
 }
