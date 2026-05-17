@@ -44,9 +44,16 @@ export function WisePersonCard({ wisePerson }: WisePersonCardProps) {
                     {wisePerson.bookSlugs.length} 本著作
                   </Badge>
                 )}
-                <Badge variant="outline" className="text-[10px] px-1.5 py-0 text-muted-foreground">
-                  待完善
-                </Badge>
+                {wisePerson.links && wisePerson.links.length > 0 && (
+                  <Badge variant="default" className="text-[10px] px-1.5 py-0 bg-blue-600 hover:bg-blue-600">
+                    精选链接
+                  </Badge>
+                )}
+                {(!wisePerson.links || wisePerson.links.length === 0) && (
+                  <Badge variant="outline" className="text-[10px] px-1.5 py-0 text-muted-foreground">
+                    待完善
+                  </Badge>
+                )}
               </>
             ) : (
               <>
