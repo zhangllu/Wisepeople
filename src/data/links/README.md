@@ -178,3 +178,12 @@ WebFetch url="https://..." prompt="Is this a valid page? YES or NO + brief."
 7. **Britannica URL 命名规则不统一** — 三岛由纪夫是 `Yukio-Mishima`（名-姓），不是 `Mishima-Yukio`（姓-名）。生成前先搜索确认
 8. **出版社图书页 URL 不可靠** — W.W. Norton 的图书页 `/books/Title/` 和 ISBN 路径都返回 404，改用 Amazon 作者页
 9. **UC Berkeley 个人页路径不直观** — `linguistics.berkeley.edu/person/34` 已重定向，真实页面在 `lx.berkeley.edu/people/george-lakoff`
+
+### 第 4 批
+
+10. **Britannica 条目覆盖有限** — 并非所有知名人物都有独立 Britannica 条目。克莱顿·克里斯坦森、保罗·瓦茨拉维克、伊丽莎白·扬-布鲁尔等均无独立页。生成链接前先用 `WebFetch` 确认，避免猜 URL。
+11. **中文 Wikipedia 条目缺失** — 伊莱娜·内米洛夫斯基的中文词条不存在，改为链接英文 Wikipedia。对知名度较低的外国作者，检查中英文词条后再决定用哪个版本。
+12. **哈佛等大学个人页可能 403** — 哈佛 `anthropology.fas.harvard.edu` 返回 403（bot 屏蔽），但用户访问正常。此类链接可以保留，但建议准备备用链接。
+13. **非学术作者不应加 Google Scholar** — 卡尔维诺（作家）、克里斯汀·迪奥（设计师）、伊迪特·索德格朗（诗人）等无学术产出的作者，去掉 Google Scholar，避免显示无结果页面。
+14. **48 位中约含 5-6 组重复条目** — 同一人同时有中文名和「中文名+英文名」两个 slug（如「保罗·弗莱雷」和「保罗·弗莱雷 Paulo Freire」）。两者都保留，但取重时注意不要混淆为不同人。
+15. **已清理的非智者条目会重新出现** — 第 2 批移除的传记作者（Agneta Rahikainen、Ananyo Bhattacharya 等）因为 slug 未被标记为 "已处理"，在后续批次中会重新排在列表前列。需要持续维护排除名单。
