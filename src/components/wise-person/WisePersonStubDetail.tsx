@@ -1,13 +1,14 @@
 "use client"
 
 import Link from "next/link"
-import { ExternalLink, BookOpen, Library, Tags } from "lucide-react"
+import { ExternalLink, BookOpen, Library, Tags, Quote } from "lucide-react"
 import type { WisePerson } from "@/types"
 import { DISCIPLINE_LABELS, ERA_LABELS, REGION_LABELS } from "@/constants"
 import { Badge } from "@/components/ui/badge"
 import topicsData from "@/data/topics.json"
 import questionsData from "@/data/questions.json"
 import type { SubTopic, Question } from "@/types"
+import lifeStories from "@/data/links/life-stories.json"
 
 interface StubBook {
   slug: string
@@ -42,6 +43,21 @@ export function WisePersonStubDetail({ person, books }: Props) {
   for (const code of person.topicCodes || []) {
     const qn = getQuestionNumber(code)
     if (qn !== null) questionNumbers.add(qn)
+  }
+
+  const storyMap = lifeStories as any
+  const lifeStory: string | undefined = storyMap[person.slug]
+
+  /** Simple markdown render: handle **bold** and line breaks */
+  function renderStory(text: string) {
+    const paragraphs = text.split("\n\n")
+    return paragraphs.map((p, i) => {
+      // Convert **bold** to <strong>
+      const html = p.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+      return (
+        <p key={i} className="leading-relaxed text-gray-700" dangerouslySetInnerHTML={{ __html: html }} />
+      )
+    })
   }
 
   return (
@@ -115,10 +131,24 @@ export function WisePersonStubDetail({ person, books }: Props) {
         )}
       </div>
 
-      {/* Notice */}
-      <div className="mb-8 rounded-lg border border-amber-200 bg-amber-50 p-3 text-sm text-amber-800">
-        此智者的详细介绍尚未完善。当前仅展示基本信息和相关著作。
-      </div>
+      {/* 人物故事 / Notice */}
+      {lifeStory ? (
+        <div className="mb-8">
+          <div className="flex items-center gap-2 mb-4">
+            <Quote className="h-4 w-4 text-blue-500" />
+            <h2 className="text-lg font-semibold">人物故事</h2>
+          </div>
+          <div className="rounded-xl border border-blue-100 bg-gradient-to-br from-white to-blue-50/30 p-6 md:p-8">
+            <div className="prose prose-sm max-w-none prose-blue">
+              {renderStory(lifeStory)}
+            </div>
+          </div>
+        </div>
+      ) : (
+        <div className="mb-8 rounded-lg border border-amber-200 bg-amber-50 p-3 text-sm text-amber-800">
+          此智者的详细介绍尚未完善。当前仅展示基本信息和相关著作。
+        </div>
+      )}
 
       {/* Source links */}
       {(person.links?.length || person.wikipediaLink) && (
