@@ -80,11 +80,7 @@ export function WisePersonStubDetail({ person, books }: Props) {
               {person.bookSlugs.length} 本著作
             </Badge>
           )}
-          {person.links && person.links.length > 0 ? (
-            <Badge variant="default" className="text-xs bg-blue-600">
-              已更新
-            </Badge>
-          ) : (
+          {(!person.links || person.links.length === 0) && (
             <Badge variant="outline" className="text-xs text-muted-foreground">
               待完善
             </Badge>
