@@ -53,9 +53,9 @@
       "description": "学术论文与引用数据"
     },
     {
-      "label": "The Man Who Knew Infinity",
-      "url": "https://robertkanigel.com/",
-      "description": "Robert Kanigel 代表作——拉马努金传记官网"
+      "label": "Amazon Author Page",
+      "url": "https://www.amazon.com/stores/Robert-Kanigel/e/B000AP7VL6",
+      "description": "Robert Kanigel 作者页面与著作列表"
     }
   ],
   "roberta-m-gilbert": [
@@ -172,7 +172,7 @@
     },
     {
       "label": "Britannica",
-      "url": "https://www.britannica.com/biography/Mishima-Yukio",
+      "url": "https://www.britannica.com/biography/Yukio-Mishima",
       "description": "权威百科全书的详细介绍"
     }
   ],
@@ -237,8 +237,8 @@
     },
     {
       "label": "Stanford Encyclopedia",
-      "url": "https://plato.stanford.edu/entries/dennett/",
-      "description": "斯坦福哲学百科——丹尼特的哲学体系详解"
+      "url": "https://plato.stanford.edu/entries/qualia/",
+      "description": "斯坦福哲学百科——感受性（Qualia），丹尼特的错觉主义立场在此详细讨论"
     }
   ],
   "a-ae048010": [
@@ -493,8 +493,8 @@
     },
     {
       "label": "UC Berkeley Profile",
-      "url": "https://linguistics.berkeley.edu/person/34",
-      "description": "加州大学伯克利分校语言学系个人页面"
+      "url": "https://lx.berkeley.edu/people/george-lakoff",
+      "description": "加州大学伯克利分校语言学系名誉教授个人页面"
     }
   ],
   "a-f5499c10": [
