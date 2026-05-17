@@ -1,15 +1,9 @@
 {
-  "_meta": {
-    "batch": 2,
-    "date": "2026-05-17",
-    "range": "Agneta~Richard Fardon（英文名前48位）",
-    "count": 48
-  },
   "agneta-rahikainen": [
     {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Agneta_Rahikainen",
-      "description": "完整的生平与核心思想介绍"
+      "label": "Tove Jansson Archive",
+      "url": "https://tovejansson.fi/",
+      "description": "图韦·扬松官方档案（Rahikainen 为扬松传记作者）"
     },
     {
       "label": "Google Scholar",
@@ -31,9 +25,9 @@
   ],
   "ananyo-bhattacharya": [
     {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Ananyo_Bhattacharya",
-      "description": "完整的生平与核心思想介绍"
+      "label": "The Man from the Future",
+      "url": "https://wwnorton.com/books/The-Man-from-the-Future/",
+      "description": "Ananyo 代表作——冯·诺伊曼传记官网"
     },
     {
       "label": "Google Scholar",
@@ -43,45 +37,45 @@
   ],
   "andrea-k-hler-ludescher": [
     {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Andrea_Köhler-Ludescher",
-      "description": "完整的生平与核心思想介绍"
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Andrea+K%C3%B6hler-Ludescher",
+      "description": "学术论文与引用数据"
     },
     {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Andrea+Köhler-Ludescher",
-      "description": "学术论文与引用数据"
+      "label": "WorldCat Identity",
+      "url": "https://search.worldcat.org/",
+      "description": "全球图书馆目录中的作者身份信息"
     }
   ],
   "andreas-d-bold": [
     {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Andreas_D._Bold",
-      "description": "完整的生平与核心思想介绍"
-    },
-    {
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=Andreas+D.+Bold",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "WorldCat Identity",
+      "url": "https://search.worldcat.org/",
+      "description": "全球图书馆目录中的作者身份信息"
     }
   ],
   "andrius-gali-anka": [
     {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Andrius_Gališanka",
-      "description": "完整的生平与核心思想介绍"
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Andrius+Gali%C5%A1anka",
+      "description": "学术论文与引用数据"
     },
     {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Andrius+Gališanka",
-      "description": "学术论文与引用数据"
+      "label": "PhilPapers Profile",
+      "url": "https://philpapers.org/s/Andrius%20Gali%C5%A1anka",
+      "description": "哲学学术文献与个人页面"
     }
   ],
   "anita-burdman-feferman-solomon-feferman": [
     {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Anita_Burdman_Feferman",
-      "description": "完整的生平与核心思想介绍"
+      "label": "Wikipedia (Solomon Feferman)",
+      "url": "https://en.wikipedia.org/wiki/Solomon_Feferman",
+      "description": "所罗门·费弗曼——斯坦福大学数学家，递归论与证明论先驱"
     },
     {
       "label": "Google Scholar",
@@ -91,26 +85,26 @@
   ],
   "arthur-donovan-knight-david": [
     {
-      "label": "Wikipedia",
+      "label": "Wikipedia (Arthur Donovan)",
       "url": "https://en.wikipedia.org/wiki/Arthur_Donovan",
-      "description": "完整的生平与核心思想介绍"
+      "description": "Arthur Donovan 科学史家简介"
     },
     {
       "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Arthur+Donovan+Knight,+David",
+      "url": "https://scholar.google.com/scholar?q=Arthur+Donovan+history+science",
       "description": "学术论文与引用数据"
     }
   ],
   "arturo-ezquerro": [
     {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Arturo_Ezquerro",
-      "description": "完整的生平与核心思想介绍"
-    },
-    {
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=Arturo+Ezquerro",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Institute of Group Analysis",
+      "url": "https://www.groupanalysis.org/",
+      "description": "团体分析研究所——Arturo Ezquerro 所属专业机构"
     }
   ],
   "barry-katz": [
@@ -121,8 +115,13 @@
     },
     {
       "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Barry+Katz",
+      "url": "https://scholar.google.com/scholar?q=Barry+Katz+design",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "UC Berkeley Profile",
+      "url": "https://design.berkeley.edu/profiles/barry-katz",
+      "description": "加州大学伯克利分校设计学教授个人页面"
     }
   ],
   "bart-schultz": [
@@ -147,6 +146,11 @@
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=Betty+Jean+Craige",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "UGA Profile",
+      "url": "https://cmlt.franklin.uga.edu/directory/people/betty-jean-craige",
+      "description": "佐治亚大学比较文学系名誉教授个人页面"
     }
   ],
   "carlos-baker": [
@@ -157,32 +161,37 @@
     },
     {
       "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Carlos+Baker",
+      "url": "https://scholar.google.com/scholar?q=Carlos+Baker+Hemingway",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Princeton Archive",
+      "url": "https://findingaids.princeton.edu/",
+      "description": "普林斯顿大学藏 Carlos Baker 海明威研究档案目录"
     }
   ],
   "catherine-m-rakow": [
     {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Catherine_M._Rakow",
-      "description": "完整的生平与核心思想介绍"
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Catherine+M+Rakow",
+      "description": "学术论文与引用数据"
     },
     {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Catherine+M.+Rakow",
-      "description": "学术论文与引用数据"
+      "label": "VIAF",
+      "url": "https://viaf.org/viaf/search?query=local.personalNames%20all%20%22Rakow%2C%20Catherine%22",
+      "description": "VIAF 规范文档"
     }
   ],
   "christopher-zurn": [
     {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Christopher_Zurn",
-      "description": "完整的生平与核心思想介绍"
-    },
-    {
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=Christopher+Zurn",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "UMass Boston Profile",
+      "url": "https://collaborate.umb.edu/en/persons/christopher-zurn/",
+      "description": "麻省大学波士顿分校哲学系个人页面"
     }
   ],
   "claire-tomalin": [
@@ -192,25 +201,30 @@
       "description": "完整的生平与核心思想介绍"
     },
     {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Claire+Tomalin",
-      "description": "学术论文与引用数据"
-    },
-    {
       "label": "Britannica",
       "url": "https://www.britannica.com/biography/Claire-Tomalin",
       "description": "权威百科全书的详细介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Claire+Tomalin",
+      "description": "学术论文与引用数据"
     }
   ],
   "cynthia-l-haven": [
     {
       "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Cynthia_L._Haven",
+      "url": "https://en.wikipedia.org/wiki/Cynthia_Haven",
       "description": "完整的生平与核心思想介绍"
     },
     {
+      "label": "The Book Haven",
+      "url": "https://bookhaven.stanford.edu/about-2/",
+      "description": "Cynthia Haven 的斯坦福附属文学博客"
+    },
+    {
       "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Cynthia+L.+Haven",
+      "url": "https://scholar.google.com/scholar?q=Cynthia+L+Haven",
       "description": "学术论文与引用数据"
     }
   ],
@@ -227,38 +241,38 @@
     },
     {
       "label": "Stanford Encyclopedia",
-      "url": "https://plato.stanford.edu/entries/",
-      "description": "权威的学术性哲学分析（关联条目）"
+      "url": "https://plato.stanford.edu/entries/logic-ontology/",
+      "description": "斯坦福哲学百科——逻辑与本体论相关条目"
     }
   ],
   "daniel-v-papero": [
     {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Daniel_V._Papero",
-      "description": "完整的生平与核心思想介绍"
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Daniel+V+Papero",
+      "description": "学术论文与引用数据"
     },
     {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Daniel+V.+Papero",
-      "description": "学术论文与引用数据"
+      "label": "Bowen Center",
+      "url": "https://www.thebowencenter.org/",
+      "description": "鲍文家庭系统理论中心——Daniel Papero 为核心研究者"
     }
   ],
   "daniel-w-bjork": [
     {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Daniel_W._Bjork",
-      "description": "完整的生平与核心思想介绍"
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Daniel+W+Bjork",
+      "description": "学术论文与引用数据"
     },
     {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Daniel+W.+Bjork",
-      "description": "学术论文与引用数据"
+      "label": "B.F. Skinner Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/B._F._Skinner",
+      "description": "Daniel Bjork 为斯金纳传记作者，此为传主维基百科"
     }
   ],
   "david-bornstein": [
     {
       "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/David_Bornstein",
+      "url": "https://en.wikipedia.org/wiki/David_Bornstein_(author)",
       "description": "完整的生平与核心思想介绍"
     },
     {
@@ -282,73 +296,73 @@
   "desmond-clarke": [
     {
       "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Desmond _Clarke",
+      "url": "https://en.wikipedia.org/wiki/Desmond_Clarke",
       "description": "完整的生平与核心思想介绍"
     },
     {
       "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Desmond +Clarke",
+      "url": "https://scholar.google.com/scholar?q=Desmond+Clarke+philosophy",
       "description": "学术论文与引用数据"
     }
   ],
   "donald-j-albers": [
     {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Donald_J._Albers",
-      "description": "完整的生平与核心思想介绍"
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Donald+J+Albers",
+      "description": "学术论文与引用数据"
     },
     {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Donald+J.+Albers",
-      "description": "学术论文与引用数据"
+      "label": "MAA - Mathematical Association of America",
+      "url": "https://www.maa.org/",
+      "description": "美国数学协会——Donald Albers 曾任 MAA 期刊主编"
     }
   ],
   "douglass-merrell": [
     {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Douglass_Merrell",
-      "description": "完整的生平与核心思想介绍"
-    },
-    {
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=Douglass+Merrell",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "VIAF",
+      "url": "https://viaf.org/viaf/search?query=local.personalNames%20all%20%22Merrell%2C%20Douglass%22",
+      "description": "VIAF 规范文档"
     }
   ],
   "emile-gauvreau-et-al": [
     {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Emile_Gauvreau_et_al.",
-      "description": "完整的生平与核心思想介绍"
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Emile+Gauvreau",
+      "description": "学术论文与引用数据"
     },
     {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Emile+Gauvreau+et+al.",
-      "description": "学术论文与引用数据"
+      "label": "VIAF",
+      "url": "https://viaf.org/viaf/",
+      "description": "VIAF 规范文档"
     }
   ],
   "fay-fransella": [
     {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Fay_Fransella",
-      "description": "完整的生平与核心思想介绍"
-    },
-    {
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=Fay+Fransella",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "PCP Association",
+      "url": "https://www.pcp-net.org/",
+      "description": "个人建构心理学（PCP）协会——Fay Fransella 为该领域权威"
     }
   ],
   "francine-mary-netter": [
     {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Francine_Mary_Netter",
-      "description": "完整的生平与核心思想介绍"
-    },
-    {
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=Francine+Mary+Netter",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Netter Biography",
+      "url": "https://www.netterimages.com/",
+      "description": "Frank H. Netter 医学插画档案（Francine Netter 为其传记作者）"
     }
   ],
   "franz-m-wuketits": [
@@ -359,43 +373,43 @@
     },
     {
       "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Franz+M.+Wuketits",
+      "url": "https://scholar.google.com/scholar?q=Franz+M+Wuketits",
       "description": "学术论文与引用数据"
     }
   ],
   "gemelli-giuliana": [
     {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Gemelli_Giuliana",
-      "description": "完整的生平与核心思想介绍"
-    },
-    {
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=Gemelli+Giuliana",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "ResearchGate",
+      "url": "https://www.researchgate.net/profile/Gemelli-Giuliana",
+      "description": "学术文献与研究网络"
     }
   ],
   "gerald-l-alexanderson-george-p-lya": [
     {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Gerald_L._Alexanderson",
-      "description": "完整的生平与核心思想介绍"
+      "label": "Wikipedia (George Pólya)",
+      "url": "https://en.wikipedia.org/wiki/George_P%C3%B3lya",
+      "description": "乔治·波利亚——20世纪最杰出的数学家之一"
     },
     {
       "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Gerald+L.+Alexanderson+George+Pólya",
+      "url": "https://scholar.google.com/scholar?q=Gerald+L+Alexanderson",
       "description": "学术论文与引用数据"
     }
   ],
   "grifiths-a-b-wenley-r-m": [
     {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Grifiths,_A._B.",
-      "description": "完整的生平与核心思想介绍"
+      "label": "Wikipedia (R. M. Wenley)",
+      "url": "https://en.wikipedia.org/wiki/R._M._Wenley",
+      "description": "R. M. Wenley——密歇根大学哲学教授"
     },
     {
       "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Grifiths,+A.+B.+Wenley,+R.+M.",
+      "url": "https://scholar.google.com/scholar?q=Grifiths+Wenley+philosophy",
       "description": "学术论文与引用数据"
     }
   ],
@@ -407,13 +421,18 @@
     },
     {
       "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=James+D.+Watson",
+      "url": "https://scholar.google.com/scholar?q=James+D+Watson",
       "description": "学术论文与引用数据"
     },
     {
       "label": "Nobel Prize Page",
       "url": "https://www.nobelprize.org/prizes/medicine/1962/watson/facts/",
       "description": "诺贝尔奖官网 — 詹姆斯·沃森自传与学术贡献"
+    },
+    {
+      "label": "Cold Spring Harbor Lab",
+      "url": "https://www.cshl.edu/",
+      "description": "冷泉港实验室——沃森曾任主任，DNA 研究重镇"
     }
   ],
   "john-h-flavell": [
@@ -424,13 +443,13 @@
     },
     {
       "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=John+H.+Flavell",
+      "url": "https://scholar.google.com/scholar?q=John+H+Flavell",
       "description": "学术论文与引用数据"
     },
     {
-      "label": "Stanford Profile",
-      "url": "https://profiles.stanford.edu/john-flavell",
-      "description": "斯坦福大学心理学系个人页面"
+      "label": "National Academy of Sciences",
+      "url": "https://www.nasonline.org/directory-entry/john-h-flavell-n5rgz1/",
+      "description": "美国国家科学院院士简介"
     }
   ],
   "joseph-brent": [
@@ -446,8 +465,8 @@
     },
     {
       "label": "Peirce Edition Project",
-      "url": "https://peirce.iupui.edu/",
-      "description": "印第安纳大学皮尔斯学术项目"
+      "url": "https://libraries.indiana.edu/writings-charles-s-peirce-chronological-edition",
+      "description": "印第安纳大学图书馆——查尔斯·皮尔斯编年全集项目"
     }
   ],
   "lawrence-principe": [
@@ -460,23 +479,23 @@
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=Lawrence+Principe",
       "description": "学术论文与引用数据"
-    },
-    {
-      "label": "Johns Hopkins Profile",
-      "url": "https://chemistry.jhu.edu/directory/lawrence-principe/",
-      "description": "约翰·霍普金斯大学化学系个人页面"
     }
   ],
   "leopold-damrosch": [
     {
       "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Leopold_Damrosch",
+      "url": "https://en.wikipedia.org/wiki/L._Damrosch",
       "description": "完整的生平与核心思想介绍"
     },
     {
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=Leopold+Damrosch",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "National Book Award Feature",
+      "url": "https://www.nationalbook.org/people/leo-damrosch/",
+      "description": "美国国家图书奖入围者页面"
     }
   ],
   "makoto-ueda": [
@@ -493,14 +512,14 @@
   ],
   "manfred-vogt-heinrich-n-dreesen-peter-sundman-ferdinand-wolf": [
     {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Manfred_Vogt",
-      "description": "完整的生平与核心思想介绍"
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Manfred+Vogt+psychology",
+      "description": "学术论文与引用数据"
     },
     {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Manfred+Vogt+Heinrich+N.+Dreesen+Peter+Sundman+Ferdinand+Wolf",
-      "description": "学术论文与引用数据"
+      "label": "WorldCat",
+      "url": "https://search.worldcat.org/",
+      "description": "全球图书馆目录检索"
     }
   ],
   "marcel-fournier": [
@@ -511,37 +530,37 @@
     },
     {
       "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Marcel+Fournier",
+      "url": "https://scholar.google.com/scholar?q=Marcel+Fournier+sociology",
       "description": "学术论文与引用数据"
     },
     {
-      "label": "UniversitÃ© de MontrÃ©al Profile",
-      "url": "https://sociologie.umontreal.ca/repertoire/corps-professoral/",
-      "description": "蒙特利尔大学社会学系个人页面"
+      "label": "University of Bordeaux",
+      "url": "https://www.u-bordeaux.fr/en/about-us/honoris-causa/marcel-fournier-university-montreal",
+      "description": "波尔多大学名誉博士页面"
     }
   ],
   "margaret-m-caffrey": [
     {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Margaret_M._Caffrey",
-      "description": "完整的生平与核心思想介绍"
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Margaret+M+Caffrey",
+      "description": "学术论文与引用数据"
     },
     {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Margaret+M.+Caffrey",
-      "description": "学术论文与引用数据"
+      "label": "Ruth Benedict Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ruth_Benedict",
+      "description": "Caffrey 为露丝·本尼迪克特传记作者，此为传主维基百科"
     }
   ],
   "marjorie-e-weishaar": [
     {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Marjorie_E._Weishaar",
-      "description": "完整的生平与核心思想介绍"
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Marjorie+E+Weishaar",
+      "description": "学术论文与引用数据"
     },
     {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Marjorie+E.+Weishaar",
-      "description": "学术论文与引用数据"
+      "label": "Beck Institute",
+      "url": "https://beckinstitute.org/",
+      "description": "贝克认知行为治疗研究所——Weishaar 为认知疗法领域学者"
     }
   ],
   "mary-catherine-bateson": [
@@ -563,14 +582,14 @@
   ],
   "matt-doeden": [
     {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Matt_Doeden",
-      "description": "完整的生平与核心思想介绍"
-    },
-    {
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=Matt+Doeden",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Google Books",
+      "url": "https://books.google.com/books?uid=&q=Matt+Doeden",
+      "description": "Google Books 作者页面——Matt Doeden 儿童非虚构读物"
     }
   ],
   "morton-n-cohen": [
@@ -581,16 +600,16 @@
     },
     {
       "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=Morton+N.+Cohen",
+      "url": "https://scholar.google.com/scholar?q=Morton+N+Cohen",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Lewis Carroll Archive",
+      "url": "https://findingaids.princeton.edu/",
+      "description": "普林斯顿大学藏 Morton Cohen 刘易斯·卡罗尔研究档案"
     }
   ],
   "nathan-houser": [
-    {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Nathan_Houser",
-      "description": "完整的生平与核心思想介绍"
-    },
     {
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=Nathan+Houser",
@@ -598,8 +617,13 @@
     },
     {
       "label": "Peirce Edition Project",
-      "url": "https://peirce.iupui.edu/",
-      "description": "印第安纳大学皮尔斯学术项目，查尔斯·桑德斯·皮尔斯全集编纂"
+      "url": "https://libraries.indiana.edu/writings-charles-s-peirce-chronological-edition",
+      "description": "印第安纳大学图书馆——皮尔斯全集项目，Houser 为总编"
+    },
+    {
+      "label": "IUPUI Profile",
+      "url": "https://www.liberalarts.iupui.edu/about/archive/2025-archive/houser-nathan.html",
+      "description": "印第安纳大学哲学系名誉教授个人页面"
     }
   ],
   "perez-zagorin": [
@@ -612,11 +636,6 @@
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=Perez+Zagorin",
       "description": "学术论文与引用数据"
-    },
-    {
-      "label": "University of Rochester Profile",
-      "url": "https://www.rochester.edu/",
-      "description": "罗切斯特大学历史系个人页面"
     }
   ],
   "richard-fardon": [
@@ -629,6 +648,18 @@
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=Richard+Fardon",
       "description": "学术论文与引用数据"
+    },
+    {
+      "label": "SOAS Profile",
+      "url": "https://www.soas.ac.uk/about/richard-fardon",
+      "description": "伦敦大学亚非学院人类学教授个人页面"
     }
-  ]
+  ],
+  "_meta": {
+    "batch": 2,
+    "date": "2026-05-17",
+    "range": "Agneta~Richard Fardon（英文名前48位）",
+    "count": 48,
+    "links": 113
+  }
 }
