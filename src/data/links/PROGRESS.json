@@ -51,11 +51,43 @@
         "Mary Catherine Bateson", "Matt Doeden", "Morton N. Cohen",
         "Nathan Houser", "Perez Zagorin", "Richard Fardon"
       ]
+    },
+    {
+      "batch": 3,
+      "file": "curated-links-003.json",
+      "date": "2026-05-17",
+      "range": "Richard Isadore Evans ~ 亨利·斯各特·斯托克斯（第49-96位）",
+      "count": 48,
+      "links": 112,
+      "status": "done",
+      "authors": [
+        "Richard Isadore Evans", "Rob Moore", "Robert Ackerman",
+        "Robert Kanigel", "Roberta M. Gilbert", "Robin Marantz Henig",
+        "Steve Andreas", "Sue Erikson Bloland", "Thomas R. Guskey",
+        "William Poundstone", "William Taussig Scott; Martin X. Moleski",
+        "丁建新", "三岛由纪夫", "严耕望", "严耕望先生纪念集编辑委员会",
+        "丹尼尔.莱文森 Daniel J. Levinson",
+        "丹尼尔.莱文森 Daniel J. Levinson; Charlotte N. Darrow; Edward B. Klein",
+        "丹尼尔·丹尼特", "丹尼尔·卡尼曼", "丹尼尔·卡尼曼; 阿莫斯·特沃斯基",
+        "丹尼尔·斯库格伦斯基", "乌莎·戈斯瓦米",
+        "乔姆斯基, [美]诺姆", "乔姆斯基, 诺姆",
+        "乔恩·艾伦", "乔治 索罗斯",
+        "乔治-凯利 George Kelly", "乔治-维克托·勒格罗",
+        "乔治·伽莫夫", "乔治·伽莫夫 George Gamow",
+        "乔治·威廉姆斯", "乔治·布尔", "乔治·布尔 George Boole",
+        "乔治·波利亚", "乔治·索罗斯", "乔治·莱考夫",
+        "乔治·莱考夫; 马克·约翰逊", "乔治·莱考夫; 马克·约翰逊; 邱雪玫 审订",
+        "乔治·齐夫", "乔纳森·卡勒", "乔纳森·海特",
+        "亚当·斯密", "亚德里安·斯莱沃斯基 等",
+        "亚德里安·斯莱沃斯基; 大卫·莫里森; 特德·莫泽; 凯文·蒙特; 詹姆斯·奎拉",
+        "亚里士多德", "亨利·威尔曼 Henry M. Wellman",
+        "亨利·威尔曼; 凯伦·琳德", "亨利·斯各特·斯托克斯"
+      ]
     }
   ],
   "summary": {
-    "done": 96,
-    "remaining": 666,
-    "progress": "12.6%"
+    "done": 144,
+    "remaining": 618,
+    "progress": "18.9%"
   }
 }

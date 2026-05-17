@@ -1,0 +1,664 @@
+{
+  "_meta": {
+    "batch": 3,
+    "date": "2026-05-17",
+    "range": "Richard Isadore Evans ~ Henry Scott Stokes（第49-96位）",
+    "count": 48
+  },
+  "richard-isadore-evans": [
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Richard%20Isadore%20Evans",
+      "description": "学术论文与引用数据"
+    },
+    {
+      "label": "B.F. Skinner Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/B._F._Skinner",
+      "description": "Richard Evans 为斯金纳传记作者与合作者"
+    }
+  ],
+  "rob-moore": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rob_Moore",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Rob%20Moore",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "robert-ackerman": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Robert_Ackerman",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Robert%20Ackerman",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "robert-kanigel": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Robert_Kanigel",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Robert%20Kanigel",
+      "description": "学术论文与引用数据"
+    },
+    {
+      "label": "The Man Who Knew Infinity",
+      "url": "https://robertkanigel.com/",
+      "description": "Robert Kanigel 代表作——拉马努金传记官网"
+    }
+  ],
+  "roberta-m-gilbert": [
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Roberta%20M.%20Gilbert",
+      "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Bowen Center",
+      "url": "https://www.thebowencenter.org/",
+      "description": "鲍文家庭系统理论中心"
+    }
+  ],
+  "robin-marantz-henig": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Robin_Marantz_Henig",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Robin%20Marantz%20Henig",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "steve-andreas": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Steve_Andreas",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Steve%20Andreas",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "sue-erikson-bloland": [
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Sue%20Erikson%20Bloland",
+      "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Erik Erikson Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Erik_Erikson",
+      "description": "Sue Bloland 为埃里克·埃里克森之女与传记作者"
+    }
+  ],
+  "thomas-r-guskey": [
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Thomas%20R.%20Guskey",
+      "description": "学术论文与引用数据"
+    },
+    {
+      "label": "ResearchGate",
+      "url": "https://www.researchgate.net/profile/Thomas-Guskey",
+      "description": "学术文献与研究网络"
+    }
+  ],
+  "william-poundstone": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/William_Poundstone",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=William%20Poundstone",
+      "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Author Site",
+      "url": "https://williampoundstone.net/",
+      "description": "William Poundstone 个人网站"
+    }
+  ],
+  "william-taussig-scott-martin-x-moleski": [
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=William%20Taussig%20Scott%20Martin%20X.%20Moleski",
+      "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Wikipedia (John von Neumann)",
+      "url": "https://en.wikipedia.org/wiki/John_von_Neumann",
+      "description": "William Scott 为冯·诺伊曼传记作者"
+    }
+  ],
+  "a-382d8f78": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B8%81%E5%BB%BA%E6%96%B0",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B8%81%E5%BB%BA%E6%96%B0",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "a-eddd14ad": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B8%89%E5%B2%9B%E7%94%B1%E7%BA%AA%E5%A4%AB",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B8%89%E5%B2%9B%E7%94%B1%E7%BA%AA%E5%A4%AB",
+      "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Mishima-Yukio",
+      "description": "权威百科全书的详细介绍"
+    }
+  ],
+  "a-62f27f25": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B8%A5%E8%80%95%E6%9C%9B",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B8%A5%E8%80%95%E6%9C%9B",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "a-67b868c0": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B8%A5%E8%80%95%E6%9C%9B%E5%85%88%E7%94%9F%E7%BA%AA%E5%BF%B5%E9%9B%86%E7%BC%96%E8%BE%91%E5%A7%94%E5%91%98%E4%BC%9A",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B8%A5%E8%80%95%E6%9C%9B%E5%85%88%E7%94%9F%E7%BA%AA%E5%BF%B5%E9%9B%86%E7%BC%96%E8%BE%91%E5%A7%94%E5%91%98%E4%BC%9A",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "a-d1e5dda4": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B8%B9%E5%B0%BC%E5%B0%94.%E8%8E%B1%E6%96%87%E6%A3%AE%20Daniel%20J.%20Levinson",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B8%B9%E5%B0%BC%E5%B0%94.%E8%8E%B1%E6%96%87%E6%A3%AE%20Daniel%20J.%20Levinson",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "a-83d60faf": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B8%B9%E5%B0%BC%E5%B0%94.%E8%8E%B1%E6%96%87%E6%A3%AE%20Daniel%20J.%20Levinson%3B%20Charlotte%20N.%20Darrow%3B%20Edward%20B.%20Klein",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B8%B9%E5%B0%BC%E5%B0%94.%E8%8E%B1%E6%96%87%E6%A3%AE%20Daniel%20J.%20Levinson%20Charlotte%20N.%20Darrow%20Edward%20B.%20Klein",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "a-5ae161c9": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B8%B9%E5%B0%BC%E5%B0%94%C2%B7%E4%B8%B9%E5%B0%BC%E7%89%B9",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B8%B9%E5%B0%BC%E5%B0%94%C2%B7%E4%B8%B9%E5%B0%BC%E7%89%B9",
+      "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/dennett/",
+      "description": "斯坦福哲学百科——丹尼特的哲学体系详解"
+    }
+  ],
+  "a-ae048010": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B8%B9%E5%B0%BC%E5%B0%94%C2%B7%E5%8D%A1%E5%B0%BC%E6%9B%BC",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B8%B9%E5%B0%BC%E5%B0%94%C2%B7%E5%8D%A1%E5%B0%BC%E6%9B%BC",
+      "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Nobel Prize Page",
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/2002/kahneman/facts/",
+      "description": "诺贝尔奖官网 — 丹尼尔·卡尼曼自传与学术贡献"
+    }
+  ],
+  "a-034bbd14": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B8%B9%E5%B0%BC%E5%B0%94%C2%B7%E5%8D%A1%E5%B0%BC%E6%9B%BC%3B%20%E9%98%BF%E8%8E%AB%E6%96%AF%C2%B7%E7%89%B9%E6%B2%83%E6%96%AF%E5%9F%BA",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B8%B9%E5%B0%BC%E5%B0%94%C2%B7%E5%8D%A1%E5%B0%BC%E6%9B%BC%20%E9%98%BF%E8%8E%AB%E6%96%AF%C2%B7%E7%89%B9%E6%B2%83%E6%96%AF%E5%9F%BA",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "a-80a39902": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B8%B9%E5%B0%BC%E5%B0%94%C2%B7%E6%96%AF%E5%BA%93%E6%A0%BC%E4%BC%A6%E6%96%AF%E5%9F%BA",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B8%B9%E5%B0%BC%E5%B0%94%C2%B7%E6%96%AF%E5%BA%93%E6%A0%BC%E4%BC%A6%E6%96%AF%E5%9F%BA",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "a-2a52b866": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B9%8C%E8%8E%8E%C2%B7%E6%88%88%E6%96%AF%E7%93%A6%E7%B1%B3",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B9%8C%E8%8E%8E%C2%B7%E6%88%88%E6%96%AF%E7%93%A6%E7%B1%B3",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "a-b60227d1": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B9%94%E5%A7%86%E6%96%AF%E5%9F%BA%2C%20%5B%E7%BE%8E%5D%E8%AF%BA%E5%A7%86",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B9%94%E5%A7%86%E6%96%AF%E5%9F%BA%2C%20%5B%E7%BE%8E%5D%E8%AF%BA%E5%A7%86",
+      "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Noam-Chomsky",
+      "description": "权威百科全书的详细介绍"
+    }
+  ],
+  "a-a51d5ee8": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B9%94%E5%A7%86%E6%96%AF%E5%9F%BA%2C%20%E8%AF%BA%E5%A7%86",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B9%94%E5%A7%86%E6%96%AF%E5%9F%BA%2C%20%E8%AF%BA%E5%A7%86",
+      "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Noam-Chomsky",
+      "description": "权威百科全书的详细介绍"
+    }
+  ],
+  "a-45846ca3": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B9%94%E6%81%A9%C2%B7%E8%89%BE%E4%BC%A6",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B9%94%E6%81%A9%C2%B7%E8%89%BE%E4%BC%A6",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "a-304267c3": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B9%94%E6%B2%BB%20%E7%B4%A2%E7%BD%97%E6%96%AF",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B9%94%E6%B2%BB%20%E7%B4%A2%E7%BD%97%E6%96%AF",
+      "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/George-Soros",
+      "description": "权威百科全书的详细介绍"
+    }
+  ],
+  "a-254b89d2": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B9%94%E6%B2%BB-%E5%87%AF%E5%88%A9%20George%20Kelly",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B9%94%E6%B2%BB-%E5%87%AF%E5%88%A9%20George%20Kelly",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "a-46e93d77": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B9%94%E6%B2%BB-%E7%BB%B4%E5%85%8B%E6%89%98%C2%B7%E5%8B%92%E6%A0%BC%E7%BD%97",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B9%94%E6%B2%BB-%E7%BB%B4%E5%85%8B%E6%89%98%C2%B7%E5%8B%92%E6%A0%BC%E7%BD%97",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "a-5ac20149": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B9%94%E6%B2%BB%C2%B7%E4%BC%BD%E8%8E%AB%E5%A4%AB",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B9%94%E6%B2%BB%C2%B7%E4%BC%BD%E8%8E%AB%E5%A4%AB",
+      "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/George-Gamow",
+      "description": "权威百科全书的详细介绍"
+    }
+  ],
+  "a-feb39e1d": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B9%94%E6%B2%BB%C2%B7%E4%BC%BD%E8%8E%AB%E5%A4%AB%20George%20Gamow",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B9%94%E6%B2%BB%C2%B7%E4%BC%BD%E8%8E%AB%E5%A4%AB%20George%20Gamow",
+      "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/George-Gamow",
+      "description": "权威百科全书的详细介绍"
+    }
+  ],
+  "a-b5406f42": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B9%94%E6%B2%BB%C2%B7%E5%A8%81%E5%BB%89%E5%A7%86%E6%96%AF",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B9%94%E6%B2%BB%C2%B7%E5%A8%81%E5%BB%89%E5%A7%86%E6%96%AF",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "a-b433589e": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B9%94%E6%B2%BB%C2%B7%E5%B8%83%E5%B0%94",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B9%94%E6%B2%BB%C2%B7%E5%B8%83%E5%B0%94",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "a-537a00e1": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B9%94%E6%B2%BB%C2%B7%E5%B8%83%E5%B0%94%20George%20Boole",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B9%94%E6%B2%BB%C2%B7%E5%B8%83%E5%B0%94%20George%20Boole",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "a-d691a67a": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B9%94%E6%B2%BB%C2%B7%E6%B3%A2%E5%88%A9%E4%BA%9A",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B9%94%E6%B2%BB%C2%B7%E6%B3%A2%E5%88%A9%E4%BA%9A",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "a-c0d87270": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B9%94%E6%B2%BB%C2%B7%E7%B4%A2%E7%BD%97%E6%96%AF",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B9%94%E6%B2%BB%C2%B7%E7%B4%A2%E7%BD%97%E6%96%AF",
+      "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/George-Soros",
+      "description": "权威百科全书的详细介绍"
+    }
+  ],
+  "a-d1b0ea8f": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B9%94%E6%B2%BB%C2%B7%E8%8E%B1%E8%80%83%E5%A4%AB",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B9%94%E6%B2%BB%C2%B7%E8%8E%B1%E8%80%83%E5%A4%AB",
+      "description": "学术论文与引用数据"
+    },
+    {
+      "label": "UC Berkeley Profile",
+      "url": "https://linguistics.berkeley.edu/person/34",
+      "description": "加州大学伯克利分校语言学系个人页面"
+    }
+  ],
+  "a-f5499c10": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B9%94%E6%B2%BB%C2%B7%E8%8E%B1%E8%80%83%E5%A4%AB%3B%20%E9%A9%AC%E5%85%8B%C2%B7%E7%BA%A6%E7%BF%B0%E9%80%8A",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B9%94%E6%B2%BB%C2%B7%E8%8E%B1%E8%80%83%E5%A4%AB%20%E9%A9%AC%E5%85%8B%C2%B7%E7%BA%A6%E7%BF%B0%E9%80%8A",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "a-95149db4": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B9%94%E6%B2%BB%C2%B7%E8%8E%B1%E8%80%83%E5%A4%AB%3B%20%E9%A9%AC%E5%85%8B%C2%B7%E7%BA%A6%E7%BF%B0%E9%80%8A%3B%20%E9%82%B1%E9%9B%AA%E7%8E%AB%20%E5%AE%A1%E8%AE%A2",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B9%94%E6%B2%BB%C2%B7%E8%8E%B1%E8%80%83%E5%A4%AB%20%E9%A9%AC%E5%85%8B%C2%B7%E7%BA%A6%E7%BF%B0%E9%80%8A%20%E9%82%B1%E9%9B%AA%E7%8E%AB%20%E5%AE%A1%E8%AE%A2",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "a-c7818ee1": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B9%94%E6%B2%BB%C2%B7%E9%BD%90%E5%A4%AB",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B9%94%E6%B2%BB%C2%B7%E9%BD%90%E5%A4%AB",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "a-cca1b3d1": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B9%94%E7%BA%B3%E6%A3%AE%C2%B7%E5%8D%A1%E5%8B%92",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B9%94%E7%BA%B3%E6%A3%AE%C2%B7%E5%8D%A1%E5%8B%92",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "a-8aceffb8": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B9%94%E7%BA%B3%E6%A3%AE%C2%B7%E6%B5%B7%E7%89%B9",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%B9%94%E7%BA%B3%E6%A3%AE%C2%B7%E6%B5%B7%E7%89%B9",
+      "description": "学术论文与引用数据"
+    },
+    {
+      "label": "The Righteous Mind",
+      "url": "https://righteousmind.com/",
+      "description": "乔纳森·海特个人网站与著作"
+    }
+  ],
+  "a-faf61ac0": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%BA%9A%E5%BD%93%C2%B7%E6%96%AF%E5%AF%86",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%BA%9A%E5%BD%93%C2%B7%E6%96%AF%E5%AF%86",
+      "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Adam-Smith",
+      "description": "权威百科全书的详细介绍"
+    }
+  ],
+  "a-f230f391": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%BA%9A%E5%BE%B7%E9%87%8C%E5%AE%89%C2%B7%E6%96%AF%E8%8E%B1%E6%B2%83%E6%96%AF%E5%9F%BA%20%E7%AD%89",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%BA%9A%E5%BE%B7%E9%87%8C%E5%AE%89%C2%B7%E6%96%AF%E8%8E%B1%E6%B2%83%E6%96%AF%E5%9F%BA%20%E7%AD%89",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "a-a0e231c3": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%BA%9A%E5%BE%B7%E9%87%8C%E5%AE%89%C2%B7%E6%96%AF%E8%8E%B1%E6%B2%83%E6%96%AF%E5%9F%BA%3B%20%E5%A4%A7%E5%8D%AB%C2%B7%E8%8E%AB%E9%87%8C%E6%A3%AE%3B%20%E7%89%B9%E5%BE%B7%C2%B7%E8%8E%AB%E6%B3%BD%3B%20%E5%87%AF%E6%96%87%C2%B7%E8%92%99%E7%89%B9%3B%20%E8%A9%B9%E5%A7%86%E6%96%AF%C2%B7%E5%A5%8E%E6%8B%89",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%BA%9A%E5%BE%B7%E9%87%8C%E5%AE%89%C2%B7%E6%96%AF%E8%8E%B1%E6%B2%83%E6%96%AF%E5%9F%BA%20%E5%A4%A7%E5%8D%AB%C2%B7%E8%8E%AB%E9%87%8C%E6%A3%AE%20%E7%89%B9%E5%BE%B7%C2%B7%E8%8E%AB%E6%B3%BD%20%E5%87%AF%E6%96%87%C2%B7%E8%92%99%E7%89%B9%20%E8%A9%B9%E5%A7%86%E6%96%AF%C2%B7%E5%A5%8E%E6%8B%89",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "a-e0759726": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7",
+      "description": "学术论文与引用数据"
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/aristotle/",
+      "description": "斯坦福哲学百科——亚里士多德的哲学体系详解"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Aristotle",
+      "description": "权威百科全书的详细介绍"
+    }
+  ],
+  "a-3118adea": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%BA%A8%E5%88%A9%C2%B7%E5%A8%81%E5%B0%94%E6%9B%BC%20Henry%20M.%20Wellman",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%BA%A8%E5%88%A9%C2%B7%E5%A8%81%E5%B0%94%E6%9B%BC%20Henry%20M.%20Wellman",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "a-8270f2e3": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%BA%A8%E5%88%A9%C2%B7%E5%A8%81%E5%B0%94%E6%9B%BC%3B%20%E5%87%AF%E4%BC%A6%C2%B7%E7%90%B3%E5%BE%B7",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%BA%A8%E5%88%A9%C2%B7%E5%A8%81%E5%B0%94%E6%9B%BC%20%E5%87%AF%E4%BC%A6%C2%B7%E7%90%B3%E5%BE%B7",
+      "description": "学术论文与引用数据"
+    }
+  ],
+  "a-55b0cd0e": [
+    {
+      "label": "维基百科",
+      "url": "https://zh.wikipedia.org/wiki/%E4%BA%A8%E5%88%A9%C2%B7%E6%96%AF%E5%90%84%E7%89%B9%C2%B7%E6%96%AF%E6%89%98%E5%85%8B%E6%96%AF",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%BA%A8%E5%88%A9%C2%B7%E6%96%AF%E5%90%84%E7%89%B9%C2%B7%E6%96%AF%E6%89%98%E5%85%8B%E6%96%AF",
+      "description": "学术论文与引用数据"
+    }
+  ]
+}
