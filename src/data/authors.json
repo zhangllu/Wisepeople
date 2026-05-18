@@ -1696,7 +1696,7 @@
   },
   {
     "slug": "a-986ba9f5",
-    "name": "凯文·凯利",
+    "name": "Kevin Kelly（凯文·凯利）",
     "bookSlugs": [
       "b-ff0e0d53",
       "b-965ef425",
@@ -1708,7 +1708,7 @@
   },
   {
     "slug": "a-6342ee17",
-    "name": "列夫·维果茨基",
+    "name": "Lev Vygotsky（列夫·维果茨基）",
     "bookSlugs": [
       "b-843e60b7",
       "b-2456c22a"
@@ -1749,7 +1749,7 @@
   },
   {
     "slug": "a-7c3edea2",
-    "name": "刘易斯·托马斯",
+    "name": "Lewis Thomas（刘易斯·托马斯）",
     "bookSlugs": [
       "b-0b727d17",
       "b-907d9b45",
@@ -1771,7 +1771,7 @@
   },
   {
     "slug": "a-926cb51a",
-    "name": "利奥波德-冯-兰克Leopold Von Ranke",
+    "name": "Leopold von Ranke（利奥波德·冯·兰克）",
     "bookSlugs": [
       "b-8a449206"
     ],
@@ -1781,7 +1781,7 @@
   },
   {
     "slug": "a-1034ff50",
-    "name": "加布里埃尔·厄廷根",
+    "name": "Gabriele Oettingen（加布里埃尔·厄廷根）",
     "bookSlugs": [
       "b-662ed97c"
     ],
@@ -1791,7 +1791,7 @@
   },
   {
     "slug": "a-dad4695c",
-    "name": "劳伦斯·克劳斯",
+    "name": "Lawrence M. Krauss（劳伦斯·克劳斯）",
     "bookSlugs": [
       "b-cf7ee9d6"
     ],
@@ -1801,7 +1801,7 @@
   },
   {
     "slug": "a-f719a9a8",
-    "name": "劳伦斯·斯坦伯格",
+    "name": "Laurence Steinberg（劳伦斯·斯坦伯格）",
     "bookSlugs": [
       "b-b7ca6756",
       "b-745e3376"
@@ -1822,7 +1822,7 @@
   },
   {
     "slug": "a-6ed9e682",
-    "name": "劳伦斯·科尔伯格",
+    "name": "Lawrence Kohlberg（劳伦斯·科尔伯格）",
     "bookSlugs": [
       "b-5110d0ed"
     ],
@@ -1832,7 +1832,7 @@
   },
   {
     "slug": "a-10377c12",
-    "name": "勒内·基拉尔",
+    "name": "René Girard（勒内·基拉尔）",
     "bookSlugs": [
       "b-23623519",
       "b-332b5042",
@@ -1844,7 +1844,7 @@
   },
   {
     "slug": "a-a3197428",
-    "name": "勒内·笛卡尔",
+    "name": "René Descartes（勒内·笛卡尔）",
     "bookSlugs": [
       "b-bbf75f92",
       "b-865e1f74",
@@ -1907,7 +1907,7 @@
   },
   {
     "slug": "a-c4bb0fdf",
-    "name": "卡尔·波普尔",
+    "name": "Karl Popper（卡尔·波普尔）",
     "bookSlugs": [
       "b-202559f2",
       "b-b7070a6f",
@@ -1920,7 +1920,7 @@
   },
   {
     "slug": "a-350a732d",
-    "name": "卡尔·洛维特",
+    "name": "Karl Löwith（卡尔·洛维特）",
     "bookSlugs": [
       "b-919d9ef4"
     ],
@@ -1930,7 +1930,7 @@
   },
   {
     "slug": "a-98407e54",
-    "name": "卡尔·罗杰斯",
+    "name": "Carl Rogers（卡尔·罗杰斯）",
     "bookSlugs": [
       "b-f95daba5"
     ],
@@ -1940,7 +1940,7 @@
   },
   {
     "slug": "a-af391cde",
-    "name": "卡尔·荣格",
+    "name": "Carl Jung（卡尔·荣格）",
     "bookSlugs": [
       "b-1a8028d5",
       "b-8f864dab",
@@ -1962,7 +1962,7 @@
   },
   {
     "slug": "a-f5d7a6e8",
-    "name": "卡尔·萨根",
+    "name": "Carl Sagan（卡尔·萨根）",
     "bookSlugs": [
       "b-8173e13a",
       "b-4e80cf9d",
@@ -1980,7 +1980,7 @@
   },
   {
     "slug": "a-63c788c2",
-    "name": "卡尔·雅斯贝尔斯",
+    "name": "Karl Jaspers（卡尔·雅斯贝尔斯）",
     "bookSlugs": [
       "b-e1844ad6",
       "b-57f03bee"
@@ -1991,7 +1991,7 @@
   },
   {
     "slug": "a-7ee6f399",
-    "name": "卡尔·马克思",
+    "name": "Karl Marx（卡尔·马克思）",
     "bookSlugs": [
       "b-be93c46a",
       "b-a6e04f7d"
@@ -2003,7 +2003,7 @@
   },
   {
     "slug": "a-fb0b05ed",
-    "name": "卡迈什瓦尔·瓦利",
+    "name": "Kameshwar C. Wali（卡迈什瓦尔·瓦利）",
     "bookSlugs": [
       "b-55179c4f"
     ],
@@ -2013,7 +2013,7 @@
   },
   {
     "slug": "a-283dc7cd",
-    "name": "卢卡奇",
+    "name": "György Lukács（卢卡奇）",
     "bookSlugs": [
       "b-cdc492a5"
     ],
@@ -2033,7 +2033,7 @@
   },
   {
     "slug": "a-25b2380f",
-    "name": "史蒂夫.德.沙泽尔 Steve de Shazer",
+    "name": "Steve de Shazer（史蒂夫·德·沙泽尔）",
     "bookSlugs": [
       "b-4f14fe21",
       "b-62df8aac"
@@ -2044,7 +2044,7 @@
   },
   {
     "slug": "a-e9fd54e8",
-    "name": "史蒂夫·布兰克",
+    "name": "Steve Blank（史蒂夫·布兰克）",
     "bookSlugs": [
       "b-3858a1e8"
     ],
@@ -2085,7 +2085,7 @@
   },
   {
     "slug": "a-a8dc3b35",
-    "name": "史蒂文·温伯格",
+    "name": "Steven Weinberg（史蒂文·温伯格）",
     "bookSlugs": [
       "b-2dde55f0",
       "b-2c635446",
@@ -2101,7 +2101,7 @@
   },
   {
     "slug": "a-9a9b48da",
-    "name": "史蒂芬·平克",
+    "name": "Steven Pinker（史蒂芬·平克）",
     "bookSlugs": [
       "b-7a463f46",
       "b-55bb9150",
@@ -2128,7 +2128,7 @@
   },
   {
     "slug": "a-0ba99947",
-    "name": "史蒂芬·霍金",
+    "name": "Stephen Hawking（史蒂芬·霍金）",
     "bookSlugs": [
       "b-cb50ce5d",
       "b-e455d583",
@@ -2161,7 +2161,7 @@
   },
   {
     "slug": "a-61482735",
-    "name": "吉仁泽",
+    "name": "Gerd Gigerenzer（吉仁泽）",
     "bookSlugs": [
       "b-2b229090"
     ],
@@ -2201,7 +2201,7 @@
   },
   {
     "slug": "a-bb034403",
-    "name": "吉尔特·霍夫斯泰德",
+    "name": "Geert Hofstede（吉尔特·霍夫斯泰德）",
     "bookSlugs": [
       "b-a76f0b65"
     ],
@@ -2234,7 +2234,7 @@
   },
   {
     "slug": "a-92e3fcbc",
-    "name": "吕迪格尔·萨弗兰斯基",
+    "name": "Rüdiger Safranski（吕迪格尔·萨弗兰斯基）",
     "bookSlugs": [
       "b-182bf4e9"
     ],
@@ -2284,7 +2284,7 @@
   },
   {
     "slug": "a-b191ebcd",
-    "name": "哈罗德·布鲁姆",
+    "name": "Harold Bloom（哈罗德·布鲁姆）",
     "bookSlugs": [
       "b-ddd32cdd",
       "b-31bfea06",
@@ -2306,7 +2306,7 @@
   },
   {
     "slug": "a-1bc3ae9c",
-    "name": "唐纳德·A.舍恩",
+    "name": "Donald A. Schön（唐纳德·A.舍恩）",
     "bookSlugs": [
       "b-8537ad36",
       "b-00b3eea0",
@@ -2318,7 +2318,7 @@
   },
   {
     "slug": "a-2d299ca0",
-    "name": "唐纳德·普拉特",
+    "name": "Donald Preziosi（唐纳德·普拉特）",
     "bookSlugs": [
       "b-c617d2f5"
     ],
@@ -2328,7 +2328,7 @@
   },
   {
     "slug": "a-0502e4e5",
-    "name": "唐纳德·诺曼",
+    "name": "Donald Norman（唐纳德·诺曼）",
     "bookSlugs": [
       "b-7933d4e2",
       "b-fa4b37ff",
@@ -2360,7 +2360,7 @@
   },
   {
     "slug": "a-dbd8b994",
-    "name": "圣地亚哥·拉蒙-卡哈尔",
+    "name": "Santiago Ramón y Cajal（圣地亚哥·拉蒙-卡哈尔）",
     "bookSlugs": [
       "b-0596f881"
     ],
@@ -2617,7 +2617,7 @@
   },
   {
     "slug": "a-febb1e5c",
-    "name": "基思·斯坦诺维奇",
+    "name": "Keith Stanovich（基思·斯坦诺维奇）",
     "bookSlugs": [
       "b-126cbeea",
       "b-019ee608"
@@ -2638,7 +2638,7 @@
   },
   {
     "slug": "a-094c22ea",
-    "name": "塔德乌什·扎维德斯基",
+    "name": "Tadeusz Zawidzki（塔德乌什·扎维德斯基）",
     "bookSlugs": [
       "b-3d7b10b1"
     ],
@@ -2648,7 +2648,7 @@
   },
   {
     "slug": "a-aef0d0bb",
-    "name": "塞万提斯",
+    "name": "Miguel de Cervantes（塞万提斯）",
     "bookSlugs": [
       "b-2d2408e6"
     ],
@@ -2658,7 +2658,7 @@
   },
   {
     "slug": "a-ed5b504b",
-    "name": "塞奇·莫斯科维奇",
+    "name": "Serge Moscovici（塞奇·莫斯科维奇）",
     "bookSlugs": [
       "b-5fd37986",
       "b-354b0e42"
