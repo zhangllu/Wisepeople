@@ -529,23 +529,6 @@
       "description": "马克斯·普朗克人类发展研究所个人页面"
     }
   ],
-  "a-b0d36ebe": [
-    {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Geert_Hofstede",
-      "description": "完整的生平与核心思想介绍"
-    },
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=%E5%90%89%E5%B0%94%E7%89%B9.%E9%9C%8D%E5%A4%AB%E6%96%AF%E6%B3%B0%E5%BE%B7",
-      "description": "学术论文与引用数据"
-    },
-    {
-      "label": "Britannica",
-      "url": "https://www.britannica.com/biography/Geert-Hofstede",
-      "description": "权威百科全书的详细介绍"
-    }
-  ],
   "a-bb034403": [
     {
       "label": "Wikipedia",
@@ -561,6 +544,16 @@
       "label": "Britannica",
       "url": "https://www.britannica.com/biography/Geert-Hofstede",
       "description": "权威百科全书的详细介绍"
+    },
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Geert_Hofstede",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E5%90%89%E5%B0%94%E7%89%B9.%E9%9C%8D%E5%A4%AB%E6%96%AF%E6%B3%B0%E5%BE%B7",
+      "description": "学术论文与引用数据"
     }
   ],
   "a-5524f41b": [
@@ -657,28 +650,6 @@
       "description": "尼尔森诺曼集团创始人页面"
     }
   ],
-  "a-1b1aac17": [
-    {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Santiago_Ram",
-      "description": "完整的生平与核心思想介绍"
-    },
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=%E5%9C%A3%E5%9C%B0%E4%BA%9A%E5%93%A5.%E6%8B%89%E8%92%99.%E5%8D%A1%E5%93%88%E5%B0%94",
-      "description": "学术论文与引用数据"
-    },
-    {
-      "label": "Britannica",
-      "url": "https://www.britannica.com/biography/Santiago-Ramon-y-Cajal",
-      "description": "权威百科全书的详细介绍"
-    },
-    {
-      "label": "Nobel Prize Page",
-      "url": "https://www.nobelprize.org/prizes/medicine/1906/cajal/facts/",
-      "description": "诺贝尔生理学医学奖官网 — 卡哈尔自传与学术贡献"
-    }
-  ],
   "a-dbd8b994": [
     {
       "label": "Wikipedia",
@@ -699,6 +670,16 @@
       "label": "Nobel Prize Page",
       "url": "https://www.nobelprize.org/prizes/medicine/1906/cajal/facts/",
       "description": "诺贝尔生理学医学奖官网 — 卡哈尔自传与学术贡献"
+    },
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Santiago_Ram",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E5%9C%A3%E5%9C%B0%E4%BA%9A%E5%93%A5.%E6%8B%89%E8%92%99.%E5%8D%A1%E5%93%88%E5%B0%94",
+      "description": "学术论文与引用数据"
     }
   ],
   "a-febb1e5c": [
@@ -762,23 +743,11 @@
       "label": "Britannica",
       "url": "https://www.britannica.com/biography/Serge-Moscovici",
       "description": "权威百科全书的详细介绍"
-    }
-  ],
-  "a-dc96fda9": [
+    },
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Serge_Moscovici",
       "description": "完整的生平与核心思想介绍"
-    },
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=%E5%A1%9E%E5%A5%87%C2%B7%E8%8E%AB%E6%96%AF%E7%A7%91%E7%BB%B4%E5%A5%87",
-      "description": "学术论文与引用数据"
-    },
-    {
-      "label": "Britannica",
-      "url": "https://www.britannica.com/biography/Serge-Moscovici",
-      "description": "权威百科全书的详细介绍"
     }
   ]
 }

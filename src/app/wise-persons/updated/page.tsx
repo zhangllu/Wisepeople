@@ -1,5 +1,8 @@
+"use client"
+
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
+import { useState } from "react"
 import authorsData from "@/data/authors.json"
 import batch001 from "@/data/links/curated-links-001.json"
 import batch002 from "@/data/links/curated-links-002.json"
@@ -37,6 +40,8 @@ function formatDate(dateStr: string): string {
 }
 
 export default function UpdatedPage() {
+  const [expanded, setExpanded] = useState<Set<number>>(new Set())
+
   const allBatches = BATCHES.map((batch) => {
     const meta = batch._meta as BatchMeta
     const entries = Object.entries(batch).filter(
@@ -50,33 +55,60 @@ export default function UpdatedPage() {
 
   const total = allBatches.reduce((s, b) => s + b.authors.length, 0)
 
+  function toggle(batch: number) {
+    setExpanded((prev) => {
+      const next = new Set(prev)
+      if (next.has(batch)) {
+        next.delete(batch)
+      } else {
+        next.add(batch)
+      }
+      return next
+    })
+  }
+
   return (
     <div className="container mx-auto max-w-4xl px-4 py-8">
       <h1 className="text-2xl font-bold mb-1">已更新智者</h1>
       <p className="text-sm text-muted-foreground mb-6">
-        已完善精选链接的 {total} 位智者。点击姓名查看人物故事和相关链接。
+        已完善精选链接的 {total} 位智者。点击批次名展开名单，点击姓名查看人物故事和相关链接。
       </p>
 
-      <div className="space-y-6">
-        {allBatches.map(({ meta, authors }) => (
-          <section key={meta.batch} className="rounded-lg border border-gray-200 overflow-hidden">
-            <div className="bg-gray-50 px-4 py-2 border-b border-gray-200 text-sm font-medium">
-              第 {meta.batch} 批 · {formatDate(meta.date)} · {authors.length} 位
+      <div className="space-y-2">
+        {allBatches.map(({ meta, authors }) => {
+          const isOpen = expanded.has(meta.batch)
+          return (
+            <div key={meta.batch} className="rounded-lg border border-gray-200 overflow-hidden">
+              <button
+                onClick={() => toggle(meta.batch)}
+                className="w-full flex items-center justify-between bg-gray-50 px-4 py-3 text-sm font-medium hover:bg-gray-100 transition-colors"
+              >
+                <span>
+                  第 {meta.batch} 批 · {formatDate(meta.date)} · {authors.length} 位
+                </span>
+                <ChevronRight
+                  className={`h-4 w-4 text-muted-foreground transition-transform ${
+                    isOpen ? "rotate-90" : ""
+                  }`}
+                />
+              </button>
+              {isOpen && (
+                <div className="divide-y divide-gray-100">
+                  {authors.map((a) => (
+                    <Link
+                      key={a.slug}
+                      href={`/wise-persons/${a.slug}`}
+                      className="flex items-center justify-between px-4 py-2.5 hover:bg-blue-50/30 transition-colors group text-sm"
+                    >
+                      <span className="group-hover:text-blue-700 transition-colors">{a.name}</span>
+                      <span className="text-xs text-muted-foreground">{a.count} 条链接</span>
+                    </Link>
+                  ))}
+                </div>
+              )}
             </div>
-            <div className="divide-y divide-gray-100">
-              {authors.map((a) => (
-                <Link
-                  key={a.slug}
-                  href={`/wise-persons/${a.slug}`}
-                  className="flex items-center justify-between px-4 py-2.5 hover:bg-blue-50/30 transition-colors group text-sm"
-                >
-                  <span className="group-hover:text-blue-700 transition-colors">{a.name}</span>
-                  <span className="text-xs text-muted-foreground">{a.count} 条链接</span>
-                </Link>
-              ))}
-            </div>
-          </section>
-        ))}
+          )
+        })}
       </div>
     </div>
   )

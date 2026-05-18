@@ -411,23 +411,11 @@
       "label": "Britannica",
       "url": "https://www.britannica.com/biography/Paulo-Freire",
       "description": "权威百科全书的详细介绍"
-    }
-  ],
-  "a-86d53954": [
+    },
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Paulo_Freire",
       "description": "完整的生平与核心思想介绍"
-    },
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=%E4%BF%9D%E7%BD%97%C2%B7%E5%BC%97%E8%8E%B1%E9%9B%B7",
-      "description": "学术论文与引用数据"
-    },
-    {
-      "label": "Britannica",
-      "url": "https://www.britannica.com/biography/Paulo-Freire",
-      "description": "权威百科全书的详细介绍"
     },
     {
       "label": "Internet Encyclopedia of Philosophy",
@@ -462,9 +450,7 @@
       "label": "VIAF",
       "url": "https://viaf.org/viaf/108411014/",
       "description": "国际规范文档—著作目录"
-    }
-  ],
-  "a-d09f5663": [
+    },
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Paul_Watzlawick",
@@ -474,11 +460,6 @@
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=Paul+Watzlawick",
       "description": "学术论文与引用数据"
-    },
-    {
-      "label": "VIAF",
-      "url": "https://viaf.org/viaf/108411014/",
-      "description": "国际规范文档—著作目录"
     }
   ],
   "a-9187318e": [
@@ -593,23 +574,11 @@
       "label": "Britannica",
       "url": "https://www.britannica.com/biography/Clifford-Geertz",
       "description": "权威百科全书的详细介绍"
-    }
-  ],
-  "a-fbf95d57": [
+    },
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Clifford_Geertz",
       "description": "完整的生平与核心思想介绍"
-    },
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=%E5%85%8B%E5%88%A9%E7%A6%8F%E5%BE%B7%C2%B7%E6%A0%BC%E5%B0%94%E8%8C%A8",
-      "description": "学术论文与引用数据"
-    },
-    {
-      "label": "Britannica",
-      "url": "https://www.britannica.com/biography/Clifford-Geertz",
-      "description": "权威百科全书的详细介绍"
     },
     {
       "label": "National Academy of Sciences",
@@ -705,18 +674,11 @@
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=%E5%85%8B%E9%87%8C%E6%96%AF%C2%B7%E9%98%BF%E5%90%89%E9%87%8C%E6%96%AF",
       "description": "学术论文与引用数据"
-    }
-  ],
-  "a-16c78eb7": [
+    },
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Chris_Argyris",
       "description": "完整的生平与核心思想介绍"
-    },
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=%E5%85%8B%E9%87%8C%E6%96%AF%C2%B7%E9%98%BF%E5%90%89%E9%87%8C%E6%96%AF",
-      "description": "学术论文与引用数据"
     }
   ],
   "a-768eb0a5": [
