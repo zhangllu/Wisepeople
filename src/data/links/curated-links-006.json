@@ -1,0 +1,754 @@
+{
+  "_meta": {
+    "batch": 6,
+    "date": "2026-05-18",
+    "range": "塞缪尔·亨廷顿 ~ 布赖恩·博伊德",
+    "count": 48
+  },
+  "a-0b2abcb1": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Samuel_P._Huntington",
+      "description": "政治学家，文明冲突论提出者"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Samuel+P.+Huntington",
+      "description": "学术引用与著作"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Samuel-P-Huntington",
+      "description": "百科生平介绍"
+    }
+  ],
+  "a-36e92222": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E5%A2%A8%E5%AD%90",
+      "description": "中国哲学史，墨家创始人"
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/mohism/",
+      "description": "墨家哲学"
+    },
+    {
+      "label": "Internet Encyclopedia of Philosophy",
+      "url": "https://iep.utm.edu/mohism/",
+      "description": "墨家思想概述"
+    }
+  ],
+  "a-ca7dba7c": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Charles_Baudelaire",
+      "description": "法国诗人，现代主义诗歌先驱"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Charles-Baudelaire",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/author/1948",
+      "description": "作品全集"
+    }
+  ],
+  "a-e62b5cbf": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E5%A4%8F%E5%BF%97%E6%B8%85",
+      "description": "中国文学批评家，中国现代文学研究"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E5%A4%8F%E5%BF%97%E6%B8%85",
+      "description": "学术引用"
+    }
+  ],
+  "a-afb5b2c4": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E5%A4%8F%E7%9B%AE%E6%BC%B1%E7%9F%B3",
+      "description": "日本文豪，国民大作家"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Natsume-Soseki",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/author/2906",
+      "description": "作品全集"
+    }
+  ],
+  "a-e34ce2e0": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kenichi_Ohmae",
+      "description": "日本战略管理大师，麦肯锡前顾问"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Kenichi+Ohmae",
+      "description": "学术引用"
+    }
+  ],
+  "a-72aa6510": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/R._David_Arkush",
+      "description": "美国汉学家，费孝通传记作者"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=R.+David+Arkush",
+      "description": "学术引用"
+    }
+  ],
+  "a-2d564202": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/David_Hume",
+      "description": "苏格兰哲学家，经验主义代表人物"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/David-Hume",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/hume/",
+      "description": "哲学思想详解"
+    },
+    {
+      "label": "Internet Encyclopedia of Philosophy",
+      "url": "https://iep.utm.edu/hume/",
+      "description": "哲学思想概述"
+    }
+  ],
+  "a-6c29aa2c": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/David_Christian_(historian)",
+      "description": "世界史学家，大历史学派创始人"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=David+Christian+historian",
+      "description": "学术引用"
+    },
+    {
+      "label": "TED Talk",
+      "url": "https://www.ted.com/speakers/david_christian",
+      "description": "大历史演讲"
+    }
+  ],
+  "a-dccff426": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/David_H._Olson",
+      "description": "家庭心理学家，婚姻治疗研究"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=David+H.+Olson",
+      "description": "学术引用"
+    }
+  ],
+  "a-2f32b546": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/David_M._Schmitz",
+      "description": "美国历史学家"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=David+M.+Schmitz",
+      "description": "学术引用"
+    }
+  ],
+  "a-747ca673": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/David_Maister",
+      "description": "专业服务管理大师，顾问"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=David+H.+Maister",
+      "description": "学术引用"
+    }
+  ],
+  "a-ecd03ab6": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E5%A4%AA%E5%AE%B0%E6%B2%BB",
+      "description": "日本文学大师，无赖派代表"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Dazai-Osamu",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/author/43577",
+      "description": "作品合集"
+    }
+  ],
+  "a-82ee12de": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E5%A4%AA%E7%94%B0%E6%B2%BB%E5%AD%90",
+      "description": "日本作家，太宰治之女"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E5%A4%AA%E7%94%B0%E6%B2%BB%E5%AD%90",
+      "description": "学术引用"
+    }
+  ],
+  "a-aaecac77": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Oliver_Sacks",
+      "description": "神经科学家，畅销书作家"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Oliver+Sacks",
+      "description": "学术引用"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Oliver-Sacks",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "NYU Profile",
+      "url": "https://med.nyu.edu/faculty/oliver-w-sacks",
+      "description": "个人主页"
+    }
+  ],
+  "a-24eca6ae": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jane_Austen",
+      "description": "英国小说家"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Jane-Austen",
+      "description": "百科生平与作品"
+    },
+    {
+      "label": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/author/68",
+      "description": "作品全集"
+    }
+  ],
+  "a-84021371": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wilbur_Schramm",
+      "description": "传播学奠基人之一"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Wilbur-Schramm",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Wilbur+Schramm",
+      "description": "学术引用"
+    }
+  ],
+  "a-e262480a": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/William_Faulkner",
+      "description": "美国文学巨匠，诺贝尔文学奖得主"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/William-Faulkner",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Nobel Prize Page",
+      "url": "https://www.nobelprize.org/prizes/literature/1949/faulkner/facts/",
+      "description": "诺贝尔奖页面"
+    }
+  ],
+  "a-bfa9c32e": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/William_J._Mitchell",
+      "description": "建筑与城市理论家，MIT教授"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=William+J.+Mitchell",
+      "description": "学术引用"
+    }
+  ],
+  "a-6d669854": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/William_Shakespeare",
+      "description": "英国戏剧家，英语文学巨匠"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/William-Shakespeare",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/author/65",
+      "description": "作品全集"
+    }
+  ],
+  "a-1fc82e29": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/W._Somerset_Maugham",
+      "description": "英国小说家、剧作家"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/W-Somerset-Maugham",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/author/126",
+      "description": "作品合集"
+    }
+  ],
+  "a-ee583893": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/William_James",
+      "description": "美国心理学家与哲学家，实用主义先驱"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/William-James",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/james/",
+      "description": "哲学思想详解"
+    }
+  ],
+  "a-e2911f91": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/William_H._McNeill",
+      "description": "世界史学家，全球史先驱"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/William-H-McNeill",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=William+H.+McNeill",
+      "description": "学术引用"
+    }
+  ],
+  "a-1c9d468e": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E5%AD%94%E5%AD%90",
+      "description": "中国哲学家，儒家创始人"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Confucius",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/confucius/",
+      "description": "哲学思想详解"
+    },
+    {
+      "label": "Internet Encyclopedia of Philosophy",
+      "url": "https://iep.utm.edu/confuciu/",
+      "description": "思想概述"
+    }
+  ],
+  "a-cd9280f8": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E5%AD%99%E6%AD%A6",
+      "description": "中国军事家，《孙子兵法》作者"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Sun-Zi",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/132",
+      "description": "《孙子兵法》全文"
+    }
+  ],
+  "a-b6246383": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E5%AD%9F%E5%AD%90",
+      "description": "中国哲学家，儒家代表人物"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Mencius",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/mencius/",
+      "description": "哲学思想详解"
+    },
+    {
+      "label": "Internet Encyclopedia of Philosophy",
+      "url": "https://iep.utm.edu/mencius/",
+      "description": "思想概述"
+    }
+  ],
+  "a-b17486ba": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Montesquieu",
+      "description": "法国启蒙思想家，三权分立学说"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Montesquieu",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/montesquieu/",
+      "description": "哲学思想详解"
+    }
+  ],
+  "a-b9d78e69": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E5%AD%9F%E7%A5%A5%E6%89%8D",
+      "description": "中国历史学者"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E5%AD%9F%E7%A5%A5%E6%89%8D",
+      "description": "学术引用"
+    }
+  ],
+  "a-710ca065": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Stephen_Owen",
+      "description": "美国汉学家，唐诗研究权威"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Stephen+Owen",
+      "description": "学术引用"
+    },
+    {
+      "label": "Harvard Profile",
+      "url": "https://scholar.harvard.edu/stephenowen",
+      "description": "哈佛个人主页"
+    }
+  ],
+  "a-12cc240d": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Anton_Chekhov",
+      "description": "俄国短篇小说大师、剧作家"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Anton-Chekhov",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/author/708",
+      "description": "作品全集"
+    }
+  ],
+  "a-3074e2a8": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Antoine_de_Saint-Exup%C3%A9ry",
+      "description": "法国作家、《小王子》作者"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Antoine-de-Saint-Exupery",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/author/536",
+      "description": "作品合集"
+    }
+  ],
+  "a-837abfe0": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Annette_Lareau",
+      "description": "美国社会学家，教育不平等研究"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Annette+Lareau",
+      "description": "学术引用"
+    },
+    {
+      "label": "Penn Profile",
+      "url": "https://www.sas.upenn.edu/sociology/people/annette-lareau",
+      "description": "宾大个人主页"
+    }
+  ],
+  "a-940ea7f5": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Andr%C3%A9_Maurois",
+      "description": "法国作家、传记大师"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Andre-Maurois",
+      "description": "百科生平介绍"
+    }
+  ],
+  "a-fa8fc0cd": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Andr%C3%A9s_Trapiello",
+      "description": "西班牙作家、出版商"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Andr%C3%A9s+Trapiello",
+      "description": "学术引用"
+    }
+  ],
+  "a-a7a3e08f": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Andrew_H._Knoll",
+      "description": "美国古生物学家，哈佛教授"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Andrew+H.+Knoll",
+      "description": "学术引用"
+    },
+    {
+      "label": "Harvard Profile",
+      "url": "https://oeb.harvard.edu/people/andrew-h-knoll",
+      "description": "哈佛个人主页"
+    }
+  ],
+  "a-0ed50bbd": [
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Andrew+Curran",
+      "description": "学术引用"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Andrew+Curran",
+      "description": "学术引用"
+    }
+  ],
+  "a-1efb63e5": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Andrew_Hodges",
+      "description": "英国数学家，艾伦·图灵传记作者"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Andrew+Hodges",
+      "description": "学术引用"
+    }
+  ],
+  "a-d3c05e39": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Antoine_Lavoisier",
+      "description": "法国化学家，现代化学之父"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Antoine-Lavoisier",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Antoine+Lavoisier",
+      "description": "学术引用"
+    }
+  ],
+  "a-f69f1c2f": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Andy_Clark_(philosopher)",
+      "description": "心灵哲学家，延展心灵理论提出者"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Andy+Clark",
+      "description": "学术引用"
+    }
+  ],
+  "a-162802e0": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E5%AE%8B%E8%A1%8D%E7%94%B3",
+      "description": "中国历史学者"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E5%AE%8B%E8%A1%8D%E7%94%B3",
+      "description": "学术引用"
+    }
+  ],
+  "a-ff3bc80d": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E5%AE%A3%E6%9C%9D%E5%BA%86",
+      "description": "中国社会学者"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E5%AE%A3%E6%9C%9D%E5%BA%86",
+      "description": "学术引用"
+    }
+  ],
+  "a-1d040742": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Richards_Heuer",
+      "description": "情报分析心理学家"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Richards+J.+Heuer",
+      "description": "学术引用"
+    }
+  ],
+  "a-46adbfac": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Urie_Bronfenbrenner",
+      "description": "发展心理学家，生态系统理论提出者"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Urie+Bronfenbrenner",
+      "description": "学术引用"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Urie-Bronfenbrenner",
+      "description": "百科生平介绍"
+    }
+  ],
+  "a-534e1b29": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Niccol%C3%B2_Machiavelli",
+      "description": "意大利政治哲学家，《君主论》作者"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Niccolo-Machiavelli",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/machiavelli/",
+      "description": "哲学思想详解"
+    },
+    {
+      "label": "Internet Encyclopedia of Philosophy",
+      "url": "https://iep.utm.edu/machiave/",
+      "description": "思想概述"
+    }
+  ],
+  "a-76999947": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Neil_Smith_(geographer)",
+      "description": "地理学家，马克思主义地理学"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Neil+Smith+geographer",
+      "description": "学术引用"
+    }
+  ],
+  "a-5dc29bc1": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Basil_Bernstein",
+      "description": "英国社会语言学家，编码理论提出者"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Basil-Bernstein",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Basil+Bernstein",
+      "description": "学术引用"
+    }
+  ],
+  "a-63f8b377": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Brian_Greene",
+      "description": "美国理论物理学家，弦理论推广者"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Brian+Greene",
+      "description": "学术引用"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Brian-Greene",
+      "description": "百科生平介绍"
+    }
+  ],
+  "a-d293b2da": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Brian_Boyd_(academic)",
+      "description": "文学学者，纳博科夫研究权威"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Brian+Boyd",
+      "description": "学术引用"
+    }
+  ]
+}
