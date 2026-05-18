@@ -174,11 +174,20 @@
       "count": 48,
       "links": 142,
       "status": "done"
+    },
+    {
+      "batch": 5,
+      "file": "curated-links-005.json",
+      "date": "2026-05-17",
+      "range": "凯文·凯利 ~ 塞奇·莫斯科维奇（名字排序第145-192位）",
+      "count": 48,
+      "links": 136,
+      "status": "done"
     }
   ],
   "summary": {
-    "done": 159,
-    "remaining": 603,
-    "progress": "20.9%"
+    "done": 207,
+    "remaining": 555,
+    "progress": "27.2%"
   }
 }
