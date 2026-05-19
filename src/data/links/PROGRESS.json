@@ -260,14 +260,23 @@
       "count": 48,
       "links": 81,
       "status": "done"
+    },
+    {
+      "batch": 9,
+      "file": "curated-links-009.json",
+      "date": "2026-05-19",
+      "range": "汪荣祖 ~ 约瑟夫·坎贝尔（第337-384位）",
+      "count": 48,
+      "links": 65,
+      "status": "done"
     }
   ],
   "summary": {
-    "done": 338,
-    "remaining": 440,
-    "progress": "43.4%"
+    "done": 386,
+    "remaining": 392,
+    "progress": "49.6%"
   },
-  "links_curated": 338,
-  "total_remaining": 440,
-  "progress": "43.4%"
+  "links_curated": 386,
+  "total_remaining": 392,
+  "progress": "49.6%"
 }
