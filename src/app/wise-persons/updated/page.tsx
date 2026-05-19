@@ -10,6 +10,8 @@ import batch003 from "@/data/links/curated-links-003.json"
 import batch004 from "@/data/links/curated-links-004.json"
 import batch005 from "@/data/links/curated-links-005.json"
 import batch006 from "@/data/links/curated-links-006.json"
+import batch007 from "@/data/links/curated-links-007.json"
+import batch008 from "@/data/links/curated-links-008.json"
 import progress from "@/data/links/PROGRESS.json"
 import type { WisePersonLink } from "@/types"
 
@@ -25,7 +27,7 @@ interface BatchModule {
   [slug: string]: BatchMeta | WisePersonLink[] | unknown
 }
 
-const BATCHES: BatchModule[] = [batch001, batch002, batch003, batch004, batch005, batch006]
+const BATCHES: BatchModule[] = [batch001, batch002, batch003, batch004, batch005, batch006, batch007, batch008]
 const authorSlugMap = new Map<string, string>()
 for (const a of authorsData) {
   authorSlugMap.set(a.slug, a.name)

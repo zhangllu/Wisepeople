@@ -13,6 +13,8 @@ import batch003 from "@/data/links/curated-links-003.json"
 import batch004 from "@/data/links/curated-links-004.json"
 import batch005 from "@/data/links/curated-links-005.json"
 import batch006 from "@/data/links/curated-links-006.json"
+import batch007 from "@/data/links/curated-links-007.json"
+import batch008 from "@/data/links/curated-links-008.json"
 
 // ── Loader ─────────────────────────────────────────────────────────────────
 
@@ -28,6 +30,8 @@ function _init(): void {
     batch004,
     batch005,
     batch006,
+    batch007,
+    batch008,
   ]
   for (const batch of batches) {
     for (const [key, links] of Object.entries(batch)) {

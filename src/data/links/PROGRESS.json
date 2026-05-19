@@ -242,14 +242,32 @@
         "Brian Greene（布莱恩·格林）",
         "Brian Boyd（布赖恩·博伊德）"
       ]
+    },
+    {
+      "batch": 7,
+      "file": "curated-links-007.json",
+      "date": "2026-05-19",
+      "range": "庄周 ~ 汉娜·阿伦特（第241-288位）",
+      "count": 48,
+      "links": 135,
+      "status": "done"
+    },
+    {
+      "batch": 8,
+      "file": "curated-links-008.json",
+      "date": "2026-05-19",
+      "range": "朱传誉 ~ 汤姆·柯科伍德（第289-336位）",
+      "count": 48,
+      "links": 81,
+      "status": "done"
     }
   ],
   "summary": {
-    "done": 242,
-    "remaining": 520,
-    "progress": "31.8%"
+    "done": 338,
+    "remaining": 440,
+    "progress": "43.4%"
   },
-  "links_curated": 242,
-  "total_remaining": 520,
-  "progress": "31.8%"
+  "links_curated": 338,
+  "total_remaining": 440,
+  "progress": "43.4%"
 }

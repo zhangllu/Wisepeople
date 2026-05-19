@@ -1,0 +1,779 @@
+{
+  "_meta": {
+    "batch": 7,
+    "date": "2026-05-19",
+    "range": "庄周 ~ 汉娜·阿伦特（第241-288位）",
+    "count": 48
+  },
+  "a-f9f795ff": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E5%BA%84%E5%AD%90",
+      "description": "道家代表人物，《庄子》作者"
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/zhuangzi/",
+      "description": "哲学思想详解"
+    },
+    {
+      "label": "Internet Encyclopedia of Philosophy",
+      "url": "https://iep.utm.edu/zhuangzi/",
+      "description": "思想概述"
+    }
+  ],
+  "a-e710ad49": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kurt_Lewin",
+      "description": "社会心理学先驱，群体动力学创始人"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Kurt-Lewin",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Kurt+Lewin",
+      "description": "学术引用"
+    }
+  ],
+  "a-0d49f440": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Konstantin_Paustovsky",
+      "description": "苏联作家，《金蔷薇》作者"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Konstantin+Paustovsky",
+      "description": "学术引用"
+    }
+  ],
+  "a-253d851c": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Konrad_Lorenz",
+      "description": "动物行为学家，诺贝尔奖得主"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Konrad-Lorenz",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Konrad+Lorenz",
+      "description": "学术引用"
+    }
+  ],
+  "a-59ae8e4a": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Frank_Knight",
+      "description": "经济学家，芝加哥学派创始人之一"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Frank-H-Knight",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Frank+H+Knight",
+      "description": "学术引用"
+    }
+  ],
+  "a-e6281539": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Francis_Collins",
+      "description": "遗传学家，人类基因组计划领导者"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Francis-Collins",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Francis+Collins",
+      "description": "学术引用"
+    }
+  ],
+  "a-b1918000": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Virginia_Woolf",
+      "description": "英国现代主义作家，《到灯塔去》作者"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Virginia-Woolf",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/author/149",
+      "description": "作品全集"
+    }
+  ],
+  "a-8ce1822e": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vladimir_Nabokov",
+      "description": "俄裔美籍作家，《洛丽塔》作者"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Vladimir-Nabokov",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Vladimir+Nabokov",
+      "description": "学术引用"
+    }
+  ],
+  "a-045c72af": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Guizot",
+      "description": "法国历史学家、政治家"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Francois-Guizot",
+      "description": "百科生平介绍"
+    }
+  ],
+  "a-fae40b8e": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Franz_Kafka",
+      "description": "奥地利作家，《变形记》《审判》作者"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Franz-Kafka",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/author/520",
+      "description": "作品全集"
+    }
+  ],
+  "a-0a12ee6b": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Francis_Bacon",
+      "description": "英国哲学家，科学方法奠基人"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Francis-Bacon",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/francis-bacon/",
+      "description": "哲学思想详解"
+    }
+  ],
+  "a-13dfd4a4": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Francis_Fukuyama",
+      "description": "政治学家，《历史之终结》作者"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Francis-Fukuyama",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Francis+Fukuyama",
+      "description": "学术引用"
+    }
+  ],
+  "a-99c60b57": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Friedrich_Hayek",
+      "description": "经济学家，自由市场理论家"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Friedrich-August-von-Hayek",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Nobel Prize Page",
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1974/hayek/facts/",
+      "description": "诺贝尔奖页面"
+    }
+  ],
+  "a-036983e8": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gottlob_Frege",
+      "description": "德国数学家、逻辑学家，分析哲学奠基人"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Gottlob-Frege",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/frege/",
+      "description": "哲学思想详解"
+    }
+  ],
+  "a-3bc3e80d": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel",
+      "description": "德国唯心论哲学家，辩证法大师"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Georg-Wilhelm-Friedrich-Hegel",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/hegel/",
+      "description": "哲学思想详解"
+    }
+  ],
+  "a-7e8bf7e8": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fred_Brooks",
+      "description": "软件工程先驱，《人月神话》作者"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Frederick+P+Brooks",
+      "description": "学术引用"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Frederick-P-Brooks-Jr",
+      "description": "百科生平介绍"
+    }
+  ],
+  "a-5db4064c": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Frederick_Winslow_Taylor",
+      "description": "科学管理之父"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Frederick-W-Taylor",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Frederick+W+Taylor",
+      "description": "学术引用"
+    }
+  ],
+  "a-cf7ee5eb": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Frederick_Herzberg",
+      "description": "管理学家，双因素理论提出者"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/topic/Herzbergs-two-factor-theory",
+      "description": "理论介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Frederick+Herzberg",
+      "description": "学术引用"
+    }
+  ],
+  "a-19aa46c4": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E5%BC%98%E4%B8%80",
+      "description": "民国高僧，律宗第十一代祖师"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E5%BC%98%E4%B8%80%E5%A4%A7%E5%B8%88",
+      "description": "学术引用"
+    }
+  ],
+  "a-925d3e53": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E7%88%B1%E7%8E%B2",
+      "description": "中国现代作家，海派文学代表"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Eileen-Chang",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E5%BC%A0%E7%88%B1%E7%8E%B2",
+      "description": "学术引用"
+    }
+  ],
+  "a-090bcfb9": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%8D%AB%E9%BA%9F",
+      "description": "中国历史学家，《中国史纲》作者"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E5%BC%A0%E8%8D%AB%E9%BA%9F",
+      "description": "学术引用"
+    }
+  ],
+  "a-5aaff683": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%BD%BD",
+      "description": "北宋哲学家，关学创始人"
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/zhang-zai/",
+      "description": "哲学思想详解"
+    },
+    {
+      "label": "Internet Encyclopedia of Philosophy",
+      "url": "https://iep.utm.edu/zhangzai/",
+      "description": "思想概述"
+    }
+  ],
+  "a-d4145022": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Peter_Abrahams",
+      "description": "南非小说家，反种族隔离作家"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Peter-Abrahams",
+      "description": "百科生平介绍"
+    }
+  ],
+  "a-65af1353": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Peter_L._Berger",
+      "description": "社会学家，《现实的社会建构》作者"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Peter-Berger",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Peter+L+Berger",
+      "description": "学术引用"
+    }
+  ],
+  "a-d3b78425": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Peter_Senge",
+      "description": "管理学家，《第五项修炼》作者"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Peter+Senge",
+      "description": "学术引用"
+    },
+    {
+      "label": "MIT Profile",
+      "url": "https://mitsloan.mit.edu/faculty/directory/peter-senge",
+      "description": "MIT个人主页"
+    }
+  ],
+  "a-10b13b96": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Peter_Drucker",
+      "description": "现代管理学之父"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Peter-F-Drucker",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Peter+Drucker",
+      "description": "学术引用"
+    }
+  ],
+  "a-edb9383d": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Peter_Gay",
+      "description": "德国裔美国历史学家，启蒙运动研究"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Peter-Gay",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Peter+Gay",
+      "description": "学术引用"
+    }
+  ],
+  "a-6c8e6d2f": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Peter_Fonagy",
+      "description": "英国精神分析师，心智化理论提出者"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Peter+Fonagy",
+      "description": "学术引用"
+    },
+    {
+      "label": "UCL Profile",
+      "url": "https://www.ucl.ac.uk/pals/people/peter-fonagy",
+      "description": "UCL个人主页"
+    }
+  ],
+  "a-ca30793b": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Peter_Ackroyd",
+      "description": "英国作家、传记大师"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Peter-Ackroyd",
+      "description": "百科生平介绍"
+    }
+  ],
+  "a-df8a3580": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Denis_Diderot",
+      "description": "法国启蒙哲学家，《百科全书》主编"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Denis-Diderot",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/diderot/",
+      "description": "哲学思想详解"
+    }
+  ],
+  "a-6aa296b2": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ernst_Curtius",
+      "description": "德国历史学家、考古学家"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Ernst-Curtius",
+      "description": "百科生平介绍"
+    }
+  ],
+  "a-ee56e862": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ernst_Gombrich",
+      "description": "艺术史学家，《艺术的故事》作者"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Ernst-Gombrich",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Ernst+Gombrich",
+      "description": "学术引用"
+    }
+  ],
+  "a-092e60fd": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ernst_Mayr",
+      "description": "进化生物学家，现代综合进化论贡献者"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Ernst-Mayr",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Ernst+Mayr",
+      "description": "学术引用"
+    }
+  ],
+  "a-14a3ac5d": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Siddhartha_Mukherjee",
+      "description": "印度裔美国肿瘤学家，《基因传》《万病之王》作者"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Siddhartha+Mukherjee",
+      "description": "学术引用"
+    },
+    {
+      "label": "Columbia Profile",
+      "url": "https://www.columbia.edu/siddhartha-mukherjee",
+      "description": "哥伦比亚大学主页"
+    }
+  ],
+  "a-2e149c8e": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E6%85%A7%E8%83%BD",
+      "description": "禅宗六祖，《六祖坛经》作者"
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/huineng/",
+      "description": "哲学思想详解"
+    },
+    {
+      "label": "Internet Encyclopedia of Philosophy",
+      "url": "https://iep.utm.edu/huineng/",
+      "description": "思想概述"
+    }
+  ],
+  "a-683f295e": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/G._H._Hardy",
+      "description": "英国数学家，《一个数学家的辩白》作者"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/G-H-Hardy",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=G+H+Hardy",
+      "description": "学术引用"
+    }
+  ],
+  "a-03308305": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gordon_Allport",
+      "description": "人格心理学家，特质理论创始人"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Gordon-Allport",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Gordon+Allport",
+      "description": "学术引用"
+    }
+  ],
+  "a-c03fe8e6": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/David_Buss",
+      "description": "进化心理学家，性择研究"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=David+Buss",
+      "description": "学术引用"
+    },
+    {
+      "label": "UT Austin Profile",
+      "url": "https://labs.la.utexas.edu/buss/",
+      "description": "德州大学个人主页"
+    }
+  ],
+  "a-ff9efb3a": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alexis_de_Tocqueville",
+      "description": "法国政治思想家，《论美国的民主》作者"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Alexis-de-Tocqueville",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/tocqueville/",
+      "description": "政治思想详解"
+    }
+  ],
+  "a-8408e711": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Thomas_Kuhn",
+      "description": "科学哲学家，《科学革命的结构》作者"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Thomas-S-Kuhn",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/thomas-kuhn/",
+      "description": "哲学思想详解"
+    }
+  ],
+  "a-2d5a241f": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Thomas_Paine",
+      "description": "美国建国先驱，《常识》作者"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Thomas-Paine",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/paine/",
+      "description": "政治思想详解"
+    }
+  ],
+  "a-f9f2e31d": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/G._Stanley_Hall",
+      "description": "美国心理学先驱，发展心理学创始人"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/G-Stanley-Hall",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=G+Stanley+Hall",
+      "description": "学术引用"
+    }
+  ],
+  "a-f8b430be": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Stanis%C5%82aw_Lem",
+      "description": "波兰科幻作家，《索拉里斯星》作者"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Stanislaw-Lem",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Stanis%C5%82aw+Lem",
+      "description": "学术引用"
+    }
+  ],
+  "a-ca0d8e9e": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Leften_Stavrianos",
+      "description": "希腊裔加拿大历史学家，《全球通史》作者"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Leften+Stavrianos",
+      "description": "学术引用"
+    }
+  ],
+  "a-5e2cc690": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Stacy_Schiff",
+      "description": "美国传记作家，普利策奖得主"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Stacy+Schiff",
+      "description": "学术引用"
+    }
+  ],
+  "a-b6076b17": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Thomas_Hager",
+      "description": "美国科学作家，传记作者"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Thomas+Hager",
+      "description": "学术引用"
+    }
+  ],
+  "a-77231773": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Benjamin_Graham",
+      "description": "投资学之父，《证券分析》作者"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Benjamin-Graham",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Benjamin+Graham",
+      "description": "学术引用"
+    }
+  ],
+  "a-14353eb5": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hannah_Arendt",
+      "description": "政治哲学家，《极权主义的起源》作者"
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Hannah-Arendt",
+      "description": "百科生平介绍"
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/arendt/",
+      "description": "哲学思想详解"
+    },
+    {
+      "label": "Internet Encyclopedia of Philosophy",
+      "url": "https://iep.utm.edu/hannah-arendt/",
+      "description": "思想概述"
+    }
+  ]
+}
