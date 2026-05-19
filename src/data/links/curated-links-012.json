@@ -1,0 +1,599 @@
+{
+  "_meta": {
+    "batch": 12,
+    "date": "2026-05-19",
+    "range": "Sigmund Freud ~ John King Fairbank（48位）",
+    "count": 48
+  },
+  "a-0e62539a": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sigmund_Freud",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Sigmund-Freud",
+      "description": ""
+    }
+  ],
+  "a-c8c299ef": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jean_Piaget",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Jean-Piaget",
+      "description": ""
+    }
+  ],
+  "a-fb00711d": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Noam_Chomsky",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Noam-Chomsky",
+      "description": ""
+    }
+  ],
+  "a-1175d770": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Max_Weber",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Max-Weber",
+      "description": ""
+    }
+  ],
+  "a-3226c8f8": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ludwig_Wittgenstein",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Ludwig-Wittgenstein",
+      "description": ""
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/wittgenstein/",
+      "description": ""
+    }
+  ],
+  "a-23415269": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jean-Jacques_Rousseau",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Jean-Jacques-Rousseau",
+      "description": ""
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/rousseau/",
+      "description": ""
+    }
+  ],
+  "a-3a1c67f9": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jean-Paul_Sartre",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Jean-Paul-Sartre",
+      "description": ""
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/sartre/",
+      "description": ""
+    }
+  ],
+  "a-ac380864": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Martin_Heidegger",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Martin-Heidegger",
+      "description": ""
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/heidegger/",
+      "description": ""
+    }
+  ],
+  "a-b2f68c6b": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/John_Maynard_Keynes",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/John-Maynard-Keynes",
+      "description": ""
+    }
+  ],
+  "a-b51f1092": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/John_Stuart_Mill",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/John-Stuart-Mill",
+      "description": ""
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/mill/",
+      "description": ""
+    }
+  ],
+  "a-f489885f": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/John_Rawls",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/John-Rawls",
+      "description": ""
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/rawls/",
+      "description": ""
+    }
+  ],
+  "a-233a9492": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jared_Diamond",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Jared-Diamond",
+      "description": ""
+    }
+  ],
+  "a-1e6513b5": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Simone_de_Beauvoir",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Simone-de-Beauvoir",
+      "description": ""
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/beauvoir/",
+      "description": ""
+    }
+  ],
+  "a-e290483c": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jorge_Luis_Borges",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Jorge-Luis-Borges",
+      "description": ""
+    }
+  ],
+  "a-95d6d486": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mark_Twain",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Mark-Twain",
+      "description": ""
+    }
+  ],
+  "a-c6c07b3e": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Robert_Nozick",
+      "description": ""
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/nozick/",
+      "description": ""
+    }
+  ],
+  "a-2f095e29": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Herbert_A._Simon",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Herbert-Simon",
+      "description": ""
+    },
+    {
+      "label": "Nobel",
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1978/simon/facts/",
+      "description": ""
+    }
+  ],
+  "a-d14fe30d": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Herbert_Marcuse",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Herbert-Marcuse",
+      "description": ""
+    }
+  ],
+  "a-bd59003d": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ludwig_von_Mises",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Ludwig-von-Mises",
+      "description": ""
+    }
+  ],
+  "a-3b17f4ad": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fernand_Braudel",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Fernand-Braudel",
+      "description": ""
+    }
+  ],
+  "a-8ee8471c": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ferdinand_de_Saussure",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Ferdinand-de-Saussure",
+      "description": ""
+    }
+  ],
+  "a-f2ad039b": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Marshall_McLuhan",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Marshall-McLuhan",
+      "description": ""
+    }
+  ],
+  "a-5c5779cd": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rachel_Carson",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Rachel-Carson",
+      "description": ""
+    }
+  ],
+  "a-bc847427": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Viktor_Frankl",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Viktor-Frankl",
+      "description": ""
+    }
+  ],
+  "a-ec64d13c": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Philip_Zimbardo",
+      "description": ""
+    }
+  ],
+  "a-5b76c6ea": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Robert_Cialdini",
+      "description": ""
+    }
+  ],
+  "a-4541775f": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Robert_D._Putnam",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Robert-Putnam",
+      "description": ""
+    }
+  ],
+  "a-ac80c71b": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Robin_Dunbar",
+      "description": ""
+    }
+  ],
+  "a-541e1814": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Roger_Penrose",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Roger-Penrose",
+      "description": ""
+    }
+  ],
+  "a-35d3f482": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/John_Bowlby",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/John-Bowlby",
+      "description": ""
+    }
+  ],
+  "a-8241feb3": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/John_Nash",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/John-Nash",
+      "description": ""
+    },
+    {
+      "label": "Nobel",
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1994/nash/facts/",
+      "description": ""
+    }
+  ],
+  "a-5e8bd45c": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/James_March",
+      "description": ""
+    }
+  ],
+  "a-b423306a": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Linus_Pauling",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Linus-Pauling",
+      "description": ""
+    },
+    {
+      "label": "Nobel",
+      "url": "https://www.nobelprize.org/prizes/chemistry/1954/pauling/facts/",
+      "description": ""
+    }
+  ],
+  "a-7086c376": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Donald_Knuth",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Donald-Knuth",
+      "description": ""
+    }
+  ],
+  "a-aaa71e28": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Douglass_North",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Douglass-C-North",
+      "description": ""
+    },
+    {
+      "label": "Nobel",
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1993/north/facts/",
+      "description": ""
+    }
+  ],
+  "a-f679da67": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Martin_Gardner",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Martin-Gardner",
+      "description": ""
+    }
+  ],
+  "a-dd5f2caa": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ruth_Benedict",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Ruth-Benedict",
+      "description": ""
+    }
+  ],
+  "a-e9eeff42": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Georg_Simmel",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Georg-Simmel",
+      "description": ""
+    }
+  ],
+  "a-c8d3cb6c": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Michael_Polanyi",
+      "description": ""
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/polanyi/",
+      "description": ""
+    }
+  ],
+  "a-39e2513e": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Michael_Porter",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Michael-E-Porter",
+      "description": ""
+    }
+  ],
+  "a-e5e727cc": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Michael_Sandel",
+      "description": ""
+    }
+  ],
+  "a-1fd928b0": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Michael_Tomasello",
+      "description": ""
+    }
+  ],
+  "a-51af4a2a": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jacob_Burckhardt",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Jacob-Burckhardt",
+      "description": ""
+    }
+  ],
+  "a-0c93ccf5": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nassim_Nicholas_Taleb",
+      "description": ""
+    }
+  ],
+  "a-f75f1001": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Robert_Boyle",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Robert-Boyle",
+      "description": ""
+    }
+  ],
+  "a-da2aac8a": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/John_Dalton",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/John-Dalton",
+      "description": ""
+    }
+  ],
+  "a-8a8ccbf1": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/John_King_Fairbank",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/John-King-Fairbank",
+      "description": ""
+    }
+  ],
+  "a-4b628a56": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Robert_Plomin",
+      "description": ""
+    }
+  ]
+}

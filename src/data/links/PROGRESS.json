@@ -287,14 +287,32 @@
       "count": 48,
       "links": 68,
       "status": "done"
+    },
+    {
+      "batch": 12,
+      "file": "curated-links-012.json",
+      "date": "2026-05-19",
+      "range": "Sigmund Freud ~ John King Fairbank（48位）",
+      "count": 48,
+      "links": 99,
+      "status": "done"
+    },
+    {
+      "batch": 13,
+      "file": "curated-links-013.json",
+      "date": "2026-05-19",
+      "range": "Umberto Eco ~ Michael W. Apple（48位）",
+      "count": 48,
+      "links": 88,
+      "status": "done"
     }
   ],
   "summary": {
-    "done": 471,
-    "remaining": 291,
-    "progress": "61.8%"
+    "done": 567,
+    "remaining": 195,
+    "progress": "74.4%"
   },
-  "links_curated": 471,
-  "total_remaining": 291,
-  "progress": "61.8%"
+  "links_curated": 567,
+  "total_remaining": 195,
+  "progress": "74.4%"
 }
