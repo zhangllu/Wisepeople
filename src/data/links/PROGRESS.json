@@ -6,8 +6,8 @@
       "file": "curated-links-001.json",
       "date": "2026-05-16",
       "range": "阿～爱（名字排序前48位）",
-      "count": 37,
-      "links": 91,
+      "count": 33,
+      "links": 83,
       "status": "done",
       "authors": [
         "阿尔波特·班杜拉",
@@ -112,8 +112,8 @@
       "file": "curated-links-003.json",
       "date": "2026-05-17",
       "range": "Richard Isadore Evans ~ 亨利·斯各特·斯托克斯（第49-96位）",
-      "count": 37,
-      "links": 90,
+      "count": 33,
+      "links": 83,
       "status": "done",
       "authors": [
         "Richard Isadore Evans",
@@ -171,8 +171,8 @@
       "file": "curated-links-004.json",
       "date": "2026-05-17",
       "range": "亨利·明茨伯格 ~ 凯博文（名字排序第97-144位）",
-      "count": 48,
-      "links": 142,
+      "count": 44,
+      "links": 136,
       "status": "done"
     },
     {
@@ -180,8 +180,8 @@
       "file": "curated-links-005.json",
       "date": "2026-05-17",
       "range": "凯文·凯利 ~ 塞奇·莫斯科维奇（名字排序第145-192位）",
-      "count": 48,
-      "links": 136,
+      "count": 45,
+      "links": 130,
       "status": "done"
     },
     {
@@ -272,11 +272,11 @@
     }
   ],
   "summary": {
-    "done": 386,
+    "done": 384,
     "remaining": 392,
-    "progress": "49.6%"
+    "progress": "49.5%"
   },
-  "links_curated": 386,
+  "links_curated": 384,
   "total_remaining": 392,
-  "progress": "49.6%"
+  "progress": "49.5%"
 }

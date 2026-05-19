@@ -3,7 +3,7 @@
     "batch": 3,
     "date": "2026-05-17",
     "range": "Richard Isadore Evans ~ Henry Scott Stokes（第49-96位）",
-    "count": 37
+    "count": 33
   },
   "rob-moore": [
     {
@@ -239,23 +239,6 @@
       "description": "权威百科全书的详细介绍"
     }
   ],
-  "a-a51d5ee8": [
-    {
-      "label": "维基百科",
-      "url": "https://en.wikipedia.org/wiki/Noam_Chomsky",
-      "description": "完整的生平与核心思想介绍"
-    },
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=%E4%B9%94%E5%A7%86%E6%96%AF%E5%9F%BA%2C%20%E8%AF%BA%E5%A7%86",
-      "description": "学术论文与引用数据"
-    },
-    {
-      "label": "Britannica",
-      "url": "https://www.britannica.com/biography/Noam-Chomsky",
-      "description": "权威百科全书的详细介绍"
-    }
-  ],
   "a-45846ca3": [
     {
       "label": "维基百科",
@@ -380,23 +363,6 @@
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=%E4%B9%94%E6%B2%BB%C2%B7%E6%B3%A2%E5%88%A9%E4%BA%9A",
       "description": "学术论文与引用数据"
-    }
-  ],
-  "a-c0d87270": [
-    {
-      "label": "维基百科",
-      "url": "https://en.wikipedia.org/wiki/George_Soros",
-      "description": "完整的生平与核心思想介绍"
-    },
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=%E4%B9%94%E6%B2%BB%C2%B7%E7%B4%A2%E7%BD%97%E6%96%AF",
-      "description": "学术论文与引用数据"
-    },
-    {
-      "label": "Britannica",
-      "url": "https://www.britannica.com/biography/George-Soros",
-      "description": "权威百科全书的详细介绍"
     }
   ],
   "a-d1b0ea8f": [
