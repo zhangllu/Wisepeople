@@ -1,0 +1,356 @@
+{
+  "_meta": {
+    "batch": 10,
+    "date": "2026-05-19",
+    "range": "G. Stanley Hall ~ Jessye Norman（第385-432位）",
+    "count": 39
+  },
+  "a-f9f2e31d": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/G._Stanley_Hall",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/G-Stanley-Hall",
+      "description": ""
+    }
+  ],
+  "a-f8b430be": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Stanisław_Lem",
+      "description": ""
+    }
+  ],
+  "a-ca0d8e9e": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Leften_Stavrianos",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Leften-Stavrianos",
+      "description": ""
+    }
+  ],
+  "a-5e2cc690": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Stacy_Schiff",
+      "description": ""
+    }
+  ],
+  "a-d167e476": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/J._Scott_Armstrong",
+      "description": ""
+    }
+  ],
+  "a-dfd36a37": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E6%96%AF%E8%92%82%E8%8A%AC%C2%B7%E6%9D%B0%C2%B7%E5%8F%A4%E5%B0%94%E5%BE%B7",
+      "description": ""
+    }
+  ],
+  "a-ca854bbf": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Stephen_Jay_Gould",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Stephen-Jay-Gould",
+      "description": ""
+    }
+  ],
+  "a-52543a83": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E6%96%AF%E8%92%82%E8%8A%AC%C2%B7%E5%9B%BE%E5%B0%94%E6%95%8F",
+      "description": ""
+    }
+  ],
+  "a-ff3d4c91": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Stephen_Toulmin",
+      "description": ""
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/toulmin/",
+      "description": ""
+    }
+  ],
+  "a-03d7a77f": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Stephen_Budiansky",
+      "description": ""
+    }
+  ],
+  "a-ca66e26f": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/B._F._Skinner",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/B-F-Skinner",
+      "description": ""
+    }
+  ],
+  "a-c5b47152": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E6%96%B9%E4%B8%9C%E7%BE%8E",
+      "description": ""
+    }
+  ],
+  "a-75745b88": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Quentin_Bell",
+      "description": ""
+    }
+  ],
+  "a-04427be6": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E6%9B%B9%E9%9B%AA%E8%8A%B9",
+      "description": ""
+    }
+  ],
+  "a-ab4fa45a": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Manfred_Kuehn",
+      "description": ""
+    }
+  ],
+  "a-4dd80f14": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Benedict_Anderson",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Benedict-Anderson",
+      "description": ""
+    }
+  ],
+  "a-37be8297": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Benjamin_Bloom",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Benjamin-Bloom",
+      "description": ""
+    }
+  ],
+  "a-77231773": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Benjamin_Graham",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Benjamin-Graham",
+      "description": ""
+    }
+  ],
+  "a-95cc3cfe": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E6%9C%B1%E4%BC%A0%E8%AA%89",
+      "description": ""
+    }
+  ],
+  "a-1a0a9743": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Giulio_Douhet",
+      "description": ""
+    }
+  ],
+  "a-d1641a1a": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E6%9C%B1%E7%86%B9",
+      "description": ""
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/zhu-xi/",
+      "description": ""
+    }
+  ],
+  "a-7b51420b": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ruthellen_Josselson",
+      "description": ""
+    }
+  ],
+  "a-fab9ba64": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Judea_Pearl",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Judea-Pearl",
+      "description": ""
+    }
+  ],
+  "a-a931ca71": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Judith_Butler",
+      "description": ""
+    },
+    {
+      "label": "Stanford Encyclopedia",
+      "url": "https://plato.stanford.edu/entries/butler/",
+      "description": ""
+    }
+  ],
+  "a-ce1dffe4": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E4%BA%A6%E5%9B%AD",
+      "description": ""
+    }
+  ],
+  "a-15095d14": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E6%98%8E",
+      "description": ""
+    }
+  ],
+  "a-6ae243d5": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Joseph_Needham",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Joseph-Needham",
+      "description": ""
+    }
+  ],
+  "a-79b5db17": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E9%95%BF%E4%B9%8B",
+      "description": ""
+    }
+  ],
+  "a-6bbaf7b2": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E6%9D%9C%E7%BB%B4%E6%98%8E",
+      "description": ""
+    }
+  ],
+  "a-082b8416": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E6%9D%9F%E6%99%AF%E5%8D%97",
+      "description": ""
+    }
+  ],
+  "a-018a10ef": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E6%9D%A8%E4%B8%AD%E8%8A%B3",
+      "description": ""
+    }
+  ],
+  "a-35651a1c": [
+    {
+      "label": "Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/%E6%9D%A8%E5%9B%BD%E6%A1%A2",
+      "description": ""
+    }
+  ],
+  "a-2ae3aa21": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Yann_LeCun",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Yann-LeCun",
+      "description": ""
+    }
+  ],
+  "a-0be6045f": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jeffrey_Meyers",
+      "description": ""
+    }
+  ],
+  "a-2074b373": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gerald_M._Weinberg",
+      "description": ""
+    }
+  ],
+  "a-9efda401": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gerald_G._Marten",
+      "description": ""
+    }
+  ],
+  "a-437e8d32": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gerald_Prince",
+      "description": ""
+    }
+  ],
+  "a-fa56c3b2": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jerome_Bruner",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Jerome-Bruner",
+      "description": ""
+    }
+  ],
+  "a-987c5e9d": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jessye_Norman",
+      "description": ""
+    },
+    {
+      "label": "Britannica",
+      "url": "https://www.britannica.com/biography/Jessye-Norman",
+      "description": ""
+    }
+  ]
+}

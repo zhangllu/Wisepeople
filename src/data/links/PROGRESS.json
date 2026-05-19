@@ -269,14 +269,32 @@
       "count": 48,
       "links": 65,
       "status": "done"
+    },
+    {
+      "batch": 10,
+      "file": "curated-links-010.json",
+      "date": "2026-05-19",
+      "range": "G. Stanley Hall ~ Jessye Norman（第385-432位）",
+      "count": 39,
+      "links": 54,
+      "status": "done"
+    },
+    {
+      "batch": 11,
+      "file": "curated-links-011.json",
+      "date": "2026-05-19",
+      "range": "Agneta Rahikainen ~ 约翰·尤德金（48位）",
+      "count": 48,
+      "links": 68,
+      "status": "done"
     }
   ],
   "summary": {
-    "done": 384,
-    "remaining": 392,
-    "progress": "49.5%"
+    "done": 471,
+    "remaining": 291,
+    "progress": "61.8%"
   },
-  "links_curated": 384,
-  "total_remaining": 392,
-  "progress": "49.5%"
+  "links_curated": 471,
+  "total_remaining": 291,
+  "progress": "61.8%"
 }
