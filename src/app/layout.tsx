@@ -1,20 +1,9 @@
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
 import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
 import { ChatWidget } from "@/components/chat/ChatWidget"
 import { Toaster } from "@/components/ui/sonner"
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-})
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-})
 
 export const metadata: Metadata = {
   title: "智者网 - 为成年人打造的通识教育地图",
@@ -27,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="zh" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
+    <html lang="zh" className="h-full antialiased">
       <head>
         <script async crossOrigin="anonymous" src="https://tweakcn.com/live-preview.min.js" />
       </head>

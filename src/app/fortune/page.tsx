@@ -95,12 +95,12 @@ export default function FortunePage() {
             onClick={draw}
           >
             {/* ===== Card Back ===== */}
-            <div className="absolute inset-0 rounded-3xl bg-red-800 shadow-sm flex flex-col items-center justify-center [backface-visibility:hidden]">
+            <div className="absolute inset-0 rounded-3xl bg-red-600 shadow-sm flex flex-col items-center justify-center [backface-visibility:hidden]">
               {/* Decorative diamond */}
-              <div className="w-16 h-16 rounded-xl bg-white/10 flex items-center justify-center mb-5">
-                <span className="text-2xl text-white/60 font-serif">?</span>
+              <div className="w-16 h-16 rounded-xl bg-white/15 flex items-center justify-center mb-5">
+                <span className="text-2xl text-white/80 font-serif">?</span>
               </div>
-              <p className="text-xs text-white/40 tracking-[0.2em]">
+              <p className="text-xs text-white/60 tracking-[0.2em]">
                 点 击 抽 卡
               </p>
             </div>
@@ -110,7 +110,7 @@ export default function FortunePage() {
               {person && (
                 <div className="flex flex-col h-full p-8 sm:p-9">
                   {/* Accent line */}
-                  <div className="w-8 h-0.5 bg-red-800 mb-6" />
+                  <div className="w-8 h-0.5 bg-red-600 mb-6" />
 
                   {/* Code + tags */}
                   <div className="flex items-center gap-2.5 text-xs mb-6">
@@ -121,7 +121,7 @@ export default function FortunePage() {
                     <span className="text-stone-400">
                       {person.questionCode}
                     </span>
-                    <span className="px-1.5 py-0.5 rounded text-[10px] bg-red-50 text-red-800 font-mono">
+                    <span className="px-1.5 py-0.5 rounded text-[10px] bg-red-50 text-red-700 font-mono">
                       {person.dimensionLabel}
                     </span>
                   </div>
