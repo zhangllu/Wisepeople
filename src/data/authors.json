@@ -60,26 +60,6 @@
     ]
   },
   {
-    "slug": "anita-burdman-feferman-solomon-feferman",
-    "name": "Anita Burdman Feferman; Solomon Feferman",
-    "bookSlugs": [
-      "b-0928b5f5"
-    ],
-    "topicCodes": [
-      "1.2"
-    ]
-  },
-  {
-    "slug": "arthur-donovan-knight-david",
-    "name": "Arthur Donovan; Knight, David",
-    "bookSlugs": [
-      "b-8f856577"
-    ],
-    "topicCodes": [
-      "2.4"
-    ]
-  },
-  {
     "slug": "arturo-ezquerro",
     "name": "Arturo Ezquerro（阿图罗·埃斯奎罗）",
     "bookSlugs": [
@@ -153,7 +133,8 @@
     "slug": "claire-tomalin",
     "name": "Claire Tomalin（克莱尔·托马林）",
     "bookSlugs": [
-      "b-e62751f4"
+      "b-e62751f4",
+      "b-eb516971"
     ],
     "topicCodes": [
       "8.5"
@@ -250,16 +231,6 @@
     ]
   },
   {
-    "slug": "emile-gauvreau-et-al",
-    "name": "Emile Gauvreau et al.",
-    "bookSlugs": [
-      "b-6afe00ae"
-    ],
-    "topicCodes": [
-      "4.2"
-    ]
-  },
-  {
     "slug": "fay-fransella",
     "name": "Fay Fransella（费伊·弗兰塞拉）",
     "bookSlugs": [
@@ -300,30 +271,11 @@
     ]
   },
   {
-    "slug": "gerald-l-alexanderson-george-p-lya",
-    "name": "Gerald L. Alexanderson; George Pólya",
-    "bookSlugs": [
-      "b-33b63baa"
-    ],
-    "topicCodes": [
-      "1.2"
-    ]
-  },
-  {
-    "slug": "grifiths-a-b-wenley-r-m",
-    "name": "Grifiths, A. B.; Wenley, R. M.",
-    "bookSlugs": [
-      "b-cd9cecab"
-    ],
-    "topicCodes": [
-      "2.4"
-    ]
-  },
-  {
     "slug": "james-d-watson",
     "name": "James D. Watson（詹姆斯·沃森）",
     "bookSlugs": [
-      "b-797f626e"
+      "b-797f626e",
+      "b-d5a8963c"
     ],
     "topicCodes": [
       "2.5"
@@ -377,16 +329,6 @@
     ],
     "topicCodes": [
       "8.5"
-    ]
-  },
-  {
-    "slug": "manfred-vogt-heinrich-n-dreesen-peter-sundman-ferdinand-wolf",
-    "name": "Manfred Vogt; Heinrich N. Dreesen; Peter Sundman; Ferdinand Wolf",
-    "bookSlugs": [
-      "b-501ee073"
-    ],
-    "topicCodes": [
-      "7.4"
     ]
   },
   {
@@ -525,7 +467,8 @@
     "slug": "roberta-m-gilbert",
     "name": "Roberta M. Gilbert（罗伯塔·吉尔伯特）",
     "bookSlugs": [
-      "b-bdda6cf7"
+      "b-bdda6cf7",
+      "b-ff1f9b6b"
     ],
     "topicCodes": [
       "7.1"
@@ -582,16 +525,6 @@
     ]
   },
   {
-    "slug": "william-taussig-scott-martin-x-moleski",
-    "name": "William Taussig Scott; Martin X. Moleski",
-    "bookSlugs": [
-      "b-81cae3f2"
-    ],
-    "topicCodes": [
-      "1.1"
-    ]
-  },
-  {
     "slug": "a-382d8f78",
     "name": "丁建新",
     "bookSlugs": [
@@ -626,30 +559,10 @@
     ]
   },
   {
-    "slug": "a-67b868c0",
-    "name": "严耕望先生纪念集编辑委员会",
-    "bookSlugs": [
-      "b-8369e07b"
-    ],
-    "topicCodes": [
-      "3.1"
-    ]
-  },
-  {
     "slug": "a-d1e5dda4",
     "name": "Daniel J. Levinson（丹尼尔.莱文森）",
     "bookSlugs": [
       "b-7c7f5149"
-    ],
-    "topicCodes": [
-      "7.3"
-    ]
-  },
-  {
-    "slug": "a-83d60faf",
-    "name": "丹尼尔.莱文森 Daniel J. Levinson; Charlotte N. Darrow; Edward B. Klein",
-    "bookSlugs": [
-      "b-2c6ae7fd"
     ],
     "topicCodes": [
       "7.3"
@@ -674,16 +587,6 @@
     "name": "Daniel Kahneman（丹尼尔·卡尼曼）",
     "bookSlugs": [
       "b-a5610e96"
-    ],
-    "topicCodes": [
-      "8.3"
-    ]
-  },
-  {
-    "slug": "a-034bbd14",
-    "name": "丹尼尔·卡尼曼; 阿莫斯·特沃斯基",
-    "bookSlugs": [
-      "b-0017fda5"
     ],
     "topicCodes": [
       "8.3"
@@ -766,16 +669,7 @@
     "bookSlugs": [
       "b-970bef25",
       "b-531d2092",
-      "b-b168626b"
-    ],
-    "topicCodes": [
-      "2.4"
-    ]
-  },
-  {
-    "slug": "a-feb39e1d",
-    "name": "George Gamow（乔治·伽莫夫）",
-    "bookSlugs": [
+      "b-b168626b",
       "b-172850b7",
       "b-05371910"
     ],
@@ -797,16 +691,7 @@
     "slug": "a-b433589e",
     "name": "George Boole（乔治·布尔）",
     "bookSlugs": [
-      "b-4d09c514"
-    ],
-    "topicCodes": [
-      "1.2"
-    ]
-  },
-  {
-    "slug": "a-537a00e1",
-    "name": "George Boole（乔治·布尔）",
-    "bookSlugs": [
+      "b-4d09c514",
       "b-64316848"
     ],
     "topicCodes": [
@@ -830,26 +715,6 @@
     "name": "George Lakoff（乔治·莱考夫）",
     "bookSlugs": [
       "b-26178a05"
-    ],
-    "topicCodes": [
-      "8.4"
-    ]
-  },
-  {
-    "slug": "a-f5499c10",
-    "name": "乔治·莱考夫; 马克·约翰逊",
-    "bookSlugs": [
-      "b-217266d8"
-    ],
-    "topicCodes": [
-      "8.4"
-    ]
-  },
-  {
-    "slug": "a-95149db4",
-    "name": "乔治·莱考夫; 马克·约翰逊; 邱雪玫 审订",
-    "bookSlugs": [
-      "b-c1e78477"
     ],
     "topicCodes": [
       "8.4"
@@ -897,26 +762,6 @@
     ]
   },
   {
-    "slug": "a-f230f391",
-    "name": "Adrian Slywotzky et al.（亚德里安·斯莱沃斯基 等）",
-    "bookSlugs": [
-      "b-00493bb0"
-    ],
-    "topicCodes": [
-      "6.4"
-    ]
-  },
-  {
-    "slug": "a-a0e231c3",
-    "name": "亚德里安·斯莱沃斯基; 大卫·莫里森; 特德·莫泽; 凯文·蒙特; 詹姆斯·奎拉",
-    "bookSlugs": [
-      "b-1a13c335"
-    ],
-    "topicCodes": [
-      "6.4"
-    ]
-  },
-  {
     "slug": "a-e0759726",
     "name": "Aristotle（亚里士多德）",
     "bookSlugs": [
@@ -938,16 +783,6 @@
     ]
   },
   {
-    "slug": "a-8270f2e3",
-    "name": "亨利·威尔曼; 凯伦·琳德",
-    "bookSlugs": [
-      "b-f844fad9"
-    ],
-    "topicCodes": [
-      "7.3"
-    ]
-  },
-  {
     "slug": "a-55b0cd0e",
     "name": "Henry Scott-Stokes（亨利·斯各特·斯托克斯）",
     "bookSlugs": [
@@ -963,16 +798,6 @@
     "bookSlugs": [
       "b-c6ae5c87",
       "b-7a801cbc"
-    ],
-    "topicCodes": [
-      "6.1"
-    ]
-  },
-  {
-    "slug": "a-ee2bf2e8",
-    "name": "亨利·明茨伯格; 布鲁斯·阿尔斯特兰德",
-    "bookSlugs": [
-      "b-5767d3ee"
     ],
     "topicCodes": [
       "6.1"
@@ -1114,16 +939,6 @@
     ]
   },
   {
-    "slug": "a-e9942d82",
-    "name": "伦道夫·尼斯; 乔治·威廉姆斯",
-    "bookSlugs": [
-      "b-41640b76"
-    ],
-    "topicCodes": [
-      "9.1"
-    ]
-  },
-  {
     "slug": "a-36c7b464",
     "name": "Bertrand Russell（伯特兰·罗素）",
     "bookSlugs": [
@@ -1134,16 +949,6 @@
     "topicCodes": [
       "1.2",
       "10.1"
-    ]
-  },
-  {
-    "slug": "a-956ce4a7",
-    "name": "伯特兰·罗素 Russell Bertrand; Alfred North Whitehead",
-    "bookSlugs": [
-      "b-48bb51c2"
-    ],
-    "topicCodes": [
-      "1.2"
     ]
   },
   {
@@ -1171,16 +976,7 @@
     "slug": "a-ccd033a3",
     "name": "余德慧",
     "bookSlugs": [
-      "b-434b9db2"
-    ],
-    "topicCodes": [
-      "7.5"
-    ]
-  },
-  {
-    "slug": "a-531edce0",
-    "name": "余德慧; 石佳仪",
-    "bookSlugs": [
+      "b-434b9db2",
       "b-bc3823e9"
     ],
     "topicCodes": [
@@ -1202,26 +998,6 @@
     ]
   },
   {
-    "slug": "a-d9404041",
-    "name": "佛教僧侣团",
-    "bookSlugs": [
-      "b-0da20d56"
-    ],
-    "topicCodes": [
-      "0"
-    ]
-  },
-  {
-    "slug": "a-c870306a",
-    "name": "作者不定",
-    "bookSlugs": [
-      "b-2788f500"
-    ],
-    "topicCodes": [
-      "0"
-    ]
-  },
-  {
     "slug": "a-d48bd47a",
     "name": "Douglas Hofstadter（侯世达）",
     "bookSlugs": [
@@ -1236,7 +1012,8 @@
     "slug": "a-68f0f84f",
     "name": "Paul A. Samuelson（保罗.萨缪尔森）",
     "bookSlugs": [
-      "b-79bb8691"
+      "b-79bb8691",
+      "b-2906ef14"
     ],
     "topicCodes": [
       "5.3"
@@ -1248,16 +1025,6 @@
     "bookSlugs": [
       "b-5a993451",
       "b-620679ef"
-    ],
-    "topicCodes": [
-      "6.3"
-    ]
-  },
-  {
-    "slug": "a-ce964997",
-    "name": "保罗·威尔莫特; 戴维·欧瑞尔",
-    "bookSlugs": [
-      "b-aaaeb7f7"
     ],
     "topicCodes": [
       "6.3"
@@ -1278,16 +1045,7 @@
     "name": "Paulo Freire（保罗·弗莱雷）",
     "bookSlugs": [
       "b-e8a5c93e",
-      "b-b67849f0"
-    ],
-    "topicCodes": [
-      "4.3"
-    ]
-  },
-  {
-    "slug": "a-86d53954",
-    "name": "Paulo Freire（保罗·弗莱雷）",
-    "bookSlugs": [
+      "b-b67849f0",
       "b-e52e70fe"
     ],
     "topicCodes": [
@@ -1309,63 +1067,12 @@
     "name": "Paul Watzlawick（保罗·瓦茨拉维克）",
     "bookSlugs": [
       "b-4f08c038",
-      "b-4f08c038"
-    ],
-    "topicCodes": [
-      "1.4",
-      "7.4"
-    ]
-  },
-  {
-    "slug": "a-d09f5663",
-    "name": "Paul Watzlawick（保罗·瓦茨拉维克）",
-    "bookSlugs": [
+      "b-4f08c038",
       "b-77761b22"
     ],
     "topicCodes": [
-      "1.4"
-    ]
-  },
-  {
-    "slug": "a-f71d1fcf",
-    "name": "保罗·瓦茨拉维克; 约翰·威克兰德; 理查德·菲什",
-    "bookSlugs": [
-      "b-da753217",
-      "b-da753217"
-    ],
-    "topicCodes": [
       "1.4",
       "7.4"
-    ]
-  },
-  {
-    "slug": "a-9187318e",
-    "name": "Paul Samuelson（保罗·萨缪尔森）",
-    "bookSlugs": [
-      "b-2906ef14"
-    ],
-    "topicCodes": [
-      "5.3"
-    ]
-  },
-  {
-    "slug": "a-b3b07a56",
-    "name": "保罗·萨缪尔森; 威廉·诺德豪斯",
-    "bookSlugs": [
-      "b-206804f1"
-    ],
-    "topicCodes": [
-      "5.3"
-    ]
-  },
-  {
-    "slug": "a-1a8d6399",
-    "name": "保罗·萨缪尔森; 赖建诚(校)",
-    "bookSlugs": [
-      "b-9eff070e"
-    ],
-    "topicCodes": [
-      "5.3"
     ]
   },
   {
@@ -1378,16 +1085,6 @@
     ],
     "topicCodes": [
       "10.4"
-    ]
-  },
-  {
-    "slug": "a-1e1fe689",
-    "name": "保罗·黑尔; 君儿·黑尔",
-    "bookSlugs": [
-      "b-cafde5ed"
-    ],
-    "topicCodes": [
-      "9.3"
     ]
   },
   {
@@ -1405,16 +1102,6 @@
     "name": "傅乐成",
     "bookSlugs": [
       "b-c782cf59"
-    ],
-    "topicCodes": [
-      "3.2"
-    ]
-  },
-  {
-    "slug": "a-9ff3f7e8",
-    "name": "傅乐成教授纪念论文编辑委员会",
-    "bookSlugs": [
-      "b-8ba03c9a"
     ],
     "topicCodes": [
       "3.2"
@@ -1447,16 +1134,7 @@
     "bookSlugs": [
       "b-b4d3c49c",
       "b-e7fd7575",
-      "b-8b111552"
-    ],
-    "topicCodes": [
-      "5.5"
-    ]
-  },
-  {
-    "slug": "a-fbf95d57",
-    "name": "Clifford Geertz（克利福德·格尔茨）",
-    "bookSlugs": [
+      "b-8b111552",
       "b-dd312216"
     ],
     "topicCodes": [
@@ -1483,26 +1161,6 @@
     ],
     "topicCodes": [
       "5.5"
-    ]
-  },
-  {
-    "slug": "a-641b44ea",
-    "name": "克洛德·皮舒瓦; 让·齐格勒",
-    "bookSlugs": [
-      "b-1a3d5e38"
-    ],
-    "topicCodes": [
-      "8.5"
-    ]
-  },
-  {
-    "slug": "a-349940e0",
-    "name": "Claire Tomalin（克莱尔·托马林）",
-    "bookSlugs": [
-      "b-eb516971"
-    ],
-    "topicCodes": [
-      "8.5"
     ]
   },
   {
@@ -1538,53 +1196,15 @@
     ]
   },
   {
-    "slug": "a-127cd5d9",
-    "name": "克里斯·弗里斯 Christopher D. Frith; Eve C. Johnstone",
-    "bookSlugs": [
-      "b-b44010c9"
-    ],
-    "topicCodes": [
-      "8.2"
-    ]
-  },
-  {
     "slug": "a-70714bbf",
     "name": "Chris Argyris（克里斯·阿吉里斯）",
     "bookSlugs": [
       "b-998adb91",
-      "b-f6c1ae97"
-    ],
-    "topicCodes": [
-      "6.2"
-    ]
-  },
-  {
-    "slug": "a-7d3983c5",
-    "name": "克里斯·阿吉里斯; 唐纳德·A.舍恩",
-    "bookSlugs": [
-      "b-22dd8faf"
-    ],
-    "topicCodes": [
-      "1.4"
-    ]
-  },
-  {
-    "slug": "a-8ff20131",
-    "name": "克里斯·阿吉里斯; 罗伯特·帕特南; 戴安娜·麦克莱恩·史密斯",
-    "bookSlugs": [
-      "b-8903654f"
-    ],
-    "topicCodes": [
-      "1.4"
-    ]
-  },
-  {
-    "slug": "a-16c78eb7",
-    "name": "Chris Argyris（克里斯·阿吉里斯）",
-    "bookSlugs": [
+      "b-f6c1ae97",
       "b-cf7077bb"
     ],
     "topicCodes": [
+      "6.2",
       "1.4"
     ]
   },
@@ -1607,17 +1227,6 @@
     ],
     "topicCodes": [
       "6.5"
-    ]
-  },
-  {
-    "slug": "a-2e16d933",
-    "name": "克里斯蒂娜.马斯拉奇 Christina Maslach; Michael P. Leiter",
-    "bookSlugs": [
-      "b-0c013e6d",
-      "b-f498d730"
-    ],
-    "topicCodes": [
-      "6.2"
     ]
   },
   {
@@ -1649,16 +1258,6 @@
     ],
     "topicCodes": [
       "4.4"
-    ]
-  },
-  {
-    "slug": "a-220b199f",
-    "name": "冯·诺伊曼; 摩根斯顿",
-    "bookSlugs": [
-      "b-45f9be2e"
-    ],
-    "topicCodes": [
-      "4.1"
     ]
   },
   {
@@ -1697,30 +1296,10 @@
     ]
   },
   {
-    "slug": "a-e5d75312",
-    "name": "列夫·维果茨基; 迈克尔·科尔等",
-    "bookSlugs": [
-      "b-7b3e4f70"
-    ],
-    "topicCodes": [
-      "7.1"
-    ]
-  },
-  {
     "slug": "a-3de3ac18",
     "name": "刘川鄂",
     "bookSlugs": [
       "b-ce98223f"
-    ],
-    "topicCodes": [
-      "8.5"
-    ]
-  },
-  {
-    "slug": "a-5dca4996",
-    "name": "刘易斯·卡罗尔; 马丁·加德纳",
-    "bookSlugs": [
-      "b-80adf2aa"
     ],
     "topicCodes": [
       "8.5"
@@ -1790,16 +1369,6 @@
     ]
   },
   {
-    "slug": "a-603b84cb",
-    "name": "劳伦斯·斯坦伯格; 理查德·勒纳",
-    "bookSlugs": [
-      "b-a4d711f6"
-    ],
-    "topicCodes": [
-      "7.3"
-    ]
-  },
-  {
     "slug": "a-6ed9e682",
     "name": "Lawrence Kohlberg（劳伦斯·科尔伯格）",
     "bookSlugs": [
@@ -1834,16 +1403,6 @@
     ]
   },
   {
-    "slug": "a-5286eeb7",
-    "name": "北京大学中国古代史研究中心",
-    "bookSlugs": [
-      "b-631ccb0c"
-    ],
-    "topicCodes": [
-      "3.4"
-    ]
-  },
-  {
     "slug": "a-73d4efe2",
     "name": "北川东子",
     "bookSlugs": [
@@ -1872,16 +1431,6 @@
     ],
     "topicCodes": [
       "3.2"
-    ]
-  },
-  {
-    "slug": "a-57ddb920",
-    "name": "卡尔.弗里斯顿 K. J. Friston; Thomas Parr; Giovanni Pezzulo",
-    "bookSlugs": [
-      "b-1a56bfc2"
-    ],
-    "topicCodes": [
-      "8.2"
     ]
   },
   {
@@ -1924,16 +1473,6 @@
       "b-1a8028d5",
       "b-8f864dab",
       "b-58fd7943"
-    ],
-    "topicCodes": [
-      "10.4"
-    ]
-  },
-  {
-    "slug": "a-8ba4a292",
-    "name": "卡尔·荣格; 卫礼贤",
-    "bookSlugs": [
-      "b-0c469644"
     ],
     "topicCodes": [
       "10.4"
@@ -2001,16 +1540,6 @@
     ]
   },
   {
-    "slug": "a-0cc35d4d",
-    "name": "古希腊奴隶",
-    "bookSlugs": [
-      "b-ee17748f"
-    ],
-    "topicCodes": [
-      "0"
-    ]
-  },
-  {
     "slug": "a-25b2380f",
     "name": "Steve de Shazer（史蒂夫·德·沙泽尔）",
     "bookSlugs": [
@@ -2029,37 +1558,6 @@
     ],
     "topicCodes": [
       "6.5"
-    ]
-  },
-  {
-    "slug": "a-9e127f0b",
-    "name": "史蒂夫·布兰克; 鲍勃·多夫",
-    "bookSlugs": [
-      "b-d3596d73",
-      "b-35597723"
-    ],
-    "topicCodes": [
-      "6.5"
-    ]
-  },
-  {
-    "slug": "a-4db7c801",
-    "name": "史蒂夫·德·沙泽尔; 伊冯·多兰; 哈里·科尔曼",
-    "bookSlugs": [
-      "b-cdb73316"
-    ],
-    "topicCodes": [
-      "7.4"
-    ]
-  },
-  {
-    "slug": "a-055e5018",
-    "name": "史蒂文·海耶斯; 杰森·利利斯",
-    "bookSlugs": [
-      "b-476c0265"
-    ],
-    "topicCodes": [
-      "9.3"
     ]
   },
   {
@@ -2092,16 +1590,6 @@
     ],
     "topicCodes": [
       "8.3",
-      "8.4"
-    ]
-  },
-  {
-    "slug": "a-47bc62d0",
-    "name": "史蒂芬·平克; 阳志平 审校",
-    "bookSlugs": [
-      "b-4e353a88"
-    ],
-    "topicCodes": [
       "8.4"
     ]
   },
@@ -2149,53 +1637,14 @@
     ]
   },
   {
-    "slug": "a-98188c66",
-    "name": "吉仁泽; 彼得·托德; ABC研究组织",
-    "bookSlugs": [
-      "b-f5e817ba"
-    ],
-    "topicCodes": [
-      "8.3"
-    ]
-  },
-  {
-    "slug": "a-331de60c",
-    "name": "吉仁泽; 莱茵哈德·泽尔腾",
-    "bookSlugs": [
-      "b-7c0ef05f"
-    ],
-    "topicCodes": [
-      "8.3"
-    ]
-  },
-  {
     "slug": "a-b0d36ebe",
     "name": "Geert Hofstede（吉尔特.霍夫斯泰德）",
     "bookSlugs": [
-      "b-36216a1b"
-    ],
-    "topicCodes": [
-      "6.2"
-    ]
-  },
-  {
-    "slug": "a-bb034403",
-    "name": "Geert Hofstede（吉尔特·霍夫斯泰德）",
-    "bookSlugs": [
+      "b-36216a1b",
       "b-a76f0b65"
     ],
     "topicCodes": [
       "6.2"
-    ]
-  },
-  {
-    "slug": "a-2cbacb79",
-    "name": "吉米·霍兰 Jimmie C. Holland; Sheldon Lewis",
-    "bookSlugs": [
-      "b-a9e78b68"
-    ],
-    "topicCodes": [
-      "9.5"
     ]
   },
   {
@@ -2222,16 +1671,6 @@
     ]
   },
   {
-    "slug": "a-cc7aac75",
-    "name": "周晓虹  编",
-    "bookSlugs": [
-      "b-513df54a"
-    ],
-    "topicCodes": [
-      "10.5"
-    ]
-  },
-  {
     "slug": "a-f80c4b78",
     "name": "周汝昌",
     "bookSlugs": [
@@ -2242,42 +1681,12 @@
     ]
   },
   {
-    "slug": "a-307fc1cd",
-    "name": "哈罗德·孔茨; 海因茨·韦里克",
-    "bookSlugs": [
-      "b-568fc0a3"
-    ],
-    "topicCodes": [
-      "6.1"
-    ]
-  },
-  {
-    "slug": "a-d1289525",
-    "name": "哈罗德·孔茨; 约瑟夫·普蒂; 海茵茨·韦里奇",
-    "bookSlugs": [
-      "b-fecc6f7a"
-    ],
-    "topicCodes": [
-      "6.1"
-    ]
-  },
-  {
     "slug": "a-b191ebcd",
     "name": "Harold Bloom（哈罗德·布鲁姆）",
     "bookSlugs": [
       "b-ddd32cdd",
       "b-31bfea06",
       "b-5a661b7a"
-    ],
-    "topicCodes": [
-      "8.5"
-    ]
-  },
-  {
-    "slug": "a-626c41a6",
-    "name": "Harold Bloom et al.（哈罗德·布鲁姆 等）",
-    "bookSlugs": [
-      "b-999ee52e"
     ],
     "topicCodes": [
       "8.5"
@@ -2318,40 +1727,11 @@
     ]
   },
   {
-    "slug": "a-88077530",
-    "name": "唐纳德·高斯; 杰拉尔德·温伯格",
-    "bookSlugs": [
-      "b-3a15f51a"
-    ],
-    "topicCodes": [
-      "6.5"
-    ]
-  },
-  {
     "slug": "a-1b1aac17",
     "name": "Santiago Ramóny Cajal（圣地亚哥.拉蒙.卡哈尔）",
     "bookSlugs": [
-      "b-6bfa91b9"
-    ],
-    "topicCodes": [
-      "8.2"
-    ]
-  },
-  {
-    "slug": "a-dbd8b994",
-    "name": "Santiago Ramón y Cajal（圣地亚哥·拉蒙-卡哈尔）",
-    "bookSlugs": [
+      "b-6bfa91b9",
       "b-0596f881"
-    ],
-    "topicCodes": [
-      "8.2"
-    ]
-  },
-  {
-    "slug": "a-f91c3df1",
-    "name": "圣地亚哥·拉蒙-卡哈尔; 傅贺",
-    "bookSlugs": [
-      "b-a779b2f0"
     ],
     "topicCodes": [
       "8.2"
@@ -2392,27 +1772,8 @@
     "slug": "a-497405ea",
     "name": "Edgar Schein（埃德加·沙因）",
     "bookSlugs": [
-      "b-fe5f18d8"
-    ],
-    "topicCodes": [
-      "6.2"
-    ]
-  },
-  {
-    "slug": "a-90cac235",
-    "name": "Edgar H. Schein（埃德加·沙因）",
-    "bookSlugs": [
+      "b-fe5f18d8",
       "b-3ca0e82a"
-    ],
-    "topicCodes": [
-      "6.2"
-    ]
-  },
-  {
-    "slug": "a-39f2f342",
-    "name": "埃德加·沙因; 彼得·沙因",
-    "bookSlugs": [
-      "b-3ce381f7"
     ],
     "topicCodes": [
       "6.2"
@@ -2489,41 +1850,12 @@
     ]
   },
   {
-    "slug": "a-6449a1f4",
-    "name": "埃蒂纳·温格; 让·莱夫",
-    "bookSlugs": [
-      "b-21da7f5a"
-    ],
-    "topicCodes": [
-      "1.2"
-    ]
-  },
-  {
     "slug": "a-caf5ee7d",
     "name": "Eric Kandel（埃里克·坎德尔）",
     "bookSlugs": [
       "b-04acbfca",
-      "b-7ea4c3fd"
-    ],
-    "topicCodes": [
-      "8.2"
-    ]
-  },
-  {
-    "slug": "a-19e778b7",
-    "name": "Eric R. Kandel（埃里克·坎德尔）",
-    "bookSlugs": [
+      "b-7ea4c3fd",
       "b-60178a6e"
-    ],
-    "topicCodes": [
-      "8.2"
-    ]
-  },
-  {
-    "slug": "a-8916324f",
-    "name": "埃里克·坎德尔; 詹姆斯·施瓦茨; 托马斯·杰塞尔; 史蒂文·西格尔鲍姆; A. J.赫兹佩思",
-    "bookSlugs": [
-      "b-230d9fae"
     ],
     "topicCodes": [
       "8.2"
@@ -2578,16 +1910,7 @@
     "slug": "a-4003dfc7",
     "name": "Emmanuel Le Roy Ladurie（埃马纽埃尔·拉迪里）",
     "bookSlugs": [
-      "b-ad45aa4e"
-    ],
-    "topicCodes": [
-      "3.5"
-    ]
-  },
-  {
-    "slug": "a-a5c15644",
-    "name": "Emmanuel Le Roy Ladurie（埃马纽埃尔·拉迪里）",
-    "bookSlugs": [
+      "b-ad45aa4e",
       "b-b88979ac"
     ],
     "topicCodes": [
@@ -2600,16 +1923,6 @@
     "bookSlugs": [
       "b-126cbeea",
       "b-019ee608"
-    ],
-    "topicCodes": [
-      "8.3"
-    ]
-  },
-  {
-    "slug": "a-96c0911c",
-    "name": "基思·斯坦诺维奇; 阳志平 审校",
-    "bookSlugs": [
-      "b-8633b6ee"
     ],
     "topicCodes": [
       "8.3"
@@ -2640,16 +1953,7 @@
     "name": "Serge Moscovici（塞奇·莫斯科维奇）",
     "bookSlugs": [
       "b-5fd37986",
-      "b-354b0e42"
-    ],
-    "topicCodes": [
-      "5.2"
-    ]
-  },
-  {
-    "slug": "a-dc96fda9",
-    "name": "Serge Moscovici（塞奇·莫斯科维奇）",
-    "bookSlugs": [
+      "b-354b0e42",
       "b-062e2201"
     ],
     "topicCodes": [
@@ -2679,16 +1983,6 @@
     ]
   },
   {
-    "slug": "a-c2662e52",
-    "name": "夏丏尊; 蔡冠洛",
-    "bookSlugs": [
-      "b-d4547285"
-    ],
-    "topicCodes": [
-      "10.3"
-    ]
-  },
-  {
     "slug": "a-ca7dba7c",
     "name": "Charles Baudelaire（夏尔·波德莱尔）",
     "bookSlugs": [
@@ -2702,16 +1996,7 @@
     "slug": "a-e62b5cbf",
     "name": "夏志清",
     "bookSlugs": [
-      "b-ca4bcb9e"
-    ],
-    "topicCodes": [
-      "8.5"
-    ]
-  },
-  {
-    "slug": "a-9718eec0",
-    "name": "夏志清; 刘绍铭 校订",
-    "bookSlugs": [
+      "b-ca4bcb9e",
       "b-c3333229"
     ],
     "topicCodes": [
@@ -2723,16 +2008,6 @@
     "name": "夏目漱石",
     "bookSlugs": [
       "b-83e3106a"
-    ],
-    "topicCodes": [
-      "8.5"
-    ]
-  },
-  {
-    "slug": "a-c653ec51",
-    "name": "夏目镜子; 松冈让 整理",
-    "bookSlugs": [
-      "b-ba895ec5"
     ],
     "topicCodes": [
       "8.5"
@@ -2765,18 +2040,6 @@
       "b-bde057fc",
       "b-40f66e6d",
       "b-df702a14"
-    ],
-    "topicCodes": [
-      "6.5"
-    ]
-  },
-  {
-    "slug": "a-e86b86df",
-    "name": "大前研一 等",
-    "bookSlugs": [
-      "b-f9c2b5c1",
-      "b-3f9682e1",
-      "b-750234c6"
     ],
     "topicCodes": [
       "6.5"
@@ -2848,16 +2111,6 @@
     ]
   },
   {
-    "slug": "a-7f278abd",
-    "name": "大卫·梅斯特; 查理·格林; 罗伯特·加弗德",
-    "bookSlugs": [
-      "b-fcfa95c7"
-    ],
-    "topicCodes": [
-      "6.5"
-    ]
-  },
-  {
     "slug": "a-ecd03ab6",
     "name": "太宰治",
     "bookSlugs": [
@@ -2888,16 +2141,6 @@
     ],
     "topicCodes": [
       "9.5"
-    ]
-  },
-  {
-    "slug": "a-b6cd0703",
-    "name": "奥德姆; 巴雷特",
-    "bookSlugs": [
-      "b-24a845e0"
-    ],
-    "topicCodes": [
-      "2.5"
     ]
   },
   {
@@ -2982,16 +2225,6 @@
     ]
   },
   {
-    "slug": "a-6e6046fc",
-    "name": "威廉·麦克尼尔; 郭方 李永斌 译校",
-    "bookSlugs": [
-      "b-b3d36b95"
-    ],
-    "topicCodes": [
-      "3.3"
-    ]
-  },
-  {
     "slug": "a-1c9d468e",
     "name": "孔子",
     "bookSlugs": [
@@ -2999,16 +2232,6 @@
     ],
     "topicCodes": [
       "10.2"
-    ]
-  },
-  {
-    "slug": "a-4ed9d658",
-    "name": "孔子学生辑录",
-    "bookSlugs": [
-      "b-75e68c94"
-    ],
-    "topicCodes": [
-      "0"
     ]
   },
   {
@@ -3159,21 +2382,13 @@
     "slug": "a-f69f1c2f",
     "name": "Andy Clark（安迪·克拉克）",
     "bookSlugs": [
-      "b-c2dd91b7"
-    ],
-    "topicCodes": [
-      "8.2"
-    ]
-  },
-  {
-    "slug": "a-4d655a03",
-    "name": "Andy Clark（安迪·克拉克）",
-    "bookSlugs": [
+      "b-c2dd91b7",
       "b-c55c984a",
       "b-cb443e5c",
       "b-464e8e07"
     ],
     "topicCodes": [
+      "8.2",
       "10.5"
     ]
   },
@@ -3249,16 +2464,6 @@
     ]
   },
   {
-    "slug": "a-ecb79be8",
-    "name": "山姆·沃尔顿; 约翰·休伊",
-    "bookSlugs": [
-      "b-7a6902c0"
-    ],
-    "topicCodes": [
-      "6.5"
-    ]
-  },
-  {
     "slug": "a-5dc29bc1",
     "name": "Basil Bernstein（巴兹尔·伯恩斯）",
     "bookSlugs": [
@@ -3301,16 +2506,6 @@
     ]
   },
   {
-    "slug": "a-8e489bca",
-    "name": "广东省东莞市政协",
-    "bookSlugs": [
-      "b-a1259585"
-    ],
-    "topicCodes": [
-      "3.2"
-    ]
-  },
-  {
     "slug": "a-f9f795ff",
     "name": "Zhuangzi（庄周）",
     "bookSlugs": [
@@ -3340,16 +2535,6 @@
     "bookSlugs": [
       "b-35585cc1",
       "b-ae022b1f"
-    ],
-    "topicCodes": [
-      "8.5"
-    ]
-  },
-  {
-    "slug": "a-edb049a8",
-    "name": "康·帕乌斯托夫斯基; 王志耕",
-    "bookSlugs": [
-      "b-8ee082e1"
     ],
     "topicCodes": [
       "8.5"
@@ -3446,16 +2631,6 @@
     "bookSlugs": [
       "b-1594a56b",
       "b-c7c6bf95"
-    ],
-    "topicCodes": [
-      "5.4"
-    ]
-  },
-  {
-    "slug": "a-27e2af04",
-    "name": "弗朗西斯·福山; 孟凡礼 校",
-    "bookSlugs": [
-      "b-e865c81b"
     ],
     "topicCodes": [
       "5.4"
@@ -3579,16 +2754,6 @@
     ]
   },
   {
-    "slug": "a-30bc522f",
-    "name": "张谷; 王缉国",
-    "bookSlugs": [
-      "b-8e806555"
-    ],
-    "topicCodes": [
-      "8.4"
-    ]
-  },
-  {
     "slug": "a-5aaff683",
     "name": "张载",
     "bookSlugs": [
@@ -3596,16 +2761,6 @@
     ],
     "topicCodes": [
       "10.2"
-    ]
-  },
-  {
-    "slug": "a-27b3a21e",
-    "name": "张镜源 主编",
-    "bookSlugs": [
-      "b-75543fe8"
-    ],
-    "topicCodes": [
-      "9.5"
     ]
   },
   {
@@ -3619,32 +2774,12 @@
     ]
   },
   {
-    "slug": "a-25b7e5a7",
-    "name": "彼得·亚伯拉罕; 乔纳森·斯普拉特; 马里奥·卢卡斯; 阿尔伯特-尼尔斯·万·斯库尔",
-    "bookSlugs": [
-      "b-978496b2"
-    ],
-    "topicCodes": [
-      "9.1"
-    ]
-  },
-  {
     "slug": "a-65af1353",
     "name": "Peter L. Berger（彼得·伯格）",
     "bookSlugs": [
       "b-9e081f99",
       "b-3db42949",
       "b-986064d1"
-    ],
-    "topicCodes": [
-      "5.2"
-    ]
-  },
-  {
-    "slug": "a-30cd0944",
-    "name": "彼得·伯格; 托马斯·卢克曼",
-    "bookSlugs": [
-      "b-044d9ae4"
     ],
     "topicCodes": [
       "5.2"
@@ -3695,26 +2830,6 @@
     ]
   },
   {
-    "slug": "a-7d05108e",
-    "name": "彼得·福纳吉; 乔恩·艾伦; 安东尼·贝特曼",
-    "bookSlugs": [
-      "b-6100367a"
-    ],
-    "topicCodes": [
-      "9.3"
-    ]
-  },
-  {
-    "slug": "a-88f1d628",
-    "name": "彼得·福纳吉; 安东尼·贝特曼",
-    "bookSlugs": [
-      "b-028aff02"
-    ],
-    "topicCodes": [
-      "9.3"
-    ]
-  },
-  {
     "slug": "a-31bce41f",
     "name": "Peter Lord（彼得·罗德）",
     "bookSlugs": [
@@ -3725,16 +2840,6 @@
     ]
   },
   {
-    "slug": "a-717786fe",
-    "name": "彼得·蒂尔; 布莱克·马斯特斯",
-    "bookSlugs": [
-      "b-690fef35"
-    ],
-    "topicCodes": [
-      "6.5"
-    ]
-  },
-  {
     "slug": "a-ca30793b",
     "name": "Peter Ackroyd（彼得·阿克罗伊德）",
     "bookSlugs": [
@@ -3742,16 +2847,6 @@
     ],
     "topicCodes": [
       "8.5"
-    ]
-  },
-  {
-    "slug": "a-54aa962c",
-    "name": "彼特.格尔维茨 Peter M. Gollwitzer; John A. Bargh",
-    "bookSlugs": [
-      "b-afe7342e"
-    ],
-    "topicCodes": [
-      "8.3"
     ]
   },
   {
@@ -3770,16 +2865,6 @@
     "name": "Derek Price（德瑞克·普莱斯）",
     "bookSlugs": [
       "b-1ad890d7"
-    ],
-    "topicCodes": [
-      "1.2"
-    ]
-  },
-  {
-    "slug": "a-28fdac09",
-    "name": "德瑞克·普莱斯; D·普赖斯",
-    "bookSlugs": [
-      "b-0e03a5bc"
     ],
     "topicCodes": [
       "1.2"
@@ -3811,16 +2896,7 @@
     "name": "Ernst Mayr（恩斯特·迈尔）",
     "bookSlugs": [
       "b-402ad48a",
-      "b-26eb4ce1"
-    ],
-    "topicCodes": [
-      "2.5"
-    ]
-  },
-  {
-    "slug": "a-945c7819",
-    "name": "Ernst Mayr（恩斯特·迈尔）",
-    "bookSlugs": [
+      "b-26eb4ce1",
       "b-6a61b2b6"
     ],
     "topicCodes": [
@@ -3864,38 +2940,9 @@
     "slug": "a-03308305",
     "name": "Gordon Allport（戈登·奥尔波特）",
     "bookSlugs": [
-      "b-45fcba22"
-    ],
-    "topicCodes": [
-      "8.1"
-    ]
-  },
-  {
-    "slug": "a-11d7c232",
-    "name": "Gordon W. Allport（戈登·奥尔波特）",
-    "bookSlugs": [
+      "b-45fcba22",
       "b-55f2d53e",
       "b-83d646c3"
-    ],
-    "topicCodes": [
-      "8.1"
-    ]
-  },
-  {
-    "slug": "a-92c7673a",
-    "name": "戈登·奥尔波特 Gordon W. Allport; Floyd H. Allport",
-    "bookSlugs": [
-      "b-e5fd83f9"
-    ],
-    "topicCodes": [
-      "8.1"
-    ]
-  },
-  {
-    "slug": "a-779cabbe",
-    "name": "戈登·奥尔波特 Gordon W. Allport; Richard I. Evans",
-    "bookSlugs": [
-      "b-1e052c1a"
     ],
     "topicCodes": [
       "8.1"
@@ -3912,54 +2959,15 @@
     ]
   },
   {
-    "slug": "a-17d032a4",
-    "name": "戴维.奥尔森 David H. Olson; Amy Olson-Sigg",
-    "bookSlugs": [
-      "b-7238c3da"
-    ],
-    "topicCodes": [
-      "7.2"
-    ]
-  },
-  {
-    "slug": "a-6b9e20e3",
-    "name": "戴维.奥尔森 David H. Olson; John DeFrain; Linda Skogrand",
-    "bookSlugs": [
-      "b-f59bce40"
-    ],
-    "topicCodes": [
-      "7.2"
-    ]
-  },
-  {
     "slug": "a-c03fe8e6",
     "name": "David M. Buss（戴维·巴斯）",
     "bookSlugs": [
       "b-1e2edea4",
-      "b-2e5a92a3"
-    ],
-    "topicCodes": [
-      "7.2"
-    ]
-  },
-  {
-    "slug": "a-08cfd8fe",
-    "name": "David M. Buss（戴维·巴斯）",
-    "bookSlugs": [
+      "b-2e5a92a3",
       "b-464da190"
     ],
     "topicCodes": [
       "7.2"
-    ]
-  },
-  {
-    "slug": "a-4361f90e",
-    "name": "戴维·麦克莱兰; David C. McClelland",
-    "bookSlugs": [
-      "b-05abaa51"
-    ],
-    "topicCodes": [
-      "6.2"
     ]
   },
   {
@@ -4018,36 +3026,6 @@
     ]
   },
   {
-    "slug": "a-98d8f9d0",
-    "name": "托马斯·罗斯 Thomas Roth; Meir H Kryger; William C Dement",
-    "bookSlugs": [
-      "b-0c94dfb0"
-    ],
-    "topicCodes": [
-      "9.2"
-    ]
-  },
-  {
-    "slug": "a-ddac145a",
-    "name": "摩诃婆罗多",
-    "bookSlugs": [
-      "b-3623cac4"
-    ],
-    "topicCodes": [
-      "0"
-    ]
-  },
-  {
-    "slug": "a-bd812d35",
-    "name": "Vincent O'Reilly et al.（文森特·奥赖利 等）",
-    "bookSlugs": [
-      "b-a950e6dc"
-    ],
-    "topicCodes": [
-      "6.3"
-    ]
-  },
-  {
     "slug": "a-f9f2e31d",
     "name": "G. Stanley Hall（斯坦利·霍尔）",
     "bookSlugs": [
@@ -4073,16 +3051,6 @@
     "bookSlugs": [
       "b-37ed094b",
       "b-1d013edf"
-    ],
-    "topicCodes": [
-      "3.3"
-    ]
-  },
-  {
-    "slug": "a-740bfb72",
-    "name": "斯塔夫里阿诺斯; 董书慧; 王昶",
-    "bookSlugs": [
-      "b-572bf3b3"
     ],
     "topicCodes": [
       "3.3"
@@ -4115,16 +3083,7 @@
       "b-74557cdf",
       "b-bfb29673",
       "b-018157e6",
-      "b-ce15a755"
-    ],
-    "topicCodes": [
-      "2.2"
-    ]
-  },
-  {
-    "slug": "a-ca854bbf",
-    "name": "Stephen Jay Gould（斯蒂芬·古尔德）",
-    "bookSlugs": [
+      "b-ce15a755",
       "b-21461925"
     ],
     "topicCodes": [
@@ -4135,16 +3094,7 @@
     "slug": "a-52543a83",
     "name": "Stephen Toulmin（斯蒂芬·图尔敏）",
     "bookSlugs": [
-      "b-83769d90"
-    ],
-    "topicCodes": [
-      "1.2"
-    ]
-  },
-  {
-    "slug": "a-ff3d4c91",
-    "name": "Stephen E.Toulmin（斯蒂芬·图尔敏）",
-    "bookSlugs": [
+      "b-83769d90",
       "b-5d6ec3a8",
       "b-84fa822b",
       "b-d5ceaf89"
@@ -4161,16 +3111,6 @@
     ],
     "topicCodes": [
       "1.2"
-    ]
-  },
-  {
-    "slug": "a-f95b38f9",
-    "name": "斯蒂芬·罗斯; 伦道夫·威斯特菲尔德; 乔丹",
-    "bookSlugs": [
-      "b-e7030eef"
-    ],
-    "topicCodes": [
-      "6.3"
     ]
   },
   {
@@ -4262,16 +3202,6 @@
     ]
   },
   {
-    "slug": "a-fbd0ff05",
-    "name": "本杰明·格雷厄姆; 戴维·多德",
-    "bookSlugs": [
-      "b-d8ccb7f2"
-    ],
-    "topicCodes": [
-      "6.3"
-    ]
-  },
-  {
     "slug": "a-95cc3cfe",
     "name": "朱传誉",
     "bookSlugs": [
@@ -4322,16 +3252,6 @@
     ]
   },
   {
-    "slug": "a-dc456da2",
-    "name": "朱迪亚·珀尔; 达纳·麦肯齐",
-    "bookSlugs": [
-      "b-31ecc2a5"
-    ],
-    "topicCodes": [
-      "4.4"
-    ]
-  },
-  {
     "slug": "a-a931ca71",
     "name": "Judith Butler（朱迪斯·巴特勒）",
     "bookSlugs": [
@@ -4363,16 +3283,6 @@
     ],
     "topicCodes": [
       "5.2"
-    ]
-  },
-  {
-    "slug": "a-dcfdfb30",
-    "name": "李白; 王琦  注",
-    "bookSlugs": [
-      "b-b5991fd1"
-    ],
-    "topicCodes": [
-      "8.5"
     ]
   },
   {
@@ -4452,16 +3362,6 @@
     ]
   },
   {
-    "slug": "a-bf415c76",
-    "name": "杰克·特劳特; 阿尔·里斯",
-    "bookSlugs": [
-      "b-bb643909"
-    ],
-    "topicCodes": [
-      "6.4"
-    ]
-  },
-  {
     "slug": "a-0be6045f",
     "name": "Jeffrey Meyers（杰弗里·迈耶斯）",
     "bookSlugs": [
@@ -4469,16 +3369,6 @@
     ],
     "topicCodes": [
       "8.5"
-    ]
-  },
-  {
-    "slug": "a-88e7fc93",
-    "name": "杰弗雷·马丁; 普雷斯顿·詹姆斯",
-    "bookSlugs": [
-      "b-c892db8b"
-    ],
-    "topicCodes": [
-      "2.3"
     ]
   },
   {
@@ -4591,26 +3481,6 @@
     ]
   },
   {
-    "slug": "a-896b6d29",
-    "name": "查尔斯·亨格瑞; 斯里坎特·达塔尔; 马达夫·拉詹",
-    "bookSlugs": [
-      "b-12e1de1c"
-    ],
-    "topicCodes": [
-      "6.3"
-    ]
-  },
-  {
-    "slug": "a-46014f5d",
-    "name": "查尔斯·亨格瑞; 格里·森登; 约翰·埃利奥特",
-    "bookSlugs": [
-      "b-f6be0ebd"
-    ],
-    "topicCodes": [
-      "6.3"
-    ]
-  },
-  {
     "slug": "a-e98eb57c",
     "name": "Charles Dickens（查尔斯·狄更斯）",
     "bookSlugs": [
@@ -4629,26 +3499,6 @@
     ],
     "topicCodes": [
       "1.3"
-    ]
-  },
-  {
-    "slug": "a-c3523621",
-    "name": "查尔斯·科尔宾 Charles B. Corbin; Charles B. Gancel",
-    "bookSlugs": [
-      "b-b8cda333"
-    ],
-    "topicCodes": [
-      "9.2"
-    ]
-  },
-  {
-    "slug": "a-bf57a556",
-    "name": "查尔斯·科尔宾; 盖伊·勒马叙里耶",
-    "bookSlugs": [
-      "b-5a0b01fe"
-    ],
-    "topicCodes": [
-      "9.2"
     ]
   },
   {
@@ -4691,16 +3541,7 @@
     "bookSlugs": [
       "b-cddfd716",
       "b-9aba8fb6",
-      "b-f3c0c23a"
-    ],
-    "topicCodes": [
-      "1.5"
-    ]
-  },
-  {
-    "slug": "a-f5bf66f1",
-    "name": "Genrich Altshuller（根里奇·阿奇舒勒）",
-    "bookSlugs": [
+      "b-f3c0c23a",
       "b-6dbb40f3"
     ],
     "topicCodes": [
@@ -4721,27 +3562,8 @@
     "slug": "a-1702a607",
     "name": "Gregory Bateson（格雷戈里-贝特森）",
     "bookSlugs": [
-      "b-d0b3700d"
-    ],
-    "topicCodes": [
-      "1.4"
-    ]
-  },
-  {
-    "slug": "a-9e694aea",
-    "name": "Gregory Bateson（格雷戈里.贝特森）",
-    "bookSlugs": [
-      "b-d05adb32"
-    ],
-    "topicCodes": [
-      "7.1"
-    ]
-  },
-  {
-    "slug": "a-c9d28668",
-    "name": "Gregory Bateson（格雷戈里·贝特森）",
-    "bookSlugs": [
-      "b-00b5e0f1",
+      "b-d0b3700d",
+      "b-d05adb32",
       "b-00b5e0f1"
     ],
     "topicCodes": [
@@ -4777,31 +3599,12 @@
     "bookSlugs": [
       "b-e76f0970",
       "b-25b023c1",
-      "b-ae76909d"
+      "b-ae76909d",
+      "b-97fe7fbb"
     ],
     "topicCodes": [
       "10.5",
       "3.1"
-    ]
-  },
-  {
-    "slug": "a-92ef77c9",
-    "name": "梁启超; 夏晓虹; 陆胤 校订",
-    "bookSlugs": [
-      "b-97fe7fbb"
-    ],
-    "topicCodes": [
-      "3.1"
-    ]
-  },
-  {
-    "slug": "a-c642bb91",
-    "name": "欧内斯特·内格尔 Ernest Nagel; 詹姆士·纽曼",
-    "bookSlugs": [
-      "b-2d0b743f"
-    ],
-    "topicCodes": [
-      "1.2"
     ]
   },
   {
@@ -4841,16 +3644,7 @@
     "name": "Erving Goffman（欧文·戈夫曼）",
     "bookSlugs": [
       "b-afbb7785",
-      "b-ff4a82f4"
-    ],
-    "topicCodes": [
-      "5.2"
-    ]
-  },
-  {
-    "slug": "a-052d8620",
-    "name": "Erving Goffman（欧文·戈夫曼）",
-    "bookSlugs": [
+      "b-ff4a82f4",
       "b-a02e02c5",
       "b-e64338d0"
     ],
@@ -4882,7 +3676,7 @@
   },
   {
     "slug": "a-6638853c",
-    "name": "段义孚, [美]",
+    "name": "Yi-Fu Tuan（段义孚）",
     "bookSlugs": [
       "b-33b38a88",
       "b-a8e05db3"
@@ -4965,16 +3759,6 @@
     ]
   },
   {
-    "slug": "a-2e00d004",
-    "name": "汤姆·柯科伍德 Tom Kirkwood; Caleb E. Finch",
-    "bookSlugs": [
-      "b-a6663a8f"
-    ],
-    "topicCodes": [
-      "7.5"
-    ]
-  },
-  {
     "slug": "a-be790166",
     "name": "Wong Young-tsu（汪荣祖）",
     "bookSlugs": [
@@ -4992,16 +3776,6 @@
     ],
     "topicCodes": [
       "6.5"
-    ]
-  },
-  {
-    "slug": "a-cf0a5996",
-    "name": "沃尔特.威利特 Walter C. Willett; Patrick J. Skerrett",
-    "bookSlugs": [
-      "b-310b5806"
-    ],
-    "topicCodes": [
-      "9.2"
     ]
   },
   {
@@ -5040,16 +3814,6 @@
     ]
   },
   {
-    "slug": "a-45ce64f0",
-    "name": "沈从文; 黄永玉 卓雅 插图",
-    "bookSlugs": [
-      "b-19eb3712"
-    ],
-    "topicCodes": [
-      "8.5"
-    ]
-  },
-  {
     "slug": "a-f5c39543",
     "name": "Rabindranath Tagore（泰戈尔）",
     "bookSlugs": [
@@ -5069,16 +3833,6 @@
     ],
     "topicCodes": [
       "1.2"
-    ]
-  },
-  {
-    "slug": "a-7121f327",
-    "name": "洪修平; 孙亦平",
-    "bookSlugs": [
-      "b-43ecfa54"
-    ],
-    "topicCodes": [
-      "10.3"
     ]
   },
   {
@@ -5102,29 +3856,10 @@
     ]
   },
   {
-    "slug": "a-5f6bb3e6",
-    "name": "爱德华. 德西  Edward L. Deci; 理查德•瑞安  Richard M. Ryan",
-    "bookSlugs": [
-      "b-015960af"
-    ],
-    "topicCodes": [
-      "8.3"
-    ]
-  },
-  {
     "slug": "a-d5452261",
     "name": "Edward Gibbon（爱德华·吉本）",
     "bookSlugs": [
-      "b-cbcae06f"
-    ],
-    "topicCodes": [
-      "3.5"
-    ]
-  },
-  {
-    "slug": "a-03f3d0ba",
-    "name": "Edward Gibbon（爱德华·吉本）",
-    "bookSlugs": [
+      "b-cbcae06f",
       "b-429d8414"
     ],
     "topicCodes": [
@@ -5143,16 +3878,6 @@
     ],
     "topicCodes": [
       "2.2"
-    ]
-  },
-  {
-    "slug": "a-e970b4aa",
-    "name": "爱德华·德西; 理查德·弗拉斯特",
-    "bookSlugs": [
-      "b-6d845047"
-    ],
-    "topicCodes": [
-      "8.3"
     ]
   },
   {
@@ -5283,40 +4008,11 @@
     ]
   },
   {
-    "slug": "a-42aa4e9d",
-    "name": "玛丽.安斯沃思 Mary D. Salter Ainsworth; John Bowlby; Margery Fry",
-    "bookSlugs": [
-      "b-0fedd0ae"
-    ],
-    "topicCodes": [
-      "7.3"
-    ]
-  },
-  {
-    "slug": "a-387d2643",
-    "name": "玛丽.安斯沃思 Mary D. Salter Ainsworth; Mary C. Blehar; Everett Waters; Sally N. Wall",
-    "bookSlugs": [
-      "b-3d43faea"
-    ],
-    "topicCodes": [
-      "7.3"
-    ]
-  },
-  {
     "slug": "a-471bac0c",
     "name": "Mary Douglas（玛丽·道格拉斯）",
     "bookSlugs": [
       "b-0815b472",
-      "b-e7235be8"
-    ],
-    "topicCodes": [
-      "5.5"
-    ]
-  },
-  {
-    "slug": "a-539e932d",
-    "name": "Mary Douglas（玛丽·道格拉斯）",
-    "bookSlugs": [
+      "b-e7235be8",
       "b-22df7a0f"
     ],
     "topicCodes": [
@@ -5358,16 +4054,6 @@
     "name": "Mara Selvini Palazzoli（玛拉·塞尔维尼-帕拉佐利）",
     "bookSlugs": [
       "b-51b811c6"
-    ],
-    "topicCodes": [
-      "7.4"
-    ]
-  },
-  {
-    "slug": "a-0d67894f",
-    "name": "玛拉.塞尔维尼.帕拉佐利 Mara Selvini Palazzoli; Stefano Cirillo; Matteo Selvini; Anna Maria Sorrentino",
-    "bookSlugs": [
-      "b-fea0ba02"
     ],
     "topicCodes": [
       "7.4"
@@ -5435,16 +4121,6 @@
     ],
     "topicCodes": [
       "7.1"
-    ]
-  },
-  {
-    "slug": "a-71804e64",
-    "name": "理查德·萨默斯; 雅克·巴伯",
-    "bookSlugs": [
-      "b-710b1717"
-    ],
-    "topicCodes": [
-      "9.3"
     ]
   },
   {
@@ -5531,16 +4207,6 @@
     ]
   },
   {
-    "slug": "a-de65aa6d",
-    "name": "田敏,徐杰舜 主编",
-    "bookSlugs": [
-      "b-33bb8a60"
-    ],
-    "topicCodes": [
-      "10.5"
-    ]
-  },
-  {
     "slug": "a-63410d7c",
     "name": "Pierre Bourdieu（皮埃尔·布尔迪厄）",
     "bookSlugs": [
@@ -5548,26 +4214,6 @@
       "b-760bef20",
       "b-3ca2a707",
       "b-30c052f7"
-    ],
-    "topicCodes": [
-      "4.3"
-    ]
-  },
-  {
-    "slug": "a-3828b79e",
-    "name": "皮埃尔·布尔迪厄; J.C.帕斯隆",
-    "bookSlugs": [
-      "b-351ae235"
-    ],
-    "topicCodes": [
-      "4.3"
-    ]
-  },
-  {
-    "slug": "a-0c2d0194",
-    "name": "皮埃尔·布尔迪厄; 林铮",
-    "bookSlugs": [
-      "b-89c3b650"
     ],
     "topicCodes": [
       "4.3"
@@ -5587,46 +4233,6 @@
     ]
   },
   {
-    "slug": "a-28aa0806",
-    "name": "皮埃尔·布迪厄; J.-C.帕斯隆",
-    "bookSlugs": [
-      "b-fc3e9af3"
-    ],
-    "topicCodes": [
-      "5.2"
-    ]
-  },
-  {
-    "slug": "a-5aa28825",
-    "name": "皮埃尔·布迪厄; 华康德",
-    "bookSlugs": [
-      "b-9e1dfdbd"
-    ],
-    "topicCodes": [
-      "5.2"
-    ]
-  },
-  {
-    "slug": "a-7659905b",
-    "name": "皮埃尔·布迪厄; 林铮",
-    "bookSlugs": [
-      "b-2016539d"
-    ],
-    "topicCodes": [
-      "5.2"
-    ]
-  },
-  {
-    "slug": "a-c9c1480b",
-    "name": "皮埃尔·特里奥姆夫; 高毅 审校",
-    "bookSlugs": [
-      "b-9a7b34cc"
-    ],
-    "topicCodes": [
-      "3.5"
-    ]
-  },
-  {
     "slug": "a-e8899465",
     "name": "Qu Tongzu（瞿同祖）",
     "bookSlugs": [
@@ -5634,19 +4240,6 @@
     ],
     "topicCodes": [
       "4.2"
-    ]
-  },
-  {
-    "slug": "a-302e31c4",
-    "name": "瞿海源 主编",
-    "bookSlugs": [
-      "b-bd0467e6",
-      "b-b21f61da",
-      "b-1cc8f779",
-      "b-bed81db3"
-    ],
-    "topicCodes": [
-      "10.5"
     ]
   },
   {
@@ -5691,36 +4284,6 @@
     "name": "Milton Friedman（米尔顿·弗里德曼）",
     "bookSlugs": [
       "b-e7fa209b"
-    ],
-    "topicCodes": [
-      "5.3"
-    ]
-  },
-  {
-    "slug": "a-11509565",
-    "name": "米尔顿·弗里德曼; 安娜·J. 施瓦茨",
-    "bookSlugs": [
-      "b-d8b83725"
-    ],
-    "topicCodes": [
-      "5.3"
-    ]
-  },
-  {
-    "slug": "a-6866a551",
-    "name": "米尔顿·弗里德曼; 罗丝·弗里德曼",
-    "bookSlugs": [
-      "b-97e058f2"
-    ],
-    "topicCodes": [
-      "5.3"
-    ]
-  },
-  {
-    "slug": "a-99c289b2",
-    "name": "米尔顿·弗里德曼; 罗斯·弗里德曼",
-    "bookSlugs": [
-      "b-8f213ea6"
     ],
     "topicCodes": [
       "5.3"
@@ -5803,16 +4366,6 @@
     ]
   },
   {
-    "slug": "a-c6af5057",
-    "name": "约翰·哈蒂; 格雷戈里·耶茨",
-    "bookSlugs": [
-      "b-0f23c66d"
-    ],
-    "topicCodes": [
-      "1.2"
-    ]
-  },
-  {
     "slug": "a-fc529ac0",
     "name": "John Yudkin（约翰·尤德金）",
     "bookSlugs": [
@@ -5831,37 +4384,6 @@
     ],
     "topicCodes": [
       "10.4"
-    ]
-  },
-  {
-    "slug": "a-0bfe8cca",
-    "name": "约翰·弗拉维尔; P·H·米勒; S·A·米勒",
-    "bookSlugs": [
-      "b-79e4eb27"
-    ],
-    "topicCodes": [
-      "7.3"
-    ]
-  },
-  {
-    "slug": "a-867c9e35",
-    "name": "约翰·戈特曼; 娜恩·西尔弗",
-    "bookSlugs": [
-      "b-d43ccdf3",
-      "b-1f2633ee"
-    ],
-    "topicCodes": [
-      "7.2"
-    ]
-  },
-  {
-    "slug": "a-586c607b",
-    "name": "约翰·戈特曼; 戈特曼, 朱莉·施瓦茨; 艾布拉姆斯, 道格; 艾布拉姆斯, 瑞秋·卡尔顿",
-    "bookSlugs": [
-      "b-89e91a83"
-    ],
-    "topicCodes": [
-      "7.2"
     ]
   },
   {
@@ -5961,16 +4483,7 @@
     "slug": "a-4d45bef1",
     "name": "Victor Regnier（维克托·雷格涅尔）",
     "bookSlugs": [
-      "b-896908ca"
-    ],
-    "topicCodes": [
-      "7.5"
-    ]
-  },
-  {
-    "slug": "a-ef679698",
-    "name": "Victor Regnier（维克托·雷格涅尔）",
-    "bookSlugs": [
+      "b-896908ca",
       "b-6ded664c"
     ],
     "topicCodes": [
@@ -5983,16 +4496,6 @@
     "bookSlugs": [
       "b-5e30b62d",
       "b-7ab09c07"
-    ],
-    "topicCodes": [
-      "7.4"
-    ]
-  },
-  {
-    "slug": "a-b9e49758",
-    "name": "维吉尼亚·萨提亚; 米凯莱·鲍德温",
-    "bookSlugs": [
-      "b-efa303fe"
     ],
     "topicCodes": [
       "7.4"
@@ -6032,22 +4535,12 @@
   },
   {
     "slug": "a-2928c759",
-    "name": "Roy Porter (ed.)（罗伊·波特 主编）",
+    "name": "Roy Porter（罗伊·波特）",
     "bookSlugs": [
       "b-0f768817"
     ],
     "topicCodes": [
       "9.5"
-    ]
-  },
-  {
-    "slug": "a-43a4a642",
-    "name": "Roberta M. Gilbert（罗伯塔·吉尔伯特）",
-    "bookSlugs": [
-      "b-ff1f9b6b"
-    ],
-    "topicCodes": [
-      "7.1"
     ]
   },
   {
@@ -6068,56 +4561,6 @@
     ],
     "topicCodes": [
       "6.2"
-    ]
-  },
-  {
-    "slug": "a-312bcc3e",
-    "name": "罗伯特·卡普兰; 大卫·诺顿",
-    "bookSlugs": [
-      "b-25bb4df6"
-    ],
-    "topicCodes": [
-      "6.2"
-    ]
-  },
-  {
-    "slug": "a-810e7a4f",
-    "name": "罗伯特·卡普兰; 戴维·诺顿",
-    "bookSlugs": [
-      "b-a378b485"
-    ],
-    "topicCodes": [
-      "6.2"
-    ]
-  },
-  {
-    "slug": "a-b8ada162",
-    "name": "罗伯特·卡普兰; 托马斯·约翰逊",
-    "bookSlugs": [
-      "b-1e4f6240"
-    ],
-    "topicCodes": [
-      "6.3"
-    ]
-  },
-  {
-    "slug": "a-a6357932",
-    "name": "罗伯特·安东尼; 维杰伊·戈文达拉扬",
-    "bookSlugs": [
-      "b-207de9f8"
-    ],
-    "topicCodes": [
-      "6.3"
-    ]
-  },
-  {
-    "slug": "a-d2fd576b",
-    "name": "罗伯特·安东尼; 莱斯利·布莱特纳",
-    "bookSlugs": [
-      "b-62539ee3"
-    ],
-    "topicCodes": [
-      "6.3"
     ]
   },
   {
@@ -6146,16 +4589,6 @@
     "name": "Robert Plomin（罗伯特·普罗明）",
     "bookSlugs": [
       "b-290c0736"
-    ],
-    "topicCodes": [
-      "9.1"
-    ]
-  },
-  {
-    "slug": "a-d4c2f7dc",
-    "name": "罗伯特·普罗明; 瓦莱丽·诺皮克; 杰纳·奈德希瑟; 约翰·德弗里斯",
-    "bookSlugs": [
-      "b-0d5a0e35"
     ],
     "topicCodes": [
       "9.1"
@@ -6240,16 +4673,6 @@
     "bookSlugs": [
       "b-8da4e478",
       "b-db4cc5b7"
-    ],
-    "topicCodes": [
-      "2.2"
-    ]
-  },
-  {
-    "slug": "a-159e9fe1",
-    "name": "罗宾·邓巴; 路易丝·巴雷特; 约翰·利塞特",
-    "bookSlugs": [
-      "b-8560bb43"
     ],
     "topicCodes": [
       "2.2"
@@ -6374,16 +4797,6 @@
     ]
   },
   {
-    "slug": "a-adad39ca",
-    "name": "胡哲; 茂著",
-    "bookSlugs": [
-      "b-357f8918"
-    ],
-    "topicCodes": [
-      "3.1"
-    ]
-  },
-  {
     "slug": "a-4b453540",
     "name": "Sherwin Nuland（舍温·努兰）",
     "bookSlugs": [
@@ -6392,16 +4805,6 @@
     ],
     "topicCodes": [
       "9.5"
-    ]
-  },
-  {
-    "slug": "a-65c3fd11",
-    "name": "艾·里斯; 杰克·特劳特",
-    "bookSlugs": [
-      "b-05f17bbc"
-    ],
-    "topicCodes": [
-      "6.4"
     ]
   },
   {
@@ -6448,16 +4851,6 @@
     ]
   },
   {
-    "slug": "a-431b9133",
-    "name": "艾莉森·高普尼克; 安德鲁·梅尔佐夫; 帕特里夏·库尔",
-    "bookSlugs": [
-      "b-b55fbf7d"
-    ],
-    "topicCodes": [
-      "7.3"
-    ]
-  },
-  {
     "slug": "a-837395e3",
     "name": "Isaac Newton（艾萨克·牛顿）",
     "bookSlugs": [
@@ -6484,16 +4877,7 @@
     "name": "Sue Johnson（苏·约翰逊）",
     "bookSlugs": [
       "b-b57017da",
-      "b-72bd8bf9"
-    ],
-    "topicCodes": [
-      "7.4"
-    ]
-  },
-  {
-    "slug": "a-80cf16e3",
-    "name": "Sue Johnson（苏·约翰逊）",
-    "bookSlugs": [
+      "b-72bd8bf9",
       "b-36e1ed89"
     ],
     "topicCodes": [
@@ -6505,16 +4889,6 @@
     "name": "Susan T. Fiske（苏珊·菲斯克）",
     "bookSlugs": [
       "b-0bd51c01"
-    ],
-    "topicCodes": [
-      "5.2"
-    ]
-  },
-  {
-    "slug": "a-918c22c4",
-    "name": "苏珊·菲斯克; 谢利·泰勒",
-    "bookSlugs": [
-      "b-79543b9b"
     ],
     "topicCodes": [
       "5.2"
@@ -6536,16 +4910,6 @@
     "bookSlugs": [
       "b-07790bee",
       "b-0834faa8"
-    ],
-    "topicCodes": [
-      "8.3"
-    ]
-  },
-  {
-    "slug": "a-407fbfc9",
-    "name": "莉莎·费德曼·巴瑞特 Lisa Feldman Barret; Jeannette M. Haviland-Jones; Michael Lewis",
-    "bookSlugs": [
-      "b-32ab14f8"
     ],
     "topicCodes": [
       "8.3"
@@ -6592,16 +4956,6 @@
     ]
   },
   {
-    "slug": "a-3f2917d9",
-    "name": "莱斯特·卢博斯基 Lester Luborsky; Paul Crits-Christoph",
-    "bookSlugs": [
-      "b-b8a9d856"
-    ],
-    "topicCodes": [
-      "9.3"
-    ]
-  },
-  {
     "slug": "a-7bb02a26",
     "name": "Rainer Stach（莱纳·施塔赫）",
     "bookSlugs": [
@@ -6634,40 +4988,10 @@
     ]
   },
   {
-    "slug": "a-3f61d37c",
-    "name": "菲利普·津巴多; 罗伯特·约翰逊; 薇薇安·麦卡恩",
-    "bookSlugs": [
-      "b-f6c835fc"
-    ],
-    "topicCodes": [
-      "5.2"
-    ]
-  },
-  {
-    "slug": "a-31c81b49",
-    "name": "菲利普·津巴多; 迈克尔·利佩",
-    "bookSlugs": [
-      "b-8ab01c65"
-    ],
-    "topicCodes": [
-      "5.2"
-    ]
-  },
-  {
     "slug": "a-0bf1ad76",
     "name": "Philip Kotler（菲利普·科特勒）",
     "bookSlugs": [
       "b-90244c1e"
-    ],
-    "topicCodes": [
-      "6.4"
-    ]
-  },
-  {
-    "slug": "a-1ce12acf",
-    "name": "菲利普·科特勒; 凯文·莱恩·凯勒; 亚历山大·切尔内夫",
-    "bookSlugs": [
-      "b-fe3f136a"
     ],
     "topicCodes": [
       "6.4"
@@ -6714,51 +5038,10 @@
     ]
   },
   {
-    "slug": "a-a9565854",
-    "name": "菲洛梅娜·布鲁伊森 Philomena M. Bluyssen; Ricardo Bayon; Katherine Hamilton; Amanda Hawn",
-    "bookSlugs": [
-      "b-16933e2f"
-    ],
-    "topicCodes": [
-      "9.4"
-    ]
-  },
-  {
-    "slug": "a-632fcb4b",
-    "name": "萧萐父; 许苏民",
-    "bookSlugs": [
-      "b-e6275eb1"
-    ],
-    "topicCodes": [
-      "3.1"
-    ]
-  },
-  {
     "slug": "a-de052a6d",
     "name": "Salvador Minuchin（萨尔瓦多·米纽庆）",
     "bookSlugs": [
       "b-72c07f22"
-    ],
-    "topicCodes": [
-      "7.4"
-    ]
-  },
-  {
-    "slug": "a-549a31ea",
-    "name": "萨尔瓦多·米纽庆; 迈克尔·雷特; 夏尔曼·博尔达",
-    "bookSlugs": [
-      "b-b174b2fa"
-    ],
-    "topicCodes": [
-      "7.4"
-    ]
-  },
-  {
-    "slug": "a-7717bfcc",
-    "name": "萨尔瓦多·米纽庆; 麦克·尼克",
-    "bookSlugs": [
-      "b-a00c8091",
-      "b-223cfa5b"
     ],
     "topicCodes": [
       "7.4"
@@ -6861,26 +5144,6 @@
     ]
   },
   {
-    "slug": "a-0dc4127b",
-    "name": "詹姆斯.伯伦 James E. Birren; K. Warner Schaie",
-    "bookSlugs": [
-      "b-d02383e1"
-    ],
-    "topicCodes": [
-      "7.5"
-    ]
-  },
-  {
-    "slug": "a-f3b8b373",
-    "name": "詹姆斯.伯伦 James E. Birren; Linda Feldman",
-    "bookSlugs": [
-      "b-64160573"
-    ],
-    "topicCodes": [
-      "7.5"
-    ]
-  },
-  {
     "slug": "a-aa6c54e0",
     "name": "James J. Gibson（詹姆斯.吉布森）",
     "bookSlugs": [
@@ -6901,52 +5164,12 @@
     ]
   },
   {
-    "slug": "a-0d9ad209",
-    "name": "James D. Watson（詹姆斯·沃森）",
-    "bookSlugs": [
-      "b-d5a8963c"
-    ],
-    "topicCodes": [
-      "2.5"
-    ]
-  },
-  {
-    "slug": "a-dacc0a5c",
-    "name": "詹姆斯·沃森; 安德鲁·贝瑞",
-    "bookSlugs": [
-      "b-066ba737"
-    ],
-    "topicCodes": [
-      "2.5"
-    ]
-  },
-  {
     "slug": "a-5e8bd45c",
     "name": "James G. March（詹姆斯·马奇）",
     "bookSlugs": [
       "b-44196840",
       "b-bb4b7957",
       "b-8f9ce9c3"
-    ],
-    "topicCodes": [
-      "6.1"
-    ]
-  },
-  {
-    "slug": "a-1220f6b0",
-    "name": "詹姆斯·马奇; 蒂里·韦尔",
-    "bookSlugs": [
-      "b-388741e6"
-    ],
-    "topicCodes": [
-      "6.1"
-    ]
-  },
-  {
-    "slug": "a-2636b86f",
-    "name": "詹姆斯·马奇; 赫伯特·西蒙",
-    "bookSlugs": [
-      "b-9d4435b1"
     ],
     "topicCodes": [
       "6.1"
@@ -7017,16 +5240,7 @@
     "name": "许倬云",
     "bookSlugs": [
       "b-32e50926",
-      "b-60c9227d"
-    ],
-    "topicCodes": [
-      "3.2"
-    ]
-  },
-  {
-    "slug": "a-62306705",
-    "name": "许倬云; 李怀宇",
-    "bookSlugs": [
+      "b-60c9227d",
       "b-3831c08b"
     ],
     "topicCodes": [
@@ -7038,16 +5252,6 @@
     "name": "Noam Chomsky（诺姆·乔姆斯基）",
     "bookSlugs": [
       "b-d8cb1903"
-    ],
-    "topicCodes": [
-      "8.4"
-    ]
-  },
-  {
-    "slug": "a-3ecec9de",
-    "name": "诺姆·乔姆斯基; 周流溪 审订",
-    "bookSlugs": [
-      "b-26ff2ff6"
     ],
     "topicCodes": [
       "8.4"
@@ -7074,16 +5278,6 @@
     ]
   },
   {
-    "slug": "a-0c02188b",
-    "name": "费·弗兰赛拉; 佩吉·道尔顿",
-    "bookSlugs": [
-      "b-c7966f5f"
-    ],
-    "topicCodes": [
-      "8.1"
-    ]
-  },
-  {
     "slug": "a-530156f6",
     "name": "费孝通",
     "bookSlugs": [
@@ -7106,16 +5300,6 @@
     "topicCodes": [
       "3.1",
       "3.5"
-    ]
-  },
-  {
-    "slug": "a-1d6c8803",
-    "name": "费尔南·布罗代尔; 张文英 译; 王明毅 译",
-    "bookSlugs": [
-      "b-2669f34d"
-    ],
-    "topicCodes": [
-      "3.3"
     ]
   },
   {
@@ -7295,51 +5479,12 @@
     ]
   },
   {
-    "slug": "a-9d51e44c",
-    "name": "迈克尔·怀特; 戴维·爱普斯顿",
-    "bookSlugs": [
-      "b-90af9bda"
-    ],
-    "topicCodes": [
-      "7.4"
-    ]
-  },
-  {
-    "slug": "a-a51df41a",
-    "name": "迈克尔·怀特; 约翰·格里宾",
-    "bookSlugs": [
-      "b-a1a28d99"
-    ],
-    "topicCodes": [
-      "2.3"
-    ]
-  },
-  {
-    "slug": "a-165fe5c4",
-    "name": "迈克尔·怀特; 艾莉丝·摩根",
-    "bookSlugs": [
-      "b-335b614c"
-    ],
-    "topicCodes": [
-      "7.4"
-    ]
-  },
-  {
     "slug": "a-1fd928b0",
     "name": "Michael Tomasello（迈克尔·托马塞洛）",
     "bookSlugs": [
       "b-4f19c896",
       "b-fa0b8e0e",
-      "b-25c32d3e"
-    ],
-    "topicCodes": [
-      "7.3"
-    ]
-  },
-  {
-    "slug": "a-25c886de",
-    "name": "Michael Tomasello（迈克尔·托马塞洛）",
-    "bookSlugs": [
+      "b-25c32d3e",
       "b-64535477"
     ],
     "topicCodes": [
@@ -7376,16 +5521,6 @@
     "bookSlugs": [
       "b-864a53dc",
       "b-aec3dc5c"
-    ],
-    "topicCodes": [
-      "8.2"
-    ]
-  },
-  {
-    "slug": "a-280443c3",
-    "name": "迈克尔·波斯纳; 玛丽·罗特巴特",
-    "bookSlugs": [
-      "b-500b9006"
     ],
     "topicCodes": [
       "8.2"
@@ -7437,16 +5572,6 @@
     ]
   },
   {
-    "slug": "a-05155d86",
-    "name": "道格拉斯·诺斯; 约翰·约瑟夫·瓦利斯; 巴里·R.韦格斯特",
-    "bookSlugs": [
-      "b-22fe6e3e"
-    ],
-    "topicCodes": [
-      "5.3"
-    ]
-  },
-  {
     "slug": "a-200d0d35",
     "name": "邓广铭",
     "bookSlugs": [
@@ -7465,27 +5590,6 @@
     ],
     "topicCodes": [
       "2.2"
-    ]
-  },
-  {
-    "slug": "a-3d07836e",
-    "name": "野中郁次郎; 竹内弘高",
-    "bookSlugs": [
-      "b-9a3ee088",
-      "b-61b04bc7"
-    ],
-    "topicCodes": [
-      "1.5"
-    ]
-  },
-  {
-    "slug": "a-cdf642cd",
-    "name": "野中郁次郎; 胜见明",
-    "bookSlugs": [
-      "b-ffe22a1c"
-    ],
-    "topicCodes": [
-      "1.5"
     ]
   },
   {
@@ -7522,36 +5626,6 @@
       "10.2",
       "3.2",
       "3.4"
-    ]
-  },
-  {
-    "slug": "a-5b7d3c35",
-    "name": "阿伦·贝克; 丹尼丝·戴维斯; 阿瑟·弗里曼",
-    "bookSlugs": [
-      "b-463faa6f"
-    ],
-    "topicCodes": [
-      "9.3"
-    ]
-  },
-  {
-    "slug": "a-a1ad1b0e",
-    "name": "阿伦·贝克; 大卫·克拉克",
-    "bookSlugs": [
-      "b-aa872183"
-    ],
-    "topicCodes": [
-      "9.3"
-    ]
-  },
-  {
-    "slug": "a-d87694fa",
-    "name": "阿伦·贝克; 布拉德·奥尔福德",
-    "bookSlugs": [
-      "b-bedf738a"
-    ],
-    "topicCodes": [
-      "9.3"
     ]
   },
   {
@@ -7592,26 +5666,7 @@
     "name": "Albert Ellis（阿尔伯特·艾利斯）",
     "bookSlugs": [
       "b-f9f51e1d",
-      "b-69464ab0"
-    ],
-    "topicCodes": [
-      "9.3"
-    ]
-  },
-  {
-    "slug": "a-2545e7f9",
-    "name": "阿尔伯特·艾利斯; 罗伯特·哈珀",
-    "bookSlugs": [
-      "b-e109a86c"
-    ],
-    "topicCodes": [
-      "9.3"
-    ]
-  },
-  {
-    "slug": "a-aa214972",
-    "name": "Albert Ellis（阿尔伯特·艾利斯）",
-    "bookSlugs": [
+      "b-69464ab0",
       "b-cf359766"
     ],
     "topicCodes": [
@@ -7745,38 +5800,8 @@
     ]
   },
   {
-    "slug": "a-a96f8559",
-    "name": "陈铁民 校注",
-    "bookSlugs": [
-      "b-5b1da6a5"
-    ],
-    "topicCodes": [
-      "8.5"
-    ]
-  },
-  {
-    "slug": "a-5b7d86b0",
-    "name": "陈鼓应; 白奚",
-    "bookSlugs": [
-      "b-8fe58c67"
-    ],
-    "topicCodes": [
-      "10.3"
-    ]
-  },
-  {
-    "slug": "a-1fc7d46b",
-    "name": "陶渊明; 陶澍 集注; 龚斌 点校",
-    "bookSlugs": [
-      "b-5d786ef4"
-    ],
-    "topicCodes": [
-      "8.5"
-    ]
-  },
-  {
     "slug": "a-153e8030",
-    "name": "Jacob Levy Moreno（雅各布.莫雷诺）",
+    "name": "Jacob Levy Moreno（雅各布·莫雷诺）",
     "bookSlugs": [
       "b-7ef37f72"
     ],
@@ -7805,41 +5830,11 @@
     ]
   },
   {
-    "slug": "a-2fffb913",
-    "name": "集体作品",
-    "bookSlugs": [
-      "b-d165a2c4",
-      "b-08c499cf"
-    ],
-    "topicCodes": [
-      "0"
-    ]
-  },
-  {
     "slug": "a-164c709c",
     "name": "Rem Koolhaas（雷姆·库哈斯）",
     "bookSlugs": [
-      "b-d325fc13"
-    ],
-    "topicCodes": [
-      "4.5"
-    ]
-  },
-  {
-    "slug": "a-90b5254f",
-    "name": "Rem Koolhaas（雷姆·库哈斯）",
-    "bookSlugs": [
+      "b-d325fc13",
       "b-92c40f37"
-    ],
-    "topicCodes": [
-      "4.5"
-    ]
-  },
-  {
-    "slug": "a-99104b0f",
-    "name": "雷姆·库哈斯 Rem Koolhaas; Bruce Mau; Hans Werlemann; Jennifer Sigler",
-    "bookSlugs": [
-      "b-09f51450"
     ],
     "topicCodes": [
       "4.5"
@@ -7879,16 +5874,6 @@
     ]
   },
   {
-    "slug": "a-ed49beba",
-    "name": "霍华德.弗里德曼 Howard S. Friedman; Leslie R. Martin",
-    "bookSlugs": [
-      "b-bec8dbbe"
-    ],
-    "topicCodes": [
-      "7.5"
-    ]
-  },
-  {
     "slug": "a-4a9ac9e4",
     "name": "Howard Kirschenbaum（霍华德·基尔申鲍姆）",
     "bookSlugs": [
@@ -7906,16 +5891,6 @@
     ],
     "topicCodes": [
       "9.3"
-    ]
-  },
-  {
-    "slug": "a-51174fda",
-    "name": "霍华德·艾兰; 迈克尔·詹宁斯",
-    "bookSlugs": [
-      "b-54c55128"
-    ],
-    "topicCodes": [
-      "8.5"
     ]
   },
   {
@@ -8076,16 +6051,6 @@
     ]
   },
   {
-    "slug": "a-d1291e8a",
-    "name": "Malwine Hussel et al.（马尔维娜·胡塞尔 等）",
-    "bookSlugs": [
-      "b-955a0687"
-    ],
-    "topicCodes": [
-      "1.1"
-    ]
-  },
-  {
     "slug": "a-926a6dba",
     "name": "Marvin Bower（马文·鲍尔）",
     "bookSlugs": [
@@ -8141,30 +6106,10 @@
     ]
   },
   {
-    "slug": "a-8de71d3d",
-    "name": "鲁迅; 丰子恺 绘",
-    "bookSlugs": [
-      "b-b7d7ca74"
-    ],
-    "topicCodes": [
-      "8.5"
-    ]
-  },
-  {
     "slug": "a-0485060b",
     "name": "F. Max Müller（麦克斯·缪勒）",
     "bookSlugs": [
       "b-fbbc62a1"
-    ],
-    "topicCodes": [
-      "10.4"
-    ]
-  },
-  {
-    "slug": "a-8e771382",
-    "name": "麦克斯·缪勒 F. Max Müller; Georgina Adelaide Grenfell Muller",
-    "bookSlugs": [
-      "b-c96e57dd"
     ],
     "topicCodes": [
       "10.4"

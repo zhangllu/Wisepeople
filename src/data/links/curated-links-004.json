@@ -370,6 +370,16 @@
       "label": "Nobel Prize Page",
       "url": "https://www.nobelprize.org/prizes/economic-sciences/1970/samuelson/facts/",
       "description": "诺贝尔经济学奖官网 — 萨缪尔森自传与学术贡献"
+    },
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Paul_Samuelson",
+      "description": "完整的生平与核心思想介绍"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=%E4%BF%9D%E7%BD%97%C2%B7%E8%90%A8%E7%BC%AA%E5%B0%94%E6%A3%AE",
+      "description": "学术论文与引用数据"
     }
   ],
   "a-e623c35a": [
@@ -460,28 +470,6 @@
       "label": "Google Scholar",
       "url": "https://scholar.google.com/scholar?q=Paul+Watzlawick",
       "description": "学术论文与引用数据"
-    }
-  ],
-  "a-9187318e": [
-    {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Paul_Samuelson",
-      "description": "完整的生平与核心思想介绍"
-    },
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/scholar?q=%E4%BF%9D%E7%BD%97%C2%B7%E8%90%A8%E7%BC%AA%E5%B0%94%E6%A3%AE",
-      "description": "学术论文与引用数据"
-    },
-    {
-      "label": "Britannica",
-      "url": "https://www.britannica.com/biography/Paul-Samuelson",
-      "description": "权威百科全书的详细介绍"
-    },
-    {
-      "label": "Nobel Prize Page",
-      "url": "https://www.nobelprize.org/prizes/economic-sciences/1970/samuelson/facts/",
-      "description": "诺贝尔经济学奖官网 — 萨缪尔森自传与学术贡献"
     }
   ],
   "a-a32411bf": [

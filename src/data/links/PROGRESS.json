@@ -1,5 +1,5 @@
 {
-  "total_authors": 776,
+  "total_authors": 568,
   "batches": [
     {
       "batch": 1,
@@ -321,7 +321,7 @@
       "date": "2026-05-20",
       "range": "",
       "count": 48,
-      "status": "done",
+      "status": "removed",
       "authors": [
         "Anita Burdman Feferman; Solomon Feferman",
         "Arthur Donovan; Knight, David",
@@ -371,15 +371,16 @@
         "唐纳德·高斯; 杰拉尔德·温伯格",
         "圣地亚哥·拉蒙-卡哈尔; 傅贺",
         "埃德加·沙因; 彼得·沙因"
-      ]
+      ],
+      "note": "Entries were co-author/non-person entries, removed in cleanup"
     }
   ],
   "summary": {
-    "done": 776,
+    "done": 568,
     "remaining": 0,
     "progress": "100.0%"
   },
-  "links_curated": 776,
+  "links_curated": 568,
   "total_remaining": 0,
   "progress": "100.0%"
 }
