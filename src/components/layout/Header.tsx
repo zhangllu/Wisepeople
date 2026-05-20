@@ -22,7 +22,7 @@ export function Header() {
             智者库
           </Link>
           <Link href={ROUTES.daily} className="text-muted-foreground hover:text-foreground transition-colors">
-            每日遇见
+            遇见智者
           </Link>
           <Link href={ROUTES.questions} className="text-muted-foreground hover:text-foreground transition-colors">
             十大问题

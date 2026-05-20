@@ -80,7 +80,7 @@ export default function DailyPage() {
       <div className="mb-8">
         <p className="text-sm text-muted-foreground mb-1">{today.date}</p>
         <h1 className="text-3xl font-bold tracking-tight">
-          每日遇见 · 第 {today.day} 天
+          遇见智者 · 第 {today.day} 天
         </h1>
         <p className="text-sm text-muted-foreground mt-2">
           今日来自 {persons.map((p: any) => p.questionTitle).join("、")} 领域的三位智者

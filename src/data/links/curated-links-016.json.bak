@@ -1,0 +1,456 @@
+{
+  "_meta": {
+    "batch": 16,
+    "file": "curated-links-016.json",
+    "date": "2026-05-20",
+    "range": "剩余合著条目（第二批）",
+    "count": 48,
+    "status": "done",
+    "authors": [
+      "埃蒂纳·温格; 让·莱夫",
+      "埃里克·坎德尔; 詹姆斯·施瓦茨; 托马斯·杰塞尔; 史蒂文·西格尔鲍姆; A. J.赫兹佩思",
+      "基思·斯坦诺维奇; 阳志平 审校",
+      "夏丏尊; 蔡冠洛",
+      "夏志清; 刘绍铭 校订",
+      "夏目镜子; 松冈让 整理",
+      "大前研一 等",
+      "大卫·梅斯特; 查理·格林; 罗伯特·加弗德",
+      "奥德姆; 巴雷特",
+      "威廉·麦克尼尔; 郭方 李永斌 译校",
+      "山姆·沃尔顿; 约翰·休伊",
+      "康·帕乌斯托夫斯基; 王志耕",
+      "弗朗西斯·福山; 孟凡礼 校",
+      "张谷; 王缉国",
+      "彼得·亚伯拉罕; 乔纳森·斯普拉特; 马里奥·卢卡斯; 阿尔伯特-尼尔斯·万·斯库尔",
+      "彼得·伯格; 托马斯·卢克曼",
+      "彼得·福纳吉; 乔恩·艾伦; 安东尼·贝特曼",
+      "彼得·福纳吉; 安东尼·贝特曼",
+      "彼得·蒂尔; 布莱克·马斯特斯",
+      "彼特.格尔维茨 Peter M. Gollwitzer; John A. Bargh",
+      "德瑞克·普莱斯; D·普赖斯",
+      "戈登·奥尔波特 Gordon W. Allport; Floyd H. Allport",
+      "戈登·奥尔波特 Gordon W. Allport; Richard I. Evans",
+      "戴维.奥尔森 David H. Olson; Amy Olson-Sigg",
+      "戴维.奥尔森 David H. Olson; John DeFrain; Linda Skogrand",
+      "戴维·麦克莱兰; David C. McClelland",
+      "托马斯·罗斯 Thomas Roth; Meir H Kryger; William C Dement",
+      "Vincent O'Reilly et al.（文森特·奥赖利 等）",
+      "斯塔夫里阿诺斯; 董书慧; 王昶",
+      "斯蒂芬·罗斯; 伦道夫·威斯特菲尔德; 乔丹",
+      "本杰明·格雷厄姆; 戴维·多德",
+      "朱迪亚·珀尔; 达纳·麦肯齐",
+      "李白; 王琦  注",
+      "杰克·特劳特; 阿尔·里斯",
+      "杰弗雷·马丁; 普雷斯顿·詹姆斯",
+      "查尔斯·亨格瑞; 斯里坎特·达塔尔; 马达夫·拉詹",
+      "查尔斯·亨格瑞; 格里·森登; 约翰·埃利奥特",
+      "查尔斯·科尔宾 Charles B. Corbin; Charles B. Gancel",
+      "查尔斯·科尔宾; 盖伊·勒马叙里耶",
+      "梁启超; 夏晓虹; 陆胤 校订",
+      "欧内斯特·内格尔 Ernest Nagel; 詹姆士·纽曼",
+      "段义孚, [美]",
+      "汤姆·柯科伍德 Tom Kirkwood; Caleb E. Finch",
+      "沃尔特.威利特 Walter C. Willett; Patrick J. Skerrett",
+      "沈从文; 黄永玉 卓雅 插图",
+      "洪修平; 孙亦平",
+      "爱德华. 德西  Edward L. Deci; 理查德•瑞安  Richard M. Ryan",
+      "爱德华·德西; 理查德·弗拉斯特"
+    ]
+  },
+  "a-6449a1f4": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E5%9F%83%E8%92%82%E7%BA%B3",
+      "description": ""
+    }
+  ],
+  "a-8916324f": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E5%9F%83%E9%87%8C%E5%85%8B",
+      "description": ""
+    }
+  ],
+  "a-96c0911c": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E5%9F%BA%E6%80%9D",
+      "description": ""
+    }
+  ],
+  "a-c2662e52": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E5%A4%8F%E4%B8%8F%E5%B0%8A",
+      "description": ""
+    }
+  ],
+  "a-9718eec0": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E5%A4%8F%E5%BF%97%E6%B8%85",
+      "description": ""
+    }
+  ],
+  "a-c653ec51": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E5%A4%8F%E7%9B%AE%E9%95%9C%E5%AD%90",
+      "description": ""
+    }
+  ],
+  "a-e86b86df": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E5%A4%A7%E5%89%8D%E7%A0%94%E4%B8%80",
+      "description": ""
+    }
+  ],
+  "a-7f278abd": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E5%A4%A7%E5%8D%AB",
+      "description": ""
+    }
+  ],
+  "a-b6cd0703": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E5%A5%A5%E5%BE%B7%E5%A7%86",
+      "description": ""
+    }
+  ],
+  "a-6e6046fc": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E5%A8%81%E5%BB%89",
+      "description": ""
+    }
+  ],
+  "a-ecb79be8": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E5%B1%B1%E5%A7%86",
+      "description": ""
+    }
+  ],
+  "a-edb049a8": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E5%BA%B7",
+      "description": ""
+    }
+  ],
+  "a-27e2af04": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E5%BC%97%E6%9C%97%E8%A5%BF%E6%96%AF",
+      "description": ""
+    }
+  ],
+  "a-30bc522f": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E5%BC%A0%E8%B0%B7",
+      "description": ""
+    }
+  ],
+  "a-25b7e5a7": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E5%BD%BC%E5%BE%97",
+      "description": ""
+    }
+  ],
+  "a-30cd0944": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E5%BD%BC%E5%BE%97",
+      "description": ""
+    }
+  ],
+  "a-7d05108e": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E5%BD%BC%E5%BE%97",
+      "description": ""
+    }
+  ],
+  "a-88f1d628": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E5%BD%BC%E5%BE%97",
+      "description": ""
+    }
+  ],
+  "a-717786fe": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E5%BD%BC%E5%BE%97",
+      "description": ""
+    }
+  ],
+  "a-54aa962c": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/彼特.格尔维茨_Peter_M._Gollwitzer",
+      "description": ""
+    },
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E5%BD%BC%E7%89%B9",
+      "description": ""
+    }
+  ],
+  "a-28fdac09": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E5%BE%B7%E7%91%9E%E5%85%8B",
+      "description": ""
+    }
+  ],
+  "a-92c7673a": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/戈登·奥尔波特_Gordon_W._Allport",
+      "description": ""
+    },
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%88%88%E7%99%BB",
+      "description": ""
+    }
+  ],
+  "a-779cabbe": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/戈登·奥尔波特_Gordon_W._Allport",
+      "description": ""
+    },
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%88%88%E7%99%BB",
+      "description": ""
+    }
+  ],
+  "a-17d032a4": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/戴维.奥尔森_David_H._Olson",
+      "description": ""
+    },
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%88%B4%E7%BB%B4",
+      "description": ""
+    }
+  ],
+  "a-6b9e20e3": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/戴维.奥尔森_David_H._Olson",
+      "description": ""
+    },
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%88%B4%E7%BB%B4",
+      "description": ""
+    }
+  ],
+  "a-4361f90e": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%88%B4%E7%BB%B4",
+      "description": ""
+    }
+  ],
+  "a-98d8f9d0": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/托马斯·罗斯_Thomas_Roth",
+      "description": ""
+    },
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%89%98%E9%A9%AC%E6%96%AF",
+      "description": ""
+    }
+  ],
+  "a-bd812d35": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vincent_O'Reilly_et_al.",
+      "description": ""
+    },
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%96%87%E6%A3%AE%E7%89%B9",
+      "description": ""
+    }
+  ],
+  "a-740bfb72": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%96%AF%E5%A1%94%E5%A4%AB%E9%87%8C%E9%98%BF%E8%AF%BA%E6%96%AF",
+      "description": ""
+    }
+  ],
+  "a-f95b38f9": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%96%AF%E8%92%82%E8%8A%AC",
+      "description": ""
+    }
+  ],
+  "a-fbd0ff05": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%9C%AC%E6%9D%B0%E6%98%8E",
+      "description": ""
+    }
+  ],
+  "a-dc456da2": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%9C%B1%E8%BF%AA%E4%BA%9A",
+      "description": ""
+    }
+  ],
+  "a-dcfdfb30": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%9D%8E%E7%99%BD",
+      "description": ""
+    }
+  ],
+  "a-bf415c76": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%9D%B0%E5%85%8B",
+      "description": ""
+    }
+  ],
+  "a-88e7fc93": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%9D%B0%E5%BC%97%E9%9B%B7",
+      "description": ""
+    }
+  ],
+  "a-896b6d29": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%9F%A5%E5%B0%94%E6%96%AF",
+      "description": ""
+    }
+  ],
+  "a-46014f5d": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%9F%A5%E5%B0%94%E6%96%AF",
+      "description": ""
+    }
+  ],
+  "a-c3523621": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/查尔斯·科尔宾_Charles_B._Corbin",
+      "description": ""
+    },
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%9F%A5%E5%B0%94%E6%96%AF",
+      "description": ""
+    }
+  ],
+  "a-bf57a556": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%9F%A5%E5%B0%94%E6%96%AF",
+      "description": ""
+    }
+  ],
+  "a-92ef77c9": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%A2%81%E5%90%AF%E8%B6%85",
+      "description": ""
+    }
+  ],
+  "a-c642bb91": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/欧内斯特·内格尔_Ernest_Nagel",
+      "description": ""
+    },
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%AC%A7%E5%86%85%E6%96%AF%E7%89%B9",
+      "description": ""
+    }
+  ],
+  "a-6638853c": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%AE%B5%E4%B9%89%E5%AD%9A",
+      "description": ""
+    }
+  ],
+  "a-2e00d004": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/汤姆·柯科伍德_Tom_Kirkwood",
+      "description": ""
+    },
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%B1%A4%E5%A7%86",
+      "description": ""
+    }
+  ],
+  "a-cf0a5996": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/沃尔特.威利特_Walter_C._Willett",
+      "description": ""
+    },
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%B2%83%E5%B0%94%E7%89%B9",
+      "description": ""
+    }
+  ],
+  "a-45ce64f0": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%B2%88%E4%BB%8E%E6%96%87",
+      "description": ""
+    }
+  ],
+  "a-7121f327": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E6%B4%AA%E4%BF%AE%E5%B9%B3",
+      "description": ""
+    }
+  ],
+  "a-5f6bb3e6": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/爱德华._德西 _Edward_L._Deci",
+      "description": ""
+    },
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E7%88%B1%E5%BE%B7%E5%8D%8E",
+      "description": ""
+    }
+  ],
+  "a-e970b4aa": [
+    {
+      "label": "百度百科",
+      "url": "https://baike.baidu.com/item/%E7%88%B1%E5%BE%B7%E5%8D%8E",
+      "description": ""
+    }
+  ]
+}
