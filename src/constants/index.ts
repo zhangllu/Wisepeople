@@ -7,7 +7,6 @@ export const ROUTES = {
   register: "/register",
   wisePersons: "/wise-persons",
   wisePersonDetail: (slug: string) => `/wise-persons/${slug}`,
-  wisePersonsUpdated: "/wise-persons/updated",
   questions: "/questions",
   questionDetail: (id: string) => `/questions/${id}`,
   bookLists: "/book-lists",
