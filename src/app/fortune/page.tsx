@@ -85,7 +85,7 @@ export default function FortunePage() {
       {/* ===== Card ===== */}
       <div
         className="[perspective:1000px] cursor-pointer select-none"
-        style={{ width: 280, height: 400 }}
+        style={{ width: 300, height: 426 }}
         onClick={draw}
       >
         <div
@@ -106,11 +106,11 @@ export default function FortunePage() {
             <div className="absolute inset-[24px] rounded-[8px] border border-white/8" />
 
             {/* Center text */}
-            <p className="text-white/60 text-xs tracking-[0.25em] mb-3">✦</p>
-            <h2 className="text-white/90 text-xl font-bold tracking-tight">
+            <p className="text-white/60 text-sm tracking-[0.25em] mb-4">✦</p>
+            <h2 className="text-white/90 text-2xl font-bold tracking-tight">
               今日幸运智者
             </h2>
-            <p className="text-white/40 text-[11px] mt-2 tracking-[0.15em]">
+            <p className="text-white/40 text-sm mt-3 tracking-[0.15em]">
               点 击 抽 卡
             </p>
           </div>
@@ -123,40 +123,40 @@ export default function FortunePage() {
               <>
                 {/* Top: question header */}
                 <div
-                  className="flex items-center gap-2 px-6 py-4"
+                  className="flex items-center gap-2 px-6 py-5"
                   style={{ backgroundColor: "#FAECE7" }}
                 >
-                  <span className="font-mono text-[11px]"
+                  <span className="font-mono text-sm"
                     style={{ color: "#D97757" }}>
                     {p.questionCode}
                   </span>
-                  <span className="text-[11px] font-medium text-gray-700">
+                  <span className="text-sm font-medium text-gray-700">
                     {p.questionTitle}
                   </span>
                 </div>
 
                 {/* Person info */}
-                <div className="flex-1 flex flex-col px-6 py-5">
+                <div className="flex-1 flex flex-col px-6 py-6">
                   {/* Name */}
-                  <h2 className="text-lg font-bold text-gray-900 leading-snug mb-3">
+                  <h2 className="text-xl font-bold text-gray-900 leading-snug mb-4">
                     {p.name}
                   </h2>
 
                   {/* Excerpt */}
-                  <p className="text-xs text-gray-500 leading-relaxed flex-1">
+                  <p className="text-sm text-gray-500 leading-relaxed flex-1">
                     {p.excerpt}
                   </p>
 
                   {/* Link */}
-                  <div className="pt-4 border-t border-gray-50">
+                  <div className="pt-5 border-t border-gray-50">
                     <Link
                       href={`/wise-persons/${p.slug}`}
                       onClick={(e) => e.stopPropagation()}
-                      className="inline-flex items-center gap-1 text-[11px] transition-colors"
+                      className="inline-flex items-center gap-1 text-sm transition-colors"
                       style={{ color: "#D97757" }}
                     >
                       阅读完整档案
-                      <ArrowRight className="h-3 w-3" />
+                      <ArrowRight className="h-3.5 w-3.5" />
                     </Link>
                   </div>
                 </div>
