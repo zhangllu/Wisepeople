@@ -12,6 +12,7 @@ export function MobileNav() {
 
   const links = [
     { href: ROUTES.wisePersons, label: "智者库" },
+    { href: ROUTES.daily, label: "每日遇见" },
     { href: ROUTES.questions, label: "十大问题" },
     { href: ROUTES.bookLists, label: "书单" },
     { href: ROUTES.profile, label: "个人中心" },

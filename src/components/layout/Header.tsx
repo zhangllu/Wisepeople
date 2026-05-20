@@ -21,6 +21,9 @@ export function Header() {
           <Link href={ROUTES.wisePersons} className="text-muted-foreground hover:text-foreground transition-colors">
             智者库
           </Link>
+          <Link href={ROUTES.daily} className="text-muted-foreground hover:text-foreground transition-colors">
+            每日遇见
+          </Link>
           <Link href={ROUTES.questions} className="text-muted-foreground hover:text-foreground transition-colors">
             十大问题
           </Link>
