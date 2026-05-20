@@ -24,6 +24,9 @@ export function Header() {
           <Link href={ROUTES.daily} className="text-muted-foreground hover:text-foreground transition-colors">
             遇见智者
           </Link>
+          <Link href={ROUTES.fortune} className="text-muted-foreground hover:text-foreground transition-colors">
+            随机漫步
+          </Link>
           <Link href={ROUTES.questions} className="text-muted-foreground hover:text-foreground transition-colors">
             十大问题
           </Link>
