@@ -74,7 +74,7 @@ export default function FortunePage() {
   }, [isRevealed, isAnimating])
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-amber-50/40">
       <div className="mx-auto px-6 py-20 max-w-lg">
         {/* Header */}
         <div className="text-center mb-14">
@@ -95,12 +95,12 @@ export default function FortunePage() {
             onClick={draw}
           >
             {/* ===== Card Back ===== */}
-            <div className="absolute inset-0 rounded-3xl bg-white border border-gray-100 shadow-sm flex flex-col items-center justify-center [backface-visibility:hidden]">
+            <div className="absolute inset-0 rounded-3xl bg-red-800 shadow-sm flex flex-col items-center justify-center [backface-visibility:hidden]">
               {/* Decorative diamond */}
-              <div className="w-16 h-16 rounded-xl bg-stone-100 flex items-center justify-center mb-5">
-                <span className="text-2xl text-stone-300 font-serif">?</span>
+              <div className="w-16 h-16 rounded-xl bg-white/10 flex items-center justify-center mb-5">
+                <span className="text-2xl text-white/60 font-serif">?</span>
               </div>
-              <p className="text-xs text-stone-300 tracking-[0.2em]">
+              <p className="text-xs text-white/40 tracking-[0.2em]">
                 点 击 抽 卡
               </p>
             </div>
@@ -110,7 +110,7 @@ export default function FortunePage() {
               {person && (
                 <div className="flex flex-col h-full p-8 sm:p-9">
                   {/* Accent line */}
-                  <div className="w-8 h-0.5 bg-stone-300 mb-6" />
+                  <div className="w-8 h-0.5 bg-red-800 mb-6" />
 
                   {/* Code + tags */}
                   <div className="flex items-center gap-2.5 text-xs mb-6">
@@ -121,7 +121,7 @@ export default function FortunePage() {
                     <span className="text-stone-400">
                       {person.questionCode}
                     </span>
-                    <span className="px-1.5 py-0.5 rounded text-[10px] bg-stone-50 text-stone-300 font-mono">
+                    <span className="px-1.5 py-0.5 rounded text-[10px] bg-red-50 text-red-800 font-mono">
                       {person.dimensionLabel}
                     </span>
                   </div>
@@ -143,7 +143,7 @@ export default function FortunePage() {
                     <Link
                       href={`/wise-persons/${person.slug}`}
                       onClick={(e) => e.stopPropagation()}
-                      className="inline-flex items-center gap-1 text-xs text-stone-300 hover:text-gray-600 transition-colors"
+                      className="inline-flex items-center gap-1 text-xs text-stone-300 hover:text-red-700 transition-colors"
                     >
                       阅读完整档案
                       <ArrowRight className="h-3 w-3" />
@@ -163,7 +163,7 @@ export default function FortunePage() {
           <button
             onClick={draw}
             disabled={isAnimating}
-            className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-gray-100 text-xs text-stone-300 hover:text-gray-600 hover:border-gray-200 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+            className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-red-200 text-xs text-red-400 hover:text-red-700 hover:border-red-300 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
           >
             再抽一位
           </button>
@@ -173,7 +173,7 @@ export default function FortunePage() {
         <p className="text-center mt-20">
           <Link
             href="/daily"
-            className="text-xs text-stone-200 hover:text-gray-400 transition-colors"
+            className="text-xs text-stone-200 hover:text-red-400 transition-colors"
           >
             每日遇见三位智者 →
           </Link>
