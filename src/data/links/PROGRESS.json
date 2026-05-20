@@ -1,5 +1,5 @@
 {
-  "total_authors": 762,
+  "total_authors": 776,
   "batches": [
     {
       "batch": 1,
@@ -302,17 +302,84 @@
       "file": "curated-links-013.json",
       "date": "2026-05-19",
       "range": "Umberto Eco ~ Michael W. Apple（48位）",
-      "count": 48,
+      "count": 52,
       "links": 88,
       "status": "done"
+    },
+    {
+      "batch": 14,
+      "file": "curated-links-014.json",
+      "date": "2026-05-19",
+      "range": "John Hick ~ 龚鉥（45位）",
+      "count": 45,
+      "links": 45,
+      "status": "done"
+    },
+    {
+      "batch": 15,
+      "file": "curated-links-015.json",
+      "date": "2026-05-20",
+      "range": "",
+      "count": 48,
+      "status": "done",
+      "authors": [
+        "Anita Burdman Feferman; Solomon Feferman",
+        "Arthur Donovan; Knight, David",
+        "Emile Gauvreau et al.",
+        "Gerald L. Alexanderson; George Pólya",
+        "Grifiths, A. B.; Wenley, R. M.",
+        "Manfred Vogt; Heinrich N. Dreesen; Peter Sundman; Ferdinand Wolf",
+        "William Taussig Scott; Martin X. Moleski",
+        "丹尼尔.莱文森 Daniel J. Levinson; Charlotte N. Darrow; Edward B. Klein",
+        "丹尼尔·卡尼曼; 阿莫斯·特沃斯基",
+        "乔治·莱考夫; 马克·约翰逊",
+        "乔治·莱考夫; 马克·约翰逊; 邱雪玫 审订",
+        "Adrian Slywotzky et al.（亚德里安·斯莱沃斯基 等）",
+        "亚德里安·斯莱沃斯基; 大卫·莫里森; 特德·莫泽; 凯文·蒙特; 詹姆斯·奎拉",
+        "亨利·威尔曼; 凯伦·琳德",
+        "亨利·明茨伯格; 布鲁斯·阿尔斯特兰德",
+        "伦道夫·尼斯; 乔治·威廉姆斯",
+        "伯特兰·罗素 Russell Bertrand; Alfred North Whitehead",
+        "余德慧; 石佳仪",
+        "保罗·威尔莫特; 戴维·欧瑞尔",
+        "保罗·瓦茨拉维克; 约翰·威克兰德; 理查德·菲什",
+        "保罗·萨缪尔森; 威廉·诺德豪斯",
+        "保罗·萨缪尔森; 赖建诚(校)",
+        "保罗·黑尔; 君儿·黑尔",
+        "克洛德·皮舒瓦; 让·齐格勒",
+        "克里斯·弗里斯 Christopher D. Frith; Eve C. Johnstone",
+        "克里斯·阿吉里斯; 唐纳德·A.舍恩",
+        "克里斯·阿吉里斯; 罗伯特·帕特南; 戴安娜·麦克莱恩·史密斯",
+        "克里斯蒂娜.马斯拉奇 Christina Maslach; Michael P. Leiter",
+        "冯·诺伊曼; 摩根斯顿",
+        "列夫·维果茨基; 迈克尔·科尔等",
+        "刘易斯·卡罗尔; 马丁·加德纳",
+        "劳伦斯·斯坦伯格; 理查德·勒纳",
+        "卡尔.弗里斯顿 K. J. Friston; Thomas Parr; Giovanni Pezzulo",
+        "卡尔·荣格; 卫礼贤",
+        "史蒂夫·布兰克; 鲍勃·多夫",
+        "史蒂夫·德·沙泽尔; 伊冯·多兰; 哈里·科尔曼",
+        "史蒂文·海耶斯; 杰森·利利斯",
+        "史蒂芬·平克; 阳志平 审校",
+        "吉仁泽; 彼得·托德; ABC研究组织",
+        "吉仁泽; 莱茵哈德·泽尔腾",
+        "吉米·霍兰 Jimmie C. Holland; Sheldon Lewis",
+        "周晓虹  编",
+        "哈罗德·孔茨; 海因茨·韦里克",
+        "哈罗德·孔茨; 约瑟夫·普蒂; 海茵茨·韦里奇",
+        "Harold Bloom et al.（哈罗德·布鲁姆 等）",
+        "唐纳德·高斯; 杰拉尔德·温伯格",
+        "圣地亚哥·拉蒙-卡哈尔; 傅贺",
+        "埃德加·沙因; 彼得·沙因"
+      ]
     }
   ],
   "summary": {
-    "done": 567,
-    "remaining": 195,
-    "progress": "74.4%"
+    "done": 776,
+    "remaining": 0,
+    "progress": "100.0%"
   },
-  "links_curated": 567,
-  "total_remaining": 195,
-  "progress": "74.4%"
+  "links_curated": 776,
+  "total_remaining": 0,
+  "progress": "100.0%"
 }
