@@ -22,6 +22,20 @@ function getDimension(qn: number): string {
   return "human"
 }
 
+function renderStory(text: string) {
+  const paragraphs = text.split("\n\n")
+  return paragraphs.map((p, i) => {
+    const html = p.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    return (
+      <p
+        key={i}
+        className="leading-relaxed text-gray-800 text-[15px]"
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
+    )
+  })
+}
+
 export default function DailyPage() {
   const [dayIndex, setDayIndex] = useState(() => {
     const today = new Date()
@@ -38,9 +52,6 @@ export default function DailyPage() {
   const totalDays = schedule.length
   const today = schedule[dayIndex]
 
-  const prevDay = dayIndex > 0 ? dayIndex - 1 : null
-  const nextDay = dayIndex < totalDays - 1 ? dayIndex + 1 : null
-
   const persons = useMemo(() => {
     return today.codes.map((code: string) => {
       const info = codes[code]
@@ -49,7 +60,6 @@ export default function DailyPage() {
       const question = qMap.get(qn)
       const dim = getDimension(qn)
       const story = stories[slug] || ""
-      const excerpt = story.split("\n\n")[0].slice(0, 120) + (story.length > 120 ? "…" : "")
 
       return {
         code,
@@ -58,104 +68,97 @@ export default function DailyPage() {
         questionNumber: qn,
         questionTitle: question?.title ?? "",
         questionCode: question?.code ?? "",
-        dimension: dim,
         dimensionLabel: DIMENSION_LABELS[dim] ?? "",
-        excerpt,
+        story,
       }
     })
   }, [dayIndex])
 
   return (
     <div className="container mx-auto max-w-3xl px-4 py-8">
-      {/* Header */}
-      <div className="mb-6">
-        <h1 className="text-2xl font-bold mb-1">每日遇见智者</h1>
-        <p className="text-sm text-muted-foreground">
-          {today.date} · 第 {today.day} 天
+      {/* Blog header */}
+      <div className="mb-8">
+        <p className="text-sm text-muted-foreground mb-1">{today.date}</p>
+        <h1 className="text-3xl font-bold tracking-tight">
+          每日遇见 · 第 {today.day} 天
+        </h1>
+        <p className="text-sm text-muted-foreground mt-2">
+          今日来自 {persons.map((p: any) => p.questionTitle).join("、")} 领域的三位智者
         </p>
       </div>
 
-      {/* Navigation */}
-      <div className="flex items-center justify-between mb-6">
-        {prevDay !== null ? (
-          <button
-            onClick={() => setDayIndex(prevDay)}
-            className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors"
-          >
-            <ChevronLeft className="h-4 w-4" />
-            昨日
-          </button>
-        ) : (
-          <div />
-        )}
-        <span className="text-xs text-muted-foreground">
-          {dayIndex + 1} / {totalDays}
-        </span>
-        {nextDay !== null ? (
-          <button
-            onClick={() => setDayIndex(nextDay)}
-            className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors"
-          >
-            明日
-            <ChevronRight className="h-4 w-4" />
-          </button>
-        ) : (
-          <div />
-        )}
-      </div>
+      {/* Divider */}
+      <div className="border-t border-gray-200 mb-8" />
 
-      {/* Person Cards */}
-      <div className="space-y-4">
-        {persons.map((p: any) => (
-          <div
-            key={p.code}
-            className="rounded-lg border border-gray-200 bg-white overflow-hidden"
-          >
-            {/* Card header: WP code + question */}
-            <div className="flex items-center gap-2 px-5 pt-4 pb-1">
-              <span className="font-mono text-[11px] text-muted-foreground bg-gray-100 px-1.5 py-0.5 rounded">
-                {p.code}
-              </span>
-              <span className="text-xs text-muted-foreground">
-                · {p.questionCode} {p.questionTitle}
-              </span>
-              <Badge variant="secondary" className="text-[10px] leading-none px-1.5 py-0.5">
-                {p.dimensionLabel}
-              </Badge>
-            </div>
-
-            {/* Name */}
-            <div className="px-5 py-2">
-              <h2 className="text-lg font-bold">{p.name}</h2>
-            </div>
-
-            {/* Excerpt */}
-            {p.excerpt && (
-              <div className="px-5 pb-3">
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  {p.excerpt}
-                </p>
+      {/* Stories */}
+      <div className="space-y-12">
+        {persons.map((p: any, idx: number) => (
+          <article key={p.code}>
+            {/* Person header */}
+            <div className="mb-4">
+              <div className="flex items-center gap-2 text-xs text-muted-foreground mb-1">
+                <span className="font-mono bg-gray-100 px-1.5 py-0.5 rounded">
+                  {p.code}
+                </span>
+                <span>·</span>
+                <span>{p.questionCode} {p.questionTitle}</span>
+                <Badge variant="secondary" className="text-[10px] leading-none px-1.5 py-0.5">
+                  {p.dimensionLabel}
+                </Badge>
               </div>
-            )}
+              <h2 className="text-xl font-bold">{p.name}</h2>
+            </div>
 
-            {/* Link */}
-            <div className="px-5 pb-4">
+            {/* Story */}
+            <div className="space-y-3 leading-relaxed text-gray-800 text-[15px]">
+              {renderStory(p.story)}
+            </div>
+
+            {/* Read more */}
+            <div className="mt-4">
               <Link
                 href={`/wise-persons/${p.slug}`}
-                className="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-700 transition-colors font-medium"
+                className="inline-flex items-center gap-1 text-sm text-blue-600 hover:text-blue-700 transition-colors font-medium"
               >
-                查看完整介绍
-                <ArrowRight className="h-3 w-3" />
+                查看 {p.name} 的完整介绍
+                <ArrowRight className="h-3.5 w-3.5" />
               </Link>
             </div>
-          </div>
+
+            {/* Divider between persons */}
+            {idx < persons.length - 1 && (
+              <div className="border-t border-gray-100 mt-8" />
+            )}
+          </article>
         ))}
       </div>
 
-      {/* Footer note */}
-      <p className="text-center text-xs text-muted-foreground mt-8">
-        每日遇见三位智者，来自不同的问题领域。
-      </p>
+      {/* Navigation */}
+      <div className="border-t border-gray-200 mt-12 pt-6">
+        <div className="flex items-center justify-between">
+          {dayIndex > 0 ? (
+            <button
+              onClick={() => setDayIndex(dayIndex - 1)}
+              className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors"
+            >
+              <ChevronLeft className="h-4 w-4" />
+              前一日
+            </button>
+          ) : <div />}
+          <span className="text-xs text-muted-foreground">
+            {dayIndex + 1} / {totalDays}
+          </span>
+          {dayIndex < totalDays - 1 ? (
+            <button
+              onClick={() => setDayIndex(dayIndex + 1)}
+              className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors"
+            >
+              后一日
+              <ChevronRight className="h-4 w-4" />
+            </button>
+          ) : <div />}
+        </div>
+      </div>
     </div>
   )
 }
