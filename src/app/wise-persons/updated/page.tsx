@@ -3,73 +3,23 @@
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 import { useState } from "react"
-import authorsData from "@/data/authors.json"
-import batch001 from "@/data/links/curated-links-001.json"
-import batch002 from "@/data/links/curated-links-002.json"
-import batch003 from "@/data/links/curated-links-003.json"
-import batch004 from "@/data/links/curated-links-004.json"
-import batch005 from "@/data/links/curated-links-005.json"
-import batch006 from "@/data/links/curated-links-006.json"
-import batch007 from "@/data/links/curated-links-007.json"
-import batch008 from "@/data/links/curated-links-008.json"
-import batch009 from "@/data/links/curated-links-009.json"
-import batch010 from "@/data/links/curated-links-010.json"
-import batch011 from "@/data/links/curated-links-011.json"
-import batch012 from "@/data/links/curated-links-012.json"
-import batch013 from "@/data/links/curated-links-013.json"
-import batch014 from "@/data/links/curated-links-014.json"
-import type { WisePersonLink } from "@/types"
-
-interface BatchMeta {
-  batch: number
-  date: string
-  range: string
-  count: number
-}
-
-interface BatchModule {
-  _meta: BatchMeta
-  [slug: string]: BatchMeta | WisePersonLink[] | unknown
-}
-
-const BATCHES: BatchModule[] = [batch001, batch002, batch003, batch004, batch005, batch006, batch007, batch008, batch009, batch010, batch011, batch012, batch013, batch014]
-const authorSlugMap = new Map<string, string>()
-for (const a of authorsData) {
-  authorSlugMap.set(a.slug, a.name)
-}
-
-function getDisplayName(slug: string): string {
-  return authorSlugMap.get(slug) ?? slug
-}
-
-function formatDate(dateStr: string): string {
-  const d = new Date(dateStr)
-  return `${d.getMonth() + 1}月${d.getDate()}日`
-}
+import { getWisePersonsByQuestion } from "@/lib/data"
+import { DIMENSION_LABELS } from "@/constants"
+import { Badge } from "@/components/ui/badge"
 
 export default function UpdatedPage() {
   const [expanded, setExpanded] = useState<Set<number>>(new Set())
+  const questionGroups = getWisePersonsByQuestion()
 
-  const allBatches = BATCHES.map((batch) => {
-    const meta = batch._meta as BatchMeta
-    const entries = Object.entries(batch).filter(
-      ([key]) => key !== "_meta"
-    ) as [string, WisePersonLink[]][]
-    const authors = entries
-      .filter(([, links]) => links.length > 0)
-      .map(([slug, links]) => ({ slug, name: getDisplayName(slug), count: links.length }))
-    return { meta, authors }
-  }).filter((b) => b.authors.length > 0)
+  const total = questionGroups.reduce((s, g) => s + g.wisePersons.length, 0)
 
-  const total = allBatches.reduce((s, b) => s + b.authors.length, 0)
-
-  function toggle(batch: number) {
+  function toggle(qn: number) {
     setExpanded((prev) => {
       const next = new Set(prev)
-      if (next.has(batch)) {
-        next.delete(batch)
+      if (next.has(qn)) {
+        next.delete(qn)
       } else {
-        next.add(batch)
+        next.add(qn)
       }
       return next
     })
@@ -77,39 +27,46 @@ export default function UpdatedPage() {
 
   return (
     <div className="container mx-auto max-w-4xl px-4 py-8">
-      <h1 className="text-2xl font-bold mb-1">已更新智者</h1>
+      <h1 className="text-2xl font-bold mb-1">十大问题</h1>
       <p className="text-sm text-muted-foreground mb-6">
-        已完善精选链接的 {total} 位智者。点击批次名展开名单，点击姓名查看人物故事和相关链接。
+        共收录 {total} 位智者，按十大问题领域分类。点击问题展开名单，点击姓名查看人物故事和相关链接。
       </p>
 
       <div className="space-y-2">
-        {allBatches.map(({ meta, authors }) => {
-          const isOpen = expanded.has(meta.batch)
+        {questionGroups.map(({ question, wisePersons }) => {
+          const isOpen = expanded.has(question.number)
           return (
-            <div key={meta.batch} className="rounded-lg border border-gray-200 overflow-hidden">
+            <div key={question.number} className="rounded-lg border border-gray-200 overflow-hidden">
               <button
-                onClick={() => toggle(meta.batch)}
+                onClick={() => toggle(question.number)}
                 className="w-full flex items-center justify-between bg-gray-50 px-4 py-3 text-sm font-medium hover:bg-gray-100 transition-colors"
               >
-                <span>
-                  第 {meta.batch} 批 · {formatDate(meta.date)} · {authors.length} 位
+                <span className="flex items-center gap-2">
+                  <span className="font-mono text-xs text-muted-foreground">{question.code}</span>
+                  <span>{question.title}</span>
+                  <Badge variant="secondary" className="text-[10px] leading-none px-1.5 py-0.5">
+                    {DIMENSION_LABELS[question.dimension]}
+                  </Badge>
+                  <span className="text-xs text-muted-foreground/60">{wisePersons.length} 位</span>
                 </span>
                 <ChevronRight
-                  className={`h-4 w-4 text-muted-foreground transition-transform ${
+                  className={`h-4 w-4 text-muted-foreground transition-transform flex-shrink-0 ${
                     isOpen ? "rotate-90" : ""
                   }`}
                 />
               </button>
               {isOpen && (
                 <div className="divide-y divide-gray-100">
-                  {authors.map((a) => (
+                  {wisePersons.map((p) => (
                     <Link
-                      key={a.slug}
-                      href={`/wise-persons/${a.slug}`}
+                      key={p.slug}
+                      href={`/wise-persons/${p.slug}`}
                       className="flex items-center justify-between px-4 py-2.5 hover:bg-blue-50/30 transition-colors group text-sm"
                     >
-                      <span className="group-hover:text-blue-700 transition-colors">{a.name}</span>
-                      <span className="text-xs text-muted-foreground">{a.count} 条链接</span>
+                      <span className="group-hover:text-blue-700 transition-colors">{p.name}</span>
+                      <span className="text-xs text-muted-foreground">
+                        {p.links ? `${p.links.length} 条链接` : ""}
+                      </span>
                     </Link>
                   ))}
                 </div>
