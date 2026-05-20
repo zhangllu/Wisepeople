@@ -7,6 +7,7 @@ import remarkGfm from "remark-gfm"
 import { BookmarkButton } from "@/components/shared/BookmarkButton"
 import { ExternalLink } from "lucide-react"
 import type { WisePerson } from "@/types"
+import wisePersonCodes from "@/data/wise-person-codes.json"
 
 type TabType = "introduction" | "basicInfo" | "cognitiveStyle" | "links"
 
@@ -41,9 +42,16 @@ export function WisePersonDetailTabs({ person, preloadedContent }: Props) {
       <div className="mb-8">
         <div className="flex items-start justify-between">
           <div>
-            <h1 className="text-3xl font-bold mb-1">{person.name}</h1>
+            <div className="flex items-center gap-3">
+              <h1 className="text-3xl font-bold">{person.name}</h1>
+              {(wisePersonCodes as any).slugToCode?.[person.slug] && (
+                <span className="font-mono text-xs text-muted-foreground bg-gray-100 px-2 py-0.5 rounded border border-gray-200">
+                  {(wisePersonCodes as any).slugToCode[person.slug]}
+                </span>
+              )}
+            </div>
             {person.nameEn && (
-              <p className="text-sm text-muted-foreground">{person.nameEn}</p>
+              <p className="text-sm text-muted-foreground mt-1">{person.nameEn}</p>
             )}
           </div>
           <BookmarkButton targetId={person.slug} targetType="wise-person" />

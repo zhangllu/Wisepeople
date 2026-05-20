@@ -9,6 +9,7 @@ import topicsData from "@/data/topics.json"
 import questionsData from "@/data/questions.json"
 import type { SubTopic, Question } from "@/types"
 import lifeStories from "@/data/links/life-stories.json"
+import wisePersonCodes from "@/data/wise-person-codes.json"
 
 interface StubBook {
   slug: string
@@ -64,7 +65,14 @@ export function WisePersonStubDetail({ person, books }: Props) {
     <div className="container mx-auto max-w-4xl px-4 py-8">
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold mb-3">{person.name}</h1>
+        <div className="flex items-center gap-3 mb-3">
+          <h1 className="text-3xl font-bold">{person.name}</h1>
+          {(wisePersonCodes as any).slugToCode?.[person.slug] && (
+            <span className="font-mono text-xs text-muted-foreground bg-gray-100 px-2 py-0.5 rounded border border-gray-200">
+              {(wisePersonCodes as any).slugToCode[person.slug]}
+            </span>
+          )}
+        </div>
         <div className="flex flex-wrap items-center gap-2 mb-4">
           <Badge variant="secondary" className="text-xs">
             {ERA_LABELS[person.era] || "当代"}
