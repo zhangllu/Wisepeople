@@ -212,15 +212,15 @@ export default function DailyPage() {
 
   return (
     <div className="min-h-screen bg-amber-50/40">
-      <div className="container mx-auto max-w-5xl px-6 py-12">
-        <div className="flex gap-10">
+      <div className="container mx-auto max-w-6xl px-8 py-12">
+        <div className="flex gap-16">
           {/* Main content */}
           <div className="flex-1 min-w-0 max-w-2xl">
             {/* Blog header */}
             <header className="mb-10">
               <p className="text-sm text-gray-400 mb-2">{today.date}</p>
               <h1 className="text-3xl font-bold tracking-tight text-gray-900">
-                遇见智者 · 第 {today.day} 天
+                每日遇见智者{String(today.day).padStart(3, "0")}
               </h1>
               <p className="text-sm text-gray-400 mt-3 leading-relaxed">
                 今日三位智者，来自 {persons.map((p: any) => p.questionTitle).join("、")} 领域。
@@ -305,8 +305,8 @@ export default function DailyPage() {
           </div>
 
           {/* Sidebar: Calendar */}
-          <aside className="hidden lg:block w-64 flex-shrink-0">
-            <div className="sticky top-8">
+          <aside className="hidden lg:flex flex-col justify-center w-72 flex-shrink-0">
+            <div className="sticky top-1/2 -translate-y-1/2">
               <Calendar dayIndex={dayIndex} onSelect={setDayIndex} />
             </div>
           </aside>
