@@ -48,7 +48,7 @@ const animStyles = `
   25%  { transform: rotateY(180deg); }
   50%  { transform: rotateY(360deg); }
   75%  { transform: rotateY(540deg); }
-  100% { transform: rotateY(720deg); }
+  100% { transform: rotateY(540deg); }
 }
 `
 
@@ -87,7 +87,7 @@ export default function FortunePage() {
         setShowFlip(false)
         setIsRevealed(true)
         setIsAnimating(false)
-      }, 700)
+      }, 1200)
     } else {
       // First draw
       setPerson(getRandomPerson())
@@ -96,7 +96,7 @@ export default function FortunePage() {
         setShowFlip(false)
         setIsRevealed(true)
         setIsAnimating(false)
-      }, 700)
+      }, 1200)
     }
   }, [isAnimating, isRevealed])
 
@@ -120,9 +120,8 @@ export default function FortunePage() {
           <div
             className="relative w-full h-full [transform-style:preserve-3d] rounded-[16px] overflow-hidden"
             style={{
-              animation: showFlip ? "doubleFlip 0.7s cubic-bezier(0.4, 0, 0.2, 1)" : undefined,
-              transform: isRevealed && !showFlip ? "rotateY(180deg)" : undefined,
-              transition: isRevealed && !showFlip ? "none" : undefined,
+              animation: showFlip ? "doubleFlip 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards" : undefined,
+              transform: isRevealed ? "rotateY(180deg)" : undefined,
             }}
           >
             {/* ===== COVER ===== */}
@@ -144,6 +143,7 @@ export default function FortunePage() {
             {/* ===== CONTENT ===== */}
             <div
               className="absolute inset-0 bg-white border border-gray-100 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col overflow-hidden"
+              style={{ transform: "rotateY(180deg) translateZ(0)", WebkitFontSmoothing: "antialiased" }}
             >
               {p && (
                 <>
