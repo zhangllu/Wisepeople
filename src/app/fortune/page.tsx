@@ -44,6 +44,15 @@ const floatKeyframes = `
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-6px); }
 }
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  15% { transform: translateX(-8px) rotate(-2deg); }
+  30% { transform: translateX(8px) rotate(2deg); }
+  45% { transform: translateX(-6px) rotate(-1deg); }
+  60% { transform: translateX(6px) rotate(1deg); }
+  75% { transform: translateX(-3px); }
+  90% { transform: translateX(3px); }
+}
 `
 const styleId = "fortune-anim"
 
@@ -51,6 +60,7 @@ export default function FortunePage() {
   const [person, setPerson] = useState<Person | null>(null)
   const [isRevealed, setIsRevealed] = useState(false)
   const [isAnimating, setIsAnimating] = useState(false)
+  const [isShaking, setIsShaking] = useState(false)
 
   if (typeof document !== "undefined" && !document.getElementById(styleId)) {
     const style = document.createElement("style")
@@ -61,20 +71,28 @@ export default function FortunePage() {
 
   const draw = useCallback(() => {
     if (isAnimating) return
+    setIsAnimating(true)
+    setIsShaking(true)
 
     if (isRevealed) {
-      setIsAnimating(true)
-      setIsRevealed(false)
+      // Shake → flip back → swap → flip forward
       setTimeout(() => {
-        setPerson(getRandomPerson())
-        setIsRevealed(true)
-        setTimeout(() => setIsAnimating(false), 500)
-      }, 350)
+        setIsShaking(false)
+        setIsRevealed(false)
+        setTimeout(() => {
+          setPerson(getRandomPerson())
+          setIsRevealed(true)
+          setTimeout(() => setIsAnimating(false), 500)
+        }, 350)
+      }, 450)
     } else {
-      setIsAnimating(true)
+      // Shake → flip forward
       setPerson(getRandomPerson())
-      setIsRevealed(true)
-      setTimeout(() => setIsAnimating(false), 700)
+      setTimeout(() => {
+        setIsShaking(false)
+        setIsRevealed(true)
+        setTimeout(() => setIsAnimating(false), 700)
+      }, 450)
     }
   }, [isRevealed, isAnimating])
 
@@ -91,9 +109,9 @@ export default function FortunePage() {
         <div
           className="relative w-full h-full [transform-style:preserve-3d]"
           style={{
-            transition: "transform 0.7s cubic-bezier(0.4, 0, 0.2, 1)",
+            transition: isShaking ? "none" : "transform 0.7s cubic-bezier(0.4, 0, 0.2, 1)",
             transform: isRevealed ? "rotateY(180deg)" : undefined,
-            animation: isRevealed ? undefined : "float 3s ease-in-out infinite",
+            animation: isShaking ? "shake 0.45s ease-in-out" : (isRevealed ? undefined : "float 3s ease-in-out infinite"),
           }}
         >
           {/* ===== COVER (initial) ===== */}
