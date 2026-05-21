@@ -33,6 +33,9 @@ export function Header() {
           <Link href={ROUTES.bookLists} className="text-muted-foreground hover:text-foreground transition-colors">
             书单
           </Link>
+          <Link href={ROUTES.story} className="text-muted-foreground hover:text-foreground transition-colors">
+            产品故事
+          </Link>
           <Link href={ROUTES.profile} className="text-muted-foreground hover:text-foreground transition-colors">
             个人中心
           </Link>

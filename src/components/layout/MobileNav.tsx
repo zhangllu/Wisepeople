@@ -16,6 +16,7 @@ export function MobileNav() {
     { href: ROUTES.fortune, label: "随机漫步" },
     { href: ROUTES.questions, label: "十大问题" },
     { href: ROUTES.bookLists, label: "书单" },
+    { href: ROUTES.story, label: "产品故事" },
     { href: ROUTES.profile, label: "个人中心" },
   ]
 

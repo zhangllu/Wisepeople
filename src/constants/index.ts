@@ -16,6 +16,7 @@ export const ROUTES = {
   topicDetail: (code: string) => `/topics/${code}`,
   search: "/search",
   fortune: "/fortune",
+  story: "/story",
   profile: "/profile",
   bookmarks: "/profile/bookmarks",
   reviews: "/profile/reviews",

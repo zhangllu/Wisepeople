@@ -18,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="zh" className="h-full antialiased">
       <head>
+        <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet" />
         <script async crossOrigin="anonymous" src="https://tweakcn.com/live-preview.min.js" />
       </head>
       <body className="min-h-full flex flex-col">
