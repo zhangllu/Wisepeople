@@ -4,12 +4,13 @@ import { useSearchParams } from "next/navigation"
 import Link from "next/link"
 import { useEffect, useState, Suspense } from "react"
 import { useSearchStore } from "@/lib/stores"
+import type { StoryMatch } from "@/lib/stores/search-store"
 import { WisePersonGrid } from "@/components/wise-person/WisePersonGrid"
 import { WorkCard } from "@/components/work/WorkCard"
 import { BookCard } from "@/components/book/BookCard"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
-import { Search, Lightbulb, BookOpen, Users, Tags } from "lucide-react"
+import { Search, Lightbulb, BookOpen, Users, Tags, BookText } from "lucide-react"
 import { ROUTES } from "@/constants"
 
 function SearchContent() {
@@ -35,7 +36,8 @@ function SearchContent() {
     results.books.length +
     results.questions.length +
     results.topics.length +
-    results.authors.length
+    results.authors.length +
+    results.storyMatches.length
 
   return (
     <div className="container mx-auto max-w-5xl px-4 py-8">
@@ -67,6 +69,7 @@ function SearchContent() {
               {/* 搜索结果统计 */}
               <p className="text-sm text-muted-foreground mb-6">
                 找到 {totalCount} 条结果
+                {results.storyMatches.length > 0 && ` · 人物故事 ${results.storyMatches.length}`}
                 {results.wisePersons.length > 0 && ` · 智者 ${results.wisePersons.length}`}
                 {results.works.length > 0 && ` · 著作 ${results.works.length}`}
                 {results.books.length > 0 && ` · 书籍 ${results.books.length}`}
@@ -83,6 +86,30 @@ function SearchContent() {
                     智者 ({results.wisePersons.length})
                   </h2>
                   <WisePersonGrid wisePersons={results.wisePersons} />
+                </section>
+              )}
+
+              {/* 人物故事 */}
+              {results.storyMatches.length > 0 && (
+                <section className="mb-8">
+                  <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
+                    <BookText className="h-4 w-4 text-primary" />
+                    人物故事 ({results.storyMatches.length})
+                  </h2>
+                  <div className="grid grid-cols-1 gap-3">
+                    {results.storyMatches.map((story) => (
+                      <Link
+                        key={story.slug}
+                        href={ROUTES.wisePersonDetail(story.slug)}
+                        className="block p-4 rounded-lg border bg-card hover:shadow-md transition-shadow"
+                      >
+                        <h3 className="font-medium text-sm mb-1">{story.name}</h3>
+                        <p className="text-xs text-muted-foreground/80 leading-relaxed line-clamp-3">
+                          {story.excerpt}
+                        </p>
+                      </Link>
+                    ))}
+                  </div>
                 </section>
               )}
 
