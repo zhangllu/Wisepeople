@@ -28,7 +28,7 @@ export function SearchBox() {
       <div className={`flex items-center gap-0 transition-all duration-200 ${expanded ? "md:w-64" : "md:w-auto"}`}>
         <Input
           type="search"
-          placeholder="搜索智者或著作..."
+          placeholder="搜索全站内容..."
           className={`h-8 text-xs w-0 md:w-40 md:focus:w-64 transition-all duration-200 ${
             expanded ? "!w-40 md:!w-64" : "hidden md:block"
           }`}
