@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation"
 import { wiseContent } from "@/data/wise-content"
+import { getMasterContent } from "@/data/master-content"
 import { mockWisePersons } from "@/lib/stores/mock-data"
 import { getAllWisePersons } from "@/lib/data/wise-persons-combined"
 import { getAuthorBooks } from "@/lib/data"
@@ -19,6 +20,7 @@ export default async function WisePersonDetailPage({ params }: Props) {
 
   if (person) {
     const content = wiseContent[slug]
+    const master = getMasterContent(slug)
     return (
       <WisePersonDetailTabs
         slug={slug}
@@ -28,6 +30,7 @@ export default async function WisePersonDetailPage({ params }: Props) {
           basicInfo: content?.basicInfo ?? null,
           cognitiveStyle: content?.cognitiveStyle ?? null,
         }}
+        masterContent={master ?? undefined}
       />
     )
   }

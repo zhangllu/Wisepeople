@@ -6,10 +6,14 @@ import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import { BookmarkButton } from "@/components/shared/BookmarkButton"
 import { ExternalLink } from "lucide-react"
+import { DevelopmentStages } from "@/components/master/DevelopmentStages"
+import { LifeNarrative } from "@/components/master/LifeNarrative"
+import { DevelopmentLessons } from "@/components/master/DevelopmentLessons"
 import type { WisePerson } from "@/types"
+import type { MasterContentEntry } from "@/types/master"
 import wisePersonCodes from "@/data/wise-person-codes.json"
 
-type TabType = "introduction" | "basicInfo" | "cognitiveStyle" | "links"
+type TabType = "introduction" | "basicInfo" | "cognitiveStyle" | "developmentStages" | "lifeNarrative" | "developmentLessons" | "links"
 
 interface WisePersonContent {
   introduction: string | null
@@ -21,6 +25,9 @@ const TAB_LABELS: Record<string, string> = {
   "introduction": "简介",
   "basicInfo": "基本信息",
   "cognitiveStyle": "认知方式",
+  "developmentStages": "发展阶段",
+  "lifeNarrative": "人生叙事",
+  "developmentLessons": "发展启示",
   "links": "相关链接",
 }
 
@@ -28,10 +35,49 @@ interface Props {
   slug: string
   person: WisePerson
   preloadedContent: WisePersonContent
+  masterContent?: MasterContentEntry
 }
 
-export function WisePersonDetailTabs({ person, preloadedContent }: Props) {
-  const [activeTab, setActiveTab] = useState<TabType>("introduction")
+/** Individual tab button with optional "新" badge */
+function TabButton({
+  label,
+  isActive,
+  onClick,
+  disabled,
+  badge,
+}: {
+  label: string
+  isActive: boolean
+  onClick: () => void
+  disabled?: boolean
+  badge?: string
+}) {
+  return (
+    <button
+      onClick={onClick}
+      disabled={disabled}
+      className={`relative px-4 py-2 rounded-t-lg transition-colors whitespace-nowrap text-sm ${
+        isActive
+          ? "bg-blue-500 text-white"
+          : disabled
+            ? "text-gray-300 cursor-not-allowed"
+            : "hover:bg-gray-100 text-gray-600"
+      }`}
+    >
+      {label}
+      {badge && !isActive && (
+        <span className="absolute -top-1 -right-1 text-[10px] bg-red-400 text-white px-1 rounded-full">
+          {badge}
+        </span>
+      )}
+    </button>
+  )
+}
+
+export function WisePersonDetailTabs({ person, preloadedContent, masterContent }: Props) {
+  const [activeTab, setActiveTab] = useState<TabType>(
+    masterContent?.hasMasterAnalysis ? "developmentStages" : "introduction",
+  )
   const content = preloadedContent
   const isLinksTab = activeTab === "links"
   const tabContent = isLinksTab ? null : content[activeTab as keyof WisePersonContent]
@@ -58,57 +104,69 @@ export function WisePersonDetailTabs({ person, preloadedContent }: Props) {
         </div>
       </div>
 
-      {/* Tabs */}
-      <div className="border-b border-gray-200 mb-6">
-        <nav className="flex gap-4">
-          <button
+      {/* Tabs - scrollable on mobile */}
+      <div className="border-b border-gray-200 mb-6 overflow-x-auto">
+        <nav className="flex gap-4 min-w-max">
+          <TabButton
+            label={TAB_LABELS["introduction"]}
+            isActive={activeTab === "introduction"}
             onClick={() => setActiveTab("introduction")}
-            className={`px-4 py-2 rounded-t-lg transition-colors ${
-              activeTab === "introduction"
-                ? "bg-blue-500 text-white"
-                : "hover:bg-gray-100"
-            }`}
-          >
-            {TAB_LABELS["introduction"]}
-          </button>
-          <button
+          />
+          <TabButton
+            label={TAB_LABELS["basicInfo"]}
+            isActive={activeTab === "basicInfo"}
             onClick={() => setActiveTab("basicInfo")}
-            className={`px-4 py-2 rounded-t-lg transition-colors ${
-              activeTab === "basicInfo"
-                ? "bg-blue-500 text-white"
-                : "hover:bg-gray-100"
-            }`}
             disabled={!content.basicInfo}
-          >
-            {TAB_LABELS["basicInfo"]}
-          </button>
-          <button
+          />
+          {masterContent?.hasMasterAnalysis && (
+            <>
+              <TabButton
+                label={TAB_LABELS["developmentStages"]}
+                isActive={activeTab === "developmentStages"}
+                onClick={() => setActiveTab("developmentStages")}
+                badge="新"
+              />
+              <TabButton
+                label={TAB_LABELS["lifeNarrative"]}
+                isActive={activeTab === "lifeNarrative"}
+                onClick={() => setActiveTab("lifeNarrative")}
+                badge="新"
+              />
+              <TabButton
+                label={TAB_LABELS["developmentLessons"]}
+                isActive={activeTab === "developmentLessons"}
+                onClick={() => setActiveTab("developmentLessons")}
+                badge="新"
+              />
+            </>
+          )}
+          <TabButton
+            label={TAB_LABELS["cognitiveStyle"]}
+            isActive={activeTab === "cognitiveStyle"}
             onClick={() => setActiveTab("cognitiveStyle")}
-            className={`px-4 py-2 rounded-t-lg transition-colors ${
-              activeTab === "cognitiveStyle"
-                ? "bg-blue-500 text-white"
-                : "hover:bg-gray-100"
-            }`}
             disabled={!content.cognitiveStyle}
-          >
-            {TAB_LABELS["cognitiveStyle"]}
-          </button>
-          <button
+          />
+          <TabButton
+            label={TAB_LABELS["links"]}
+            isActive={activeTab === "links"}
             onClick={() => setActiveTab("links")}
-            className={`px-4 py-2 rounded-t-lg transition-colors ${
-              activeTab === "links"
-                ? "bg-blue-500 text-white"
-                : "hover:bg-gray-100"
-            }`}
             disabled={!person.links?.length && !person.wikipediaLink}
-          >
-            {TAB_LABELS["links"]}
-          </button>
+          />
         </nav>
       </div>
 
       {/* Content */}
-      {activeTab === "links" ? (
+      {activeTab === "developmentStages" && masterContent?.hasMasterAnalysis ? (
+        <DevelopmentStages stages={masterContent.stages} references={masterContent.references} />
+      ) : activeTab === "lifeNarrative" && masterContent?.hasMasterAnalysis ? (
+        <LifeNarrative narrative={masterContent.narrative} references={masterContent.references} />
+      ) : activeTab === "developmentLessons" && masterContent?.hasMasterAnalysis ? (
+        <DevelopmentLessons
+          transferablePrinciples={masterContent.transferablePrinciples}
+          pitfalls={masterContent.pitfalls}
+          references={masterContent.references}
+        />
+      ) : activeTab === "links" ? (
         <div className="space-y-3">
           {(person.links?.length ? person.links : person.wikipediaLink ? [{ label: "维基百科", url: person.wikipediaLink, description: "完整的生平与核心思想介绍" }] : []).map(
             (link, i) => (

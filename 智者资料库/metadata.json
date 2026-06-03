@@ -184,6 +184,18 @@
       "has_cognitive_style": true
     },
     {
+      "slug": "b-f-skinner",
+      "name": "斯金纳",
+      "english_name": "B.F. Skinner",
+      "years": "1904—1990",
+      "questions": ["Q08"],
+      "topics": ["行为主义", "操作性条件反射", "言语行为", "程序教学", "自由意志"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": false
+    },
+    {
       "slug": "paul-graham",
       "name": "保罗·格雷厄姆",
       "english_name": "Paul Graham",
@@ -194,6 +206,66 @@
       "has_introduction": true,
       "has_sources": true,
       "has_cognitive_style": true
+    },
+    {
+      "slug": "harold-bloom",
+      "name": "哈罗德·布鲁姆",
+      "english_name": "Harold Bloom",
+      "years": "1930—2019",
+      "questions": ["Q08"],
+      "topics": ["西方正典", "影响的焦虑", "审美批评", "文学经典", "人性洞察"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": false
+    },
+    {
+      "slug": "herbert-simon",
+      "name": "赫伯特·西蒙",
+      "english_name": "Herbert A. Simon",
+      "years": "1916—2001",
+      "questions": ["Q08", "Q06"],
+      "topics": ["有限理性", "满意即可", "认知科学", "人工智能", "组织决策", "人工科学"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": false
+    },
+    {
+      "slug": "george-kelly",
+      "name": "乔治·凯利",
+      "english_name": "George Kelly",
+      "years": "1905—1967",
+      "questions": ["Q08"],
+      "topics": ["个人建构心理学", "建构选择论", "人格理论", "认知建构", "心理治疗"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": false
+    },
+    {
+      "slug": "steven-pinker",
+      "name": "史蒂芬·平克",
+      "english_name": "Steven Pinker",
+      "years": "1954—",
+      "questions": ["Q08"],
+      "topics": ["语言本能", "进化心理学", "心智计算理论", "白板说批判", "暴力下降论", "启蒙理性"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": false
+    },
+    {
+      "slug": "daniel-kahneman",
+      "name": "丹尼尔·卡尼曼",
+      "english_name": "Daniel Kahneman",
+      "years": "1934—2024",
+      "questions": ["Q08", "Q05"],
+      "topics": ["系统1与系统2", "前景理论", "损失厌恶", "启发式与偏差", "行为经济学", "判断与决策"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": false
     }
   ],
   "questions": [
@@ -228,6 +300,11 @@
         {"id": "political-game", "zh_title": "政治博弈", "count": 16},
         {"id": "human-diversity", "zh_title": "人类的多样性", "count": 15}
       ]
+    },
+    {
+      "id": "Q08",
+      "zh_title": "如何理解人性",
+      "description": "人性论、心理、语言、文学中的人性洞察"
     }
   ]
 }
