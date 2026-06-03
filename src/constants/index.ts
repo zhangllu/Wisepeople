@@ -17,6 +17,7 @@ export const ROUTES = {
   search: "/search",
   fortune: "/fortune",
   story: "/story",
+  masters: "/masters",
   profile: "/profile",
   bookmarks: "/profile/bookmarks",
   reviews: "/profile/reviews",
