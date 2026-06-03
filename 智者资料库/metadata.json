@@ -268,6 +268,32 @@
       "has_cognitive_style": false
     }
   ],
+  "questions":    },
+    {
+      "slug": "gordon-allport",
+      "name": "戈登·奥尔波特",
+      "english_name": "Gordon Allport",
+      "years": "1897—1967",
+      "questions": ["Q08"],
+      "topics": ["特质理论", "人格心理学", "偏见", "功能自主性", "个人独特性"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": false
+    },
+    {
+      "slug": "albert-bandura",
+      "name": "阿尔伯特·班杜拉",
+      "english_name": "Albert Bandura",
+      "years": "1925—2021",
+      "questions": ["Q08"],
+      "topics": ["社会学习理论", "观察学习", "自我效能感", "交互决定论", "道德脱钩", "波波娃娃实验"],
+      "status": "complete",
+      "has_introduction": true,
+      "has_sources": true,
+      "has_cognitive_style": false
+    }
+  ],
   "questions": [
     {
       "id": "Q01",
