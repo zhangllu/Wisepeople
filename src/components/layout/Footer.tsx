@@ -9,8 +9,8 @@ export function Footer() {
           <div>
             <h3 className="text-sm font-semibold mb-3">{SITE_NAME}</h3>
             <p className="text-xs text-muted-foreground">
-              为成年人打造的通识教育地图。<br />
-              探索智者世界，发现阅读路径。
+              为终身学习者打造的通识教育地图。<br />
+              助力你生发出自己独特的知识结构。
             </p>
           </div>
           <div>
