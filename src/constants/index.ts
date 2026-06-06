@@ -26,6 +26,7 @@ export const ROUTES = {
   femaleWisePersons: "/wise-persons/female",
   femaleBiographies: "/wise-persons/female/biographies",
   explore: "/home",
+  map: "/map",
 } as const
 
 // 平台名称

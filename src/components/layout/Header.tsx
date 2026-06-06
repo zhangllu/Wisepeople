@@ -27,6 +27,9 @@ export function Header() {
           <Link href={ROUTES.explore} className="nav-link">
             首页
           </Link>
+          <Link href={ROUTES.map} className="nav-link">
+            知识地图
+          </Link>
           <Link href={ROUTES.wisePersons} className="nav-link">
             智者库
           </Link>
