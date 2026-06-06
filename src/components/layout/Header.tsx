@@ -34,7 +34,7 @@ export function Header() {
             女性智者
           </Link>
           <Link href={ROUTES.masters} className="nav-link">
-            高手库
+            智者人生
           </Link>
           <DropdownMenu>
             <DropdownMenuTrigger className="text-muted-foreground hover:text-foreground transition-colors text-sm cursor-pointer">

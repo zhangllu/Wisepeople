@@ -11,7 +11,7 @@ export default function MastersPage() {
   return (
     <div>
       <PageHero
-        title="高手库"
+        title="智者人生"
         subtitle="以人生发展学解码大师之路"
         description="利用人生发展学对高手的人生发展进行编码——他们的人格特质、认知方式、发展阶段、做对与做错的事。"
         accent={

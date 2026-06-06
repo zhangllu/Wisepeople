@@ -14,7 +14,7 @@ export function MobileNav() {
     { href: ROUTES.explore, label: "首页" },
     { href: ROUTES.wisePersons, label: "智者库" },
     { href: ROUTES.femaleWisePersons, label: "女性智者" },
-    { href: ROUTES.masters, label: "高手库" },
+    { href: ROUTES.masters, label: "智者人生" },
   ]
 
   const dailyGroup = [
