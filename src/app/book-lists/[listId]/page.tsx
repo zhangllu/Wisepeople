@@ -41,7 +41,13 @@ export default function BookListDetailPage() {
                     <div className="flex flex-col gap-1">
                       <div className="flex items-start justify-between">
                         <div className="flex-1 min-w-0">
-                          <h3 className="font-semibold text-sm">{b.title}</h3>
+                          <h3 className="font-semibold text-sm">
+                            {b.doubanLink ? (
+                              <a href={b.doubanLink} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                                {b.title}
+                              </a>
+                            ) : b.title}
+                          </h3>
                           <p className="text-xs text-muted-foreground">{b.author}{b.translator ? ` · ${b.translator}译` : ""}</p>
                         </div>
                         <div className="flex items-center gap-1 shrink-0">

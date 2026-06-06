@@ -13,7 +13,13 @@ export function BookCard({ book }: BookCardProps) {
         <div className="flex flex-col gap-1">
           <div className="flex items-start justify-between">
             <div className="flex-1 min-w-0">
-              <h3 className="font-semibold text-sm leading-snug">{book.title}</h3>
+              <h3 className="font-semibold text-sm leading-snug">
+                {book.doubanLink ? (
+                  <a href={book.doubanLink} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                    {book.title}
+                  </a>
+                ) : book.title}
+              </h3>
               <p className="text-xs text-muted-foreground">{book.author}</p>
             </div>
             <BookmarkButton targetId={book.slug} targetType="book" />

@@ -212,7 +212,13 @@ export function WisePersonStubDetail({ person, books }: Props) {
               >
                 <div className="flex items-start justify-between">
                   <div className="flex-1 min-w-0">
-                    <h3 className="font-medium text-gray-900">{book.title}</h3>
+                    <h3 className="font-medium text-gray-900">
+                      {book.doubanLink ? (
+                        <a href={book.doubanLink} target="_blank" rel="noopener noreferrer" className="hover:text-blue-700 transition-colors">
+                          {book.title}
+                        </a>
+                      ) : book.title}
+                    </h3>
                     {book.publisher && (
                       <p className="text-xs text-muted-foreground mt-1">
                         {book.publisher}{book.year ? ` · ${book.year}` : ""}
