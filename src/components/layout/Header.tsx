@@ -3,6 +3,12 @@ import { ROUTES, SITE_NAME } from "@/constants"
 import { SearchBox } from "@/components/search/SearchBox"
 import { AuthButtons } from "@/components/shared/AuthButtons"
 import { MobileNav } from "@/components/layout/MobileNav"
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+} from "@/components/ui/dropdown-menu"
 
 export function Header() {
   return (
@@ -27,12 +33,19 @@ export function Header() {
           <Link href={ROUTES.masters} className="text-muted-foreground hover:text-foreground transition-colors">
             高手库
           </Link>
-          <Link href={ROUTES.daily} className="text-muted-foreground hover:text-foreground transition-colors">
-            遇见智者
-          </Link>
-          <Link href={ROUTES.fortune} className="text-muted-foreground hover:text-foreground transition-colors">
-            随机漫步
-          </Link>
+          <DropdownMenu>
+            <DropdownMenuTrigger className="text-muted-foreground hover:text-foreground transition-colors text-sm cursor-pointer">
+              遇见智者
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuItem asChild>
+                <Link href={ROUTES.daily}>每日智者</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href={ROUTES.fortune}>随机漫步</Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
           <Link href={ROUTES.questions} className="text-muted-foreground hover:text-foreground transition-colors">
             十大问题
           </Link>

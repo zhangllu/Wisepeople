@@ -14,8 +14,14 @@ export function MobileNav() {
     { href: ROUTES.wisePersons, label: "智者库" },
     { href: ROUTES.femaleWisePersons, label: "女性智者" },
     { href: ROUTES.masters, label: "高手库" },
-    { href: ROUTES.daily, label: "遇见智者" },
+  ]
+
+  const dailyGroup = [
+    { href: ROUTES.daily, label: "每日智者" },
     { href: ROUTES.fortune, label: "随机漫步" },
+  ]
+
+  const otherLinks = [
     { href: ROUTES.questions, label: "十大问题" },
     { href: ROUTES.bookLists, label: "书单" },
     { href: ROUTES.story, label: "产品故事" },
@@ -30,6 +36,32 @@ export function MobileNav() {
       <SheetContent side="left" className="w-60">
         <div className="flex flex-col gap-4 mt-8">
           {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              onClick={() => setOpen(false)}
+              className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              {link.label}
+            </Link>
+          ))}
+
+          {/* 遇见智者 group */}
+          <div className="flex flex-col gap-1">
+            <span className="text-xs font-medium text-muted-foreground/60 px-1">遇见智者</span>
+            {dailyGroup.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors pl-4"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+
+          {otherLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
