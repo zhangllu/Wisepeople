@@ -12,6 +12,7 @@ interface AuthState {
   register: (email: string, password: string, name: string) => Promise<{ success: boolean; error?: string }>
   sendOTP: (email: string) => Promise<{ success: boolean; error?: string }>
   verifyOTP: (email: string, token: string) => Promise<boolean>
+  signInWithOAuth: (provider: "google" | "github") => Promise<void>
   logout: () => Promise<void>
 }
 
@@ -229,6 +230,16 @@ export const useAuthStore = create<AuthState>()(
           console.error("Verify OTP error:", e)
           return false
         }
+      },
+
+      signInWithOAuth: async (provider: "google" | "github") => {
+        const supabase = createClient()
+        await supabase.auth.signInWithOAuth({
+          provider,
+          options: {
+            redirectTo: `${window.location.origin}/auth/callback`,
+          },
+        })
       },
 
       logout: async () => {
