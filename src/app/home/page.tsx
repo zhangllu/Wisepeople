@@ -42,11 +42,7 @@ export default function HomePage() {
             {SITE_DESCRIPTION}
           </p>
 
-          {/* Quote */}
-          <blockquote className="mt-8 text-xs md:text-sm text-muted-foreground/50 italic max-w-md mx-auto leading-relaxed border-l-2 border-accent/30 pl-4 text-left">
-            "教育不是注满一桶水，而是点燃一把火。"
-            <footer className="mt-1 text-xs not-italic text-muted-foreground/30">—— 威廉·巴特勒·叶芝</footer>
-          </blockquote>
+
 
           <div className="flex items-center justify-center gap-3 mt-8">
             <Link
