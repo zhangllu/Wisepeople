@@ -27,6 +27,3 @@ build/
 # Vercel
 .vercel
 *.tsbuildinfo
-
-# 生成的封面图片（通过 scripts/fetch-covers.mjs 抓取）
-public/images/covers/
