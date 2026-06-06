@@ -8,6 +8,7 @@ import {
   DropdownMenuTrigger,
   DropdownMenuContent,
   DropdownMenuItem,
+  DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu"
 
 export function Header() {
@@ -17,20 +18,28 @@ export function Header() {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <MobileNav />
-          <Link href={ROUTES.map} className="flex items-center gap-1.5">
+          <Link href={ROUTES.home} className="flex items-center gap-1.5">
             <span className="text-lg font-bold tracking-tight text-accent">{SITE_NAME}</span>
           </Link>
         </div>
 
         {/* Navigation - Desktop */}
         <nav className="hidden md:flex items-center gap-6 text-sm">
+          <Link href={ROUTES.home} className="nav-link">
+            首页
+          </Link>
+
           <Link href={ROUTES.map} className="nav-link">
             知识地图
           </Link>
 
+          <Link href={ROUTES.questions} className="nav-link">
+            十大问题
+          </Link>
+
           <DropdownMenu>
             <DropdownMenuTrigger className="text-muted-foreground hover:text-foreground transition-colors text-sm cursor-pointer">
-              智者库
+              遇见智者
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem render={<Link href={ROUTES.wisePersons} />}>
@@ -42,18 +51,7 @@ export function Header() {
               <DropdownMenuItem render={<Link href={ROUTES.masters} />}>
                 智者人生
               </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
-
-          <Link href={ROUTES.bookLists} className="nav-link">
-            书单
-          </Link>
-
-          <DropdownMenu>
-            <DropdownMenuTrigger className="text-muted-foreground hover:text-foreground transition-colors text-sm cursor-pointer">
-              遇见智者
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
+              <DropdownMenuSeparator />
               <DropdownMenuItem render={<Link href={ROUTES.daily} />}>
                 每日智者
               </DropdownMenuItem>
@@ -63,8 +61,8 @@ export function Header() {
             </DropdownMenuContent>
           </DropdownMenu>
 
-          <Link href={ROUTES.questions} className="nav-link">
-            十大问题
+          <Link href={ROUTES.bookLists} className="nav-link">
+            书单
           </Link>
 
           <Link href={ROUTES.profile} className="nav-link">

@@ -10,9 +10,9 @@ export function MobileNav() {
   const [open, setOpen] = useState(false)
 
   const mainLinks = [
+    { href: ROUTES.home, label: "首页" },
     { href: ROUTES.map, label: "知识地图" },
     { href: ROUTES.questions, label: "十大问题" },
-    { href: ROUTES.bookLists, label: "书单" },
   ]
 
   const wisePersonLinks = [
@@ -21,12 +21,13 @@ export function MobileNav() {
     { href: ROUTES.masters, label: "智者人生" },
   ]
 
-  const dailyLinks = [
+  const discoverLinks = [
     { href: ROUTES.daily, label: "每日智者" },
     { href: ROUTES.fortune, label: "随机漫步" },
   ]
 
   const bottomLinks = [
+    { href: ROUTES.bookLists, label: "书单" },
     { href: ROUTES.story, label: "产品故事" },
     { href: ROUTES.profile, label: "个人中心" },
   ]
@@ -50,9 +51,9 @@ export function MobileNav() {
             </Link>
           ))}
 
-          {/* 智者库 group */}
+          {/* 遇见智者 group */}
           <div className="flex flex-col gap-1">
-            <span className="text-xs font-medium text-muted-foreground/60 px-1">智者库</span>
+            <span className="text-xs font-medium text-muted-foreground/60 px-1">遇见智者</span>
             {wisePersonLinks.map((link) => (
               <Link
                 key={link.href}
@@ -63,12 +64,8 @@ export function MobileNav() {
                 {link.label}
               </Link>
             ))}
-          </div>
-
-          {/* 遇见智者 group */}
-          <div className="flex flex-col gap-1">
-            <span className="text-xs font-medium text-muted-foreground/60 px-1">遇见智者</span>
-            {dailyLinks.map((link) => (
+            <div className="my-1 h-px bg-border" />
+            {discoverLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
