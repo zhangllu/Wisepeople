@@ -44,11 +44,11 @@ export default function LoginPage() {
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="email">邮箱</Label>
+              <Label htmlFor="email">邮箱 / 用户名</Label>
               <Input
                 id="email"
-                type="email"
-                placeholder="请输入邮箱"
+                type="text"
+                placeholder="邮箱或用户名"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required

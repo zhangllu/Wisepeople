@@ -54,9 +54,26 @@ export const useAuthStore = create<AuthState>()(
         set({ user: null, isAuthenticated: false, loading: false })
       },
 
-      login: async (email: string, password: string) => {
+      login: async (emailOrUsername: string, password: string) => {
         try {
           const supabase = createClient()
+
+          // 判断输入的是邮箱还是用户名
+          const isEmail = emailOrUsername.includes("@")
+          let email = emailOrUsername
+
+          if (!isEmail) {
+            // 用户名登录：从 profiles 表查找对应的邮箱
+            const { data: profile } = await supabase
+              .from("profiles")
+              .select("email")
+              .eq("name", emailOrUsername)
+              .maybeSingle()
+
+            if (!profile?.email) return false
+            email = profile.email
+          }
+
           const { data, error } = await supabase.auth.signInWithPassword({ email, password })
           if (error || !data.user) return false
 
