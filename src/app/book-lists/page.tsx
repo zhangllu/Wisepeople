@@ -17,6 +17,7 @@ export default function BookListsPage() {
   const classicsBooks = getClassicsBooks()
 
   const [expanded, setExpanded] = useState<Set<number>>(new Set())
+  const [expandedTopics, setExpandedTopics] = useState<Set<string>>(new Set())
 
   const totalBooks = questions.reduce(
     (s, q) =>
@@ -29,6 +30,15 @@ export default function BookListsPage() {
       const next = new Set(prev)
       if (next.has(qn)) next.delete(qn)
       else next.add(qn)
+      return next
+    })
+  }
+
+  function toggleTopic(code: string) {
+    setExpandedTopics((prev) => {
+      const next = new Set(prev)
+      if (next.has(code)) next.delete(code)
+      else next.add(code)
       return next
     })
   }
@@ -88,10 +98,19 @@ export default function BookListsPage() {
                     <div className="divide-y divide-border/50">
                       {topics.map((topic) => {
                         const books = getBooksByTopic(topic.code)
+                        const topicOpen = expandedTopics.has(topic.code)
                         return (
                           <div key={topic.code}>
-                            {/* Topic sub-header */}
-                            <div className="flex items-center gap-2 px-4 py-2 bg-muted/30">
+                            {/* Topic sub-header — collapsible */}
+                            <button
+                              onClick={() => toggleTopic(topic.code)}
+                              className="w-full flex items-center gap-2 px-4 py-2 bg-muted/30 hover:bg-muted/50 transition-colors"
+                            >
+                              <ChevronRight
+                                className={`h-3 w-3 text-muted-foreground/50 transition-transform flex-shrink-0 ${
+                                  topicOpen ? "rotate-90" : ""
+                                }`}
+                              />
                               <span className="font-mono text-[10px] text-accent">
                                 {topic.code}
                               </span>
@@ -101,33 +120,35 @@ export default function BookListsPage() {
                               <span className="text-[10px] text-muted-foreground/60">
                                 {books.length} 本
                               </span>
-                            </div>
-                            {/* Books under this topic */}
-                            {books.length > 0 ? (
-                              <div className="divide-y divide-border/30">
-                                {books.map((b) => (
-                                  <Link
-                                    key={b.slug}
-                                    href={b.doubanLink || "#"}
-                                    target={b.doubanLink ? "_blank" : undefined}
-                                    className="flex items-center justify-between px-4 py-2 pl-8 hover:bg-accent/5 transition-colors group text-sm"
-                                  >
-                                    <span className="group-hover:text-accent transition-colors truncate">
-                                      {b.title}
-                                    </span>
-                                    <span className="text-xs text-muted-foreground flex-shrink-0 ml-3">
-                                      {b.author}
-                                      {b.doubanLink && (
-                                        <ExternalLink className="inline w-3 h-3 ml-1 opacity-40" />
-                                      )}
-                                    </span>
-                                  </Link>
-                                ))}
-                              </div>
-                            ) : (
-                              <div className="px-4 py-2 pl-8 text-xs text-muted-foreground/50">
-                                暂无收录
-                              </div>
+                            </button>
+                            {/* Books under this topic — collapsible */}
+                            {topicOpen && (
+                              books.length > 0 ? (
+                                <div className="divide-y divide-border/30">
+                                  {books.map((b) => (
+                                    <Link
+                                      key={b.slug}
+                                      href={b.doubanLink || "#"}
+                                      target={b.doubanLink ? "_blank" : undefined}
+                                      className="flex items-center justify-between px-4 py-2 pl-10 hover:bg-accent/5 transition-colors group text-sm"
+                                    >
+                                      <span className="group-hover:text-accent transition-colors truncate">
+                                        {b.title}
+                                      </span>
+                                      <span className="text-xs text-muted-foreground flex-shrink-0 ml-3">
+                                        {b.author}
+                                        {b.doubanLink && (
+                                          <ExternalLink className="inline w-3 h-3 ml-1 opacity-40" />
+                                        )}
+                                      </span>
+                                    </Link>
+                                  ))}
+                                </div>
+                              ) : (
+                                <div className="px-4 py-2 pl-10 text-xs text-muted-foreground/50">
+                                  暂无收录
+                                </div>
+                              )
                             )}
                           </div>
                         )
