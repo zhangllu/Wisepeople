@@ -13,7 +13,7 @@ const MODULES = [
   },
   {
     title: "十大问题",
-    description: "以问题为线索，编织跨学科的知识网络",
+    description: "以大问题为线索，编织跨学科的知识网络",
     href: ROUTES.questions,
     icon: List,
   },
