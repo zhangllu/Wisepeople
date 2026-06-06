@@ -22,6 +22,7 @@ export const ROUTES = {
   bookmarks: "/profile/bookmarks",
   reviews: "/profile/reviews",
   femaleWisePersons: "/wise-persons/female",
+  femaleBiographies: "/wise-persons/female/biographies",
 } as const
 
 // 平台名称

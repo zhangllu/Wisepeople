@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { ExternalLink, BookOpen, Library, Tags, Quote } from "lucide-react"
+import { BookmarkButton } from "@/components/shared/BookmarkButton"
 import type { WisePerson } from "@/types"
 import { DISCIPLINE_LABELS, ERA_LABELS, REGION_LABELS } from "@/constants"
 import { Badge } from "@/components/ui/badge"
@@ -65,13 +66,16 @@ export function WisePersonStubDetail({ person, books }: Props) {
     <div className="container mx-auto max-w-4xl px-4 py-8">
       {/* Header */}
       <div className="mb-8">
-        <div className="flex items-center gap-3 mb-3">
-          <h1 className="text-3xl font-bold">{person.name}</h1>
-          {(wisePersonCodes as any).slugToCode?.[person.slug] && (
-            <span className="font-mono text-xs text-muted-foreground bg-gray-100 px-2 py-0.5 rounded border border-gray-200">
-              {(wisePersonCodes as any).slugToCode[person.slug]}
-            </span>
-          )}
+        <div className="flex items-start justify-between">
+          <div className="flex items-center gap-3 mb-3">
+            <h1 className="text-3xl font-bold">{person.name}</h1>
+            {(wisePersonCodes as any).slugToCode?.[person.slug] && (
+              <span className="font-mono text-xs text-muted-foreground bg-gray-100 px-2 py-0.5 rounded border border-gray-200">
+                {(wisePersonCodes as any).slugToCode[person.slug]}
+              </span>
+            )}
+          </div>
+          <BookmarkButton targetId={person.slug} targetType="wise-person" />
         </div>
         <div className="flex flex-wrap items-center gap-2 mb-4">
           <Badge variant="secondary" className="text-xs">
