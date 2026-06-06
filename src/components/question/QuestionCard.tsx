@@ -10,7 +10,7 @@ interface QuestionCardProps {
 
 export function QuestionCard({ question }: QuestionCardProps) {
   return (
-    <Link href={`${ROUTES.map}?q=${question.number}`}>
+    <Link href={ROUTES.questionDetail(question.id)}>
       <Card className="transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full">
         <CardContent className="p-5">
           <div className="flex items-center gap-2 mb-2">
