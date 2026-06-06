@@ -10,7 +10,7 @@ export default function QuestionsPage() {
     <div>
       <PageHero
         title="十大问题导览"
-        subtitle="「大问题」因为与每一个人的人生发展息息相关而「大」，「大问题」因为成为人类文明历史基本命题而「大」。"
+        subtitle="「大问题」因为与每一个人的人生发展息息相关而「大」，因为成为人类文明历史基本命题而「大」。"
         description="从您关心的问题出发，找到相关的智者和著作"
         accent={
           <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center">
