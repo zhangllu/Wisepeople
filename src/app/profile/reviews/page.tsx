@@ -6,6 +6,8 @@ import { ROUTES } from "@/constants"
 import { Button } from "@/components/ui/button"
 import { ReviewCard } from "@/components/review/ReviewCard"
 import { EmptyState } from "@/components/shared/EmptyState"
+import { DetailHeader } from "@/components/shared/DetailHeader"
+import { FadeIn } from "@/components/shared/FadeIn"
 
 export default function ReviewsPage() {
   const { isAuthenticated, user } = useAuthStore()
@@ -25,33 +27,41 @@ export default function ReviewsPage() {
 
   if (userReviews.length === 0) {
     return (
-      <div className="container mx-auto max-w-4xl px-4 py-8">
-        <h1 className="text-2xl font-bold mb-6">我的书评</h1>
-        <EmptyState title="暂无书评" description="在智者详情页中可以撰写书评和笔记" />
-      </div>
+      <>
+        <DetailHeader title="我的书评" />
+        <FadeIn>
+          <div className="container mx-auto max-w-4xl px-4 py-8">
+            <EmptyState title="暂无书评" description="在智者详情页中可以撰写书评和笔记" />
+          </div>
+        </FadeIn>
+      </>
     )
   }
 
   return (
-    <div className="container mx-auto max-w-4xl px-4 py-8">
-      <h1 className="text-2xl font-bold mb-6">我的书评（{userReviews.length}）</h1>
-      <div className="space-y-3">
-        {userReviews.map((review) => (
-          <div key={review.id} className="relative">
-            <ReviewCard review={review} />
-            <div className="absolute top-2 right-2 flex gap-1">
-              <Button
-                variant="ghost"
-                size="sm"
-                className="text-xs text-muted-foreground h-6"
-                onClick={() => deleteReview(review.id)}
-              >
-                删除
-              </Button>
-            </div>
+    <>
+      <DetailHeader title="我的书评" description={`共 ${userReviews.length} 篇`} />
+      <FadeIn>
+        <div className="container mx-auto max-w-4xl px-4 py-8">
+          <div className="space-y-3">
+            {userReviews.map((review) => (
+              <div key={review.id} className="relative">
+                <ReviewCard review={review} />
+                <div className="absolute top-2 right-2 flex gap-1">
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="text-xs text-muted-foreground h-6"
+                    onClick={() => deleteReview(review.id)}
+                  >
+                    删除
+                  </Button>
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-    </div>
+        </div>
+      </FadeIn>
+    </>
   )
 }
