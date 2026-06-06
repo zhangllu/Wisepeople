@@ -45,22 +45,9 @@ export function Header() {
             </DropdownMenuContent>
           </DropdownMenu>
 
-          <DropdownMenu>
-            <DropdownMenuTrigger className="text-muted-foreground hover:text-foreground transition-colors text-sm cursor-pointer">
-              书单
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              <DropdownMenuItem render={<Link href={ROUTES.bookLists} />}>
-                通识书单
-              </DropdownMenuItem>
-              <DropdownMenuItem render={<Link href={ROUTES.bookListDetail("minimum-56")} />}>
-                最小限度书单
-              </DropdownMenuItem>
-              <DropdownMenuItem render={<Link href={ROUTES.topicDetail("0")} />}>
-                元典十三经
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+          <Link href={ROUTES.bookLists} className="nav-link">
+            书单
+          </Link>
 
           <DropdownMenu>
             <DropdownMenuTrigger className="text-muted-foreground hover:text-foreground transition-colors text-sm cursor-pointer">

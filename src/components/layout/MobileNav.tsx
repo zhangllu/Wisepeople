@@ -12,18 +12,13 @@ export function MobileNav() {
   const mainLinks = [
     { href: ROUTES.map, label: "知识地图" },
     { href: ROUTES.questions, label: "十大问题" },
+    { href: ROUTES.bookLists, label: "书单" },
   ]
 
   const wisePersonLinks = [
     { href: ROUTES.wisePersons, label: "全部智者" },
     { href: ROUTES.femaleWisePersons, label: "女性智者" },
     { href: ROUTES.masters, label: "智者人生" },
-  ]
-
-  const bookLinks = [
-    { href: ROUTES.bookLists, label: "通识书单" },
-    { href: ROUTES.bookListDetail("minimum-56"), label: "最小限度书单" },
-    { href: ROUTES.topicDetail("0"), label: "元典十三经" },
   ]
 
   const dailyLinks = [
@@ -59,21 +54,6 @@ export function MobileNav() {
           <div className="flex flex-col gap-1">
             <span className="text-xs font-medium text-muted-foreground/60 px-1">智者库</span>
             {wisePersonLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setOpen(false)}
-                className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors pl-4"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
-
-          {/* 书单 group */}
-          <div className="flex flex-col gap-1">
-            <span className="text-xs font-medium text-muted-foreground/60 px-1">书单</span>
-            {bookLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}

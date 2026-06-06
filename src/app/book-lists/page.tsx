@@ -1,140 +1,198 @@
+"use client"
+
+import { useState } from "react"
 import Link from "next/link"
-import { BookListCard } from "@/components/book-list/BookListCard"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { mockBookLists } from "@/lib/stores/mock-data"
+import { ChevronRight, BookHeart, ExternalLink } from "lucide-react"
 import { getAllQuestions, getBooksByQuestion, getMinimumBookList, getClassicsBooks } from "@/lib/data"
-import { ROUTES, DIMENSION_LABELS } from "@/constants"
-import { personalizedBookLists } from "@/data/personalized-booklists"
+import { DIMENSION_LABELS, ROUTES } from "@/constants"
+import { Badge } from "@/components/ui/badge"
+import { Card, CardContent } from "@/components/ui/card"
 import { DoubanListCard } from "@/components/book-list/DoubanListCard"
+import { personalizedBookLists } from "@/data/personalized-booklists"
 import { PageHero } from "@/components/shared/PageHero"
-import { BookHeart } from "lucide-react"
 
 export default function BookListsPage() {
   const questions = getAllQuestions()
   const minBooks = getMinimumBookList()
   const classicsBooks = getClassicsBooks()
 
+  const [expanded, setExpanded] = useState<Set<number>>(new Set())
+
+  const totalBooks = questions.reduce(
+    (s, q) => s + getBooksByQuestion(q.number).length,
+    0,
+  )
+
+  function toggle(qn: number) {
+    setExpanded((prev) => {
+      const next = new Set(prev)
+      if (next.has(qn)) next.delete(qn)
+      else next.add(qn)
+      return next
+    })
+  }
+
   return (
     <div>
       <PageHero
         title="书单推荐"
         subtitle="好的阅读，始于好的选择"
-        description="从精选书单开始您的阅读之旅"
+        description={`大问题主题书单 · 最小限度书单 · 元典十三经 · 个性化书单，共 ${totalBooks + minBooks.length + classicsBooks.length} 本著作`}
         accent={
           <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center">
             <BookHeart className="w-4 h-4 text-accent" />
           </div>
         }
       />
-      <div className="container mx-auto max-w-5xl px-4 py-8">
-
-      {/* 最小限度书单 */}
-      <section className="mb-10">
-        <div className="flex items-center justify-between mb-4">
-          <div>
-            <h2 className="text-lg font-semibold">最小限度书单</h2>
-            <p className="text-xs text-muted-foreground mt-0.5">精选 56 本必读经典，覆盖天地人三大维度</p>
+      <div className="container mx-auto max-w-4xl px-4 py-8 space-y-12">
+        {/* ── 大问题主题书单 ── */}
+        <section>
+          <h2 className="text-lg font-semibold mb-4">大问题主题书单</h2>
+          <div className="space-y-2">
+            {questions.map((q) => {
+              const books = getBooksByQuestion(q.number)
+              const isOpen = expanded.has(q.number)
+              return (
+                <div
+                  key={q.number}
+                  className="rounded-lg border border-border overflow-hidden"
+                >
+                  <button
+                    onClick={() => toggle(q.number)}
+                    className="w-full flex items-center justify-between bg-muted px-4 py-3 text-sm font-medium hover:bg-muted/80 transition-colors"
+                  >
+                    <span className="flex items-center gap-2">
+                      <span className="font-mono text-xs text-muted-foreground">
+                        {q.code}
+                      </span>
+                      <span>{q.title}</span>
+                      <Badge
+                        variant="secondary"
+                        className="text-[10px] leading-none px-1.5 py-0.5"
+                      >
+                        {DIMENSION_LABELS[q.dimension]}
+                      </Badge>
+                      <span className="text-xs text-muted-foreground/60">
+                        {books.length} 本
+                      </span>
+                    </span>
+                    <ChevronRight
+                      className={`h-4 w-4 text-muted-foreground transition-transform flex-shrink-0 ${
+                        isOpen ? "rotate-90" : ""
+                      }`}
+                    />
+                  </button>
+                  {isOpen && (
+                    <div className="divide-y divide-border">
+                      {books.map((b) => (
+                        <Link
+                          key={b.slug}
+                          href={b.doubanLink || "#"}
+                          target={b.doubanLink ? "_blank" : undefined}
+                          className="flex items-center justify-between px-4 py-2.5 hover:bg-accent/5 transition-colors group text-sm"
+                        >
+                          <span className="group-hover:text-accent transition-colors truncate">
+                            {b.title}
+                          </span>
+                          <span className="text-xs text-muted-foreground flex-shrink-0 ml-3">
+                            {b.author}
+                            {b.doubanLink && (
+                              <ExternalLink className="inline w-3 h-3 ml-1 opacity-40" />
+                            )}
+                          </span>
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              )
+            })}
           </div>
-          <Link
-            href={ROUTES.bookListDetail("minimum-56")}
-            className="text-xs text-accent hover:underline"
-          >
-            查看全部 {minBooks.length} 本 →
-          </Link>
-        </div>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-          {minBooks.slice(0, 8).map((b) => (
-            <Card key={b.slug} className="transition-all duration-200 hover:shadow-md">
-              <CardContent className="p-3">
-                <p className="text-sm font-medium truncate">{b.title}</p>
-                <p className="text-xs text-muted-foreground truncate">{b.author}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
+        </section>
 
-      {/* 元典 */}
-      {classicsBooks.length > 0 && (
-        <section className="mb-10">
+        {/* ── 最小限度书单 ── */}
+        <section>
           <div className="flex items-center justify-between mb-4">
             <div>
-              <h2 className="text-lg font-semibold">元典：人类文明十三经</h2>
-              <p className="text-xs text-muted-foreground mt-0.5">轴心时代四大文明的根本经典</p>
+              <h2 className="text-lg font-semibold">最小限度书单</h2>
+              <p className="text-xs text-muted-foreground mt-0.5">
+                精选 56 本必读经典，覆盖天地人三大维度
+              </p>
             </div>
             <Link
-              href={ROUTES.topicDetail("0")}
+              href={ROUTES.bookListDetail("minimum-56")}
               className="text-xs text-accent hover:underline"
             >
-              查看全部 →
+              查看全部 {minBooks.length} 本 →
             </Link>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-            {classicsBooks.slice(0, 8).map((b) => (
-              <Card key={b.slug} className="transition-all duration-200 hover:shadow-md">
+            {minBooks.slice(0, 8).map((b) => (
+              <Card
+                key={b.slug}
+                className="transition-all duration-200 hover:shadow-md"
+              >
                 <CardContent className="p-3">
                   <p className="text-sm font-medium truncate">{b.title}</p>
-                  <p className="text-xs text-muted-foreground truncate">{b.author}</p>
+                  <p className="text-xs text-muted-foreground truncate">
+                    {b.author}
+                  </p>
                 </CardContent>
               </Card>
             ))}
           </div>
         </section>
-      )}
 
-      {/* 大问题主题书单 */}
-      <section className="mb-10">
-        <h2 className="text-lg font-semibold mb-4">大问题主题书单</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {questions.map((q) => {
-            const bookCount = getBooksByQuestion(q.number).length
-            return (
-              <Link key={q.code} href={ROUTES.bookListDetail(`q-${q.number}`)}>
-                <Card className="transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 h-full">
-                  <CardContent className="p-5">
-                    <div className="flex items-center gap-2 mb-2">
-                      <span className="text-xs font-mono text-muted-foreground">{q.code}</span>
-                      <Badge variant="secondary" className="text-[10px]">
-                        {DIMENSION_LABELS[q.dimension]}
-                      </Badge>
-                    </div>
-                    <h3 className="font-semibold text-sm mb-1">{q.title}</h3>
-                    <p className="text-xs text-muted-foreground line-clamp-2">{q.subtitle}</p>
-                    <p className="text-xs text-accent/70 mt-2">{bookCount} 本相关著作</p>
+        {/* ── 元典十三经 ── */}
+        {classicsBooks.length > 0 && (
+          <section>
+            <div className="flex items-center justify-between mb-4">
+              <div>
+                <h2 className="text-lg font-semibold">元典：人类文明十三经</h2>
+                <p className="text-xs text-muted-foreground mt-0.5">
+                  轴心时代四大文明的根本经典
+                </p>
+              </div>
+              <Link
+                href={ROUTES.topicDetail("0")}
+                className="text-xs text-accent hover:underline"
+              >
+                查看全部 →
+              </Link>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+              {classicsBooks.slice(0, 8).map((b) => (
+                <Card
+                  key={b.slug}
+                  className="transition-all duration-200 hover:shadow-md"
+                >
+                  <CardContent className="p-3">
+                    <p className="text-sm font-medium truncate">{b.title}</p>
+                    <p className="text-xs text-muted-foreground truncate">
+                      {b.author}
+                    </p>
                   </CardContent>
                 </Card>
-              </Link>
-            )
-          })}
-        </div>
-      </section>
+              ))}
+            </div>
+          </section>
+        )}
 
-      {/* 精选书单（原有 mock） */}
-      {mockBookLists.length > 0 && (
-        <section className="mb-10">
-          <h2 className="text-lg font-semibold mb-4">精选书单</h2>
+        {/* ── 个性化书单 ── */}
+        <section>
+          <div className="mb-4">
+            <h2 className="text-lg font-semibold">个性化书单</h2>
+            <p className="text-xs text-muted-foreground mt-0.5">
+              来自豆瓣的主题豆列，拓展阅读的边界
+            </p>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {mockBookLists.map((bl) => (
-              <BookListCard key={bl.id} bookList={bl} />
+            {personalizedBookLists.map((bl) => (
+              <DoubanListCard key={bl.id} list={bl} />
             ))}
           </div>
         </section>
-      )}
-
-      {/* 个性化书单（豆瓣豆列） */}
-      <section className="mb-10">
-        <div className="mb-4">
-          <h2 className="text-lg font-semibold">个性化书单</h2>
-          <p className="text-xs text-muted-foreground mt-0.5">来自豆瓣的个性化主题书单</p>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {personalizedBookLists.map((bl) => (
-            <DoubanListCard key={bl.id} list={bl} />
-          ))}
-        </div>
-      </section>
       </div>
-      </div>
+    </div>
   )
 }
