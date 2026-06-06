@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { ROUTES } from "@/constants"
 import { masterContent } from "@/data/master-content"
-import mastersMeta from "../../../高手库/metadata.json"
+import mastersMeta from "../../../智者人生/metadata.json"
 import { PageHero } from "@/components/shared/PageHero"
 import { Trophy } from "lucide-react"
 

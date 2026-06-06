@@ -1,0 +1,67 @@
+{
+  "zh_title": "智者人生",
+  "zh_description": "利用人生发展学对高手的人生发展进行编码——他们的人格特质、认知方式、发展阶段、做对与做错的事",
+  "title": "Master Library",
+  "masters": [
+    {
+      "slug": "wang-yangming",
+      "name": "王阳明",
+      "english_name": "Wang Yangming",
+      "years": "1472—1529",
+      "era": "明朝",
+      "status": "complete",
+      "has_development_stages": true,
+      "has_life_narrative": true
+    },
+    {
+      "slug": "b-f-skinner",
+      "name": "斯金纳",
+      "english_name": "B.F. Skinner",
+      "years": "1904—1990",
+      "era": "20世纪",
+      "status": "complete",
+      "has_development_stages": true,
+      "has_life_narrative": true
+    },
+    {
+      "slug": "harold-bloom",
+      "name": "哈罗德·布鲁姆",
+      "english_name": "Harold Bloom",
+      "years": "1930—2019",
+      "era": "20世纪",
+      "status": "complete",
+      "has_development_stages": true,
+      "has_life_narrative": true
+    },
+    {
+      "slug": "george-kelly",
+      "name": "乔治·凯利",
+      "english_name": "George Kelly",
+      "years": "1905—1967",
+      "era": "20世纪",
+      "status": "complete",
+      "has_development_stages": true,
+      "has_life_narrative": true
+    },
+    {
+      "slug": "steven-pinker",
+      "name": "史蒂芬·平克",
+      "english_name": "Steven Pinker",
+      "years": "1954—",
+      "era": "当代",
+      "status": "complete",
+      "has_development_stages": true,
+      "has_life_narrative": true
+    },
+    {
+      "slug": "daniel-kahneman",
+      "name": "丹尼尔·卡尼曼",
+      "english_name": "Daniel Kahneman",
+      "years": "1934—2024",
+      "era": "当代",
+      "status": "complete",
+      "has_development_stages": true,
+      "has_life_narrative": true
+    }
+  ]
+}
