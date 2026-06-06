@@ -30,7 +30,11 @@ export async function proxy(request: NextRequest) {
   )
 
   // 刷新 session，确保 OAuth 回调后 session 能正确建立
-  await supabase.auth.getUser()
+  try {
+    await supabase.auth.getUser()
+  } catch {
+    // Supabase 连接失败时不阻塞页面渲染
+  }
 
   return supabaseResponse
 }
