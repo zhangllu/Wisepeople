@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { ChevronRight, BookHeart, ExternalLink } from "lucide-react"
-import { getAllQuestions, getBooksByQuestion, getMinimumBookList, getClassicsBooks } from "@/lib/data"
+import { getAllQuestions, getBooksByTopic, getTopicsByQuestion, getMinimumBookList, getClassicsBooks } from "@/lib/data"
 import { DIMENSION_LABELS, ROUTES } from "@/constants"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
@@ -19,7 +19,8 @@ export default function BookListsPage() {
   const [expanded, setExpanded] = useState<Set<number>>(new Set())
 
   const totalBooks = questions.reduce(
-    (s, q) => s + getBooksByQuestion(q.number).length,
+    (s, q) =>
+      s + getTopicsByQuestion(q.number).reduce((t, topic) => t + getBooksByTopic(topic.code).length, 0),
     0,
   )
 
@@ -50,7 +51,8 @@ export default function BookListsPage() {
           <h2 className="text-lg font-semibold mb-4">大问题主题书单</h2>
           <div className="space-y-2">
             {questions.map((q) => {
-              const books = getBooksByQuestion(q.number)
+              const topics = getTopicsByQuestion(q.number)
+              const totalInQ = topics.reduce((t, topic) => t + getBooksByTopic(topic.code).length, 0)
               const isOpen = expanded.has(q.number)
               return (
                 <div
@@ -73,7 +75,7 @@ export default function BookListsPage() {
                         {DIMENSION_LABELS[q.dimension]}
                       </Badge>
                       <span className="text-xs text-muted-foreground/60">
-                        {books.length} 本
+                        {totalInQ} 本
                       </span>
                     </span>
                     <ChevronRight
@@ -83,25 +85,53 @@ export default function BookListsPage() {
                     />
                   </button>
                   {isOpen && (
-                    <div className="divide-y divide-border">
-                      {books.map((b) => (
-                        <Link
-                          key={b.slug}
-                          href={b.doubanLink || "#"}
-                          target={b.doubanLink ? "_blank" : undefined}
-                          className="flex items-center justify-between px-4 py-2.5 hover:bg-accent/5 transition-colors group text-sm"
-                        >
-                          <span className="group-hover:text-accent transition-colors truncate">
-                            {b.title}
-                          </span>
-                          <span className="text-xs text-muted-foreground flex-shrink-0 ml-3">
-                            {b.author}
-                            {b.doubanLink && (
-                              <ExternalLink className="inline w-3 h-3 ml-1 opacity-40" />
+                    <div className="divide-y divide-border/50">
+                      {topics.map((topic) => {
+                        const books = getBooksByTopic(topic.code)
+                        return (
+                          <div key={topic.code}>
+                            {/* Topic sub-header */}
+                            <div className="flex items-center gap-2 px-4 py-2 bg-muted/30">
+                              <span className="font-mono text-[10px] text-accent">
+                                {topic.code}
+                              </span>
+                              <span className="text-xs font-medium">
+                                {topic.title}
+                              </span>
+                              <span className="text-[10px] text-muted-foreground/60">
+                                {books.length} 本
+                              </span>
+                            </div>
+                            {/* Books under this topic */}
+                            {books.length > 0 ? (
+                              <div className="divide-y divide-border/30">
+                                {books.map((b) => (
+                                  <Link
+                                    key={b.slug}
+                                    href={b.doubanLink || "#"}
+                                    target={b.doubanLink ? "_blank" : undefined}
+                                    className="flex items-center justify-between px-4 py-2 pl-8 hover:bg-accent/5 transition-colors group text-sm"
+                                  >
+                                    <span className="group-hover:text-accent transition-colors truncate">
+                                      {b.title}
+                                    </span>
+                                    <span className="text-xs text-muted-foreground flex-shrink-0 ml-3">
+                                      {b.author}
+                                      {b.doubanLink && (
+                                        <ExternalLink className="inline w-3 h-3 ml-1 opacity-40" />
+                                      )}
+                                    </span>
+                                  </Link>
+                                ))}
+                              </div>
+                            ) : (
+                              <div className="px-4 py-2 pl-8 text-xs text-muted-foreground/50">
+                                暂无收录
+                              </div>
                             )}
-                          </span>
-                        </Link>
-                      ))}
+                          </div>
+                        )
+                      })}
                     </div>
                   )}
                 </div>
