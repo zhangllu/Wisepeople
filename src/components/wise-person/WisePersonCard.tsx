@@ -1,103 +1,136 @@
 "use client"
 
 import Link from "next/link"
-import type { WisePerson } from "@/types"
+import type { WisePerson, Era } from "@/types"
 import { DISCIPLINE_LABELS, ERA_LABELS, REGION_LABELS, ROUTES } from "@/constants"
-import { Card, CardContent, CardHeader } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
 import { BookmarkButton } from "@/components/shared/BookmarkButton"
 
 interface WisePersonCardProps {
   wisePerson: WisePerson
 }
 
+/** Era-based gradient colors for avatar backgrounds */
+const ERA_STYLES: Record<Era | "default", { bg: string; text: string }> = {
+  ancient: { bg: "from-amber-100 to-orange-100", text: "text-amber-700" },
+  modern: { bg: "from-sky-100 to-indigo-100", text: "text-indigo-700" },
+  contemporary: { bg: "from-emerald-100 to-teal-100", text: "text-teal-700" },
+  default: { bg: "from-gray-100 to-slate-100", text: "text-slate-600" },
+}
+
+/**
+ * Parse name into { primary (Chinese), secondary (English) }.
+ * Stub names come as "English Name（中文译名）"; non-stub have separate name/nameEn fields.
+ */
+function parseName(wp: WisePerson) {
+  if (wp.isStub) {
+    const m = wp.name.match(/^(.+?)\s*[（(](.+?)[）)]$/)
+    if (m) {
+      return { primary: m[2], secondary: m[1] }
+    }
+    // Pure Chinese or no parentheses
+    return { primary: wp.name, secondary: undefined }
+  }
+  // Non-stub: name is Chinese, nameEn is English/original
+  return { primary: wp.name, secondary: wp.nameEn }
+}
+
 export function WisePersonCard({ wisePerson }: WisePersonCardProps) {
-  const isStub = wisePerson.isStub
-  const initial = wisePerson.name.charAt(0)
+  const { primary, secondary } = parseName(wisePerson)
+  const initial = primary.charAt(0)
+  const avatarStyle = ERA_STYLES[wisePerson.era ?? "default"] ?? ERA_STYLES.default
+
+  // Coordinate line — only for non-stub users (stub era/discipline/region are hardcoded defaults)
+  const coords = !wisePerson.isStub
+    ? [
+        wisePerson.era && ERA_LABELS[wisePerson.era],
+        wisePerson.discipline && DISCIPLINE_LABELS[wisePerson.discipline],
+        wisePerson.region && REGION_LABELS[wisePerson.region],
+      ].filter(Boolean)
+    : []
+
+  const hasCoords = coords.length > 0
+  const hasSummary = !wisePerson.isStub && wisePerson.summary?.length > 0
+
+  // For stub users, show a subtle book/topic count instead of coordinates
+  const stubMeta = wisePerson.isStub
+    ? [
+        wisePerson.bookSlugs?.length
+          ? `${wisePerson.bookSlugs.length} 本著作`
+          : null,
+        wisePerson.topicCodes?.length
+          ? `${wisePerson.topicCodes.length} 个主题`
+          : null,
+      ].filter(Boolean)
+    : []
 
   return (
     <Link href={ROUTES.wisePersonDetail(wisePerson.slug)} className="group block h-full">
-      <Card className="relative cursor-pointer h-full border-l-2 border-l-transparent hover:border-l-accent/50 transition-all duration-300 hover:-translate-y-1">
-        {/* Left accent bar — visible on hover */}
-        <div className="absolute left-0 top-4 bottom-4 w-0.5 bg-accent/0 group-hover:bg-accent/40 rounded-full transition-all duration-300" aria-hidden="true" />
-
-        <CardHeader className="pb-2">
-          <div className="flex items-start justify-between gap-3">
-            {/* Avatar */}
-            <div className="shrink-0 size-10 rounded-full bg-accent/5 ring-1 ring-accent/10 group-hover:ring-accent/40 flex items-center justify-center text-sm font-heading font-semibold text-accent/60 group-hover:text-accent transition-all duration-300">
-              {initial}
-            </div>
-
-            <div className="flex-1 min-w-0">
-              <h3 className="text-lg font-semibold group-hover:text-accent transition-colors truncate">
-                {wisePerson.name}
-              </h3>
-              {wisePerson.region === "western" && wisePerson.nameEn && (
-                <p className="text-xs text-muted-foreground truncate">{wisePerson.nameEn}</p>
-              )}
-            </div>
-            <div onClick={(e) => e.stopPropagation()} onPointerDown={(e) => e.stopPropagation()} role="button" tabIndex={-1}>
-              <BookmarkButton targetId={wisePerson.slug} targetType="wise-person" />
-            </div>
-          </div>
-          <div className="flex flex-wrap gap-1.5 mt-1">
-            {isStub ? (
-              <>
-                {wisePerson.topicCodes && wisePerson.topicCodes.length > 0 && (
-                  <Badge variant="secondary" className="text-[10px] px-1.5 py-0">
-                    {wisePerson.topicCodes.length} 个主题
-                  </Badge>
-                )}
-                {wisePerson.bookSlugs && (
-                  <Badge variant="outline" className="text-[10px] px-1.5 py-0">
-                    {wisePerson.bookSlugs.length} 本著作
-                  </Badge>
-                )}
-                {wisePerson.links && wisePerson.links.length > 0 && (
-                  <Badge variant="default" className="text-[10px] px-1.5 py-0 bg-accent text-accent-foreground hover:bg-accent/90">
-                    精选链接
-                  </Badge>
-                )}
-                {(!wisePerson.links || wisePerson.links.length === 0) && (
-                  <Badge variant="outline" className="text-[10px] px-1.5 py-0 text-muted-foreground">
-                    待完善
-                  </Badge>
-                )}
-              </>
-            ) : (
-              <>
-                <Badge variant="secondary" className="text-[10px] px-1.5 py-0 pointer-events-none">
-                  {ERA_LABELS[wisePerson.era]}
-                </Badge>
-                <Badge variant="outline" className="text-[10px] px-1.5 py-0 pointer-events-none">
-                  {DISCIPLINE_LABELS[wisePerson.discipline]}
-                </Badge>
-                <Badge variant="outline" className="text-[10px] px-1.5 py-0 pointer-events-none">
-                  {REGION_LABELS[wisePerson.region]}
-                </Badge>
-              </>
-            )}
-          </div>
-        </CardHeader>
-        <CardContent>
-          {isStub ? (
-            <p className="text-xs text-muted-foreground">
-              收录 {wisePerson.bookSlugs?.length || 0} 本著作，关联 {wisePerson.topicCodes?.length || 0} 个主题方向
-            </p>
+      <div className="relative flex items-start gap-4 rounded-xl border border-border/60 bg-card p-4 transition-all duration-300 hover:border-accent/30 hover:shadow-md hover:shadow-accent/5 hover:-translate-y-0.5 h-full">
+        {/* Portrait */}
+        <div className="shrink-0">
+          {wisePerson.portrait ? (
+            <img
+              src={wisePerson.portrait}
+              alt={primary}
+              className="size-14 rounded-full object-cover ring-2 ring-border/50 group-hover:ring-accent/30 transition-all duration-300"
+            />
           ) : (
-            <p className="text-xs text-muted-foreground line-clamp-3">{wisePerson.summary}</p>
-          )}
-          {!isStub && wisePerson.tags.length > 0 && (
-            <div className="flex flex-wrap gap-1 mt-2">
-              {wisePerson.tags.map((tag) => (
-                <span key={tag} className="text-[10px] text-muted-foreground/60">
-                  #{tag}
-                </span>
-              ))}
+            <div
+              className={`size-14 rounded-full bg-gradient-to-br ${avatarStyle.bg} ring-2 ring-border/50 group-hover:ring-accent/30 flex items-center justify-center transition-all duration-300`}
+            >
+              <span className={`text-lg font-heading font-bold ${avatarStyle.text}`}>
+                {initial}
+              </span>
             </div>
           )}
-        </CardContent>
-      </Card>
+        </div>
+
+        {/* Info */}
+        <div className="flex-1 min-w-0">
+          {/* Chinese name as primary */}
+          <h3 className="text-base font-semibold text-foreground group-hover:text-accent transition-colors truncate leading-snug">
+            {primary}
+          </h3>
+          {/* English/original name as secondary */}
+          {secondary && (
+            <p className="text-xs text-muted-foreground truncate mt-0.5">
+              {secondary}
+            </p>
+          )}
+
+          {/* Coordinate line for full-profile users */}
+          {hasCoords && (
+            <p className="text-[11px] text-muted-foreground/70 mt-1.5 tracking-wide">
+              {coords.join(" · ")}
+            </p>
+          )}
+
+          {/* Stub meta info */}
+          {stubMeta.length > 0 && (
+            <p className="text-[11px] text-muted-foreground/50 mt-1.5">
+              {stubMeta.join(" · ")}
+            </p>
+          )}
+
+          {/* Summary for full-profile users */}
+          {hasSummary && (
+            <p className="text-xs text-muted-foreground line-clamp-2 mt-2 leading-relaxed">
+              {wisePerson.summary}
+            </p>
+          )}
+        </div>
+
+        {/* Bookmark */}
+        <div
+          className="shrink-0 mt-0.5"
+          onClick={(e) => e.stopPropagation()}
+          onPointerDown={(e) => e.stopPropagation()}
+          role="button"
+          tabIndex={-1}
+        >
+          <BookmarkButton targetId={wisePerson.slug} targetType="wise-person" />
+        </div>
+      </div>
     </Link>
   )
 }

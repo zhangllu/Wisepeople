@@ -233,13 +233,28 @@ export const useAuthStore = create<AuthState>()(
       },
 
       signInWithOAuth: async (provider: "google" | "github") => {
-        const supabase = createClient()
-        await supabase.auth.signInWithOAuth({
-          provider,
-          options: {
-            redirectTo: `${window.location.origin}/auth/callback`,
-          },
-        })
+        try {
+          const supabase = createClient()
+          const { data, error } = await supabase.auth.signInWithOAuth({
+            provider,
+            options: {
+              redirectTo: `${window.location.origin}/auth/callback`,
+            },
+          })
+          if (error) {
+            console.error("OAuth error:", error.message)
+            throw error
+          }
+          // signInWithOAuth 会自动通过 window.location.assign 跳转
+          // 如果没有跳转，说明有问题，手动跳转到返回的 URL
+          if (data?.url) {
+            window.location.assign(data.url)
+          }
+        } catch (e) {
+          console.error("signInWithOAuth failed:", e)
+          // 抛出错误以便 UI 层可以捕获并提示用户
+          throw e
+        }
       },
 
       logout: async () => {

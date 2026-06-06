@@ -379,7 +379,7 @@ function InfoRow({
   const colorMap: Record<string, string> = {
     amber: "text-amber-600",
     green: "text-green-600",
-    blue: "text-blue-600",
+    blue: "text-accent",
     emerald: "text-emerald-600",
     red: "text-red-500",
     purple: "text-purple-600",
@@ -614,7 +614,7 @@ function CognitiveStyleSection({ content }: { content: string | null }) {
   return (
     <FadeInSection>
       <SectionHeading icon="🧠" label="认知方式" />
-      <div className="bg-gradient-to-br from-card to-blue-50/30 rounded-xl border border-border p-6 sm:p-8 shadow-sm">
+      <div className="bg-gradient-to-br from-card to-accent/5 rounded-xl border border-border p-6 sm:p-8 shadow-sm">
         <div className="flex items-start gap-3 mb-4">
           <Brain className="w-5 h-5 text-accent shrink-0 mt-0.5" />
           <p className="text-sm text-muted-foreground italic leading-relaxed">

@@ -26,7 +26,7 @@ export function LifeNarrative({ narrative, references }: Props) {
         components={{
           blockquote: ({ children, ...props }) => (
             <blockquote
-              className="border-l-4 border-blue-400 bg-blue-50/50 py-2 px-4 my-4 rounded-r-lg"
+              className="border-l-4 border-accent/40 bg-accent/10 py-2 px-4 my-4 rounded-r-lg"
               {...props}
             >
               {children}

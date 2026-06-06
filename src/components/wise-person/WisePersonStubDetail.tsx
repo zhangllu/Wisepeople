@@ -109,7 +109,7 @@ export function WisePersonStubDetail({ person, books }: Props) {
                 <Link
                   key={t.code}
                   href={`/topics/${t.code}`}
-                  className="text-xs bg-blue-50 text-blue-700 px-2 py-0.5 rounded-full hover:bg-blue-100 transition-colors"
+                  className="text-xs bg-accent/10 text-accent px-2 py-0.5 rounded-full hover:bg-accent/20 transition-colors"
                 >
                   {qn ? `Q${qn} · ` : ""}{t.title}
                 </Link>
@@ -128,7 +128,7 @@ export function WisePersonStubDetail({ person, books }: Props) {
                 <Link
                   key={qn}
                   href={`/wise-persons/question/${qn}`}
-                  className="text-blue-600 hover:text-blue-800 mx-1"
+                  className="text-accent hover:text-accent/80 mx-1"
                 >
                   「{q.title}」
                 </Link>
@@ -143,11 +143,11 @@ export function WisePersonStubDetail({ person, books }: Props) {
       {lifeStory ? (
         <div className="mb-8">
           <div className="flex items-center gap-2 mb-4">
-            <Quote className="h-4 w-4 text-blue-500" />
+            <Quote className="h-4 w-4 text-accent" />
             <h2 className="text-lg font-semibold">人物故事</h2>
           </div>
-          <div className="rounded-xl border border-blue-100 bg-gradient-to-br from-white to-blue-50/30 p-6 md:p-8">
-            <div className="prose prose-sm max-w-none prose-blue">
+          <div className="rounded-xl border border-accent/20 bg-gradient-to-br from-white to-accent/5 p-6 md:p-8">
+            <div className="prose prose-sm max-w-none">
               {renderStory(lifeStory)}
             </div>
           </div>
@@ -177,18 +177,18 @@ export function WisePersonStubDetail({ person, books }: Props) {
                     e.preventDefault()
                     window.open(link.url, "_blank", "noopener,noreferrer")
                   }}
-                  className="block rounded-lg border border-gray-200 p-4 hover:border-blue-200 hover:bg-blue-50/30 transition-colors group cursor-pointer"
+                  className="block rounded-lg border border-gray-200 p-4 hover:border-accent/30 hover:bg-accent/5 transition-colors group cursor-pointer"
                 >
                   <div className="flex items-start justify-between">
                     <div>
-                      <span className="font-medium text-blue-700 group-hover:text-blue-800 text-sm">
+                      <span className="font-medium text-accent group-hover:text-accent/80 text-sm">
                         {link.label}
                       </span>
                       {link.description && (
                         <p className="text-xs text-muted-foreground mt-0.5">{link.description}</p>
                       )}
                     </div>
-                    <ExternalLink className="h-4 w-4 shrink-0 text-gray-400 group-hover:text-blue-500 mt-0.5" />
+                    <ExternalLink className="h-4 w-4 shrink-0 text-gray-400 group-hover:text-accent mt-0.5" />
                   </div>
                 </a>
               )
@@ -214,7 +214,7 @@ export function WisePersonStubDetail({ person, books }: Props) {
                   <div className="flex-1 min-w-0">
                     <h3 className="font-medium text-gray-900">
                       {book.doubanLink ? (
-                        <a href={book.doubanLink} target="_blank" rel="noopener noreferrer" className="hover:text-blue-700 transition-colors">
+                        <a href={book.doubanLink} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
                           {book.title}
                         </a>
                       ) : book.title}
@@ -232,7 +232,7 @@ export function WisePersonStubDetail({ person, books }: Props) {
                         href={book.doubanLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="shrink-0 text-xs text-blue-600 hover:text-blue-800 inline-flex items-center gap-1"
+                        className="shrink-0 text-xs text-accent hover:text-accent/80 inline-flex items-center gap-1"
                       >
                         <ExternalLink className="h-3 w-3" />
                         豆瓣
@@ -250,7 +250,7 @@ export function WisePersonStubDetail({ person, books }: Props) {
       <div className="mt-8 pt-4 border-t border-gray-200">
         <Link
           href="/wise-persons"
-          className="text-sm text-blue-600 hover:text-blue-800"
+          className="text-sm text-accent hover:text-accent/80"
         >
           ← 返回智者列表
         </Link>

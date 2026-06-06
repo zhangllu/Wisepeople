@@ -29,7 +29,7 @@ function StageCard({
       <div
         className={`rounded-lg border p-5 transition-all duration-300 ${
           isActive
-            ? "border-blue-300 bg-blue-50/40 shadow-sm"
+            ? "border-accent/40 bg-accent/10 shadow-sm"
             : "border-gray-200 bg-white"
         }`}
       >
@@ -60,7 +60,7 @@ function StageCard({
             </div>
           </div>
           <div className="flex gap-2">
-            <span className="text-blue-600 shrink-0">🧠</span>
+            <span className="text-accent shrink-0">🧠</span>
             <div>
               <span className="font-semibold text-gray-700">认知升级：</span>
               <span>{stage.cognitiveUpgrade}</span>
@@ -131,7 +131,7 @@ function TimelineNav({
                   onClick={() => scrollToStage(i)}
                   className={`relative flex items-center gap-3 w-full text-left py-2.5 px-1 rounded-lg transition-all ${
                     isActive
-                      ? "text-blue-700 font-semibold"
+                      ? "text-accent font-semibold"
                       : isPast
                         ? "text-gray-500"
                         : "text-gray-400 hover:text-gray-600"
@@ -141,7 +141,7 @@ function TimelineNav({
                   <span
                     className={`relative z-10 w-[15px] h-[15px] rounded-full border-2 shrink-0 transition-all ${
                       isActive
-                        ? "border-blue-500 bg-blue-500 shadow-sm shadow-blue-300"
+                        ? "border-accent bg-accent shadow-sm shadow-accent/30"
                         : isPast
                           ? "border-gray-300 bg-gray-100"
                           : "border-gray-300 bg-white"
