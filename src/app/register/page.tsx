@@ -61,11 +61,16 @@ export default function RegisterPage() {
               {loading ? "注册中..." : "注册"}
             </Button>
           </form>
-          <div className="mt-4 text-center text-xs text-muted-foreground">
-            已有账号？{" "}
-            <Link href={ROUTES.login} className="text-accent hover:underline">
-              登录
-            </Link>
+          <div className="mt-4 text-center text-xs text-muted-foreground space-y-1">
+            <div>
+              已有账号？{" "}
+              <Link href={ROUTES.login} className="text-accent hover:underline">
+                登录
+              </Link>
+            </div>
+            <p className="text-[11px] text-muted-foreground/60">
+              注册后也可使用邮箱验证码登录
+            </p>
           </div>
         </CardContent>
       </Card>

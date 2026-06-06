@@ -10,6 +10,8 @@ interface AuthState {
   initialize: () => Promise<void>
   login: (email: string, password: string) => Promise<boolean>
   register: (email: string, password: string, name: string) => Promise<{ success: boolean; error?: string }>
+  sendOTP: (email: string) => Promise<{ success: boolean; error?: string }>
+  verifyOTP: (email: string, token: string) => Promise<boolean>
   logout: () => Promise<void>
 }
 
@@ -160,6 +162,72 @@ export const useAuthStore = create<AuthState>()(
         } catch (e) {
           console.error("Register error:", e)
           return { success: false, error: "注册失败，请重试" }
+        }
+      },
+
+      sendOTP: async (email: string) => {
+        try {
+          const supabase = createClient()
+          const { error } = await supabase.auth.signInWithOtp({
+            email,
+            options: { shouldCreateUser: true },
+          })
+          if (error) return { success: false, error: error.message }
+          return { success: true }
+        } catch (e) {
+          console.error("Send OTP error:", e)
+          return { success: false, error: "发送验证码失败，请重试" }
+        }
+      },
+
+      verifyOTP: async (email: string, token: string) => {
+        try {
+          const supabase = createClient()
+          const { data, error } = await supabase.auth.verifyOtp({
+            email,
+            token,
+            type: "email",
+          })
+          if (error || !data.user) return false
+
+          const { data: profile } = await supabase
+            .from("profiles")
+            .select("*")
+            .eq("id", data.user.id)
+            .single()
+
+          if (profile) {
+            set({
+              user: {
+                id: profile.id,
+                email: profile.email || "",
+                name: profile.name || "",
+                avatar: profile.avatar,
+                role: profile.role || "registered",
+                createdAt: profile.created_at,
+              },
+              isAuthenticated: true,
+              loading: false,
+            })
+            return true
+          }
+
+          // fallback to auth metadata
+          set({
+            user: {
+              id: data.user.id,
+              email: data.user.email || email,
+              name: data.user.user_metadata?.name || email.split("@")[0],
+              role: "registered",
+              createdAt: data.user.created_at || new Date().toISOString(),
+            },
+            isAuthenticated: true,
+            loading: false,
+          })
+          return true
+        } catch (e) {
+          console.error("Verify OTP error:", e)
+          return false
         }
       },
 
