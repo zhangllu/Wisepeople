@@ -211,7 +211,7 @@ export function WisePersonStubDetail({ person, books }: Props) {
                 className="rounded-lg border border-gray-200 p-4 hover:border-gray-300 transition-colors"
               >
                 <div className="flex items-start justify-between">
-                  <div>
+                  <div className="flex-1 min-w-0">
                     <h3 className="font-medium text-gray-900">{book.title}</h3>
                     {book.publisher && (
                       <p className="text-xs text-muted-foreground mt-1">
@@ -219,17 +219,20 @@ export function WisePersonStubDetail({ person, books }: Props) {
                       </p>
                     )}
                   </div>
-                  {book.doubanLink && (
-                    <a
-                      href={book.doubanLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="shrink-0 text-xs text-blue-600 hover:text-blue-800 inline-flex items-center gap-1"
-                    >
-                      <ExternalLink className="h-3 w-3" />
-                      豆瓣
-                    </a>
-                  )}
+                  <div className="flex items-center gap-1 shrink-0">
+                    <BookmarkButton targetId={book.slug} targetType="book" />
+                    {book.doubanLink && (
+                      <a
+                        href={book.doubanLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="shrink-0 text-xs text-blue-600 hover:text-blue-800 inline-flex items-center gap-1"
+                      >
+                        <ExternalLink className="h-3 w-3" />
+                        豆瓣
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             ))}

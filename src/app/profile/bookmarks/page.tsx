@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { EmptyState } from "@/components/shared/EmptyState"
 import { DetailHeader } from "@/components/shared/DetailHeader"
 import { FadeIn } from "@/components/shared/FadeIn"
+import { getBookBySlug } from "@/lib/data"
 
 export default function BookmarksPage() {
   const { isAuthenticated, user } = useAuthStore()
@@ -64,17 +65,25 @@ export default function BookmarksPage() {
           <div className="space-y-2">
             {bookmarks.map((bm) => {
               const person = getWisePersonBySlug(bm.targetId)
+              const book = bm.targetType === "book" ? getBookBySlug(bm.targetId) : undefined
+              const displayName = book?.title || person?.name || bm.targetId
+              const typeLabel = bm.targetType === "book" ? "书籍" : bm.targetType === "wise-person" ? "智者" : "书单"
+              const detailHref = bm.targetType === "book"
+                ? `/book-lists/minimum-56`
+                : bm.targetType === "wise-person"
+                  ? ROUTES.wisePersonDetail(bm.targetId)
+                  : ROUTES.bookListDetail(bm.targetId)
               return (
                 <div key={bm.id} className="flex items-center justify-between p-3 border rounded-lg">
                   <div>
                     <Link
-                      href={bm.targetType === "wise-person" ? ROUTES.wisePersonDetail(bm.targetId) : ROUTES.bookListDetail(bm.targetId)}
+                      href={detailHref}
                       className="text-sm font-medium hover:text-accent"
                     >
-                      {person?.name || bm.targetId}
+                      {displayName}
                     </Link>
                     <p className="text-[10px] text-muted-foreground">
-                      {bm.targetType === "wise-person" ? "智者" : "书单"} · {new Date(bm.createdAt).toLocaleDateString("zh-CN")}
+                      {typeLabel} · {new Date(bm.createdAt).toLocaleDateString("zh-CN")}
                     </p>
                   </div>
                   <Button variant="ghost" size="sm" className="text-xs text-muted-foreground" onClick={() => removeBookmark(bm.targetId)}>

@@ -7,7 +7,7 @@ interface BookmarkState {
   bookmarks: Bookmark[]
   loading: boolean
   fetchBookmarks: (userId: string) => Promise<void>
-  addBookmark: (targetId: string, targetType: "wise-person" | "book-list" | "work") => Promise<void>
+  addBookmark: (targetId: string, targetType: Bookmark["targetType"]) => Promise<void>
   removeBookmark: (targetId: string) => Promise<void>
   isBookmarked: (targetId: string) => boolean
   getUserBookmarks: (userId: string) => Bookmark[]

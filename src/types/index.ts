@@ -170,7 +170,7 @@ export interface Bookmark {
   id: string
   userId: string
   targetId: string
-  targetType: "wise-person" | "book-list" | "work"
+  targetType: "wise-person" | "book-list" | "work" | "book"
   createdAt: string
 }
 

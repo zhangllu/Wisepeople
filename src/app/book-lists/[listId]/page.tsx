@@ -40,15 +40,18 @@ export default function BookListDetailPage() {
                   <CardContent className="p-4">
                     <div className="flex flex-col gap-1">
                       <div className="flex items-start justify-between">
-                        <div>
+                        <div className="flex-1 min-w-0">
                           <h3 className="font-semibold text-sm">{b.title}</h3>
                           <p className="text-xs text-muted-foreground">{b.author}{b.translator ? ` · ${b.translator}译` : ""}</p>
                         </div>
-                        {b.doubanLink && (
-                          <a href={b.doubanLink} target="_blank" rel="noopener noreferrer" className="text-[11px] text-accent hover:underline shrink-0">
-                            豆瓣
-                          </a>
-                        )}
+                        <div className="flex items-center gap-1 shrink-0">
+                          <BookmarkButton targetId={b.slug} targetType="book" />
+                          {b.doubanLink && (
+                            <a href={b.doubanLink} target="_blank" rel="noopener noreferrer" className="text-[11px] text-accent hover:underline">
+                              豆瓣
+                            </a>
+                          )}
+                        </div>
                       </div>
                       <div className="flex items-center gap-2 text-[11px] text-muted-foreground">
                         {b.publisher && <span>{b.publisher}</span>}
