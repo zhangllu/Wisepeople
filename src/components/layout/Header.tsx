@@ -19,12 +19,12 @@ export function Header() {
         <div className="flex items-center gap-2">
           <MobileNav />
           <Link href={ROUTES.home} className="flex items-center gap-1.5">
-            <span className="text-lg font-bold tracking-tight text-accent">{SITE_NAME}</span>
+            <span className="text-xl font-bold tracking-tight text-accent">{SITE_NAME}</span>
           </Link>
         </div>
 
         {/* Navigation - Desktop */}
-        <nav className="hidden md:flex items-center gap-6 text-sm">
+        <nav className="hidden md:flex items-center gap-6 text-base">
           <Link href={ROUTES.home} className="nav-link">
             首页
           </Link>
@@ -38,7 +38,7 @@ export function Header() {
           </Link>
 
           <DropdownMenu>
-            <DropdownMenuTrigger className="text-muted-foreground hover:text-foreground transition-colors text-sm cursor-pointer">
+            <DropdownMenuTrigger className="text-muted-foreground hover:text-foreground transition-colors text-base cursor-pointer">
               遇见智者
             </DropdownMenuTrigger>
             <DropdownMenuContent>
