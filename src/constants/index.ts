@@ -21,6 +21,7 @@ export const ROUTES = {
   profile: "/profile",
   bookmarks: "/profile/bookmarks",
   reviews: "/profile/reviews",
+  femaleWisePersons: "/wise-persons/female",
 } as const
 
 // 平台名称
