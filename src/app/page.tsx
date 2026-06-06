@@ -74,13 +74,6 @@ export default function HomePage() {
             </Link>
           </div>
 
-          {/* Scroll indicator */}
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-muted-foreground/30">
-            <span className="text-[10px]">向下滚动</span>
-            <div className="w-4 h-6 rounded-full border border-muted-foreground/20 flex justify-center pt-1">
-              <div className="w-1 h-1.5 rounded-full bg-muted-foreground/30 animate-bounce" />
-            </div>
-          </div>
         </div>
       </section>
 
