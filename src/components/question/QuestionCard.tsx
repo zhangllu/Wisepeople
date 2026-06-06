@@ -21,7 +21,7 @@ export function QuestionCard({ question }: QuestionCardProps) {
           </div>
           <h3 className="font-semibold text-sm mb-2">{question.title}</h3>
           <p className="text-xs text-muted-foreground line-clamp-2">{question.subtitle}</p>
-          <p className="text-xs text-primary/70 mt-3">
+          <p className="text-xs text-accent/70 mt-3">
             {question.subTopicCodes.length} 个主题方向
           </p>
         </CardContent>

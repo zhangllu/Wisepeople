@@ -82,7 +82,7 @@ function SearchContent() {
               {results.wisePersons.length > 0 && (
                 <section className="mb-8">
                   <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
-                    <Users className="h-4 w-4 text-primary" />
+                    <Users className="h-4 w-4 text-accent" />
                     智者 ({results.wisePersons.length})
                   </h2>
                   <WisePersonGrid wisePersons={results.wisePersons} />
@@ -93,7 +93,7 @@ function SearchContent() {
               {results.storyMatches.length > 0 && (
                 <section className="mb-8">
                   <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
-                    <BookText className="h-4 w-4 text-primary" />
+                    <BookText className="h-4 w-4 text-accent" />
                     人物故事 ({results.storyMatches.length})
                   </h2>
                   <div className="grid grid-cols-1 gap-3">
@@ -117,7 +117,7 @@ function SearchContent() {
               {results.works.length > 0 && (
                 <section className="mb-8">
                   <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
-                    <BookOpen className="h-4 w-4 text-primary" />
+                    <BookOpen className="h-4 w-4 text-accent" />
                     著作 ({results.works.length})
                   </h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -132,7 +132,7 @@ function SearchContent() {
               {results.questions.length > 0 && (
                 <section className="mb-8">
                   <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
-                    <Lightbulb className="h-4 w-4 text-primary" />
+                    <Lightbulb className="h-4 w-4 text-accent" />
                     十大问题 ({results.questions.length})
                   </h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -159,7 +159,7 @@ function SearchContent() {
               {results.topics.length > 0 && (
                 <section className="mb-8">
                   <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
-                    <Tags className="h-4 w-4 text-primary" />
+                    <Tags className="h-4 w-4 text-accent" />
                     主题 ({results.topics.length})
                   </h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -189,7 +189,7 @@ function SearchContent() {
               {results.books.length > 0 && (
                 <section className="mb-8">
                   <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
-                    <BookOpen className="h-4 w-4 text-primary" />
+                    <BookOpen className="h-4 w-4 text-accent" />
                     通识千书包 ({results.books.length})
                   </h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -209,7 +209,7 @@ function SearchContent() {
               {results.authors.length > 0 && (
                 <section className="mb-8">
                   <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
-                    <Users className="h-4 w-4 text-primary" />
+                    <Users className="h-4 w-4 text-accent" />
                     作者 ({results.authors.length})
                   </h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">

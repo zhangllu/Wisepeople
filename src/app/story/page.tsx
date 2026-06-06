@@ -90,7 +90,7 @@ export default function StoryPage() {
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-primary hover:text-accent underline underline-offset-2"
+          className="text-accent hover:text-accent/80 underline underline-offset-2"
           {...rest}
         >
           {children}

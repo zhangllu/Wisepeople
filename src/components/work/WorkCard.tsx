@@ -20,7 +20,7 @@ export function WorkCard({ work, showRecommendation = true }: WorkCardProps) {
         </div>
         <p className="text-xs text-muted-foreground mt-2 line-clamp-2">{work.summary}</p>
         {showRecommendation && work.recommendation && (
-          <p className="text-xs text-primary/80 mt-2 italic line-clamp-1">
+          <p className="text-xs text-accent/80 mt-2 italic line-clamp-1">
             " {work.recommendation}"
           </p>
         )}

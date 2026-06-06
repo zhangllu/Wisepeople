@@ -42,7 +42,7 @@ export default function QuestionDetailPage() {
         title={question.title}
         description={question.subtitle}
         breadcrumb={
-          <Link href={ROUTES.questions} className="text-muted-foreground hover:text-primary transition-colors">
+          <Link href={ROUTES.questions} className="text-muted-foreground hover:text-accent transition-colors">
             ← 返回问题列表
           </Link>
         }
@@ -70,7 +70,7 @@ export default function QuestionDetailPage() {
                       </div>
                       <h3 className="font-semibold text-sm mb-1">{st.title}</h3>
                       <p className="text-xs text-muted-foreground line-clamp-1">{st.representativeDiscipline}</p>
-                      <p className="text-xs text-primary/70 mt-2">{st.bookCount} 本著作</p>
+                      <p className="text-xs text-accent/70 mt-2">{st.bookCount} 本著作</p>
                     </CardContent>
                   </Card>
                 </Link>

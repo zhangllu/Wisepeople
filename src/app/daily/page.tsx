@@ -146,7 +146,7 @@ function Calendar({ dayIndex, onSelect }: { dayIndex: number; onSelect: (i: numb
               onClick={() => d.dayIndex !== null && onSelect(d.dayIndex)}
               className={`h-7 flex items-center justify-center text-[11px] rounded-full transition-colors
                 ${d.isActive
-                  ? "bg-primary text-primary-foreground font-medium"
+                  ? "bg-accent text-accent-foreground font-medium"
                   : d.isToday
                     ? "bg-accent/15 text-foreground/80 font-medium hover:bg-accent/25"
                     : "text-muted-foreground hover:bg-muted"

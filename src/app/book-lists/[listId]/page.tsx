@@ -27,7 +27,7 @@ export default function BookListDetailPage() {
           title="最小限度书单"
           description="精选 56 本必读经典，覆盖天地人三大维度"
           breadcrumb={
-            <Link href={ROUTES.bookLists} className="text-muted-foreground hover:text-primary transition-colors">
+            <Link href={ROUTES.bookLists} className="text-muted-foreground hover:text-accent transition-colors">
               ← 返回书单列表
             </Link>
           }
@@ -45,7 +45,7 @@ export default function BookListDetailPage() {
                           <p className="text-xs text-muted-foreground">{b.author}{b.translator ? ` · ${b.translator}译` : ""}</p>
                         </div>
                         {b.doubanLink && (
-                          <a href={b.doubanLink} target="_blank" rel="noopener noreferrer" className="text-[11px] text-primary hover:underline shrink-0">
+                          <a href={b.doubanLink} target="_blank" rel="noopener noreferrer" className="text-[11px] text-accent hover:underline shrink-0">
                             豆瓣
                           </a>
                         )}
@@ -90,7 +90,7 @@ export default function BookListDetailPage() {
           title={question.title}
           description={question.subtitle}
           breadcrumb={
-            <Link href={ROUTES.bookLists} className="text-muted-foreground hover:text-primary transition-colors">
+            <Link href={ROUTES.bookLists} className="text-muted-foreground hover:text-accent transition-colors">
               ← 返回书单列表
             </Link>
           }
@@ -105,7 +105,7 @@ export default function BookListDetailPage() {
         />
         <FadeIn>
           <div className="container mx-auto max-w-5xl px-4 py-8">
-            <p className="text-xs text-primary/70 mb-6">{books.length} 本相关著作</p>
+            <p className="text-xs text-accent/70 mb-6">{books.length} 本相关著作</p>
             <BookGrid books={books} />
           </div>
         </FadeIn>
@@ -127,7 +127,7 @@ export default function BookListDetailPage() {
           title={bookList.title}
           description={bookList.description}
           breadcrumb={
-            <Link href={ROUTES.bookLists} className="text-muted-foreground hover:text-primary transition-colors">
+            <Link href={ROUTES.bookLists} className="text-muted-foreground hover:text-accent transition-colors">
               ← 返回书单列表
             </Link>
           }

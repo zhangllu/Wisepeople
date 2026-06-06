@@ -73,13 +73,13 @@ export default function FemaleBiographiesPage() {
       const isExternal = href?.startsWith("http")
       if (isExternal) {
         return (
-          <a href={href} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline" {...rest}>
+          <a href={href} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline" {...rest}>
             {children}
           </a>
         )
       }
       return (
-        <a href={href} className="text-primary hover:underline" {...rest}>
+        <a href={href} className="text-accent hover:underline" {...rest}>
           {children}
         </a>
       )
@@ -91,7 +91,7 @@ export default function FemaleBiographiesPage() {
       {/* Back link */}
       <Link
         href={ROUTES.femaleWisePersons}
-        className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors mb-6"
+        className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-accent transition-colors mb-6"
       >
         <ArrowLeft className="w-3.5 h-3.5" />
         返回女性智者

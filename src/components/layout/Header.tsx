@@ -18,7 +18,7 @@ export function Header() {
         <div className="flex items-center gap-2">
           <MobileNav />
           <Link href={ROUTES.home} className="flex items-center gap-1.5">
-            <span className="text-lg font-bold tracking-tight text-primary">{SITE_NAME}</span>
+            <span className="text-lg font-bold tracking-tight text-accent">{SITE_NAME}</span>
           </Link>
         </div>
 

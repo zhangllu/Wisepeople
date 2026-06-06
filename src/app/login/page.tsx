@@ -72,7 +72,7 @@ export default function LoginPage() {
           </form>
           <div className="mt-4 text-center text-xs text-muted-foreground">
             还没有账号？{" "}
-            <Link href={ROUTES.register} className="text-primary hover:underline">
+            <Link href={ROUTES.register} className="text-accent hover:underline">
               注册
             </Link>
           </div>

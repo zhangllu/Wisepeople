@@ -23,14 +23,14 @@ export function BookCard({ book }: BookCardProps) {
             )}
           </div>
           {book.tags && (
-            <span className="text-[10px] text-primary/60 mt-0.5">{book.tags}</span>
+            <span className="text-[10px] text-accent/60 mt-0.5">{book.tags}</span>
           )}
           {book.doubanLink && (
             <a
               href={book.doubanLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[11px] text-primary hover:underline mt-1 inline-block"
+              className="text-[11px] text-accent hover:underline mt-1 inline-block"
               onClick={(e) => e.stopPropagation()}
             >
               豆瓣详情 →

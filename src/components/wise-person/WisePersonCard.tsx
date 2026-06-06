@@ -24,12 +24,12 @@ export function WisePersonCard({ wisePerson }: WisePersonCardProps) {
         <CardHeader className="pb-2">
           <div className="flex items-start justify-between gap-3">
             {/* Avatar */}
-            <div className="shrink-0 size-10 rounded-full bg-primary/5 ring-1 ring-primary/10 group-hover:ring-accent/40 flex items-center justify-center text-sm font-heading font-semibold text-primary/60 group-hover:text-accent/70 transition-all duration-300">
+            <div className="shrink-0 size-10 rounded-full bg-accent/5 ring-1 ring-accent/10 group-hover:ring-accent/40 flex items-center justify-center text-sm font-heading font-semibold text-accent/60 group-hover:text-accent transition-all duration-300">
               {initial}
             </div>
 
             <div className="flex-1 min-w-0">
-              <h3 className="text-lg font-semibold group-hover:text-primary transition-colors truncate">
+              <h3 className="text-lg font-semibold group-hover:text-accent transition-colors truncate">
                 {wisePerson.name}
               </h3>
               {wisePerson.region === "western" && wisePerson.nameEn && (

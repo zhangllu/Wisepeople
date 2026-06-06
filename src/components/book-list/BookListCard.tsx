@@ -22,7 +22,7 @@ export function BookListCard({ bookList }: { bookList: BookList }) {
           </div>
           <h3 className="font-semibold text-sm mb-2">{bookList.title}</h3>
           <p className="text-xs text-muted-foreground line-clamp-2">{bookList.summary}</p>
-          <p className="text-xs text-primary/70 mt-3">
+          <p className="text-xs text-accent/70 mt-3">
             {bookList.workSlugs.length} 本著作
           </p>
         </CardContent>

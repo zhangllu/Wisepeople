@@ -38,7 +38,7 @@ export default function FemaleWisePersonsPage() {
         <div className="flex items-center justify-between mb-8">
           <Link
             href="/wise-persons"
-            className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"
+            className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-accent transition-colors"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
             返回智者库

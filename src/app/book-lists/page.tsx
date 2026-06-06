@@ -38,7 +38,7 @@ export default function BookListsPage() {
           </div>
           <Link
             href={ROUTES.bookListDetail("minimum-56")}
-            className="text-xs text-primary hover:underline"
+            className="text-xs text-accent hover:underline"
           >
             查看全部 {minBooks.length} 本 →
           </Link>
@@ -65,7 +65,7 @@ export default function BookListsPage() {
             </div>
             <Link
               href={ROUTES.topicDetail("0")}
-              className="text-xs text-primary hover:underline"
+              className="text-xs text-accent hover:underline"
             >
               查看全部 →
             </Link>
@@ -101,7 +101,7 @@ export default function BookListsPage() {
                     </div>
                     <h3 className="font-semibold text-sm mb-1">{q.title}</h3>
                     <p className="text-xs text-muted-foreground line-clamp-2">{q.subtitle}</p>
-                    <p className="text-xs text-primary/70 mt-2">{bookCount} 本相关著作</p>
+                    <p className="text-xs text-accent/70 mt-2">{bookCount} 本相关著作</p>
                   </CardContent>
                 </Card>
               </Link>

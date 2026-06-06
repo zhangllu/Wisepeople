@@ -49,7 +49,7 @@ export default function BookmarksPage() {
                   <div>
                     <Link
                       href={bm.targetType === "wise-person" ? ROUTES.wisePersonDetail(bm.targetId) : ROUTES.bookListDetail(bm.targetId)}
-                      className="text-sm font-medium hover:text-primary"
+                      className="text-sm font-medium hover:text-accent"
                     >
                       {person?.name || bm.targetId}
                     </Link>

@@ -72,7 +72,7 @@ export default function ProfilePage() {
           <div className="mb-6">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-lg font-semibold">我的收藏</h2>
-              <Link href={ROUTES.bookmarks} className="text-xs text-primary hover:underline">
+              <Link href={ROUTES.bookmarks} className="text-xs text-accent hover:underline">
                 查看全部 →
               </Link>
             </div>
@@ -96,7 +96,7 @@ export default function ProfilePage() {
           <div>
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-lg font-semibold">最近书评</h2>
-              <Link href={ROUTES.reviews} className="text-xs text-primary hover:underline">
+              <Link href={ROUTES.reviews} className="text-xs text-accent hover:underline">
                 查看全部 →
               </Link>
             </div>

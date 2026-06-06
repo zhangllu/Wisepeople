@@ -44,7 +44,7 @@ export function ChatWidget() {
           {/* Header */}
           <div className="flex items-center justify-between p-3 border-b">
             <div className="flex items-center gap-2">
-              <Bot className="h-5 w-5 text-primary" />
+              <Bot className="h-5 w-5 text-accent" />
               <span className="text-sm font-semibold">AI 助手</span>
             </div>
             <div className="flex items-center gap-1">
@@ -71,7 +71,7 @@ export function ChatWidget() {
                 <div
                   className={`max-w-[85%] rounded-lg p-3 ${
                     msg.role === "user"
-                      ? "bg-primary text-primary-foreground"
+                      ? "bg-accent text-accent-foreground"
                       : "bg-muted"
                   }`}
                 >

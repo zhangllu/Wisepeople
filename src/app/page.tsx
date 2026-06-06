@@ -51,7 +51,7 @@ export default function HomePage() {
           <div className="flex items-center justify-center gap-3 mt-8">
             <Link
               href={ROUTES.wisePersons}
-              className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground text-sm font-medium px-6 py-2.5 transition-all duration-200 hover:bg-primary/90 hover:-translate-y-0.5 hover:shadow-md"
+              className="inline-flex items-center justify-center rounded-md bg-accent text-accent-foreground text-sm font-medium px-6 py-2.5 transition-all duration-200 hover:bg-accent/90 hover:-translate-y-0.5 hover:shadow-md"
             >
               探索智者库
             </Link>
@@ -70,19 +70,19 @@ export default function HomePage() {
         <section className="mb-12">
           <div className="grid grid-cols-4 gap-4 text-center">
             <div>
-              <p className="text-2xl font-bold text-primary"><CountUp end={1197} /></p>
+              <p className="text-2xl font-bold text-accent"><CountUp end={1197} /></p>
               <p className="text-xs text-muted-foreground">本著作</p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-primary"><CountUp end={778} /></p>
+              <p className="text-2xl font-bold text-accent"><CountUp end={778} /></p>
               <p className="text-xs text-muted-foreground">位作者</p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-primary"><CountUp end={50} /></p>
+              <p className="text-2xl font-bold text-accent"><CountUp end={50} /></p>
               <p className="text-xs text-muted-foreground">个主题方向</p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-primary"><CountUp end={10} /></p>
+              <p className="text-2xl font-bold text-accent"><CountUp end={10} /></p>
               <p className="text-xs text-muted-foreground">大问题</p>
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function HomePage() {
         <section className="mb-12">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-xl font-semibold">推荐智者</h2>
-            <Link href={ROUTES.wisePersons} className="text-xs text-primary hover:underline">
+            <Link href={ROUTES.wisePersons} className="text-xs text-accent hover:underline">
               查看全部 →
             </Link>
           </div>
@@ -107,7 +107,7 @@ export default function HomePage() {
         <section className="mb-12">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-xl font-semibold">十大问题导览</h2>
-            <Link href={ROUTES.questions} className="text-xs text-primary hover:underline">
+            <Link href={ROUTES.questions} className="text-xs text-accent hover:underline">
               查看全部 →
             </Link>
           </div>
@@ -128,7 +128,7 @@ export default function HomePage() {
                 <h2 className="text-xl font-semibold">最小限度书单</h2>
                 <p className="text-xs text-muted-foreground mt-0.5">56 本通识教育核心书目</p>
               </div>
-              <Link href={ROUTES.bookListDetail("minimum-56")} className="text-xs text-primary hover:underline">
+              <Link href={ROUTES.bookListDetail("minimum-56")} className="text-xs text-accent hover:underline">
                 查看全部 →
               </Link>
             </div>
@@ -155,7 +155,7 @@ export default function HomePage() {
                 <h2 className="text-xl font-semibold">元典：人类文明十三经</h2>
                 <p className="text-xs text-muted-foreground mt-0.5">轴心时代四大文明的根本经典</p>
               </div>
-              <Link href={ROUTES.topicDetail("0")} className="text-xs text-primary hover:underline">
+              <Link href={ROUTES.topicDetail("0")} className="text-xs text-accent hover:underline">
                 查看全部 →
               </Link>
             </div>
@@ -178,7 +178,7 @@ export default function HomePage() {
         <section className="mb-12">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-xl font-semibold">精选书单</h2>
-            <Link href={ROUTES.bookLists} className="text-xs text-primary hover:underline">
+            <Link href={ROUTES.bookLists} className="text-xs text-accent hover:underline">
               查看全部 →
             </Link>
           </div>

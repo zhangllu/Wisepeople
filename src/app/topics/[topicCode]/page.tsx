@@ -33,14 +33,14 @@ export default function TopicDetailPage() {
           <div className="flex items-center gap-2">
             {question ? (
               <>
-                <Link href={ROUTES.questions} className="hover:text-primary">十大问题</Link>
+                <Link href={ROUTES.questions} className="hover:text-accent">十大问题</Link>
                 <span className="text-muted-foreground/30">/</span>
-                <Link href={ROUTES.questionDetail(question.code)} className="hover:text-primary">{question.title}</Link>
+                <Link href={ROUTES.questionDetail(question.code)} className="hover:text-accent">{question.title}</Link>
                 <span className="text-muted-foreground/30">/</span>
               </>
             ) : (
               <>
-                <Link href={ROUTES.questions} className="hover:text-primary">十大问题</Link>
+                <Link href={ROUTES.questions} className="hover:text-accent">十大问题</Link>
                 <span className="text-muted-foreground/30">/</span>
               </>
             )}

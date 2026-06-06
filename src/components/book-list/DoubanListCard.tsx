@@ -10,7 +10,7 @@ export function DoubanListCard({ list }: { list: PersonalizedBookList }) {
           {list.description && (
             <p className="text-xs text-muted-foreground line-clamp-2">{list.description}</p>
           )}
-          <p className="text-xs text-primary/70 mt-3">豆瓣豆列 →</p>
+          <p className="text-xs text-accent/70 mt-3">豆瓣豆列 →</p>
         </CardContent>
       </Card>
     </a>
