@@ -18,7 +18,7 @@ CREATE TABLE public.bookmarks (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   user_id UUID REFERENCES public.profiles(id) ON DELETE CASCADE NOT NULL,
   target_id TEXT NOT NULL,
-  target_type TEXT NOT NULL CHECK (target_type IN ('wise-person', 'book-list', 'work')),
+  target_type TEXT NOT NULL CHECK (target_type IN ('wise-person', 'book-list', 'work', 'book')),
   created_at TIMESTAMPTZ DEFAULT NOW(),
   UNIQUE(user_id, target_id)
 );
