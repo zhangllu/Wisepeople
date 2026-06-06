@@ -2,14 +2,46 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { ChevronRight, BookHeart, ExternalLink } from "lucide-react"
+import { ChevronRight, BookHeart, BookOpen } from "lucide-react"
 import { getAllQuestions, getBooksByTopic, getTopicsByQuestion, getMinimumBookList, getClassicsBooks } from "@/lib/data"
 import { DIMENSION_LABELS, ROUTES } from "@/constants"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
+import { BookCard } from "@/components/book/BookCard"
 import { DoubanListCard } from "@/components/book-list/DoubanListCard"
 import { personalizedBookLists } from "@/data/personalized-booklists"
 import { PageHero } from "@/components/shared/PageHero"
+
+/** Preview card with cover image for the grid sections */
+function CoverPreviewCard({ slug, title, author, href }: { slug: string; title: string; author: string; href?: string }) {
+  const [imgError, setImgError] = useState(false)
+  const coverSrc = imgError ? null : `/images/covers/${slug}.jpg`
+  const Wrapper = href ? "a" : "div"
+  const linkProps = href ? { href, target: "_blank" as const, rel: "noopener noreferrer" } : {}
+
+  return (
+    <Wrapper {...linkProps}>
+      <Card className="transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 overflow-hidden h-full">
+        <div className="aspect-[3/4] bg-muted flex items-center justify-center overflow-hidden">
+          {coverSrc ? (
+            <img
+              src={coverSrc}
+              alt={title}
+              className="w-full h-full object-cover"
+              onError={() => setImgError(true)}
+            />
+          ) : (
+            <BookOpen className="w-8 h-8 text-muted-foreground/15" />
+          )}
+        </div>
+        <CardContent className="p-2.5">
+          <p className="text-sm font-medium truncate">{title}</p>
+          <p className="text-xs text-muted-foreground truncate">{author}</p>
+        </CardContent>
+      </Card>
+    </Wrapper>
+  )
+}
 
 export default function BookListsPage() {
   const questions = getAllQuestions()
@@ -126,22 +158,7 @@ export default function BookListsPage() {
                               books.length > 0 ? (
                                 <div className="divide-y divide-border/30">
                                   {books.map((b) => (
-                                    <Link
-                                      key={b.slug}
-                                      href={b.doubanLink || "#"}
-                                      target={b.doubanLink ? "_blank" : undefined}
-                                      className="flex items-center justify-between px-4 py-2 pl-10 hover:bg-accent/5 transition-colors group text-sm"
-                                    >
-                                      <span className="group-hover:text-accent transition-colors truncate">
-                                        {b.title}
-                                      </span>
-                                      <span className="text-xs text-muted-foreground flex-shrink-0 ml-3">
-                                        {b.author}
-                                        {b.doubanLink && (
-                                          <ExternalLink className="inline w-3 h-3 ml-1 opacity-40" />
-                                        )}
-                                      </span>
-                                    </Link>
+                                    <BookCard key={b.slug} book={b} compact />
                                   ))}
                                 </div>
                               ) : (
@@ -177,19 +194,9 @@ export default function BookListsPage() {
               查看全部 {minBooks.length} 本 →
             </Link>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {minBooks.slice(0, 8).map((b) => (
-              <Card
-                key={b.slug}
-                className="transition-all duration-200 hover:shadow-md"
-              >
-                <CardContent className="p-3">
-                  <p className="text-sm font-medium truncate">{b.title}</p>
-                  <p className="text-xs text-muted-foreground truncate">
-                    {b.author}
-                  </p>
-                </CardContent>
-              </Card>
+              <CoverPreviewCard key={b.slug} slug={b.slug} title={b.title} author={b.author} href={b.doubanLink} />
             ))}
           </div>
         </section>
@@ -211,19 +218,9 @@ export default function BookListsPage() {
                 查看全部 →
               </Link>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               {classicsBooks.slice(0, 8).map((b) => (
-                <Card
-                  key={b.slug}
-                  className="transition-all duration-200 hover:shadow-md"
-                >
-                  <CardContent className="p-3">
-                    <p className="text-sm font-medium truncate">{b.title}</p>
-                    <p className="text-xs text-muted-foreground truncate">
-                      {b.author}
-                    </p>
-                  </CardContent>
-                </Card>
+                <CoverPreviewCard key={b.slug} slug={b.slug} title={b.title} author={b.author} href={b.doubanLink} />
               ))}
             </div>
           </section>
