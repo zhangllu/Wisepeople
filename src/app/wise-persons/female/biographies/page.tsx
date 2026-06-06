@@ -17,27 +17,27 @@ export default function FemaleBiographiesPage() {
 
   const components: Components = {
     h2: ({ children, ...rest }) => (
-      <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 pb-2 border-b" {...rest}>
+      <h2 className="text-xl font-bold text-foreground mt-10 mb-4 pb-2 border-b" {...rest}>
         {children}
       </h2>
     ),
     h3: ({ children, ...rest }) => (
-      <h3 className="text-lg font-bold text-gray-800 mt-8 mb-3" {...rest}>
+      <h3 className="text-lg font-bold text-foreground mt-8 mb-3" {...rest}>
         {children}
       </h3>
     ),
     p: ({ children, ...rest }) => (
-      <p className="text-sm text-gray-700 leading-relaxed mb-4" {...rest}>
+      <p className="text-sm text-muted-foreground leading-relaxed mb-4" {...rest}>
         {children}
       </p>
     ),
     ul: ({ children, ...rest }) => (
-      <ul className="list-disc pl-5 text-sm text-gray-700 space-y-1 mb-4" {...rest}>
+      <ul className="list-disc pl-5 text-sm text-muted-foreground space-y-1 mb-4" {...rest}>
         {children}
       </ul>
     ),
     ol: ({ children, ...rest }) => (
-      <ol className="list-decimal pl-5 text-sm text-gray-700 space-y-1 mb-4" {...rest}>
+      <ol className="list-decimal pl-5 text-sm text-muted-foreground space-y-1 mb-4" {...rest}>
         {children}
       </ol>
     ),
@@ -46,7 +46,7 @@ export default function FemaleBiographiesPage() {
         {children}
       </li>
     ),
-    hr: () => <hr className="my-8 border-gray-200" />,
+    hr: () => <hr className="my-8 border-border" />,
     blockquote: ({ children, ...rest }) => (
       <blockquote className="border-l-4 border-primary/30 pl-4 py-1 my-4 text-sm text-muted-foreground italic" {...rest}>
         {children}
@@ -54,18 +54,18 @@ export default function FemaleBiographiesPage() {
     ),
     table: ({ children, ...rest }) => (
       <div className="overflow-x-auto my-4">
-        <table className="min-w-full text-sm border-collapse border border-gray-200" {...rest}>
+        <table className="min-w-full text-sm border-collapse border border-border" {...rest}>
           {children}
         </table>
       </div>
     ),
     th: ({ children, ...rest }) => (
-      <th className="border border-gray-200 bg-gray-50 px-3 py-2 text-left font-medium" {...rest}>
+      <th className="border border-border bg-muted px-3 py-2 text-left font-medium" {...rest}>
         {children}
       </th>
     ),
     td: ({ children, ...rest }) => (
-      <td className="border border-gray-200 px-3 py-2" {...rest}>
+      <td className="border border-border px-3 py-2" {...rest}>
         {children}
       </td>
     ),

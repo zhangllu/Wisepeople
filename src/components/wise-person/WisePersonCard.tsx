@@ -13,18 +13,27 @@ interface WisePersonCardProps {
 
 export function WisePersonCard({ wisePerson }: WisePersonCardProps) {
   const isStub = wisePerson.isStub
+  const initial = wisePerson.name.charAt(0)
 
   return (
     <Link href={ROUTES.wisePersonDetail(wisePerson.slug)} className="group block h-full">
-      <Card className="transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 cursor-pointer h-full">
+      <Card className="relative cursor-pointer h-full border-l-2 border-l-transparent hover:border-l-accent/50 transition-all duration-300 hover:-translate-y-1">
+        {/* Left accent bar — visible on hover */}
+        <div className="absolute left-0 top-4 bottom-4 w-0.5 bg-accent/0 group-hover:bg-accent/40 rounded-full transition-all duration-300" aria-hidden="true" />
+
         <CardHeader className="pb-2">
-          <div className="flex items-start justify-between">
-            <div>
-              <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">
+          <div className="flex items-start justify-between gap-3">
+            {/* Avatar */}
+            <div className="shrink-0 size-10 rounded-full bg-primary/5 ring-1 ring-primary/10 group-hover:ring-accent/40 flex items-center justify-center text-sm font-heading font-semibold text-primary/60 group-hover:text-accent/70 transition-all duration-300">
+              {initial}
+            </div>
+
+            <div className="flex-1 min-w-0">
+              <h3 className="text-lg font-semibold group-hover:text-primary transition-colors truncate">
                 {wisePerson.name}
               </h3>
               {wisePerson.region === "western" && wisePerson.nameEn && (
-                <p className="text-xs text-muted-foreground">{wisePerson.nameEn}</p>
+                <p className="text-xs text-muted-foreground truncate">{wisePerson.nameEn}</p>
               )}
             </div>
             <div onClick={(e) => e.stopPropagation()} onPointerDown={(e) => e.stopPropagation()} role="button" tabIndex={-1}>
@@ -45,7 +54,7 @@ export function WisePersonCard({ wisePerson }: WisePersonCardProps) {
                   </Badge>
                 )}
                 {wisePerson.links && wisePerson.links.length > 0 && (
-                  <Badge variant="default" className="text-[10px] px-1.5 py-0 bg-blue-600 hover:bg-blue-600">
+                  <Badge variant="default" className="text-[10px] px-1.5 py-0 bg-accent text-accent-foreground hover:bg-accent/90">
                     精选链接
                   </Badge>
                 )}

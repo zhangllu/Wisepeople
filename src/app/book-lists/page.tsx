@@ -7,6 +7,8 @@ import { getAllQuestions, getBooksByQuestion, getMinimumBookList, getClassicsBoo
 import { ROUTES, DIMENSION_LABELS } from "@/constants"
 import { personalizedBookLists } from "@/data/personalized-booklists"
 import { DoubanListCard } from "@/components/book-list/DoubanListCard"
+import { PageHero } from "@/components/shared/PageHero"
+import { BookHeart } from "lucide-react"
 
 export default function BookListsPage() {
   const questions = getAllQuestions()
@@ -14,13 +16,18 @@ export default function BookListsPage() {
   const classicsBooks = getClassicsBooks()
 
   return (
-    <div className="container mx-auto max-w-5xl px-4 py-8">
-      <div className="mb-8">
-        <h1 className="text-2xl font-bold mb-2">书单推荐</h1>
-        <p className="text-sm text-muted-foreground">
-          从精选书单开始您的阅读之旅
-        </p>
-      </div>
+    <div>
+      <PageHero
+        title="书单推荐"
+        subtitle="好的阅读，始于好的选择"
+        description="从精选书单开始您的阅读之旅"
+        accent={
+          <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center">
+            <BookHeart className="w-4 h-4 text-accent" />
+          </div>
+        }
+      />
+      <div className="container mx-auto max-w-5xl px-4 py-8">
 
       {/* 最小限度书单 */}
       <section className="mb-10">
@@ -127,6 +134,7 @@ export default function BookListsPage() {
           ))}
         </div>
       </section>
-    </div>
+      </div>
+      </div>
   )
 }

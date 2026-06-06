@@ -136,7 +136,7 @@ export default function FortunePage() {
   const isWisePersonMode = mode === "wise-person"
 
   return (
-    <div className="min-h-screen bg-amber-50/40 flex flex-col items-center justify-center px-4 py-12">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-12">
       {/* Tab 切换 */}
       <Tabs value={mode} onValueChange={handleModeChange} className="mb-10">
         <TabsList>
@@ -166,7 +166,7 @@ export default function FortunePage() {
           {/* ===== 封面 ===== */}
           <div
             className="absolute inset-0 rounded-[16px] [backface-visibility:hidden] overflow-hidden flex flex-col items-center justify-center"
-            style={{ backgroundColor: "#D97757" }}
+            style={{ backgroundColor: "var(--accent)" }}
           >
             <div className="absolute inset-[18px] rounded-[10px] border border-white/15" />
             <div className="absolute inset-[24px] rounded-[8px] border border-white/8" />
@@ -181,26 +181,25 @@ export default function FortunePage() {
 
           {/* ===== 内容面 ===== */}
           <div
-            className="absolute inset-0 rounded-[16px] bg-white border border-gray-100 [backface-visibility:hidden] flex flex-col overflow-hidden"
+            className="absolute inset-0 rounded-[16px] bg-white border border-border [backface-visibility:hidden] flex flex-col overflow-hidden"
             style={{ transform: "rotateY(180deg)" }}
           >
             {/* 智者内容 */}
             {isWisePersonMode && p && (
               <>
-                <div className="flex items-center gap-2 px-6 py-5" style={{ backgroundColor: "#FAECE7" }}>
-                  <span className="font-mono text-sm" style={{ color: "#D97757" }}>{p.questionCode}</span>
-                  <span className="text-sm font-medium text-gray-700">{p.questionTitle}</span>
+                <div className="flex items-center gap-2 px-6 py-5 bg-accent/10">
+                  <span className="font-mono text-sm text-accent">{p.questionCode}</span>
+                  <span className="text-sm font-medium text-foreground/80">{p.questionTitle}</span>
                 </div>
                 <div className="flex-1 flex flex-col px-6 py-6">
-                  <span className="text-lg mb-3" style={{ color: "#D97757" }}>✦</span>
-                  <h2 className="text-xl font-bold text-gray-900 leading-snug mb-4">{p.name}</h2>
-                  <p className="text-sm text-gray-500 leading-relaxed flex-1">{p.excerpt}</p>
-                  <div className="pt-5 border-t border-gray-50">
+                  <span className="text-lg mb-3 text-accent">✦</span>
+                  <h2 className="text-xl font-bold text-foreground leading-snug mb-4">{p.name}</h2>
+                  <p className="text-sm text-muted-foreground leading-relaxed flex-1">{p.excerpt}</p>
+                  <div className="pt-5 border-t border-border">
                     <Link
                       href={`/wise-persons/${p.slug}`}
                       onClick={(e) => e.stopPropagation()}
-                      className="inline-flex items-center gap-1 text-sm transition-colors"
-                      style={{ color: "#D97757" }}
+                      className="inline-flex items-center gap-1 text-sm text-accent transition-colors"
                     >
                       阅读完整档案 <ArrowRight className="h-3.5 w-3.5" />
                     </Link>
@@ -212,29 +211,28 @@ export default function FortunePage() {
             {/* 书籍内容 */}
             {!isWisePersonMode && b && (
               <>
-                <div className="flex items-center gap-2 px-6 py-5" style={{ backgroundColor: "#F5F0EB" }}>
-                  <span className="text-sm" style={{ color: "#8B7E66" }}>📖</span>
-                  <span className="text-sm font-medium text-gray-700">{getQuestionTitleByTopicCode(b.topicCode)}</span>
+                <div className="flex items-center gap-2 px-6 py-5 bg-muted">
+                  <span className="text-sm text-muted-foreground">📖</span>
+                  <span className="text-sm font-medium text-foreground/80">{getQuestionTitleByTopicCode(b.topicCode)}</span>
                 </div>
                 <div className="flex-1 flex flex-col px-6 py-6">
-                  <span className="text-lg mb-3" style={{ color: "#8B7E66" }}>✦</span>
-                  <h2 className="text-lg font-bold text-gray-900 leading-snug mb-3 line-clamp-2">{b.title}</h2>
-                  <p className="text-sm text-gray-600 mb-1">{b.author}</p>
-                  <p className="text-xs text-gray-400 mb-3">
+                  <span className="text-lg mb-3 text-muted-foreground">✦</span>
+                  <h2 className="text-lg font-bold text-foreground leading-snug mb-3 line-clamp-2">{b.title}</h2>
+                  <p className="text-sm text-muted-foreground mb-1">{b.author}</p>
+                  <p className="text-xs text-muted-foreground mb-3">
                     {b.year && <span>{b.year}</span>}
                     {b.publisher && <span> · {b.publisher}</span>}
                   </p>
                   {b.tags && (
-                    <span className="text-[11px] text-gray-400">{b.tags}</span>
+                    <span className="text-[11px] text-muted-foreground">{b.tags}</span>
                   )}
-                  <div className="pt-5 border-t border-gray-50 mt-auto">
+                  <div className="pt-5 border-t border-border mt-auto">
                     <a
                       href={b.doubanLink}
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={(e) => e.stopPropagation()}
-                      className="inline-flex items-center gap-1 text-sm transition-colors"
-                      style={{ color: "#8B7E66" }}
+                      className="inline-flex items-center gap-1 text-sm text-muted-foreground transition-colors"
                     >
                       豆瓣详情 <ArrowRight className="h-3.5 w-3.5" />
                     </a>
@@ -251,7 +249,7 @@ export default function FortunePage() {
         <button
           onClick={draw}
           disabled={isAnimating}
-          className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-red-200 text-xs text-red-400 hover:text-red-700 hover:border-red-300 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+          className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-accent/30 text-xs text-accent/70 hover:text-accent hover:border-accent/60 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
         >
           {isWisePersonMode ? "再抽一位" : "再抽一本"}
         </button>
@@ -261,7 +259,7 @@ export default function FortunePage() {
       <p className="text-center mt-14">
         <Link
           href={isWisePersonMode ? "/daily" : "/book-lists"}
-          className="text-xs text-stone-200 hover:text-red-400 transition-colors"
+          className="text-xs text-muted-foreground/30 hover:text-accent transition-colors"
         >
           {isWisePersonMode ? "每日遇见三位智者 →" : "浏览全部书单 →"}
         </Link>

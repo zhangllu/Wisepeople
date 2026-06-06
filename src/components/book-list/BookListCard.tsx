@@ -13,7 +13,7 @@ const listTypeLabels: Record<string, string> = {
 export function BookListCard({ bookList }: { bookList: BookList }) {
   return (
     <Link href={ROUTES.bookListDetail(bookList.slug)}>
-      <Card className="transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 h-full">
+      <Card className="transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full">
         <CardContent className="p-5">
           <div className="flex items-center gap-2 mb-2">
             <Badge variant="secondary" className="text-[10px]">

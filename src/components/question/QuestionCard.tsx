@@ -11,7 +11,7 @@ interface QuestionCardProps {
 export function QuestionCard({ question }: QuestionCardProps) {
   return (
     <Link href={ROUTES.questionDetail(question.id)}>
-      <Card className="transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 h-full">
+      <Card className="transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full">
         <CardContent className="p-5">
           <div className="flex items-center gap-2 mb-2">
             <span className="text-xs font-mono text-muted-foreground">Q{String(question.number).padStart(2, "0")}</span>

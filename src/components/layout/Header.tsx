@@ -24,13 +24,13 @@ export function Header() {
 
         {/* Navigation - Desktop */}
         <nav className="hidden md:flex items-center gap-6 text-sm">
-          <Link href={ROUTES.wisePersons} className="text-muted-foreground hover:text-foreground transition-colors">
+          <Link href={ROUTES.wisePersons} className="nav-link">
             智者库
           </Link>
-          <Link href={ROUTES.femaleWisePersons} className="text-muted-foreground hover:text-foreground transition-colors">
+          <Link href={ROUTES.femaleWisePersons} className="nav-link">
             女性智者
           </Link>
-          <Link href={ROUTES.masters} className="text-muted-foreground hover:text-foreground transition-colors">
+          <Link href={ROUTES.masters} className="nav-link">
             高手库
           </Link>
           <DropdownMenu>
@@ -46,16 +46,16 @@ export function Header() {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <Link href={ROUTES.questions} className="text-muted-foreground hover:text-foreground transition-colors">
+          <Link href={ROUTES.questions} className="nav-link">
             十大问题
           </Link>
-          <Link href={ROUTES.bookLists} className="text-muted-foreground hover:text-foreground transition-colors">
+          <Link href={ROUTES.bookLists} className="nav-link">
             书单
           </Link>
-          <Link href={ROUTES.story} className="text-muted-foreground hover:text-foreground transition-colors">
+          <Link href={ROUTES.story} className="nav-link">
             产品故事
           </Link>
-          <Link href={ROUTES.profile} className="text-muted-foreground hover:text-foreground transition-colors">
+          <Link href={ROUTES.profile} className="nav-link">
             个人中心
           </Link>
         </nav>

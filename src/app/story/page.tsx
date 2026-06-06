@@ -50,33 +50,33 @@ export default function StoryPage() {
   // Strip bold/italic: render as plain text
   const components: Components = {
     h2: ({ children, ...rest }) => (
-      <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4" {...rest}>
+      <h2 className="text-xl font-bold text-foreground mt-10 mb-4" {...rest}>
         {children}
       </h2>
     ),
     h3: ({ children, ...rest }) => (
-      <h3 className="text-lg font-bold text-gray-800 mt-8 mb-3" {...rest}>
+      <h3 className="text-lg font-bold text-foreground mt-8 mb-3" {...rest}>
         {children}
       </h3>
     ),
     p: ({ children, ...rest }) => (
-      <p className="leading-[1.8] text-[15px] text-gray-800 mb-4" {...rest}>
+      <p className="leading-[1.8] text-[15px] text-foreground mb-4" {...rest}>
         {children}
       </p>
     ),
-    hr: () => <div className="border-t border-gray-200/70 my-8" />,
+    hr: () => <div className="border-t border-border my-8" />,
     ul: ({ children, ...rest }) => (
-      <ul className="list-disc pl-6 text-[15px] text-gray-800 leading-[1.8] mb-4 space-y-1" {...rest}>
+      <ul className="list-disc pl-6 text-[15px] text-foreground leading-[1.8] mb-4 space-y-1" {...rest}>
         {children}
       </ul>
     ),
     ol: ({ children, ...rest }) => (
-      <ol className="list-decimal pl-6 text-[15px] text-gray-800 leading-[1.8] mb-4 space-y-1" {...rest}>
+      <ol className="list-decimal pl-6 text-[15px] text-foreground leading-[1.8] mb-4 space-y-1" {...rest}>
         {children}
       </ol>
     ),
     li: ({ children, ...rest }) => (
-      <li className="text-[15px] text-gray-800" {...rest}>
+      <li className="text-[15px] text-foreground" {...rest}>
         {children}
       </li>
     ),
@@ -90,7 +90,7 @@ export default function StoryPage() {
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-600 hover:text-blue-800 underline underline-offset-2"
+          className="text-primary hover:text-accent underline underline-offset-2"
           {...rest}
         >
           {children}
@@ -99,23 +99,23 @@ export default function StoryPage() {
     },
     img: () => null,
     blockquote: ({ children, ...rest }) => (
-      <blockquote className="border-l-4 border-amber-300 bg-amber-100/50 pl-4 py-2 my-4 text-[15px] text-gray-700 leading-[1.8]" {...rest}>
+      <blockquote className="border-l-4 border-accent/30 bg-accent/5 pl-4 py-2 my-4 text-[15px] text-muted-foreground leading-[1.8]" {...rest}>
         {children}
       </blockquote>
     ),
     code: ({ children, ...rest }) => (
-      <code className="bg-gray-100 rounded px-1 text-sm" {...rest}>
+      <code className="bg-muted rounded px-1 text-sm" {...rest}>
         {children}
       </code>
     ),
   }
 
   return (
-    <div className="min-h-screen bg-amber-50/40">
+    <div className="min-h-screen">
       <div className="mx-auto px-6 py-12" style={{ maxWidth: "820px" }}>
         {/* Page title */}
-        <h1 className="text-2xl font-bold text-gray-900 mb-2">产品故事</h1>
-        <div className="text-sm text-gray-500 mb-8 leading-relaxed space-y-2">
+        <h1 className="text-2xl font-bold text-foreground mb-2">产品故事</h1>
+        <div className="text-sm text-muted-foreground mb-8 leading-relaxed space-y-2">
           <p>
             【智者网】的数据来源于阳志平老师 2023 年出版的《聪明的阅读者》第十一章——「通识千书：智者的代表作」。
           </p>
@@ -128,11 +128,11 @@ export default function StoryPage() {
         </div>
 
         {/* Article title block */}
-        <div className="mb-6 pb-4 border-b border-gray-200/70">
-          <h2 className="text-2xl font-bold text-gray-900 leading-snug">
+        <div className="mb-6 pb-4 border-b border-border">
+          <h2 className="text-2xl font-bold text-foreground leading-snug">
             {articleTitle}
           </h2>
-          <p className="mt-3 text-sm text-gray-400">
+          <p className="mt-3 text-sm text-muted-foreground">
             作者：阳志平
           </p>
         </div>
@@ -150,15 +150,15 @@ export default function StoryPage() {
             href={ORIGINAL_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-sm text-amber-700 hover:text-amber-900 transition-colors border border-amber-300 rounded-lg px-4 py-2 hover:bg-amber-100/50"
+            className="inline-flex items-center gap-1 text-sm text-accent-foreground bg-accent/10 hover:bg-accent/20 transition-colors border border-accent/30 rounded-lg px-4 py-2"
           >
             阅读原文 →
           </a>
         </div>
 
         {/* Source credit */}
-        <div className="mt-8 pt-8 border-t border-gray-200/70">
-          <p className="text-sm text-gray-400 text-center leading-relaxed">
+        <div className="mt-8 pt-8 border-t border-border">
+          <p className="text-sm text-muted-foreground text-center leading-relaxed">
             本文来源：阳志平老师的个人公众号「心智工具箱」
           </p>
         </div>
