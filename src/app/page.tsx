@@ -50,9 +50,6 @@ export default function HomePage() {
 
         <div className="relative text-center px-4 max-w-3xl mx-auto">
           {/* Tag */}
-          <div className="inline-flex items-center gap-1.5 rounded-full border border-accent/20 bg-accent/5 px-3 py-1 text-xs text-accent mb-6">
-            面向终身学习者的通识教育平台
-          </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight mb-5">
             为终身学习者打造的<br /><span className="text-accent">通识阅读地图</span>
