@@ -38,11 +38,11 @@ export function Header() {
               遇见智者
             </DropdownMenuTrigger>
             <DropdownMenuContent>
-              <DropdownMenuItem asChild>
-                <Link href={ROUTES.daily}>每日智者</Link>
+              <DropdownMenuItem render={<Link href={ROUTES.daily} />}>
+                每日智者
               </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href={ROUTES.fortune}>随机漫步</Link>
+              <DropdownMenuItem render={<Link href={ROUTES.fortune} />}>
+                随机漫步
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
