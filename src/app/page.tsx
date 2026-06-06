@@ -55,7 +55,7 @@ export default function HomePage() {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight mb-5">
-            为终身学习者打造的<br /><span className="text-accent">通识教育地图</span>
+            为终身学习者打造的<br /><span className="text-accent">通识阅读地图</span>
           </h1>
 
           <p className="text-sm md:text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-8">

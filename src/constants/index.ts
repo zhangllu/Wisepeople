@@ -30,8 +30,8 @@ export const ROUTES = {
 
 // 平台名称
 export const SITE_NAME = "智者网"
-export const SITE_TAGLINE = "为终身学习者打造的通识教育地图"
-export const SITE_DESCRIPTION = "为终身学习者打造的通识教育地图，助力你生发出自己独特的知识结构。"
+export const SITE_TAGLINE = "为终身学习者打造的通识阅读地图"
+export const SITE_DESCRIPTION = "为终身学习者打造的通识阅读地图，助力你生发出自己独特的知识结构。"
 
 // 分类筛选选项
 export const ERA_OPTIONS: CategoryOption[] = [
