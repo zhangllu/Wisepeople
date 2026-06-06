@@ -1,5 +1,6 @@
 "use client"
 
+import { useEffect } from "react"
 import Link from "next/link"
 import { useAuthStore, useBookmarkStore, useReviewStore } from "@/lib/stores"
 import { ROUTES } from "@/constants"
@@ -11,8 +12,15 @@ import { FadeIn } from "@/components/shared/FadeIn"
 
 export default function ProfilePage() {
   const { isAuthenticated, user, logout } = useAuthStore()
-  const { bookmarks } = useBookmarkStore()
-  const { reviews } = useReviewStore()
+  const { bookmarks, fetchBookmarks } = useBookmarkStore()
+  const { reviews, fetchReviews } = useReviewStore()
+
+  useEffect(() => {
+    if (isAuthenticated && user) {
+      fetchBookmarks(user.id)
+      fetchReviews(user.id)
+    }
+  }, [isAuthenticated, user, fetchBookmarks, fetchReviews])
 
   if (!isAuthenticated || !user) {
     return (

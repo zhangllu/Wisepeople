@@ -4,6 +4,7 @@ import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
 import { ChatWidget } from "@/components/chat/ChatWidget"
 import { Toaster } from "@/components/ui/sonner"
+import { AuthInitializer } from "@/components/shared/AuthInitializer"
 
 export const metadata: Metadata = {
   title: "智者网 - 为成年人打造的通识教育地图",
@@ -22,11 +23,13 @@ export default function RootLayout({
         <script async crossOrigin="anonymous" src="https://tweakcn.com/live-preview.min.js" />
       </head>
       <body className="min-h-full flex flex-col">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <ChatWidget />
-        <Toaster />
+        <AuthInitializer>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <ChatWidget />
+          <Toaster />
+        </AuthInitializer>
       </body>
     </html>
   )

@@ -1,5 +1,6 @@
 "use client"
 
+import { useEffect } from "react"
 import Link from "next/link"
 import { useBookmarkStore, useWisePersonStore, useAuthStore } from "@/lib/stores"
 import { ROUTES } from "@/constants"
@@ -9,9 +10,15 @@ import { DetailHeader } from "@/components/shared/DetailHeader"
 import { FadeIn } from "@/components/shared/FadeIn"
 
 export default function BookmarksPage() {
-  const { isAuthenticated } = useAuthStore()
-  const { bookmarks, removeBookmark } = useBookmarkStore()
+  const { isAuthenticated, user } = useAuthStore()
+  const { bookmarks, loading, fetchBookmarks, removeBookmark } = useBookmarkStore()
   const { getWisePersonBySlug } = useWisePersonStore()
+
+  useEffect(() => {
+    if (isAuthenticated && user) {
+      fetchBookmarks(user.id)
+    }
+  }, [isAuthenticated, user, fetchBookmarks])
 
   if (!isAuthenticated) {
     return (
@@ -20,6 +27,19 @@ export default function BookmarksPage() {
         <p className="text-sm text-muted-foreground mb-6">请先登录</p>
         <Link href={ROUTES.login}><Button>去登录</Button></Link>
       </div>
+    )
+  }
+
+  if (loading) {
+    return (
+      <>
+        <DetailHeader title="我的收藏" />
+        <FadeIn>
+          <div className="container mx-auto max-w-4xl px-4 py-8 text-center text-sm text-muted-foreground">
+            加载中...
+          </div>
+        </FadeIn>
+      </>
     )
   }
 

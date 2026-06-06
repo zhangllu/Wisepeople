@@ -1,5 +1,6 @@
 "use client"
 
+import { useEffect } from "react"
 import { useAuthStore, useReviewStore } from "@/lib/stores"
 import Link from "next/link"
 import { ROUTES } from "@/constants"
@@ -11,7 +12,7 @@ import { FadeIn } from "@/components/shared/FadeIn"
 
 export default function ReviewsPage() {
   const { isAuthenticated, user } = useAuthStore()
-  const { reviews, deleteReview } = useReviewStore()
+  const { reviews, loading, fetchReviews, deleteReview } = useReviewStore()
 
   if (!isAuthenticated || !user) {
     return (
@@ -23,7 +24,26 @@ export default function ReviewsPage() {
     )
   }
 
+  useEffect(() => {
+    if (isAuthenticated && user) {
+      fetchReviews(user.id)
+    }
+  }, [isAuthenticated, user, fetchReviews])
+
   const userReviews = reviews.filter((r) => r.userId === user.id)
+
+  if (loading) {
+    return (
+      <>
+        <DetailHeader title="我的书评" />
+        <FadeIn>
+          <div className="container mx-auto max-w-4xl px-4 py-8 text-center text-sm text-muted-foreground">
+            加载中...
+          </div>
+        </FadeIn>
+      </>
+    )
+  }
 
   if (userReviews.length === 0) {
     return (

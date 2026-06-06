@@ -1,13 +1,16 @@
 import { create } from "zustand"
 import { persist } from "zustand/middleware"
+import { createClient } from "@/lib/supabase/client"
 import type { User } from "@/types"
 
 interface AuthState {
   user: User | null
   isAuthenticated: boolean
+  loading: boolean
+  initialize: () => Promise<void>
   login: (email: string, password: string) => Promise<boolean>
   register: (email: string, password: string, name: string) => Promise<boolean>
-  logout: () => void
+  logout: () => Promise<void>
 }
 
 export const useAuthStore = create<AuthState>()(
@@ -15,43 +18,149 @@ export const useAuthStore = create<AuthState>()(
     (set) => ({
       user: null,
       isAuthenticated: false,
+      loading: true,
 
-      login: async (email: string, _password: string) => {
-        // Mock 登录：匹配预设账户或 demo 账户
-        if (email === "demo@wisepeople.cn" || email === "test@wisepeople.cn") {
-          set({
-            user: {
-              id: "u-demo-001",
-              email,
-              name: email === "demo@wisepeople.cn" ? "Demo用户" : "测试用户",
-              role: "registered",
-              createdAt: new Date().toISOString(),
-            },
-            isAuthenticated: true,
-          })
-          return true
+      initialize: async () => {
+        try {
+          const supabase = createClient()
+          const { data: { session } } = await supabase.auth.getSession()
+
+          if (session?.user) {
+            const { data: profile } = await supabase
+              .from("profiles")
+              .select("*")
+              .eq("id", session.user.id)
+              .single()
+
+            if (profile) {
+              set({
+                user: {
+                  id: profile.id,
+                  email: profile.email || "",
+                  name: profile.name || "",
+                  avatar: profile.avatar,
+                  role: profile.role || "registered",
+                  createdAt: profile.created_at,
+                },
+                isAuthenticated: true,
+                loading: false,
+              })
+              return
+            }
+          }
+        } catch (e) {
+          console.error("Auth init error:", e)
+        }
+        set({ user: null, isAuthenticated: false, loading: false })
+      },
+
+      login: async (email: string, password: string) => {
+        try {
+          const supabase = createClient()
+          const { data, error } = await supabase.auth.signInWithPassword({ email, password })
+          if (error || !data.user) return false
+
+          const { data: profile } = await supabase
+            .from("profiles")
+            .select("*")
+            .eq("id", data.user.id)
+            .single()
+
+          if (profile) {
+            set({
+              user: {
+                id: profile.id,
+                email: profile.email || "",
+                name: profile.name || "",
+                avatar: profile.avatar,
+                role: profile.role || "registered",
+                createdAt: profile.created_at,
+              },
+              isAuthenticated: true,
+              loading: false,
+            })
+            return true
+          }
+        } catch (e) {
+          console.error("Login error:", e)
         }
         return false
       },
 
-      register: async (email: string, _password: string, name: string) => {
-        set({
-          user: {
-            id: `u-${Date.now()}`,
+      register: async (email: string, password: string, name: string) => {
+        try {
+          const supabase = createClient()
+          const { data, error } = await supabase.auth.signUp({
             email,
-            name,
-            role: "registered",
-            createdAt: new Date().toISOString(),
-          },
-          isAuthenticated: true,
-        })
-        return true
+            password,
+            options: { data: { name } },
+          })
+          if (error || !data.user) return false
+
+          // 如果 signUp 返回了 session（邮箱验证关闭的情况），直接设置用户状态
+          if (data.session) {
+            // 等待 profile 触发器完成（最多重试 3 次）
+            for (let i = 0; i < 3; i++) {
+              const { data: profile } = await supabase
+                .from("profiles")
+                .select("*")
+                .eq("id", data.user.id)
+                .single()
+
+              if (profile) {
+                set({
+                  user: {
+                    id: profile.id,
+                    email: profile.email || "",
+                    name: profile.name || "",
+                    avatar: profile.avatar,
+                    role: profile.role || "registered",
+                    createdAt: profile.created_at,
+                  },
+                  isAuthenticated: true,
+                  loading: false,
+                })
+                return true
+              }
+              // 等待 300ms 后重试（给触发器时间完成）
+              await new Promise((r) => setTimeout(r, 300))
+            }
+            // profile 仍未创建，用 auth 元数据兜底
+            set({
+              user: {
+                id: data.user.id,
+                email: data.user.email || email,
+                name: data.user.user_metadata?.name || name,
+                role: "registered",
+                createdAt: data.user.created_at || new Date().toISOString(),
+              },
+              isAuthenticated: true,
+              loading: false,
+            })
+          }
+          return true
+        } catch (e) {
+          console.error("Register error:", e)
+          return false
+        }
       },
 
-      logout: () => {
-        set({ user: null, isAuthenticated: false })
+      logout: async () => {
+        try {
+          const supabase = createClient()
+          await supabase.auth.signOut()
+        } catch (e) {
+          console.error("Logout error:", e)
+        }
+        set({ user: null, isAuthenticated: false, loading: false })
       },
     }),
-    { name: "wp-auth" }
+    {
+      name: "wp-auth",
+      partialize: (state) => ({
+        user: state.user,
+        isAuthenticated: state.isAuthenticated,
+      }),
+    }
   )
 )

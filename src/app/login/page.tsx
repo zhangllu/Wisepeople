@@ -29,7 +29,7 @@ export default function LoginPage() {
       toast("登录成功")
       router.push(ROUTES.home)
     } else {
-      setError("邮箱或密码错误")
+      setError("邮箱或密码错误，请重试")
       setLoading(false)
     }
   }
@@ -48,7 +48,7 @@ export default function LoginPage() {
               <Input
                 id="email"
                 type="email"
-                placeholder="demo@wisepeople.cn"
+                placeholder="请输入邮箱"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -59,7 +59,7 @@ export default function LoginPage() {
               <Input
                 id="password"
                 type="password"
-                placeholder="任意密码"
+                placeholder="请输入密码"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
@@ -75,9 +75,6 @@ export default function LoginPage() {
             <Link href={ROUTES.register} className="text-accent hover:underline">
               注册
             </Link>
-          </div>
-          <div className="mt-3 text-center text-[10px] text-muted-foreground/50">
-            演示账号：demo@wisepeople.cn（任意密码即可登录）
           </div>
         </CardContent>
       </Card>

@@ -16,10 +16,11 @@ interface ReviewEditorProps {
 export function ReviewEditor({ workSlug, workTitle, onDone }: ReviewEditorProps) {
   const [title, setTitle] = useState("")
   const [content, setContent] = useState("")
+  const [submitting, setSubmitting] = useState(false)
   const { addReview } = useReviewStore()
   const { user } = useAuthStore()
 
-  const handlePublish = () => {
+  const handlePublish = async () => {
     if (!user) {
       toast("请先登录")
       return
@@ -28,7 +29,8 @@ export function ReviewEditor({ workSlug, workTitle, onDone }: ReviewEditorProps)
       toast("请填写标题和内容")
       return
     }
-    addReview({
+    setSubmitting(true)
+    await addReview({
       userId: user.id,
       userName: user.name,
       workSlug,
@@ -37,15 +39,17 @@ export function ReviewEditor({ workSlug, workTitle, onDone }: ReviewEditorProps)
       content: content.trim(),
       status: "pending_review",
     })
+    setSubmitting(false)
     toast("发布成功，等待审核")
     setTitle("")
     setContent("")
     onDone?.()
   }
 
-  const handleSaveDraft = () => {
+  const handleSaveDraft = async () => {
     if (!user || !content.trim()) return
-    addReview({
+    setSubmitting(true)
+    await addReview({
       userId: user.id,
       userName: user.name,
       workSlug,
@@ -54,6 +58,7 @@ export function ReviewEditor({ workSlug, workTitle, onDone }: ReviewEditorProps)
       content: content.trim(),
       status: "draft",
     })
+    setSubmitting(false)
     toast("已保存草稿")
   }
 
@@ -72,10 +77,10 @@ export function ReviewEditor({ workSlug, workTitle, onDone }: ReviewEditorProps)
         onChange={(e) => setContent(e.target.value)}
       />
       <div className="flex gap-2">
-        <Button size="sm" onClick={handlePublish}>
-          发布
+        <Button size="sm" onClick={handlePublish} disabled={submitting}>
+          {submitting ? "提交中..." : "发布"}
         </Button>
-        <Button size="sm" variant="outline" onClick={handleSaveDraft}>
+        <Button size="sm" variant="outline" onClick={handleSaveDraft} disabled={submitting}>
           保存草稿
         </Button>
       </div>

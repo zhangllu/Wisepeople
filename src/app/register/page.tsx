@@ -18,13 +18,21 @@ export default function RegisterPage() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [loading, setLoading] = useState(false)
+  const [error, setError] = useState("")
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
-    await register(email, password, name)
-    toast("注册成功")
-    router.push(ROUTES.home)
+    setError("")
+
+    const success = await register(email, password, name)
+    if (success) {
+      toast("注册成功，欢迎加入智者网")
+      router.push(ROUTES.home)
+    } else {
+      setError("注册失败，该邮箱可能已被注册")
+      setLoading(false)
+    }
   }
 
   return (
@@ -48,6 +56,7 @@ export default function RegisterPage() {
               <Label htmlFor="password">密码</Label>
               <Input id="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} required minLength={6} />
             </div>
+            {error && <p className="text-xs text-destructive">{error}</p>}
             <Button type="submit" className="w-full" disabled={loading}>
               {loading ? "注册中..." : "注册"}
             </Button>
