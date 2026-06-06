@@ -10,12 +10,9 @@ export default function MapPage() {
   const wisePersonsByQuestion = getWisePersonsByQuestion()
 
   return (
-    <div className="container mx-auto max-w-5xl px-4 py-6 sm:py-10">
+    <div className="container mx-auto max-w-7xl px-4 py-6 sm:py-10">
       <header className="mb-6 text-center">
         <h1 className="text-2xl sm:text-3xl font-bold font-heading mb-2">知识地图</h1>
-        <p className="text-sm sm:text-base text-muted-foreground">
-          天圆地方 —— 点击问题区域，探索对应的智者与著作
-        </p>
       </header>
       <KnowledgeMap wisePersonsByQuestion={wisePersonsByQuestion} />
     </div>

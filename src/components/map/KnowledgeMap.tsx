@@ -81,7 +81,6 @@ export function KnowledgeMap({ wisePersonsByQuestion }: KnowledgeMapProps) {
         <rect width="900" height="270" fill="url(#m-sky)" />
         <path d="M0 235 Q80 205 160 218 Q260 232 350 200 Q440 168 530 192 Q620 214 710 182 Q790 154 900 174 L900 270 L0 270Z" fill="#c0d8e4" opacity="0.42" />
         <path d="M0 252 Q150 239 300 247 Q450 255 600 237 Q750 219 900 235 L900 270 L0 270Z" fill="#d5e8f0" opacity="0.5" />
-        <text x="32" y="224" fontSize="10" fill="#3a6a8a" letterSpacing="5" opacity="0.7">天 · 行云三问</text>
 
         {/* 云1 Q02 */}
         {(() => {
@@ -254,7 +253,6 @@ export function KnowledgeMap({ wisePersonsByQuestion }: KnowledgeMapProps) {
         {/* 水面 */}
         <rect x="0" y="314" width="900" height="206" fill="url(#m-water)" />
         <path d="M0 314 Q150 328 300 320 Q450 312 600 326 Q750 340 900 322 L900 355 L0 355Z" fill="#90b8c8" opacity="0.3" />
-        <text x="32" y="340" fontSize="10" fill="#2a4a5a" letterSpacing="5" opacity="0.7">地 · 方形三问</text>
 
         {/* 地 Q05 */}
         {(() => {
