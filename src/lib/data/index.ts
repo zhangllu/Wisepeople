@@ -13,6 +13,10 @@ import minimumBooksData from "@/data/minimum_books.json"
 import { mockWisePersons } from "@/lib/stores/mock-data"
 import { guessWikipediaLink } from "@/lib/data/guess-wikipedia-link"
 import { getCuratedLinks } from "@/lib/data/curated-links"
+import portraitsData from "@/data/portraits.json"
+
+/** Portrait lookup map: slug → portrait URL */
+const portraitMap = portraitsData as Record<string, { portrait_url: string }>
 
 // ── Books ────────────────────────────────────────────────────────────────
 
@@ -280,6 +284,7 @@ function authorToStubWisePerson(author: Author): WisePerson {
     topicCodes: author.topicCodes,
     wikipediaLink: guessWikipediaLink(author.name),
     links: curatedLinks.length > 0 ? curatedLinks : undefined,
+    portrait: portraitMap[author.slug]?.portrait_url,
   }
 }
 
