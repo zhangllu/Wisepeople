@@ -30,7 +30,7 @@ export const ROUTES = {
 
 // 平台名称
 export const SITE_NAME = "智者网"
-export const SITE_TAGLINE = "为成年人打造的通识教育地图"
+export const SITE_TAGLINE = "为终身学习者打造的通识教育地图"
 export const SITE_DESCRIPTION = "智者网是一个面向终身学习者的通识教育平台，围绕十大问题导览、智者库、代表作索引、最小限度书单四大板块，为您提供系统性构建跨学科知识框架的行动空间。"
 
 // 分类筛选选项
