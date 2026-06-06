@@ -25,12 +25,12 @@ export default function RegisterPage() {
     setLoading(true)
     setError("")
 
-    const success = await register(email, password, name)
-    if (success) {
+    const result = await register(email, password, name)
+    if (result.success) {
       toast("注册成功，欢迎加入智者网")
       router.push(ROUTES.explore)
     } else {
-      setError("注册失败，该邮箱可能已被注册")
+      setError(result.error || "注册失败，请重试")
       setLoading(false)
     }
   }

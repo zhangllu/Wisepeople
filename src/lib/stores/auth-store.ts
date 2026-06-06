@@ -9,7 +9,7 @@ interface AuthState {
   loading: boolean
   initialize: () => Promise<void>
   login: (email: string, password: string) => Promise<boolean>
-  register: (email: string, password: string, name: string) => Promise<boolean>
+  register: (email: string, password: string, name: string) => Promise<{ success: boolean; error?: string }>
   logout: () => Promise<void>
 }
 
@@ -95,7 +95,8 @@ export const useAuthStore = create<AuthState>()(
             password,
             options: { data: { name } },
           })
-          if (error || !data.user) return false
+          if (error) return { success: false, error: error.message }
+          if (!data.user) return { success: false, error: "注册失败，未获取到用户信息" }
 
           // 如果 signUp 返回了 session（邮箱验证关闭的情况），直接设置用户状态
           if (data.session) {
@@ -120,7 +121,7 @@ export const useAuthStore = create<AuthState>()(
                   isAuthenticated: true,
                   loading: false,
                 })
-                return true
+                return { success: true }
               }
               // 等待 300ms 后重试（给触发器时间完成）
               await new Promise((r) => setTimeout(r, 300))
@@ -138,10 +139,10 @@ export const useAuthStore = create<AuthState>()(
               loading: false,
             })
           }
-          return true
+          return { success: true }
         } catch (e) {
           console.error("Register error:", e)
-          return false
+          return { success: false, error: "注册失败，请重试" }
         }
       },
 
