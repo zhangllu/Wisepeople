@@ -1,6 +1,7 @@
 "use client"
 
-import { useState, useMemo, useRef, useCallback } from "react"
+import { useState, useMemo, useRef, useCallback, useEffect } from "react"
+import { useSearchParams, useRouter } from "next/navigation"
 import type { Question, Book } from "@/types"
 import { KnowledgeMap } from "./KnowledgeMap"
 import { QuestionHubContent } from "./QuestionHubContent"
@@ -21,9 +22,43 @@ interface MapPageClientProps {
   questions: Question[]
 }
 
+/** Parse ?q=N from URL, returns null if absent or invalid */
+function parseInitialQuestion(searchParams: URLSearchParams): number | null {
+  const raw = searchParams.get("q")
+  if (!raw) return null
+  const n = parseInt(raw, 10)
+  if (isNaN(n) || n < 1 || n > 10) return null
+  return n
+}
+
 export function MapPageClient({ wisePersonsByQuestion, questions }: MapPageClientProps) {
-  const [selectedQuestion, setSelectedQuestion] = useState<number | null>(null)
+  const searchParams = useSearchParams()
+  const router = useRouter()
+  const [selectedQuestion, setSelectedQuestion] = useState<number | null>(
+    () => parseInitialQuestion(searchParams)
+  )
   const contentRef = useRef<HTMLDivElement>(null)
+
+  // Sync URL when selected question changes
+  useEffect(() => {
+    const currentQ = parseInitialQuestion(searchParams)
+    if (selectedQuestion !== currentQ) {
+      const params = new URLSearchParams(searchParams.toString())
+      if (selectedQuestion !== null) {
+        params.set("q", String(selectedQuestion))
+      } else {
+        params.delete("q")
+      }
+      const qs = params.toString()
+      router.replace(qs ? `/map?${qs}` : "/map", { scroll: false })
+    }
+  }, [selectedQuestion, searchParams, router])
+
+  // Listen for external URL changes (e.g. browser back/forward)
+  useEffect(() => {
+    const q = parseInitialQuestion(searchParams)
+    setSelectedQuestion(q)
+  }, [searchParams])
 
   const handleQuestionSelect = useCallback((qNum: number | null) => {
     setSelectedQuestion(qNum)

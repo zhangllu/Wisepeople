@@ -1,3 +1,4 @@
+import { Suspense } from "react"
 import { getWisePersonsByQuestion, getAllQuestions } from "@/lib/data"
 import { MapPageClient } from "@/components/map/MapPageClient"
 
@@ -11,9 +12,11 @@ export default function MapPage() {
   const questions = getAllQuestions()
 
   return (
-    <MapPageClient
-      wisePersonsByQuestion={wisePersonsByQuestion}
-      questions={questions}
-    />
+    <Suspense>
+      <MapPageClient
+        wisePersonsByQuestion={wisePersonsByQuestion}
+        questions={questions}
+      />
+    </Suspense>
   )
 }
