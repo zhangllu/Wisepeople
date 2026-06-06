@@ -24,6 +24,9 @@ export function Header() {
 
         {/* Navigation - Desktop */}
         <nav className="hidden md:flex items-center gap-6 text-sm">
+          <Link href={ROUTES.explore} className="nav-link">
+            首页
+          </Link>
           <Link href={ROUTES.wisePersons} className="nav-link">
             智者库
           </Link>

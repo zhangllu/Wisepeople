@@ -27,7 +27,7 @@ export default function LoginPage() {
     const success = await login(email, password)
     if (success) {
       toast("登录成功")
-      router.push(ROUTES.home)
+      router.push(ROUTES.explore)
     } else {
       setError("邮箱或密码错误，请重试")
       setLoading(false)
