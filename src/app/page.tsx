@@ -152,8 +152,7 @@ export default function HomePage() {
       <FadeIn delay={200}>
         <section className="container mx-auto max-w-3xl px-4 mb-20">
           <blockquote className="text-center text-sm md:text-base text-muted-foreground/60 italic leading-relaxed border-t border-border pt-10">
-            "为什么读好书如此重要？沿着好书不断阅读，不断积累，就会生发出一个只属于你自己的独特的知识结构。"
-            <footer className="mt-2 text-xs not-italic text-muted-foreground/30">—— 阳志平</footer>
+            "为什么读好书如此重要？沿着好书不断阅读，不断积累，就会生发出一个只属于你自己的独特的知识结构。" —— 阳志平
           </blockquote>
         </section>
       </FadeIn>
