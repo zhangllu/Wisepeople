@@ -13,7 +13,7 @@ export default function MastersPage() {
       <PageHero
         title="智者人生"
         subtitle="以人生发展学解码大师之路"
-        description="智者的人生"
+        description="利用人生发展学对智者的人生发展进行编码——他们的人格特质、认知方式、发展阶段、做对与做错的事。"
         accent={
           <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center">
             <Trophy className="w-4 h-4 text-accent" />
