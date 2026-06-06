@@ -25,7 +25,7 @@ const MODULES = [
   },
   {
     title: "随机漫步",
-    description: "每日一位智者推荐，让偶然带来启发",
+    description: "随机遇见智者与好书，打破信息茧房",
     href: ROUTES.fortune,
     icon: Shuffle,
   },
