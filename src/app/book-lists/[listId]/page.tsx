@@ -137,14 +137,16 @@ export default function BookListDetailPage() {
         />
         <FadeIn>
           <div className="container mx-auto max-w-4xl px-4 py-8">
-            <div className="flex justify-end mb-6">
-              <BookmarkButton targetId={bookList.slug} targetType="book-list" />
-            </div>
             <section>
               <h2 className="text-lg font-semibold mb-4">包含著作（{works.length}）</h2>
               <div className="space-y-3">
                 {works.map((work) => (
-                  <WorkCard key={work.id} work={work} showRecommendation={true} />
+                  <div key={work.id} className="relative">
+                    <WorkCard work={work} showRecommendation={true} />
+                    <div className="absolute top-3 right-3">
+                      <BookmarkButton targetId={work.slug} targetType="work" />
+                    </div>
+                  </div>
                 ))}
               </div>
             </section>
