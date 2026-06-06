@@ -3,28 +3,35 @@
 import { useState } from "react"
 import Link from "next/link"
 import { Menu } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { ROUTES } from "@/constants"
 
 export function MobileNav() {
   const [open, setOpen] = useState(false)
 
-  const links = [
-    { href: ROUTES.explore, label: "首页" },
-    { href: ROUTES.wisePersons, label: "智者库" },
+  const mainLinks = [
+    { href: ROUTES.map, label: "知识地图" },
+    { href: ROUTES.questions, label: "十大问题" },
+  ]
+
+  const wisePersonLinks = [
+    { href: ROUTES.wisePersons, label: "全部智者" },
     { href: ROUTES.femaleWisePersons, label: "女性智者" },
     { href: ROUTES.masters, label: "智者人生" },
   ]
 
-  const dailyGroup = [
+  const bookLinks = [
+    { href: ROUTES.bookLists, label: "通识书单" },
+    { href: ROUTES.bookListDetail("minimum-56"), label: "最小限度书单" },
+    { href: ROUTES.topicDetail("0"), label: "元典十三经" },
+  ]
+
+  const dailyLinks = [
     { href: ROUTES.daily, label: "每日智者" },
     { href: ROUTES.fortune, label: "随机漫步" },
   ]
 
-  const otherLinks = [
-    { href: ROUTES.questions, label: "十大问题" },
-    { href: ROUTES.bookLists, label: "书单" },
+  const bottomLinks = [
     { href: ROUTES.story, label: "产品故事" },
     { href: ROUTES.profile, label: "个人中心" },
   ]
@@ -36,21 +43,22 @@ export function MobileNav() {
       </SheetTrigger>
       <SheetContent side="left" className="w-60">
         <div className="flex flex-col gap-4 mt-8">
-          {links.map((link) => (
+          {/* Main links */}
+          {mainLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors"
+              className="text-base font-medium text-foreground hover:text-accent transition-colors"
             >
               {link.label}
             </Link>
           ))}
 
-          {/* 遇见智者 group */}
+          {/* 智者库 group */}
           <div className="flex flex-col gap-1">
-            <span className="text-xs font-medium text-muted-foreground/60 px-1">遇见智者</span>
-            {dailyGroup.map((link) => (
+            <span className="text-xs font-medium text-muted-foreground/60 px-1">智者库</span>
+            {wisePersonLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
@@ -62,16 +70,49 @@ export function MobileNav() {
             ))}
           </div>
 
-          {otherLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              onClick={() => setOpen(false)}
-              className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {/* 书单 group */}
+          <div className="flex flex-col gap-1">
+            <span className="text-xs font-medium text-muted-foreground/60 px-1">书单</span>
+            {bookLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors pl-4"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+
+          {/* 遇见智者 group */}
+          <div className="flex flex-col gap-1">
+            <span className="text-xs font-medium text-muted-foreground/60 px-1">遇见智者</span>
+            {dailyLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors pl-4"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+
+          {/* Bottom links */}
+          <div className="border-t pt-3 flex flex-col gap-2">
+            {bottomLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </SheetContent>
     </Sheet>

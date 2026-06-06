@@ -17,28 +17,51 @@ export function Header() {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <MobileNav />
-          <Link href={ROUTES.home} className="flex items-center gap-1.5">
+          <Link href={ROUTES.map} className="flex items-center gap-1.5">
             <span className="text-lg font-bold tracking-tight text-accent">{SITE_NAME}</span>
           </Link>
         </div>
 
         {/* Navigation - Desktop */}
         <nav className="hidden md:flex items-center gap-6 text-sm">
-          <Link href={ROUTES.explore} className="nav-link">
-            首页
-          </Link>
           <Link href={ROUTES.map} className="nav-link">
             知识地图
           </Link>
-          <Link href={ROUTES.wisePersons} className="nav-link">
-            智者库
-          </Link>
-          <Link href={ROUTES.femaleWisePersons} className="nav-link">
-            女性智者
-          </Link>
-          <Link href={ROUTES.masters} className="nav-link">
-            智者人生
-          </Link>
+
+          <DropdownMenu>
+            <DropdownMenuTrigger className="text-muted-foreground hover:text-foreground transition-colors text-sm cursor-pointer">
+              智者库
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuItem render={<Link href={ROUTES.wisePersons} />}>
+                全部智者
+              </DropdownMenuItem>
+              <DropdownMenuItem render={<Link href={ROUTES.femaleWisePersons} />}>
+                女性智者
+              </DropdownMenuItem>
+              <DropdownMenuItem render={<Link href={ROUTES.masters} />}>
+                智者人生
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+
+          <DropdownMenu>
+            <DropdownMenuTrigger className="text-muted-foreground hover:text-foreground transition-colors text-sm cursor-pointer">
+              书单
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuItem render={<Link href={ROUTES.bookLists} />}>
+                通识书单
+              </DropdownMenuItem>
+              <DropdownMenuItem render={<Link href={ROUTES.bookListDetail("minimum-56")} />}>
+                最小限度书单
+              </DropdownMenuItem>
+              <DropdownMenuItem render={<Link href={ROUTES.topicDetail("0")} />}>
+                元典十三经
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+
           <DropdownMenu>
             <DropdownMenuTrigger className="text-muted-foreground hover:text-foreground transition-colors text-sm cursor-pointer">
               遇见智者
@@ -52,15 +75,11 @@ export function Header() {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
+
           <Link href={ROUTES.questions} className="nav-link">
             十大问题
           </Link>
-          <Link href={ROUTES.bookLists} className="nav-link">
-            书单
-          </Link>
-          <Link href={ROUTES.story} className="nav-link">
-            产品故事
-          </Link>
+
           <Link href={ROUTES.profile} className="nav-link">
             个人中心
           </Link>
