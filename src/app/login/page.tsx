@@ -70,7 +70,12 @@ export default function LoginPage() {
               {loading ? "登录中..." : "登录"}
             </Button>
           </form>
-          <div className="mt-4 text-center text-xs text-muted-foreground">
+          <div className="mt-4 text-center text-xs">
+            <Link href={ROUTES.forgotPassword} className="text-muted-foreground hover:text-accent transition-colors">
+              忘记密码？
+            </Link>
+          </div>
+          <div className="mt-2 text-center text-xs text-muted-foreground">
             还没有账号？{" "}
             <Link href={ROUTES.register} className="text-accent hover:underline">
               注册

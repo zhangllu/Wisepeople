@@ -21,6 +21,8 @@ export const ROUTES = {
   profile: "/profile",
   bookmarks: "/profile/bookmarks",
   reviews: "/profile/reviews",
+  forgotPassword: "/forgot-password",
+  resetPassword: "/reset-password",
   femaleWisePersons: "/wise-persons/female",
   femaleBiographies: "/wise-persons/female/biographies",
   explore: "/home",
