@@ -1958,5 +1958,965 @@
     "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Simmel_01.JPG",
     "wiki_title": "Georg Simmel",
     "name": "Georg Simmel（齐美尔）"
+  },
+  "agneta-rahikainen": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Edith_Sodergran.jpg/330px-Edith_Sodergran.jpg",
+    "wiki_title": "Edith Södergran",
+    "name": "Agneta Rahikainen（阿格尼塔·拉希凯宁）",
+    "source": "en_search"
+  },
+  "agnieszka-gajewska": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Stanislaw_Lem_2_manually_dusted.jpg/330px-Stanislaw_Lem_2_manually_dusted.jpg",
+    "wiki_title": "Stanisław Lem",
+    "name": "Agnieszka Gajewska（阿格涅什卡·加耶夫斯卡）",
+    "source": "en_search"
+  },
+  "ananyo-bhattacharya": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Hello_Web_Series_%28Wordmark%29_Logo.png/330px-Hello_Web_Series_%28Wordmark%29_Logo.png",
+    "wiki_title": "Hello (TV series)",
+    "name": "Ananyo Bhattacharya（阿纳尼奥·巴塔查里亚）",
+    "source": "en_search"
+  },
+  "andrea-k-hler-ludescher": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/1880-_Global_average_sea_level_rise_%28SLR%29_-_annually.svg/330px-1880-_Global_average_sea_level_rise_%28SLR%29_-_annually.svg.png",
+    "wiki_title": "Sea level rise",
+    "name": "Andrea Köhler-Ludescher（安德烈娅·克勒-卢德舍）",
+    "source": "en_search_ctx"
+  },
+  "andreas-d-bold": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Andreas_Dorschel_%282010%29.jpg/330px-Andreas_Dorschel_%282010%29.jpg",
+    "wiki_title": "Andreas Dorschel",
+    "name": "Andreas D. Bold（安德烈亚斯·博尔德）",
+    "source": "en_search_ctx"
+  },
+  "andrius-gali-anka": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shelly_Kagan_Yale_%28cropped%29.jpg/330px-Shelly_Kagan_Yale_%28cropped%29.jpg",
+    "wiki_title": "Shelly Kagan",
+    "name": "Andrius Gališanka（安德留斯·加利尚卡）",
+    "source": "en_search"
+  },
+  "betty-jean-craige": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Eugene_Odum_by_James_Stawser.jpg/330px-Eugene_Odum_by_James_Stawser.jpg",
+    "wiki_title": "Eugene Odum",
+    "name": "Betty Jean Craige（贝蒂·琼·克雷格）",
+    "source": "en_search_ctx"
+  },
+  "catherine-m-rakow": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/en/3/36/Kindergarten_Cop_film.jpg",
+    "wiki_title": "Kindergarten Cop",
+    "name": "Catherine M. Rakow（凯瑟琳·拉科夫）",
+    "source": "en_direct"
+  },
+  "christopher-zurn": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Rahel_Jaeggi.jpg/330px-Rahel_Jaeggi.jpg",
+    "wiki_title": "Rahel Jaeggi",
+    "name": "Christopher Zurn（克里斯托弗·泽恩）",
+    "source": "en_search"
+  },
+  "dale-jacquette": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Margaret_Thatcher.png/330px-Margaret_Thatcher.png",
+    "wiki_title": "玛格丽特·撒切尔",
+    "name": "Dale Jacquette（戴尔·雅凯特）",
+    "source": "zh_search"
+  },
+  "david-bornstein": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Leonard_Bernstein_1971.jpg/330px-Leonard_Bernstein_1971.jpg",
+    "wiki_title": "伦纳德·伯恩斯坦",
+    "name": "David Bornstein（戴维·伯恩斯坦）",
+    "source": "zh_search"
+  },
+  "desmond-clarke": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Borussia_Dortmund_logo.svg/langzh-330px-Borussia_Dortmund_logo.svg.png",
+    "wiki_title": "多特蒙德足球俱樂部",
+    "name": "Desmond Clarke（德斯蒙德·克拉克）",
+    "source": "zh_search"
+  },
+  "donald-j-albers": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Xavier_University_seal.svg/330px-Xavier_University_seal.svg.png",
+    "wiki_title": "Xavier University",
+    "name": "Donald J. Albers（唐纳德·阿尔伯斯）",
+    "source": "en_search_ctx"
+  },
+  "douglass-merrell": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Frederick_Douglass_%28circa_1879%29_%28cropped%29.jpg/330px-Frederick_Douglass_%28circa_1879%29_%28cropped%29.jpg",
+    "wiki_title": "Frederick Douglass",
+    "name": "Douglass Merrell（道格拉斯·梅雷尔）",
+    "source": "en_search"
+  },
+  "fay-fransella": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/en/b/bf/George_A._Kelly_%28Psychologist%29.jpg",
+    "wiki_title": "George Kelly (psychologist)",
+    "name": "Fay Fransella（费伊·弗兰塞拉）",
+    "source": "en_search_ctx"
+  },
+  "francine-mary-netter": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Frank_H._Netter_Signature.svg/330px-Frank_H._Netter_Signature.svg.png",
+    "wiki_title": "Frank H. Netter",
+    "name": "Francine Mary Netter（弗朗辛·玛丽·内特）",
+    "source": "en_search"
+  },
+  "gemelli-giuliana": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Photo_of_Fernand_Braudel_on_The_Identity_of_France_dustjacket.jpg/330px-Photo_of_Fernand_Braudel_on_The_Identity_of_France_dustjacket.jpg",
+    "wiki_title": "Fernand Braudel",
+    "name": "Gemelli Giuliana（杰梅利·朱利亚娜）",
+    "source": "en_search"
+  },
+  "john-h-flavell": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Metacognition2.svg/330px-Metacognition2.svg.png",
+    "wiki_title": "Metacognition",
+    "name": "John H. Flavell（约翰·弗拉维尔）",
+    "source": "en_search_ctx"
+  },
+  "makoto-ueda": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/NDL1286413_%E3%80%94%E6%97%A5%E6%9C%AC%E5%8F%A4%E5%9F%8E%E7%B5%B5%E5%9B%B3%E3%80%95_%E6%9D%B1%E5%B1%B1%E9%81%93%E4%B9%8B%E9%83%A8%EF%BC%883%EF%BC%89.150_%E4%BF%A1%E5%B7%9E%E4%B8%8A%E7%94%B0%E5%9F%8E%E5%9B%B3.jpg/330px-NDL1286413_%E3%80%94%E6%97%A5%E6%9C%AC%E5%8F%A4%E5%9F%8E%E7%B5%B5%E5%9B%B3%E3%80%95_%E6%9D%B1%E5%B1%B1%E9%81%93%E4%B9%8B%E9%83%A8%EF%BC%883%EF%BC%89.150_%E4%BF%A1%E5%B7%9E%E4%B8%8A%E7%94%B0%E5%9F%8E%E5%9B%B3.jpg",
+    "wiki_title": "上田合戰",
+    "name": "Makoto Ueda（上田真）",
+    "source": "zh_search"
+  },
+  "marcel-fournier": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/M.Mauss_1872-1950.jpg/330px-M.Mauss_1872-1950.jpg",
+    "wiki_title": "Marcel Mauss",
+    "name": "Marcel Fournier（马塞尔·富尼耶）",
+    "source": "en_search"
+  },
+  "margaret-m-caffrey": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Author_photo_of_Anne_McCaffrey_%281986%29.png/330px-Author_photo_of_Anne_McCaffrey_%281986%29.png",
+    "wiki_title": "Anne McCaffrey",
+    "name": "Margaret M. Caffrey（玛格丽特·M·卡弗里）",
+    "source": "en_search"
+  },
+  "matt-doeden": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Adele_2016.jpg/330px-Adele_2016.jpg",
+    "wiki_title": "Adele",
+    "name": "Matt Doeden（马特·多登）",
+    "source": "en_search"
+  },
+  "morton-n-cohen": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/en/5/5e/Ernest_Nagel.jpg",
+    "wiki_title": "Ernest Nagel",
+    "name": "Morton N. Cohen（莫顿·科恩）",
+    "source": "en_search_ctx"
+  },
+  "nathan-houser": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Charles_Taylor_in_2019_%284x5_cropped%29.jpg/330px-Charles_Taylor_in_2019_%284x5_cropped%29.jpg",
+    "wiki_title": "Charles Taylor (philosopher)",
+    "name": "Nathan Houser（内森·豪瑟）",
+    "source": "en_search_ctx"
+  },
+  "perez-zagorin": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Thucydides_pushkin01.jpg/330px-Thucydides_pushkin01.jpg",
+    "wiki_title": "Thucydides",
+    "name": "Perez Zagorin（佩雷斯·扎戈林）",
+    "source": "en_search_ctx"
+  },
+  "richard-fardon": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/en/e/ed/Mary_Douglas_%281921%E2%80%932007%29.jpg",
+    "wiki_title": "Mary Douglas",
+    "name": "Richard Fardon（理查德·法登）",
+    "source": "en_search"
+  },
+  "richard-isadore-evans": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Irving_Berlin_NYWTS.jpg/330px-Irving_Berlin_NYWTS.jpg",
+    "wiki_title": "Irving Berlin",
+    "name": "Richard Isadore Evans（理查德·伊萨多尔·埃文斯）",
+    "source": "en_search"
+  },
+  "rob-moore": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Henri_Lefebvre_1971.jpg/330px-Henri_Lefebvre_1971.jpg",
+    "wiki_title": "Henri Lefebvre",
+    "name": "Rob Moore（罗布·穆尔）",
+    "source": "en_search_ctx"
+  },
+  "robert-ackerman": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Peter_Ackerman.png/330px-Peter_Ackerman.png",
+    "wiki_title": "Peter Ackerman",
+    "name": "Robert Ackerman（罗伯特·阿克曼）",
+    "source": "en_search_ctx"
+  },
+  "roberta-m-gilbert": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Art_of_War-1573.jpg/330px-Art_of_War-1573.jpg",
+    "wiki_title": "The Art of War (Machiavelli book)",
+    "name": "Roberta M. Gilbert（罗伯塔·吉尔伯特）",
+    "source": "en_search_ctx"
+  },
+  "robin-marantz-henig": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Gregor_Mendel_2.jpg/330px-Gregor_Mendel_2.jpg",
+    "wiki_title": "Gregor Mendel",
+    "name": "Robin Marantz Henig（罗宾·马兰茨·赫尼格）",
+    "source": "en_search_ctx"
+  },
+  "steve-andreas": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Rublev_MCM22_%2823%29_%2852036442068%29edited.jpg/330px-Rublev_MCM22_%2823%29_%2852036442068%29edited.jpg",
+    "wiki_title": "安德烈·魯布列夫",
+    "name": "Steve Andreas（史蒂夫·安德烈亚斯）",
+    "source": "zh_search"
+  },
+  "sue-erikson-bloland": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Erik_Erikson.jpg",
+    "wiki_title": "Erik Erikson",
+    "name": "Sue Erikson Bloland（苏·埃里克森·布罗兰）",
+    "source": "en_search"
+  },
+  "thomas-r-guskey": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/NCAA_logo.svg/330px-NCAA_logo.svg.png",
+    "wiki_title": "2024–25 NCAA Division I men's basketball season",
+    "name": "Thomas R. Guskey（托马斯·古斯基）",
+    "source": "en_search_ctx"
+  },
+  "a-382d8f78": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Choi_Uk_Tsuen%2C_Yuen_Long_%28Hong_Kong%29.jpg/330px-Choi_Uk_Tsuen%2C_Yuen_Long_%28Hong_Kong%29.jpg",
+    "wiki_title": "新界小型屋宇政策",
+    "name": "丁建新",
+    "source": "zh_search"
+  },
+  "a-80a39902": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/en/e/e6/TheBehaviorOfOrganisms.jpg",
+    "wiki_title": "The Behavior of Organisms",
+    "name": "Daniel Schugurensky（丹尼尔·斯库格伦斯基）",
+    "source": "en_search"
+  },
+  "a-2a52b866": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Usha_Vance%2C_official_portrait_%282025%29_%283x4_cropped%29.jpg/330px-Usha_Vance%2C_official_portrait_%282025%29_%283x4_cropped%29.jpg",
+    "wiki_title": "乌莎·万斯",
+    "name": "Usha Goswami（乌莎·戈斯瓦米）",
+    "source": "zh_search"
+  },
+  "a-45846ca3": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Paul_G._Allen_%28cropped%29.jpg/330px-Paul_G._Allen_%28cropped%29.jpg",
+    "wiki_title": "Paul Allen",
+    "name": "Jon G. Allen（乔恩·艾伦）",
+    "source": "en_search_ctx"
+  },
+  "a-254b89d2": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/George_%E2%80%9CMachine_Gun%E2%80%9D_Kelly.jpg/330px-George_%E2%80%9CMachine_Gun%E2%80%9D_Kelly.jpg",
+    "wiki_title": "Machine Gun Kelly (gangster)",
+    "name": "George Kelly（乔治-凯利）",
+    "source": "en_search"
+  },
+  "a-46e93d77": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Legros_-_David_Wilkie_Wynfield.jpg/330px-Legros_-_David_Wilkie_Wynfield.jpg",
+    "wiki_title": "Alphonse Legros",
+    "name": "George-Victor Legros（乔治-维克托·勒格罗）",
+    "source": "en_search"
+  },
+  "a-b5406f42": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/George_W._Williams_from_History_of_Negro_Troops.jpg/330px-George_W._Williams_from_History_of_Negro_Troops.jpg",
+    "wiki_title": "George Washington Williams",
+    "name": "George C. Williams（乔治·威廉姆斯）",
+    "source": "en_search_ctx"
+  },
+  "a-cca1b3d1": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Arpanet_logical_map%2C_march_1977.png/330px-Arpanet_logical_map%2C_march_1977.png",
+    "wiki_title": "ARPANET",
+    "name": "Jonathan Culler（乔纳森·卡勒）",
+    "source": "ja_search"
+  },
+  "a-55b0cd0e": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Vant_Hoff.jpg",
+    "wiki_title": "雅各布斯·亨里克斯·范托夫",
+    "name": "Henry Scott-Stokes（亨利·斯各特·斯托克斯）",
+    "source": "zh_search"
+  },
+  "a-c8465dc7": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Herbert_Simon%2C_RIT_NandE_Vol13Num11_1981_Mar19_Complete.jpg/330px-Herbert_Simon%2C_RIT_NandE_Vol13Num11_1981_Mar19_Complete.jpg",
+    "wiki_title": "Herbert A. Simon",
+    "name": "Hunter Crowther-Heyck（亨特·克劳瑟-海克）",
+    "source": "en_search"
+  },
+  "a-ba66ca70": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Hannah_Arendt_auf_dem_1._Kulturkritikerkongress%2C_Barbara_Niggl_Radloff%2C_FM-2019-1-5-9-16_%28cropped%29.jpg/330px-Hannah_Arendt_auf_dem_1._Kulturkritikerkongress%2C_Barbara_Niggl_Radloff%2C_FM-2019-1-5-9-16_%28cropped%29.jpg",
+    "wiki_title": "Hannah Arendt",
+    "name": "Elisabeth Young-Bruehl（伊丽莎白·扬-布鲁尔）",
+    "source": "en_search_ctx"
+  },
+  "a-3a579f4d": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Kobe_Bryant_8.jpg/330px-Kobe_Bryant_8.jpg",
+    "wiki_title": "科比·布莱恩特",
+    "name": "Elaine Biech（伊莱恩.碧柯）",
+    "source": "zh_search"
+  },
+  "a-6afd17ec": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Ingvar_Kamprad_Haparanda_June_2010.jpg/330px-Ingvar_Kamprad_Haparanda_June_2010.jpg",
+    "wiki_title": "Ingvar Kamprad",
+    "name": "Bertil Torekull（伯迪·托尔卡）",
+    "source": "en_search"
+  },
+  "a-34b1c41e": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/2007-GPF-ladies-Nakano004_%28cropped%29.jpg",
+    "wiki_title": "佐藤信夫",
+    "name": "佐藤信夫",
+    "source": "ja_search"
+  },
+  "a-24241547": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Bp_John_Wilkins.jpg/330px-Bp_John_Wilkins.jpg",
+    "wiki_title": "John Wilkins",
+    "name": "Paul Wilkins（保罗·威尔金斯）",
+    "source": "en_search_ctx"
+  },
+  "a-b20af1f0": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/GKGokhale.jpg/330px-GKGokhale.jpg",
+    "wiki_title": "Gopal Krishna Gokhale",
+    "name": "Krishna Kripalani（克里希那·克里巴拉尼）",
+    "source": "en_search_ctx"
+  },
+  "a-70714bbf": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Donald_schon_pic.jpg/330px-Donald_schon_pic.jpg",
+    "wiki_title": "Donald Schön",
+    "name": "Chris Argyris（克里斯·阿吉里斯）",
+    "source": "en_search_ctx"
+  },
+  "a-190ad0cc": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Takeshi_Okada_20100525.jpg",
+    "wiki_title": "岡田武史",
+    "name": "冈田武彦",
+    "source": "zh_search"
+  },
+  "a-3de3ac18": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/China_Hubei.svg/langja-330px-China_Hubei.svg.png",
+    "wiki_title": "湖北省",
+    "name": "刘川鄂",
+    "source": "ja_search"
+  },
+  "a-92a50e36": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/%E5%8A%89%E5%84%BC.jpg/330px-%E5%8A%89%E5%84%BC.jpg",
+    "wiki_title": "劉儼 (正統進士)",
+    "name": "刘笑敢",
+    "source": "zh_search"
+  },
+  "a-73d4efe2": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/JR_Suigun_Line_Kawahigashi_Station_building.jpg/330px-JR_Suigun_Line_Kawahigashi_Station_building.jpg",
+    "wiki_title": "川東站 (福島縣)",
+    "name": "北川东子",
+    "source": "zh_search"
+  },
+  "a-2a5f2991": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Sean_Connery_as_James_Bond_at_Switzerland_1964_%28two_thirds_crop%29.jpg/330px-Sean_Connery_as_James_Bond_at_Switzerland_1964_%28two_thirds_crop%29.jpg",
+    "wiki_title": "肖恩·康纳利",
+    "name": "北康利",
+    "source": "zh_search"
+  },
+  "a-350a732d": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Karl_Marx_by_John_Jabez_Edwin_Mayall_1875_-_Restored.png/330px-Karl_Marx_by_John_Jabez_Edwin_Mayall_1875_-_Restored.png",
+    "wiki_title": "Karl Marx",
+    "name": "Karl Löwith（卡尔·洛维特）",
+    "source": "en_search_ctx"
+  },
+  "a-25b2380f": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/MKr25402_Steven_Spielberg_%28Berlinale_2023%29.jpg/330px-MKr25402_Steven_Spielberg_%28Berlinale_2023%29.jpg",
+    "wiki_title": "斯蒂芬·斯皮尔伯格",
+    "name": "Steve de Shazer（史蒂夫·德·沙泽尔）",
+    "source": "zh_search"
+  },
+  "a-b0d36ebe": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Hofstede_4_countries_6_dimensions.png/330px-Hofstede_4_countries_6_dimensions.png",
+    "wiki_title": "霍夫斯泰德文化维度理论",
+    "name": "Geert Hofstede（吉尔特.霍夫斯泰德）",
+    "source": "zh_search"
+  },
+  "a-2d299ca0": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Panopticon.jpg/330px-Panopticon.jpg",
+    "wiki_title": "Panopticon",
+    "name": "Donald Preziosi（唐纳德·普拉特）",
+    "source": "en_search_ctx"
+  },
+  "a-1b1aac17": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Santiago_Ram%C3%B3n_y_Cajal_%281852-1934%29_portrait_%28restored%29.jpg/330px-Santiago_Ram%C3%B3n_y_Cajal_%281852-1934%29_portrait_%28restored%29.jpg",
+    "wiki_title": "圣地亚哥·拉蒙-卡哈尔",
+    "name": "Santiago Ramóny Cajal（圣地亚哥.拉蒙.卡哈尔）",
+    "source": "zh_search"
+  },
+  "a-ea78b3e8": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Luca_Giordano_-_Dream_of_Solomon_-_WGA09004.jpg/330px-Luca_Giordano_-_Dream_of_Solomon_-_WGA09004.jpg",
+    "wiki_title": "Wisdom",
+    "name": "Esther M. Sternberg（埃丝特.史坦伯格）",
+    "source": "en_search_ctx"
+  },
+  "a-497405ea": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Didier_aug_2014.jpg/330px-Didier_aug_2014.jpg",
+    "wiki_title": "迪迪埃·德罗巴",
+    "name": "Edgar Schein（埃德加·沙因）",
+    "source": "zh_search"
+  },
+  "a-28677074": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Bust_Portrait_of_Edwin_Williamson_Price_%28cropped%29.jpg/330px-Bust_Portrait_of_Edwin_Williamson_Price_%28cropped%29.jpg",
+    "wiki_title": "Edwin Williamson Price",
+    "name": "Edwin Williamson（埃德温·威廉森）",
+    "source": "en_search"
+  },
+  "a-094c22ea": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Gmach_Ministerstwa_Wyzna%C5%84_Religijnych_i_O%C5%9Bwiecenia_Publicznego_al._Szucha_25_przed_1939.jpg/330px-Gmach_Ministerstwa_Wyzna%C5%84_Religijnych_i_O%C5%9Bwiecenia_Publicznego_al._Szucha_25_przed_1939.jpg",
+    "wiki_title": "Ministry of Religious Affairs and Public Education (Poland)",
+    "name": "Tadeusz Zawidzki（塔德乌什·扎维德斯基）",
+    "source": "en_search"
+  },
+  "a-e34ce2e0": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Kenichi_Enomoto.jpg",
+    "wiki_title": "Ken'ichi",
+    "name": "Kenichi Ohmae（大前研一）",
+    "source": "en_search_ctx"
+  },
+  "a-72aa6510": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Francesca_Stavrakopoulou_4_2015_%28cropped%29.png/330px-Francesca_Stavrakopoulou_4_2015_%28cropped%29.png",
+    "wiki_title": "Francesca Stavrakopoulou",
+    "name": "R. David Arkush（大卫·阿古什）",
+    "source": "en_search_ctx"
+  },
+  "a-dccff426": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Kaitlin_Olson_at_the_2013_San_Diego_Comic_Con_International_%28cropped%29.jpg/330px-Kaitlin_Olson_at_the_2013_San_Diego_Comic_Con_International_%28cropped%29.jpg",
+    "wiki_title": "Kaitlin Olson",
+    "name": "David H. Olson（大卫·奥尔森）",
+    "source": "en_search"
+  },
+  "a-2f32b546": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/John_G._Schmitz.jpg/330px-John_G._Schmitz.jpg",
+    "wiki_title": "John G. Schmitz",
+    "name": "David M. Schmitz（大卫·施密茨）",
+    "source": "en_search"
+  },
+  "a-82ee12de": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Chunichi1967-06-10-1.jpg/330px-Chunichi1967-06-10-1.jpg",
+    "wiki_title": "太田治子",
+    "name": "太田治子",
+    "source": "ja_search"
+  },
+  "a-84021371": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Atlassian_Williams_F1_Team_logo.svg/langzh-330px-Atlassian_Williams_F1_Team_logo.svg.png",
+    "wiki_title": "威廉姆斯车队",
+    "name": "Wilbur Schramm（威廉·施拉姆）",
+    "source": "zh_search"
+  },
+  "a-837abfe0": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Anette_Norberg_%28Swedish_skip-2010_Olympics%29.jpg/330px-Anette_Norberg_%28Swedish_skip-2010_Olympics%29.jpg",
+    "wiki_title": "Annette (given name)",
+    "name": "Annette Lareau（安妮特·拉鲁）",
+    "source": "en_search_ctx"
+  },
+  "a-0ed50bbd": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Denis_Diderot_by_Louis-Michel_van_Loo.jpg/330px-Denis_Diderot_by_Louis-Michel_van_Loo.jpg",
+    "wiki_title": "Denis Diderot",
+    "name": "Andrew Curran（安德鲁·柯伦）",
+    "source": "en_search_ctx"
+  },
+  "a-1efb63e5": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Alan_turing_header.jpg/330px-Alan_turing_header.jpg",
+    "wiki_title": "Alan Turing",
+    "name": "Andrew Hodges（安德鲁·霍奇斯）",
+    "source": "en_search_ctx"
+  },
+  "a-ff3bc80d": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Chongqing_in_China_%28%2Ball_claims_hatched%29.svg/langja-330px-Chongqing_in_China_%28%2Ball_claims_hatched%29.svg.png",
+    "wiki_title": "重慶市",
+    "name": "宣朝庆",
+    "source": "ja_search"
+  },
+  "a-1d040742": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Detail_of_Tree_of_Knowledge_after_Diderot_%26_d%27Alembert%27s_Encyclop%C3%A9die%2C_by_Chr%C3%A9tien_Fr%C3%A9d%C3%A9ric_Guillaume_Roth.jpg/330px-Detail_of_Tree_of_Knowledge_after_Diderot_%26_d%27Alembert%27s_Encyclop%C3%A9die%2C_by_Chr%C3%A9tien_Fr%C3%A9d%C3%A9ric_Guillaume_Roth.jpg",
+    "wiki_title": "Analysis of competing hypotheses",
+    "name": "Richards J. Heuer Jr.（小理查兹·霍耶尔）",
+    "source": "en_search_ctx"
+  },
+  "a-76999947": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Barry_Smith.jpg/330px-Barry_Smith.jpg",
+    "wiki_title": "Barry Smith (ontologist)",
+    "name": "Neil Smith（尼尔·史密斯）",
+    "source": "en_search_ctx"
+  },
+  "a-5dc29bc1": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/en/6/6a/Davidson_pyke.jpg",
+    "wiki_title": "Donald Davidson (philosopher)",
+    "name": "Basil Bernstein（巴兹尔·伯恩斯）",
+    "source": "en_search_ctx"
+  },
+  "a-31424775": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/George_Wilcken_Romney_%28cropped%29.png/330px-George_Wilcken_Romney_%28cropped%29.png",
+    "wiki_title": "George W. Romney",
+    "name": "Patrick Wilcken（帕特里克·威肯）",
+    "source": "en_search"
+  },
+  "a-5db4064c": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Fredrick_Winslow_Taylor_c1907_retouched.png/330px-Fredrick_Winslow_Taylor_c1907_retouched.png",
+    "wiki_title": "Frederick Winslow Taylor",
+    "name": "Frederick W. Taylor（弗雷德里克·泰勒）",
+    "source": "en_search"
+  },
+  "a-5aaff683": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Line_4_Train_Chengdu_Metro.jpg/330px-Line_4_Train_Chengdu_Metro.jpg",
+    "wiki_title": "成都軌道交通",
+    "name": "张载",
+    "source": "ja_search"
+  },
+  "a-a48946fe": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Anthony_John_Patrick_Kenny.jpg/330px-Anthony_John_Patrick_Kenny.jpg",
+    "wiki_title": "Anthony Kenny",
+    "name": "David A. Kenny（戴维-肯尼）",
+    "source": "en_search_ctx"
+  },
+  "a-db888ff5": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Thomas_Banks_Shakespeare_attended_by_Painting_and_Poetry_c_1789.jpg/330px-Thomas_Banks_Shakespeare_attended_by_Painting_and_Poetry_c_1789.jpg",
+    "wiki_title": "Bardolatry",
+    "name": "Thomas Laporte（托马斯·拉波尔德）",
+    "source": "en_search_ctx"
+  },
+  "a-d167e476": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/330px-Neil_Armstrong_pose.jpg",
+    "wiki_title": "尼尔·阿姆斯特朗",
+    "name": "J. Scott Armstrong（斯科特·阿姆斯特朗）",
+    "source": "zh_search"
+  },
+  "a-ab4fa45a": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/The_Only_Possible_Argument_in_Support_of_a_Demonstration_of_the_Existence_of_God_%281911_German_edition%29.jpg",
+    "wiki_title": "The Only Possible Argument in Support of a Demonstration of the Existence of God",
+    "name": "Manfred Kuehn（曼弗雷德·库恩）",
+    "source": "en_search_ctx"
+  },
+  "a-37be8297": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Internationales_Management-Gespr%C3%A4ch-Allan_Bloom_%283x4_cropped%29.jpg/330px-Internationales_Management-Gespr%C3%A4ch-Allan_Bloom_%283x4_cropped%29.jpg",
+    "wiki_title": "Allan Bloom",
+    "name": "Benjamin Bloom（本杰明·布鲁姆）",
+    "source": "en_search_ctx"
+  },
+  "a-95cc3cfe": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Wang_Qishan_at_the_Enthronement_of_Naruhito_%281%29.jpg/330px-Wang_Qishan_at_the_Enthronement_of_Naruhito_%281%29.jpg",
+    "wiki_title": "王岐山",
+    "name": "朱传誉",
+    "source": "ja_search"
+  },
+  "a-7b51420b": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Yalom.jpg/330px-Yalom.jpg",
+    "wiki_title": "Irvin D. Yalom",
+    "name": "Ruthellen Josselson（朱瑟琳·乔塞尔森）",
+    "source": "en_search_ctx"
+  },
+  "a-ce1dffe4": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/%E9%87%8D%E6%85%B6%E6%9C%83%E8%AB%87_%E8%94%A3%E4%BB%8B%E7%9F%B3%E8%88%87%E6%AF%9B%E6%BE%A4%E6%9D%B1.jpg/330px-%E9%87%8D%E6%85%B6%E6%9C%83%E8%AB%87_%E8%94%A3%E4%BB%8B%E7%9F%B3%E8%88%87%E6%AF%9B%E6%BE%A4%E6%9D%B1.jpg",
+    "wiki_title": "国共内戦",
+    "name": "李亦园",
+    "source": "ja_search"
+  },
+  "a-79b5db17": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Li_Fuchun.jpg/330px-Li_Fuchun.jpg",
+    "wiki_title": "李富春",
+    "name": "李长之",
+    "source": "ja_search"
+  },
+  "a-018a10ef": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Exit_8_of_Middle_Yanggao_Road_Station_in_Shanghai.jpg/330px-Exit_8_of_Middle_Yanggao_Road_Station_in_Shanghai.jpg",
+    "wiki_title": "楊高中路駅",
+    "name": "杨中芳",
+    "source": "ja_search"
+  },
+  "a-35651a1c": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Cantong_Aviation_School_in_Dashatou.jpg/330px-Cantong_Aviation_School_in_Dashatou.jpg",
+    "wiki_title": "広東航空学校",
+    "name": "杨国桢",
+    "source": "ja_search"
+  },
+  "a-0be6045f": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Jeffrey_Epstein_mug_shot.jpg/330px-Jeffrey_Epstein_mug_shot.jpg",
+    "wiki_title": "杰弗里·爱泼斯坦",
+    "name": "Jeffrey Meyers（杰弗里·迈耶斯）",
+    "source": "zh_search"
+  },
+  "a-2074b373": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Steven_Weinberg_2010.jpg/330px-Steven_Weinberg_2010.jpg",
+    "wiki_title": "Steven Weinberg",
+    "name": "Gerald M. Weinberg（杰拉尔德·温伯格）",
+    "source": "en_search_ctx"
+  },
+  "a-9968ed37": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Tadashi_Yanai%2C_in_Japan_on_May_23%2C_2022_%281%29_%28cropped%29.jpg/330px-Tadashi_Yanai%2C_in_Japan_on_May_23%2C_2022_%281%29_%28cropped%29.jpg",
+    "wiki_title": "柳井正",
+    "name": "柳井正",
+    "source": "ja_search"
+  },
+  "a-58c92355": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/MorusAlba.jpg/330px-MorusAlba.jpg",
+    "wiki_title": "クワ",
+    "name": "桑兵",
+    "source": "ja_search"
+  },
+  "a-787b4f61": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/David_Hume_Ramsay.jpg/330px-David_Hume_Ramsay.jpg",
+    "wiki_title": "David Hume",
+    "name": "Ernest Mossner（欧内斯特·莫斯纳）",
+    "source": "en_search_ctx"
+  },
+  "a-89efea39": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/%E7%A7%A6%E5%8F%94%E5%AF%B3%EF%BC%88%E6%B7%A9%E7%85%99%E9%96%A3%E5%8A%9F%E8%87%A3%E5%9C%96%E5%83%8F%EF%BC%89.jpg/330px-%E7%A7%A6%E5%8F%94%E5%AF%B3%EF%BC%88%E6%B7%A9%E7%85%99%E9%96%A3%E5%8A%9F%E8%87%A3%E5%9C%96%E5%83%8F%EF%BC%89.jpg",
+    "wiki_title": "秦叔宝",
+    "name": "殷志鹏",
+    "source": "ja_search"
+  },
+  "a-3a250f3a": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Confucius_Tang_Dynasty.jpg/330px-Confucius_Tang_Dynasty.jpg",
+    "wiki_title": "孔子誕辰日",
+    "name": "毕宝魁",
+    "source": "zh_search"
+  },
+  "a-c138a0e2": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg/330px-Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg",
+    "wiki_title": "Niccolò Machiavelli",
+    "name": "Maurizio Viroli（毛里齐奥·维罗利）",
+    "source": "en_search"
+  },
+  "a-0d442fb6": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Lord_reith.jpg/330px-Lord_reith.jpg",
+    "wiki_title": "Reith Lectures",
+    "name": "Tom Kirkwood（汤姆·柯科伍德）",
+    "source": "en_search_ctx"
+  },
+  "a-be790166": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/20090731_Remains_of_the_Old_Summer_Palace_02.jpg/330px-20090731_Remains_of_the_Old_Summer_Palace_02.jpg",
+    "wiki_title": "Old Summer Palace",
+    "name": "Wong Young-tsu（汪荣祖）",
+    "source": "en_search"
+  },
+  "a-44c69f29": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Michael_Porter.jpg/330px-Michael_Porter.jpg",
+    "wiki_title": "Michael Porter",
+    "name": "Walter Kiechel III（沃尔特·基希勒三世）",
+    "source": "en_search_ctx"
+  },
+  "a-e2dacf56": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Lorin_C._Woolley2.jpg/330px-Lorin_C._Woolley2.jpg",
+    "wiki_title": "Lorin C. Woolley",
+    "name": "Lorin W. Anderson（洛林·安德森）",
+    "source": "en_search"
+  },
+  "a-99c3eb5a": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Philip_Seymour_Hoffman_2011.jpg/330px-Philip_Seymour_Hoffman_2011.jpg",
+    "wiki_title": "Philip Seymour Hoffman",
+    "name": "Edward Hoffman（爱德华·霍夫曼）",
+    "source": "en_search_ctx"
+  },
+  "a-0cde37a3": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Ming_Dynasty_Activities_of_Minister_of_War_Wang_Qiong.jpg/330px-Ming_Dynasty_Activities_of_Minister_of_War_Wang_Qiong.jpg",
+    "wiki_title": "Scholar-official",
+    "name": "Wang Li（王力）",
+    "source": "en_search_ctx"
+  },
+  "a-eb84ee9a": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Zhangye_National_Geopark_13.jpg/330px-Zhangye_National_Geopark_13.jpg",
+    "wiki_title": "Hexi Corridor",
+    "name": "Wang Xinmin（王新民）",
+    "source": "en_search"
+  },
+  "a-b36a26bc": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Huang_Xiaoming_from_%22Mostly_Sunny%22_at_Red_Carpet_of_the_Tokyo_International_Film_Festival_2024_%2854577127407%29.jpg/330px-Huang_Xiaoming_from_%22Mostly_Sunny%22_at_Red_Carpet_of_the_Tokyo_International_Film_Festival_2024_%2854577127407%29.jpg",
+    "wiki_title": "Huang Xiaoming",
+    "name": "Wang Xiaoming（王晓明）",
+    "source": "en_search_ctx"
+  },
+  "a-6ef2eb39": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Wang_Hao_OQ_2012.jpg/330px-Wang_Hao_OQ_2012.jpg",
+    "wiki_title": "Wang Hao (table tennis, born 1983)",
+    "name": "Wang Hao（王浩）",
+    "source": "en_search"
+  },
+  "a-81280814": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Lixin_Wang_CA.jpg/330px-Lixin_Wang_CA.jpg",
+    "wiki_title": "Lixin Wang",
+    "name": "Wang Lixin（王立新）",
+    "source": "en_search"
+  },
+  "a-f3d16d2a": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Eskimo_Family_NGM-v31-p564-2.jpg/330px-Eskimo_Family_NGM-v31-p564-2.jpg",
+    "wiki_title": "Attachment theory",
+    "name": "Mary Ainsworth（玛丽·安斯沃思）",
+    "source": "en_search_ctx"
+  },
+  "a-45399c65": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/%28left_to_right%29_Mary_Douglas_Nicol_Leakey_%281913-1996%29_and_her_husband_Louis_Seymour_Bazett_Leakey_%281903-1972%29.jpg/330px-%28left_to_right%29_Mary_Douglas_Nicol_Leakey_%281913-1996%29_and_her_husband_Louis_Seymour_Bazett_Leakey_%281903-1972%29.jpg",
+    "wiki_title": "Louis Leakey",
+    "name": "Mary Bowman-Kruhm（玛丽·鲍曼-克鲁姆）",
+    "source": "en_search"
+  },
+  "a-fc92af23": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/The_opening_ceremony_of_the_FIFA_World_Cup_2014_13_%28cropped%29.jpg/330px-The_opening_ceremony_of_the_FIFA_World_Cup_2014_13_%28cropped%29.jpg",
+    "wiki_title": "詹妮弗·洛佩兹",
+    "name": "Janet Lowe（珍妮特·洛尔）",
+    "source": "zh_search"
+  },
+  "a-274fe488": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Kohler_Company_Main_Office.jpg/330px-Kohler_Company_Main_Office.jpg",
+    "wiki_title": "Kohler Co.",
+    "name": "Richard Kohler（理查德·科勒）",
+    "source": "en_search"
+  },
+  "a-e8899465": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Qu_Hongji.jpg/330px-Qu_Hongji.jpg",
+    "wiki_title": "Qu Hongji",
+    "name": "Qu Tongzu（瞿同祖）",
+    "source": "en_search"
+  },
+  "a-da830614": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Signature%2Bmonogram_Charles_Picart_Le_Doux.png/330px-Signature%2Bmonogram_Charles_Picart_Le_Doux.png",
+    "wiki_title": "Charles Picart Le Doux",
+    "name": "Joseph E. LeDoux（约瑟夫.勒杜）",
+    "source": "en_search_ctx"
+  },
+  "a-4d438153": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Signature%2Bmonogram_Charles_Picart_Le_Doux.png/330px-Signature%2Bmonogram_Charles_Picart_Le_Doux.png",
+    "wiki_title": "Charles Picart Le Doux",
+    "name": "Joseph LeDoux（约瑟夫·勒杜克斯）",
+    "source": "en_search_ctx"
+  },
+  "a-6dac79ef": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Petercarruthers.jpg/330px-Petercarruthers.jpg",
+    "wiki_title": "Peter Carruthers (philosopher)",
+    "name": "John Tooby（约翰.托比）",
+    "source": "en_search_ctx"
+  },
+  "a-4d45bef1": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/VictorRegnierHeadshot3.jpg/330px-VictorRegnierHeadshot3.jpg",
+    "wiki_title": "Victor A. Regnier",
+    "name": "Victor Regnier（维克托·雷格涅尔）",
+    "source": "en_search_ctx"
+  },
+  "a-33dad6df": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Kwame_Anthony_Appiah_no_Fronteiras_do_Pensamento_Porto_Alegre_2013_%289517494881%29.jpg/330px-Kwame_Anthony_Appiah_no_Fronteiras_do_Pensamento_Porto_Alegre_2013_%289517494881%29.jpg",
+    "wiki_title": "Kwame Anthony Appiah",
+    "name": "Werner Schuessler（维尔纳·叔斯勒）",
+    "source": "en_search_ctx"
+  },
+  "a-3d11a5fe": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Social_Network_Diagram_%28segment%29.svg/330px-Social_Network_Diagram_%28segment%29.svg.png",
+    "wiki_title": "Relational sociology",
+    "name": "Viviana Zelizer（维维安娜·泽利泽）",
+    "source": "en_search_ctx"
+  },
+  "a-e5d84203": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Justus_Sustermans_010.jpg/330px-Justus_Sustermans_010.jpg",
+    "wiki_title": "Cosimo II de' Medici",
+    "name": "Roy Porter（罗伊·波特）",
+    "source": "en_search_ctx"
+  },
+  "a-2928c759": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/en/4/4a/Nietzsche%2C_Philosopher%2C_Psychologist%2C_Antichrist_%281950s_edition%29.jpg",
+    "wiki_title": "Nietzsche: Philosopher, Psychologist, Antichrist",
+    "name": "Roy Porter（罗伊·波特）",
+    "source": "en_search_ctx"
+  },
+  "a-8c459221": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jean_Paul_Sartre_1965.jpg/330px-Jean_Paul_Sartre_1965.jpg",
+    "wiki_title": "Jean-Paul Sartre",
+    "name": "Robert Siegler（罗伯特·西格）",
+    "source": "en_search_ctx"
+  },
+  "a-01f2d87f": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/TomateTrossRomanaTyp.jpg/330px-TomateTrossRomanaTyp.jpg",
+    "wiki_title": "Roma tomato",
+    "name": "Robert J. Marzano（罗伯特·马扎诺）",
+    "source": "en_search_ctx"
+  },
+  "a-69d9bf67": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/240211_Kana_Hanazawa.jpg/330px-240211_Kana_Hanazawa.jpg",
+    "wiki_title": "花澤香菜",
+    "name": "罗志田",
+    "source": "ja_search"
+  },
+  "a-bb188525": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Mao_Zedong_1950_Portrait_%283x4_cropped%29%282%29.jpg/330px-Mao_Zedong_1950_Portrait_%283x4_cropped%29%282%29.jpg",
+    "wiki_title": "Mao Zedong",
+    "name": "Ross Terrill（罗斯·特里尔）",
+    "source": "en_search_ctx"
+  },
+  "a-032187c4": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Jacques_Lacan_during_an_interview_1969.jpg",
+    "wiki_title": "Jacques Lacan",
+    "name": "Roger Lowenstein（罗杰·洛温斯坦）",
+    "source": "en_search_ctx"
+  },
+  "a-32602300": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/20200111%E7%8E%8B%E4%B8%80%E5%8D%9A.jpg/330px-20200111%E7%8E%8B%E4%B8%80%E5%8D%9A.jpg",
+    "wiki_title": "王一博",
+    "name": "肖书文",
+    "source": "ja_search"
+  },
+  "a-5ab17419": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Friedrich_Hayek_portrait.jpg/330px-Friedrich_Hayek_portrait.jpg",
+    "wiki_title": "Friedrich Hayek",
+    "name": "Alan Ebenstein（艾伦·艾伯斯坦）",
+    "source": "en_search_ctx"
+  },
+  "a-78c9b5b4": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Acuddy.jpg",
+    "wiki_title": "Amy Cuddy",
+    "name": "Susan T. Fiske（苏珊·菲斯克）",
+    "source": "en_search_ctx"
+  },
+  "a-14c25d8c": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Cannibalism_1571.PNG/330px-Cannibalism_1571.PNG",
+    "wiki_title": "Cannibalism in Europe",
+    "name": "Sarah Goldhagen（莎拉·戈德哈根）",
+    "source": "en_search_ctx"
+  },
+  "a-9c2f3f70": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Spencer_Arms.svg/langzh-330px-Spencer_Arms.svg.png",
+    "wiki_title": "斯宾塞家族",
+    "name": "Lyle M. Spencer（莱尔·斯宾塞）",
+    "source": "zh_search"
+  },
+  "a-7bb02a26": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Franz_Kafka%2C_1923.jpg/330px-Franz_Kafka%2C_1923.jpg",
+    "wiki_title": "Franz Kafka",
+    "name": "Rainer Stach（莱纳·施塔赫）",
+    "source": "en_search"
+  },
+  "a-c13034e8": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/en/0/0f/Spanking_the_monkey_ver1.jpg",
+    "wiki_title": "Spanking the Monkey",
+    "name": "Philip Weinstein（菲利普·韦恩斯坦）",
+    "source": "en_search"
+  },
+  "a-a45501c1": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Made_of_honor.jpg",
+    "wiki_title": "Made of Honor",
+    "name": "Philip Marchand（菲利普·马尔尚）",
+    "source": "en_search"
+  },
+  "a-de052a6d": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Paul_Watzlawick_am_ISC-Symposium_1988_HSGH_022-000762_%28cropped%29.jpg/330px-Paul_Watzlawick_am_ISC-Symposium_1988_HSGH_022-000762_%28cropped%29.jpg",
+    "wiki_title": "Paul Watzlawick",
+    "name": "Salvador Minuchin（萨尔瓦多·米纽庆）",
+    "source": "en_search_ctx"
+  },
+  "a-51f2f208": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cleopatra_VII%2C_dalla_via_appia_tra_ariccia_e_genzano%2C_40-30_ac_ca._02.JPG/330px-Cleopatra_VII%2C_dalla_via_appia_tra_ariccia_e_genzano%2C_40-30_ac_ca._02.JPG",
+    "wiki_title": "克娄巴特拉七世",
+    "name": "Tim Spector（蒂姆·斯佩克特）",
+    "source": "zh_search"
+  },
+  "a-8539d7de": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Yuan_Jinkai3.jpg/330px-Yuan_Jinkai3.jpg",
+    "wiki_title": "袁金鎧",
+    "name": "袁德金",
+    "source": "zh_search"
+  },
+  "a-281efd75": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Inscription_on_Imperial_Seal_of_China_%22%E5%8F%97%E5%91%BD%E6%96%BC%E5%A4%A9_%E6%97%A2%E5%A3%BD%E6%B0%B8%E6%98%8C%22.svg/langzh-330px-Inscription_on_Imperial_Seal_of_China_%22%E5%8F%97%E5%91%BD%E6%96%BC%E5%A4%A9_%E6%97%A2%E5%A3%BD%E6%B0%B8%E6%98%8C%22.svg.png",
+    "wiki_title": "传国玺",
+    "name": "解玺璋",
+    "source": "zh_search"
+  },
+  "a-116f21b3": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Opdracht_HP_UVV-bejaardensocieteit_in_gebouw_Reigersburg_Amsterdam-Oost_bejaar%2C_Bestanddeelnr_923-7802.jpg/330px-Opdracht_HP_UVV-bejaardensocieteit_in_gebouw_Reigersburg_Amsterdam-Oost_bejaar%2C_Bestanddeelnr_923-7802.jpg",
+    "wiki_title": "Gerontology",
+    "name": "James E. Birren（詹姆斯.伯伦）",
+    "source": "en_search_ctx"
+  },
+  "a-aa6c54e0": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Patrick_Gibson_by_Gage_Skidmore.jpg/330px-Patrick_Gibson_by_Gage_Skidmore.jpg",
+    "wiki_title": "Patrick Gibson (actor)",
+    "name": "James J. Gibson（詹姆斯.吉布森）",
+    "source": "en_search_ctx"
+  },
+  "a-4029c6cc": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Chris_hedges_blur.jpg",
+    "wiki_title": "Chris Hedges",
+    "name": "Bethany Saltman（贝丝妮·索特曼）",
+    "source": "en_search_ctx"
+  },
+  "a-d03db178": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/en/9/9d/9781922539199_The_Happiness_Trap_2nd_Edition_cover.jpg",
+    "wiki_title": "The Happiness Trap",
+    "name": "Russ Harris（路斯·哈里斯）",
+    "source": "en_search"
+  },
+  "a-8295be09": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Portland_HeadLight_%28cropped%29.jpg/330px-Portland_HeadLight_%28cropped%29.jpg",
+    "wiki_title": "New England",
+    "name": "Louis Degraaf（路易·戴格拉夫）",
+    "source": "en_search"
+  },
+  "a-15040f82": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Chengdu_Railway_Station_South_Square.jpg/330px-Chengdu_Railway_Station_South_Square.jpg",
+    "wiki_title": "成都駅",
+    "name": "边建松",
+    "source": "ja_search"
+  },
+  "a-1fd928b0": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Michael_Madsen_by_Gage_Skidmore.jpg/330px-Michael_Madsen_by_Gage_Skidmore.jpg",
+    "wiki_title": "迈克尔·马德森",
+    "name": "Michael Tomasello（迈克尔·托马塞洛）",
+    "source": "zh_search"
+  },
+  "a-a629fff5": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Shencongwen001.jpg/330px-Shencongwen001.jpg",
+    "wiki_title": "Shen Congwen",
+    "name": "Jeffrey C. Kinkley（金介甫）",
+    "source": "en_search"
+  },
+  "a-cbc608a1": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/%E9%99%88%E5%AF%85%E6%81%AA.jpg/330px-%E9%99%88%E5%AF%85%E6%81%AA.jpg",
+    "wiki_title": "陈寅恪",
+    "name": "陆键东",
+    "source": "zh_search"
+  },
+  "a-107388e5": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/%E4%BB%8E%E5%87%A4%E5%87%B0%E5%B1%B1%E8%BF%9C%E7%9C%BA%E7%8F%A0%E6%B5%B7%E4%B8%BB%E5%9F%8E%E5%8C%BA.jpg/330px-%E4%BB%8E%E5%87%A4%E5%87%B0%E5%B1%B1%E8%BF%9C%E7%9C%BA%E7%8F%A0%E6%B5%B7%E4%B8%BB%E5%9F%8E%E5%8C%BA.jpg",
+    "wiki_title": "珠海市",
+    "name": "陈勇",
+    "source": "ja_search"
+  },
+  "a-de8b9252": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Zhou_Shengxian_UNDP_2009.jpg/330px-Zhou_Shengxian_UNDP_2009.jpg",
+    "wiki_title": "周生賢",
+    "name": "陈邦贤",
+    "source": "ja_search"
+  },
+  "a-cfdf3022": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Jason_Kidd_Nets_coach_cropped.jpg/330px-Jason_Kidd_Nets_coach_cropped.jpg",
+    "wiki_title": "贾森·基德",
+    "name": "Horace Judson（霍勒斯·贾德森）",
+    "source": "zh_search"
+  },
+  "a-4d2aac6e": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Portrait_of_Milton_Friedman_%284x5_cropped%29.jpg/330px-Portrait_of_Milton_Friedman_%284x5_cropped%29.jpg",
+    "wiki_title": "Milton Friedman",
+    "name": "Howard S. Friedman（霍华德.弗里德曼）",
+    "source": "en_search_ctx"
+  },
+  "a-4a9ac9e4": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Kensico_best_picture_800.jpg/330px-Kensico_best_picture_800.jpg",
+    "wiki_title": "Kensico Cemetery",
+    "name": "Howard Kirschenbaum（霍华德·基尔申鲍姆）",
+    "source": "en_search_ctx"
+  },
+  "a-7ce21c8b": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/2014_1226_Rachel_Feinstein.jpg/330px-2014_1226_Rachel_Feinstein.jpg",
+    "wiki_title": "Rachel Feinstein (comedian)",
+    "name": "Howard Feinstein（霍华德·范斯坦）",
+    "source": "en_search"
+  },
+  "a-c956fc0b": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Han_Han_2.jpg/330px-Han_Han_2.jpg",
+    "wiki_title": "韓寒",
+    "name": "韩静霆",
+    "source": "ja_search"
+  },
+  "a-65dda1aa": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/1/19/%E8%81%96%E5%B8%9D%E6%98%8E%E7%8E%8B%E5%96%84%E7%AB%AF%E9%8C%84%EF%BC%88%E5%AE%8B%E5%85%83%E6%98%8E%EF%BC%89_%E5%86%8A_%E9%87%91%E4%B8%96%E5%AE%97_K2A003132N000000011PAB_%28cropped%29.png",
+    "wiki_title": "金世宗",
+    "name": "颜世安",
+    "source": "zh_search"
+  },
+  "a-353e234d": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Saint_Justin_Martyr_by_Theophanes_the_Cretan.jpg/330px-Saint_Justin_Martyr_by_Theophanes_the_Cretan.jpg",
+    "wiki_title": "Justin Martyr",
+    "name": "Matthew Jackson（马修·杰克逊）",
+    "source": "en_search_ctx"
+  },
+  "a-48fd337c": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Social-network.svg/330px-Social-network.svg.png",
+    "wiki_title": "Interpersonal ties",
+    "name": "Mark Granovetter（马克·格兰诺维特）",
+    "source": "en_search_ctx"
+  },
+  "a-5f74b72c": {
+    "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Steve_Ballmer_2014.jpg/330px-Steve_Ballmer_2014.jpg",
+    "wiki_title": "史蒂夫·巴爾默",
+    "name": "Murray Bowen（默里·鲍文）",
+    "source": "zh_search"
   }
 }
