@@ -105,21 +105,25 @@ export default function BookListsPage() {
                     onClick={() => toggle(q.number)}
                     className="w-full flex items-center justify-between bg-muted px-4 py-3 text-sm font-medium hover:bg-muted/80 transition-colors"
                   >
-                    <span className="flex items-center gap-2">
-                      <span className="font-mono text-xs text-muted-foreground">
+                    <Link
+                      href={ROUTES.questionDetail(q.id)}
+                      className="flex items-center gap-2 hover:text-accent transition-colors flex-1 min-w-0"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <span className="font-mono text-xs text-muted-foreground shrink-0">
                         {q.code}
                       </span>
-                      <span>{q.title}</span>
+                      <span className="truncate">{q.title}</span>
                       <Badge
                         variant="secondary"
-                        className="text-[10px] leading-none px-1.5 py-0.5"
+                        className="text-[10px] leading-none px-1.5 py-0.5 shrink-0"
                       >
                         {DIMENSION_LABELS[q.dimension]}
                       </Badge>
-                      <span className="text-xs text-muted-foreground/60">
+                      <span className="text-xs text-muted-foreground/60 shrink-0">
                         {totalInQ} 本
                       </span>
-                    </span>
+                    </Link>
                     <ChevronRight
                       className={`h-4 w-4 text-muted-foreground transition-transform flex-shrink-0 ${
                         isOpen ? "rotate-90" : ""
@@ -143,15 +147,21 @@ export default function BookListsPage() {
                                   topicOpen ? "rotate-90" : ""
                                 }`}
                               />
-                              <span className="font-mono text-[10px] text-accent">
-                                {topic.code}
-                              </span>
-                              <span className="text-xs font-medium">
-                                {topic.title}
-                              </span>
-                              <span className="text-[10px] text-muted-foreground/60">
-                                {books.length} 本
-                              </span>
+                              <Link
+                                href={ROUTES.topicDetail(topic.code)}
+                                className="flex items-center gap-2 hover:text-accent transition-colors flex-1 min-w-0"
+                                onClick={(e) => e.stopPropagation()}
+                              >
+                                <span className="font-mono text-[10px] text-accent shrink-0">
+                                  {topic.code}
+                                </span>
+                                <span className="text-xs font-medium">
+                                  {topic.title}
+                                </span>
+                                <span className="text-[10px] text-muted-foreground/60 shrink-0">
+                                  {books.length} 本
+                                </span>
+                              </Link>
                             </button>
                             {/* Books under this topic — collapsible */}
                             {topicOpen && (
