@@ -110,7 +110,7 @@ export default function TopicDetailPage() {
 
         {/* Books */}
         <FadeIn>
-          <section className="mb-10">
+          <section id="books" className="mb-10 scroll-mt-20">
             <div className="flex items-center gap-2 mb-5">
               <BookOpen className="w-4 h-4 text-accent" />
               <h2 className="text-lg font-semibold">著作</h2>

@@ -56,7 +56,6 @@ function displayName(wp: WisePerson) {
 
 export function WisePersonStubDetail({ person, books }: Props) {
   const [imgError, setImgError] = useState(false)
-  const [expandedTopic, setExpandedTopic] = useState<string | null>(null)
   const { chinese, english } = parseName(person)
 
   // Group person's topics by parent question
@@ -81,17 +80,10 @@ export function WisePersonStubDetail({ person, books }: Props) {
     const allWise = getAllWisePersons()
     const relatedPersons = allWise
       .filter((wp) => wp.slug !== person.slug && wp.topicCodes?.includes(topicCode))
-      .slice(0, 6)
     const allBooks = booksData as any[]
     const relatedBooks = allBooks
       .filter((b) => b.topicCode === topicCode)
-      .slice(0, 6)
-    // Get total counts
-    const totalPersons = allWise.filter(
-      (wp) => wp.slug !== person.slug && wp.topicCodes?.includes(topicCode)
-    ).length
-    const totalBooks = allBooks.filter((b) => b.topicCode === topicCode).length
-    return { relatedPersons, relatedBooks, totalPersons, totalBooks }
+    return { relatedPersons, relatedBooks }
   }
 
   const storyMap = lifeStories as any
@@ -112,11 +104,6 @@ export function WisePersonStubDetail({ person, books }: Props) {
         <p key={i} className="leading-[2] text-[15px]" dangerouslySetInnerHTML={{ __html: html }} />
       )
     })
-  }
-
-  /** Toggle expandable panel */
-  function toggleTopic(code: string) {
-    setExpandedTopic((prev) => (prev === code ? null : code))
   }
 
   return (
@@ -184,7 +171,7 @@ export function WisePersonStubDetail({ person, books }: Props) {
             </div>
           )}
 
-          {/* ─── B2 Breadcrumb Tags with expandable panels ─── */}
+          {/* ─── B2 Breadcrumb Tags with inline panels ─── */}
           {questionGroups.map(({ question, topics: topicList }) => (
             <div key={question.number} className="mt-5">
               {/* Breadcrumb row */}
@@ -194,39 +181,25 @@ export function WisePersonStubDetail({ person, books }: Props) {
                 </span>
                 <span style={{ color: "#c4b8a6", fontSize: "12px" }}>›</span>
                 {topicList.map(({ code, topic }) => (
-                  <button
+                  <span
                     key={code}
-                    onClick={() => toggleTopic(code)}
-                    className="text-[12px] px-3 py-1 rounded-full transition-all border"
-                    style={
-                      expandedTopic === code
-                        ? { background: "rgba(196,116,40,0.2)", color: "#9a6b35", fontWeight: 600, borderColor: "rgba(196,116,40,0.25)" }
-                        : { background: "rgba(196,116,40,0.08)", color: "#9a6b35", borderColor: "rgba(196,116,40,0.12)" }
-                    }
+                    className="text-[12px] px-3 py-1 rounded-full border"
+                    style={{ background: "rgba(196,116,40,0.08)", color: "#9a6b35", borderColor: "rgba(196,116,40,0.12)" }}
                   >
                     {topic.title}
-                  </button>
+                  </span>
                 ))}
-                {/* Link to topic page for full view */}
-                <Link
-                  href={`/topics/${topicList[0]?.code}`}
-                  className="text-[10px] ml-1 transition-colors"
-                  style={{ color: "#b0a08e" }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = "#9a6b35")}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = "#b0a08e")}
-                >
-                  查看全部 →
-                </Link>
               </div>
 
-              {/* Expandable panel */}
-              {expandedTopic && topicList.some((t) => t.code === expandedTopic) && (
+              {/* Inline panel for each topic */}
+              {topicList.map(({ code }) => (
                 <TopicPanel
-                  topicCode={expandedTopic}
+                  key={code}
+                  topicCode={code}
                   personSlug={person.slug}
                   getRelatedData={getRelatedData}
                 />
-              )}
+              ))}
             </div>
           ))}
 
@@ -380,7 +353,7 @@ export function WisePersonStubDetail({ person, books }: Props) {
   )
 }
 
-/* ─── Expandable Topic Panel Sub-component ─── */
+/* ─── Inline Topic Panel Sub-component ─── */
 function TopicPanel({
   topicCode,
   personSlug,
@@ -391,11 +364,11 @@ function TopicPanel({
   getRelatedData: (code: string) => {
     relatedPersons: WisePerson[]
     relatedBooks: any[]
-    totalPersons: number
-    totalBooks: number
   }
 }) {
-  const { relatedPersons, relatedBooks, totalPersons, totalBooks } = getRelatedData(topicCode)
+  const { relatedPersons, relatedBooks } = getRelatedData(topicCode)
+
+  if (relatedPersons.length === 0 && relatedBooks.length === 0) return null
 
   return (
     <div
@@ -403,7 +376,7 @@ function TopicPanel({
       style={{ background: "rgba(255,255,255,0.45)", border: "1px solid #e4dbd0" }}
     >
       {/* Related wise persons */}
-      {totalPersons > 0 && (
+      {relatedPersons.length > 0 && (
         <div className="flex-1 min-w-0">
           <div className="text-[10px] mb-2 tracking-wider" style={{ color: "#b0a08e" }}>
             相关智者
@@ -427,21 +400,12 @@ function TopicPanel({
                 {displayName(wp)}
               </Link>
             ))}
-            {totalPersons > 6 && (
-              <Link
-                href={`/topics/${topicCode}`}
-                className="text-[11px] px-2 py-0.5 rounded transition-all"
-                style={{ color: "#9a6b35", background: "transparent" }}
-              >
-                更多 {totalPersons} →
-              </Link>
-            )}
           </div>
         </div>
       )}
 
       {/* Related books */}
-      {totalBooks > 0 && (
+      {relatedBooks.length > 0 && (
         <div className="flex-1 min-w-0">
           <div className="text-[10px] mb-2 tracking-wider" style={{ color: "#b0a08e" }}>
             相关书籍
@@ -450,7 +414,7 @@ function TopicPanel({
             {relatedBooks.map((book: any, i: number) => (
               <Link
                 key={book.slug || i}
-                href={`/topics/${topicCode}`}
+                href={`/topics/${topicCode}#books`}
                 className="text-[11px] px-2 py-0.5 rounded transition-all"
                 style={{ color: "#6b5d4f", background: "#f5efe7", border: "1px solid #e8dfd4" }}
                 onMouseEnter={(e) => {
@@ -465,15 +429,6 @@ function TopicPanel({
                 {book.title}
               </Link>
             ))}
-            {totalBooks > 6 && (
-              <Link
-                href={`/topics/${topicCode}`}
-                className="text-[11px] px-2 py-0.5 rounded transition-all"
-                style={{ color: "#9a6b35", background: "transparent" }}
-              >
-                更多 {totalBooks} →
-              </Link>
-            )}
           </div>
         </div>
       )}
