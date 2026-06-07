@@ -88,9 +88,11 @@ export function WisePersonStubDetail({ person, books }: Props) {
     const allWise = getAllWisePersons()
     const relatedPersons = allWise
       .filter((wp) => wp.slug !== person.slug && wp.topicCodes?.includes(topicCode))
+      .slice(0, 6)
     const allBooks = booksData as any[]
     const relatedBooks = allBooks
       .filter((b) => b.topicCode === topicCode)
+      .slice(0, 6)
     return { relatedPersons, relatedBooks }
   }
 
