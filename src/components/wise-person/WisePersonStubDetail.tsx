@@ -390,7 +390,7 @@ function TopicPanel({
 
   return (
     <div
-      className="mt-3 p-3.5 rounded-xl flex flex-col sm:flex-row gap-5"
+      className="mt-3 p-3.5 rounded-xl flex flex-col sm:flex-row flex-wrap gap-5"
       style={{ background: "rgba(255,255,255,0.45)", border: "1px solid #e4dbd0" }}
     >
       {/* Related wise persons */}
@@ -468,6 +468,19 @@ function TopicPanel({
           </div>
         </div>
       )}
+
+      {/* Bottom link to full topic page */}
+      <div className="w-full flex justify-end mt-1">
+        <Link
+          href={`/topics/${topicCode}`}
+          className="text-[11px] inline-flex items-center gap-0.5 transition-colors"
+          style={{ color: "#b0a08e" }}
+          onMouseEnter={(e) => (e.currentTarget.style.color = "#9a6b35")}
+          onMouseLeave={(e) => (e.currentTarget.style.color = "#b0a08e")}
+        >
+          查看全部 →
+        </Link>
+      </div>
     </div>
   )
 }
