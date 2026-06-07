@@ -86,14 +86,16 @@ export function WisePersonStubDetail({ person, books }: Props) {
   // Compute related wise persons and books for a given topic code
   function getRelatedData(topicCode: string) {
     const allWise = getAllWisePersons()
-    const relatedPersons = allWise
+    const filteredPersons = allWise
       .filter((wp) => wp.slug !== person.slug && wp.topicCodes?.includes(topicCode))
-      .slice(0, 6)
+    const relatedPersons = filteredPersons.slice(0, 6)
+    const totalPersons = filteredPersons.length
     const allBooks = booksData as any[]
-    const relatedBooks = allBooks
+    const filteredBooks = allBooks
       .filter((b) => b.topicCode === topicCode)
-      .slice(0, 6)
-    return { relatedPersons, relatedBooks }
+    const relatedBooks = filteredBooks.slice(0, 6)
+    const totalBooks = filteredBooks.length
+    return { relatedPersons, relatedBooks, totalPersons, totalBooks }
   }
 
   const storyMap = lifeStories as any
@@ -378,9 +380,11 @@ function TopicPanel({
   getRelatedData: (code: string) => {
     relatedPersons: WisePerson[]
     relatedBooks: any[]
+    totalPersons: number
+    totalBooks: number
   }
 }) {
-  const { relatedPersons, relatedBooks } = getRelatedData(topicCode)
+  const { relatedPersons, relatedBooks, totalPersons, totalBooks } = getRelatedData(topicCode)
 
   if (relatedPersons.length === 0 && relatedBooks.length === 0) return null
 
@@ -414,6 +418,15 @@ function TopicPanel({
                 {displayName(wp)}
               </Link>
             ))}
+            {totalPersons > 6 && (
+              <Link
+                href={`/topics/${topicCode}#wise-persons`}
+                className="text-[11px] px-2 py-0.5 rounded transition-all"
+                style={{ color: "#9a6b35", background: "transparent" }}
+              >
+                更多 {totalPersons} →
+              </Link>
+            )}
           </div>
         </div>
       )}
@@ -443,6 +456,15 @@ function TopicPanel({
                 {book.title}
               </Link>
             ))}
+            {totalBooks > 6 && (
+              <Link
+                href={`/topics/${topicCode}#books`}
+                className="text-[11px] px-2 py-0.5 rounded transition-all"
+                style={{ color: "#9a6b35", background: "transparent" }}
+              >
+                更多 {totalBooks} →
+              </Link>
+            )}
           </div>
         </div>
       )}

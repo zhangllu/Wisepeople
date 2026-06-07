@@ -93,7 +93,7 @@ export default function TopicDetailPage() {
         {/* Wise Persons */}
         {wisePersons.length > 0 && (
           <FadeIn>
-            <section className="mb-10">
+            <section id="wise-persons" className="mb-10 scroll-mt-20">
               <div className="flex items-center gap-2 mb-5">
                 <Users className="w-4 h-4 text-accent" />
                 <h2 className="text-lg font-semibold">智者</h2>
