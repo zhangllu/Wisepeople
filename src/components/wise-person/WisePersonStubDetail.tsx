@@ -1,12 +1,15 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useMemo } from "react"
 import Link from "next/link"
 import { ExternalLink } from "lucide-react"
 import { BookmarkButton } from "@/components/shared/BookmarkButton"
 import type { WisePerson } from "@/types"
 import topicsData from "@/data/topics.json"
-import type { SubTopic } from "@/types"
+import questionsData from "@/data/questions.json"
+import booksData from "@/data/books.json"
+import type { SubTopic, Question } from "@/types"
+import { getAllWisePersons } from "@/lib/data/wise-persons-combined"
 import lifeStories from "@/data/links/life-stories.json"
 
 interface StubBook {
@@ -22,10 +25,20 @@ interface Props {
   books: StubBook[]
 }
 
-const topics: SubTopic[] = topicsData as SubTopic[]
+const allTopics: SubTopic[] = topicsData as SubTopic[]
+const allQuestions: Question[] = questionsData as Question[]
 
 const topicByCode = new Map<string, SubTopic>()
-for (const t of topics) topicByCode.set(t.code, t)
+for (const t of allTopics) topicByCode.set(t.code, t)
+
+const questionByNumber = new Map<number, Question>()
+for (const q of allQuestions) questionByNumber.set(q.number, q)
+
+/** Extract question number from a topic code like "10.2" → 10 */
+function getQuestionNumber(topicCode: string): number | null {
+  const n = parseInt(topicCode.split(".")[0])
+  return n >= 1 && n <= 10 ? n : null
+}
 
 /** Parse "English Name（中文名）" or just name */
 function parseName(wp: WisePerson) {
@@ -34,19 +47,52 @@ function parseName(wp: WisePerson) {
   return { chinese: wp.name, english: wp.nameEn }
 }
 
+/** Extract display name (Chinese preferred) */
+function displayName(wp: WisePerson) {
+  const { chinese } = parseName(wp)
+  return chinese
+}
+
 
 export function WisePersonStubDetail({ person, books }: Props) {
   const [imgError, setImgError] = useState(false)
+  const [expandedTopic, setExpandedTopic] = useState<string | null>(null)
   const { chinese, english } = parseName(person)
 
-  // Show each sub-topic as a separate tag with its title
-  const topicEntries = (person.topicCodes || [])
-    .map((code) => {
+  // Group person's topics by parent question
+  const questionGroups = useMemo(() => {
+    const groups = new Map<number, { question: Question; topics: { code: string; topic: SubTopic }[] }>()
+    for (const code of person.topicCodes || []) {
       const topic = topicByCode.get(code)
-      if (!topic) return null
-      return { code, topic }
-    })
-    .filter((e): e is NonNullable<typeof e> => !!e)
+      const qn = getQuestionNumber(code)
+      if (!topic || !qn) continue
+      if (!groups.has(qn)) {
+        const question = questionByNumber.get(qn)
+        if (!question) continue
+        groups.set(qn, { question, topics: [] })
+      }
+      groups.get(qn)!.topics.push({ code, topic })
+    }
+    return Array.from(groups.values())
+  }, [person.topicCodes])
+
+  // Compute related wise persons and books for a given topic code
+  function getRelatedData(topicCode: string) {
+    const allWise = getAllWisePersons()
+    const relatedPersons = allWise
+      .filter((wp) => wp.slug !== person.slug && wp.topicCodes?.includes(topicCode))
+      .slice(0, 6)
+    const allBooks = booksData as any[]
+    const relatedBooks = allBooks
+      .filter((b) => b.topicCode === topicCode)
+      .slice(0, 6)
+    // Get total counts
+    const totalPersons = allWise.filter(
+      (wp) => wp.slug !== person.slug && wp.topicCodes?.includes(topicCode)
+    ).length
+    const totalBooks = allBooks.filter((b) => b.topicCode === topicCode).length
+    return { relatedPersons, relatedBooks, totalPersons, totalBooks }
+  }
 
   const storyMap = lifeStories as any
   const lifeStory: string | undefined = storyMap[person.slug]
@@ -68,6 +114,11 @@ export function WisePersonStubDetail({ person, books }: Props) {
     })
   }
 
+  /** Toggle expandable panel */
+  function toggleTopic(code: string) {
+    setExpandedTopic((prev) => (prev === code ? null : code))
+  }
+
   return (
     <div className="min-h-screen" style={{ background: "#f8f3ec" }}>
 
@@ -76,7 +127,7 @@ export function WisePersonStubDetail({ person, books }: Props) {
         className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 px-6 sm:px-10 pt-10 sm:pt-14 pb-8 sm:pb-10"
         style={{ background: "linear-gradient(180deg, #f8f3ec 0%, #faf6f0 100%)" }}
       >
-        {/* Portrait — 200×280, book-like shadow */}
+        {/* Portrait */}
         <div className="shrink-0 flex justify-center sm:justify-start">
           {showPortrait ? (
             <img
@@ -100,18 +151,25 @@ export function WisePersonStubDetail({ person, books }: Props) {
 
         {/* Intro */}
         <div className="flex-1 flex flex-col justify-start sm:pt-2 min-w-0">
-          {/* Name */}
-          <h1
-            className="text-[32px] sm:text-[36px] font-bold font-heading leading-tight"
-            style={{ color: "#1e1a14", letterSpacing: "2px" }}
-          >
-            {chinese}
-          </h1>
-          {english && english !== chinese && (
-            <p className="text-sm font-heading mt-1.5" style={{ color: "#a89480", letterSpacing: "1px" }}>
-              {english}
-            </p>
-          )}
+          {/* Name row with bookmark top-right */}
+          <div className="flex items-start justify-between gap-4">
+            <div>
+              <h1
+                className="text-[32px] sm:text-[36px] font-bold font-heading leading-tight"
+                style={{ color: "#1e1a14", letterSpacing: "2px" }}
+              >
+                {chinese}
+              </h1>
+              {english && english !== chinese && (
+                <p className="text-sm font-heading mt-1.5" style={{ color: "#a89480", letterSpacing: "1px" }}>
+                  {english}
+                </p>
+              )}
+            </div>
+            <div className="shrink-0 pt-1">
+              <BookmarkButton targetId={person.slug} targetType="wise-person" />
+            </div>
+          </div>
 
           {/* Decorative quote */}
           {quote && (
@@ -126,30 +184,52 @@ export function WisePersonStubDetail({ person, books }: Props) {
             </div>
           )}
 
-          {/* Topic tags — show each sub-topic title */}
-          {topicEntries.length > 0 && (
-            <div className="flex flex-wrap gap-2 mt-5">
-              {topicEntries.map(({ code, topic }, i) => (
+          {/* ─── B2 Breadcrumb Tags with expandable panels ─── */}
+          {questionGroups.map(({ question, topics: topicList }) => (
+            <div key={question.number} className="mt-5">
+              {/* Breadcrumb row */}
+              <div className="flex items-center gap-1.5 flex-wrap">
+                <span className="font-heading text-[13px] font-semibold" style={{ color: "#9a6b35" }}>
+                  {question.title}
+                </span>
+                <span style={{ color: "#c4b8a6", fontSize: "12px" }}>›</span>
+                {topicList.map(({ code, topic }) => (
+                  <button
+                    key={code}
+                    onClick={() => toggleTopic(code)}
+                    className="text-[12px] px-3 py-1 rounded-full transition-all border"
+                    style={
+                      expandedTopic === code
+                        ? { background: "rgba(196,116,40,0.2)", color: "#9a6b35", fontWeight: 600, borderColor: "rgba(196,116,40,0.25)" }
+                        : { background: "rgba(196,116,40,0.08)", color: "#9a6b35", borderColor: "rgba(196,116,40,0.12)" }
+                    }
+                  >
+                    {topic.title}
+                  </button>
+                ))}
+                {/* Link to topic page for full view */}
                 <Link
-                  key={code}
-                  href={`/topics/${code}`}
-                  className="text-[11.5px] px-3.5 py-1 rounded-md transition-colors border"
-                  style={
-                    i === 0
-                      ? { background: "rgba(196,116,40,0.1)", color: "#9a6b35", borderColor: "rgba(196,116,40,0.15)" }
-                      : { background: "#efe8de", color: "#8a7a68", borderColor: "#e4dbd0" }
-                  }
+                  href={`/topics/${topicList[0]?.code}`}
+                  className="text-[10px] ml-1 transition-colors"
+                  style={{ color: "#b0a08e" }}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = "#9a6b35")}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = "#b0a08e")}
                 >
-                  {topic.title}
+                  查看全部 →
                 </Link>
-              ))}
-            </div>
-          )}
+              </div>
 
-          {/* Bookmark */}
-          <div className="mt-5">
-            <BookmarkButton targetId={person.slug} targetType="wise-person" />
-          </div>
+              {/* Expandable panel */}
+              {expandedTopic && topicList.some((t) => t.code === expandedTopic) && (
+                <TopicPanel
+                  topicCode={expandedTopic}
+                  personSlug={person.slug}
+                  getRelatedData={getRelatedData}
+                />
+              )}
+            </div>
+          ))}
+
         </div>
       </header>
 
@@ -296,6 +376,107 @@ export function WisePersonStubDetail({ person, books }: Props) {
           </section>
         )}
       </div>
+    </div>
+  )
+}
+
+/* ─── Expandable Topic Panel Sub-component ─── */
+function TopicPanel({
+  topicCode,
+  personSlug,
+  getRelatedData,
+}: {
+  topicCode: string
+  personSlug: string
+  getRelatedData: (code: string) => {
+    relatedPersons: WisePerson[]
+    relatedBooks: any[]
+    totalPersons: number
+    totalBooks: number
+  }
+}) {
+  const { relatedPersons, relatedBooks, totalPersons, totalBooks } = getRelatedData(topicCode)
+
+  return (
+    <div
+      className="mt-3 p-3.5 rounded-xl flex flex-col sm:flex-row gap-5"
+      style={{ background: "rgba(255,255,255,0.45)", border: "1px solid #e4dbd0" }}
+    >
+      {/* Related wise persons */}
+      {totalPersons > 0 && (
+        <div className="flex-1 min-w-0">
+          <div className="text-[10px] mb-2 tracking-wider" style={{ color: "#b0a08e" }}>
+            相关智者
+          </div>
+          <div className="flex flex-wrap gap-1.5">
+            {relatedPersons.map((wp) => (
+              <Link
+                key={wp.slug}
+                href={`/wise-persons/${wp.slug}`}
+                className="text-[11px] px-2 py-0.5 rounded transition-all"
+                style={{ color: "#6b5d4f", background: "#f5efe7", border: "1px solid #e8dfd4" }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = "#efe8de"
+                  e.currentTarget.style.borderColor = "#d4c8b8"
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = "#f5efe7"
+                  e.currentTarget.style.borderColor = "#e8dfd4"
+                }}
+              >
+                {displayName(wp)}
+              </Link>
+            ))}
+            {totalPersons > 6 && (
+              <Link
+                href={`/topics/${topicCode}`}
+                className="text-[11px] px-2 py-0.5 rounded transition-all"
+                style={{ color: "#9a6b35", background: "transparent" }}
+              >
+                更多 {totalPersons} →
+              </Link>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Related books */}
+      {totalBooks > 0 && (
+        <div className="flex-1 min-w-0">
+          <div className="text-[10px] mb-2 tracking-wider" style={{ color: "#b0a08e" }}>
+            相关书籍
+          </div>
+          <div className="flex flex-wrap gap-1.5">
+            {relatedBooks.map((book: any, i: number) => (
+              <Link
+                key={book.slug || i}
+                href={`/topics/${topicCode}`}
+                className="text-[11px] px-2 py-0.5 rounded transition-all"
+                style={{ color: "#6b5d4f", background: "#f5efe7", border: "1px solid #e8dfd4" }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = "#efe8de"
+                  e.currentTarget.style.borderColor = "#d4c8b8"
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = "#f5efe7"
+                  e.currentTarget.style.borderColor = "#e8dfd4"
+                }}
+              >
+                {book.title}
+              </Link>
+            ))}
+            {totalBooks > 6 && (
+              <Link
+                href={`/topics/${topicCode}`}
+                className="text-[11px] px-2 py-0.5 rounded transition-all"
+                style={{ color: "#9a6b35", background: "transparent" }}
+              >
+                更多 {totalBooks} →
+              </Link>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   )
 }
