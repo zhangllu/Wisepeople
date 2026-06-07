@@ -56,7 +56,15 @@ function displayName(wp: WisePerson) {
 
 export function WisePersonStubDetail({ person, books }: Props) {
   const [imgError, setImgError] = useState(false)
+  const [expandedTopic, setExpandedTopic] = useState<string | null>(
+    person.topicCodes?.[0] ?? null
+  )
   const { chinese, english } = parseName(person)
+
+  /** Toggle expandable panel */
+  function toggleTopic(code: string) {
+    setExpandedTopic((prev) => (prev === code ? null : code))
+  }
 
   // Group person's topics by parent question
   const questionGroups = useMemo(() => {
@@ -171,7 +179,7 @@ export function WisePersonStubDetail({ person, books }: Props) {
             </div>
           )}
 
-          {/* ─── B2 Breadcrumb Tags with inline panels ─── */}
+          {/* ─── B2 Breadcrumb Tags with expandable panels ─── */}
           {questionGroups.map(({ question, topics: topicList }) => (
             <div key={question.number} className="mt-5">
               {/* Breadcrumb row */}
@@ -181,25 +189,29 @@ export function WisePersonStubDetail({ person, books }: Props) {
                 </span>
                 <span style={{ color: "#c4b8a6", fontSize: "12px" }}>›</span>
                 {topicList.map(({ code, topic }) => (
-                  <span
+                  <button
                     key={code}
-                    className="text-[12px] px-3 py-1 rounded-full border"
-                    style={{ background: "rgba(196,116,40,0.08)", color: "#9a6b35", borderColor: "rgba(196,116,40,0.12)" }}
+                    onClick={() => toggleTopic(code)}
+                    className="text-[12px] px-3 py-1 rounded-full transition-all border"
+                    style={
+                      expandedTopic === code
+                        ? { background: "rgba(196,116,40,0.2)", color: "#9a6b35", fontWeight: 600, borderColor: "rgba(196,116,40,0.25)" }
+                        : { background: "rgba(196,116,40,0.08)", color: "#9a6b35", borderColor: "rgba(196,116,40,0.12)" }
+                    }
                   >
                     {topic.title}
-                  </span>
+                  </button>
                 ))}
               </div>
 
-              {/* Inline panel for each topic */}
-              {topicList.map(({ code }) => (
+              {/* Expandable panel for the active topic */}
+              {expandedTopic && topicList.some((t) => t.code === expandedTopic) && (
                 <TopicPanel
-                  key={code}
-                  topicCode={code}
+                  topicCode={expandedTopic}
                   personSlug={person.slug}
                   getRelatedData={getRelatedData}
                 />
-              ))}
+              )}
             </div>
           ))}
 
