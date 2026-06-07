@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { ChevronRight, BookHeart, BookOpen } from "lucide-react"
+import { ChevronRight, BookHeart, BookOpen, ExternalLink } from "lucide-react"
 import { getAllQuestions, getBooksByTopic, getTopicsByQuestion, getMinimumBookList, getClassicsBooks } from "@/lib/data"
 import { DIMENSION_LABELS, ROUTES } from "@/constants"
 import { Badge } from "@/components/ui/badge"
@@ -21,7 +21,7 @@ function CoverPreviewCard({ slug, title, author, href }: { slug: string; title: 
 
   return (
     <Wrapper {...linkProps}>
-      <Card className="transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 overflow-hidden h-full">
+      <Card className="transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 overflow-hidden h-full relative group">
         <div className="aspect-[3/4] bg-muted flex items-center justify-center overflow-hidden">
           {coverSrc ? (
             <img
@@ -33,9 +33,18 @@ function CoverPreviewCard({ slug, title, author, href }: { slug: string; title: 
           ) : (
             <BookOpen className="w-8 h-8 text-muted-foreground/15" />
           )}
+          {/* Douban badge on cover */}
+          {href && (
+            <span className="absolute top-1.5 right-1.5 text-[9px] px-1.5 py-0.5 rounded bg-black/50 text-white/90 opacity-0 group-hover:opacity-100 transition-opacity">
+              豆瓣
+            </span>
+          )}
         </div>
         <CardContent className="p-2.5">
-          <p className="text-sm font-medium truncate">{title}</p>
+          <p className="text-sm font-medium truncate flex items-center gap-1">
+            {title}
+            {href && <ExternalLink className="h-3 w-3 shrink-0 text-muted-foreground/40" />}
+          </p>
           <p className="text-xs text-muted-foreground truncate">{author}</p>
         </CardContent>
       </Card>
