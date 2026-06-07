@@ -2974,5 +2974,20 @@
     "portrait_url": "https://bkimg.cdn.bcebos.com/pic/fd039245d688d43f65aa4701771ed21b0ff43bc6",
     "name": "陈撄宁",
     "source": "baidu_baike"
+  },
+  "william-poundstone": {
+    "portrait_url": "https://images-na.ssl-images-amazon.com/images/S/amzn-author-media-prod/mpisnja58r65vovsje6pu2u8pj.jpg",
+    "name": "William Poundstone（威廉·庞德斯通）",
+    "source": "manual"
+  },
+  "a-6ed9e682": {
+    "portrait_url": "https://kohlbergpsych.weebly.com/uploads/1/7/3/2/17329682/5888434_orig.jpg",
+    "name": "Lawrence Kohlberg（劳伦斯·科尔伯格）",
+    "source": "manual"
+  },
+  "a-ecc62aa6": {
+    "portrait_url": "https://casbs.stanford.edu/sites/default/files/2023-04/filename_1628.jpg",
+    "name": "Everett Rogers（埃弗里特·罗杰斯）",
+    "source": "manual"
   }
 }
