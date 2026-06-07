@@ -288,6 +288,37 @@ function authorToStubWisePerson(author: Author): WisePerson {
   }
 }
 
+/** Get wise persons for a single topic code (bypassing the question group) */
+export function getWisePersonsByTopicCode(topicCode: string): WisePerson[] {
+  const allAuthors = getAllAuthors()
+  const seenSlugs = new Set<string>()
+  const wisePersons: WisePerson[] = []
+
+  // Stub authors matching this topic code
+  for (const author of allAuthors) {
+    if (author.topicCodes.includes(topicCode)) {
+      if (!seenSlugs.has(author.slug)) {
+        seenSlugs.add(author.slug)
+        wisePersons.push(authorToStubWisePerson(author))
+      }
+    }
+  }
+
+  // Mock persons matching this topic code
+  for (const mock of mockWisePersons) {
+    if (mock.topicCodes?.includes(topicCode)) {
+      if (!seenSlugs.has(mock.slug)) {
+        seenSlugs.add(mock.slug)
+        wisePersons.push(mock)
+      }
+    }
+  }
+
+  // Remove stub entries shadowed by a mock person with the same name
+  const mockNames = new Set(wisePersons.filter((p) => !p.isStub).map((p) => p.name))
+  return wisePersons.filter((p) => !(p.isStub && mockNames.has(p.name)))
+}
+
 /** Get wise persons (mock + stub) grouped by sub-topic within a question */
 export function getWisePersonsByTopicInQuestion(
   questionNumber: number
