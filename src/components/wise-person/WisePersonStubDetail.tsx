@@ -1,14 +1,14 @@
 "use client"
 
+import { useState } from "react"
 import Link from "next/link"
-import { ExternalLink, BookOpen, ArrowLeft } from "lucide-react"
+import { ExternalLink, BookOpen, ArrowLeft, Users, Layers } from "lucide-react"
 import { BookmarkButton } from "@/components/shared/BookmarkButton"
-import type { WisePerson } from "@/types"
+import type { WisePerson, Era } from "@/types"
 import topicsData from "@/data/topics.json"
 import questionsData from "@/data/questions.json"
 import type { SubTopic, Question } from "@/types"
 import lifeStories from "@/data/links/life-stories.json"
-import wisePersonCodes from "@/data/wise-person-codes.json"
 
 interface StubBook {
   slug: string
@@ -37,7 +37,26 @@ function getQuestionNumber(topicCode: string): number | null {
   return n >= 1 && n <= 10 ? n : null
 }
 
+/** Parse "English Name（中文名）" or just name */
+function parseName(wp: WisePerson) {
+  const m = wp.name.match(/^(.+?)\s*[（(](.+?)[）)]$/)
+  if (m) return { chinese: m[2], english: m[1] }
+  return { chinese: wp.name, english: wp.nameEn }
+}
+
+/** Era-based accent for portrait ring */
+const ERA_RING: Record<Era | "default", string> = {
+  ancient: "ring-amber-200/70",
+  modern: "ring-sky-200/70",
+  contemporary: "ring-emerald-200/70",
+  default: "ring-gray-200/70",
+}
+
 export function WisePersonStubDetail({ person, books }: Props) {
+  const [imgError, setImgError] = useState(false)
+  const { chinese, english } = parseName(person)
+  const ringColor = ERA_RING[person.era ?? "default"]
+
   const topicEntries = (person.topicCodes || [])
     .map((code) => {
       const topic = topicByCode.get(code)
@@ -50,7 +69,7 @@ export function WisePersonStubDetail({ person, books }: Props) {
 
   const storyMap = lifeStories as any
   const lifeStory: string | undefined = storyMap[person.slug]
-  const code: string | undefined = (wisePersonCodes as any).slugToCode?.[person.slug]
+  const showPortrait = person.portrait && !imgError
 
   /** Simple markdown render: handle **bold** and line breaks */
   function renderStory(text: string) {
@@ -58,99 +77,103 @@ export function WisePersonStubDetail({ person, books }: Props) {
     return paragraphs.map((p, i) => {
       const html = p.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
       return (
-        <p key={i} className="leading-relaxed text-foreground/85" dangerouslySetInnerHTML={{ __html: html }} />
+        <p key={i} className="leading-[1.9] text-foreground/85" dangerouslySetInnerHTML={{ __html: html }} />
       )
     })
   }
 
   return (
-    <div className="container mx-auto max-w-4xl px-4 py-8 sm:py-12">
-      {/* Hero Header */}
-      <div className="mb-10">
-        <div className="flex items-start justify-between gap-4">
-          <div className="flex items-start gap-5">
-            {/* Portrait */}
-            {person.portrait && (
-              <img
-                src={person.portrait}
-                alt={person.name}
-                className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl object-cover border border-border shadow-sm shrink-0"
-              />
-            )}
-            <div>
-              {/* Code */}
-              {code && (
-                <span className="font-mono text-[11px] tracking-wider text-accent bg-accent/8 px-2 py-0.5 rounded-full border border-accent/15 inline-block mb-2">
-                  {code}
-                </span>
-              )}
-              {/* Name */}
-              <h1 className="text-3xl sm:text-4xl font-bold font-heading tracking-tight text-foreground leading-tight">
-                {person.name}
-              </h1>
-            </div>
+    <div className="container mx-auto max-w-2xl px-4 py-8 sm:py-12">
+
+      {/* ─── Hero: portrait + name + stats + tags ─── */}
+      <header className="flex flex-col items-center text-center mb-10">
+        {/* Portrait */}
+        {showPortrait ? (
+          <img
+            src={person.portrait}
+            alt={chinese}
+            onError={() => setImgError(true)}
+            className={`w-[108px] h-[108px] rounded-2xl object-cover object-top shadow-md ring-2 ${ringColor}`}
+          />
+        ) : (
+          <div className={`w-[108px] h-[108px] rounded-2xl bg-gradient-to-br from-accent/10 to-accent/5 ring-2 ${ringColor} flex items-center justify-center shadow-md`}>
+            <span className="text-3xl font-heading font-bold text-accent/60">
+              {chinese.charAt(0)}
+            </span>
           </div>
+        )}
+
+        {/* Name */}
+        <h1 className="text-2xl sm:text-3xl font-bold font-heading mt-5 leading-tight">
+          {chinese}
+        </h1>
+        {english && english !== chinese && (
+          <p className="text-sm text-muted-foreground mt-1">{english}</p>
+        )}
+
+        {/* Bookmark */}
+        <div className="mt-3">
           <BookmarkButton targetId={person.slug} targetType="wise-person" />
         </div>
-      </div>
 
-      {/* Life Story — always present */}
+        {/* Stats + Topics row */}
+        <div className="flex flex-wrap items-center justify-center gap-3 mt-5">
+          {books.length > 0 && (
+            <span className="text-xs bg-accent/8 text-accent px-3 py-1 rounded-full">
+              {books.length} 本著作
+            </span>
+          )}
+          {topicEntries.map(({ topic, questionNumber }) => (
+            <Link
+              key={topic.code}
+              href={`/topics/${topic.code}`}
+              className="text-xs bg-muted text-foreground/70 px-3 py-1 rounded-full hover:bg-accent/10 hover:text-accent transition-colors"
+            >
+              {topic.title}
+            </Link>
+          ))}
+        </div>
+      </header>
+
+      {/* ─── Life Story ─── */}
       {lifeStory && (
-        <div className="mb-10">
-          <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm">
-            <div className="prose prose-sm max-w-none space-y-3">
-              {renderStory(lifeStory)}
-            </div>
+        <section className="mb-10">
+          <div className="flex items-center gap-2 mb-4">
+            <Users className="w-4 h-4 text-accent" />
+            <h2 className="text-sm font-semibold text-accent tracking-wide">人物故事</h2>
           </div>
-        </div>
+          <div className="space-y-3.5">
+            {renderStory(lifeStory)}
+          </div>
+        </section>
       )}
 
-      {/* Topics & Questions */}
-      {topicEntries.length > 0 && (
-        <div className="mb-10">
-          <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-widest mb-4">
-            知识领域
-          </h2>
-          <div className="flex flex-wrap items-center gap-2">
-            {topicEntries.map(({ topic, questionNumber, question }) => (
-              <div key={topic.code} className="flex items-center gap-1">
-                {question && (
-                  <Link
-                    href={`/wise-persons/question/${questionNumber}`}
-                    className="text-xs text-muted-foreground hover:text-accent transition-colors"
-                  >
-                    Q{questionNumber}
-                  </Link>
-                )}
-                <span className="text-muted-foreground/40">·</span>
-                <Link
-                  href={`/topics/${topic.code}`}
-                  className="text-sm bg-accent/8 text-accent px-3 py-1 rounded-full hover:bg-accent/15 transition-colors"
-                >
-                  {topic.title}
-                </Link>
-              </div>
-            ))}
+      {/* No story fallback */}
+      {!lifeStory && (
+        <section className="mb-10">
+          <div className="rounded-xl border border-dashed border-border/60 py-12 text-center">
+            <p className="text-sm text-muted-foreground">人物故事正在编撰中</p>
           </div>
-        </div>
+        </section>
       )}
 
-      {/* Books */}
+      {/* ─── Books ─── */}
       {books.length > 0 && (
-        <div className="mb-10">
-          <h2 className="flex items-center gap-2 text-sm font-semibold text-muted-foreground uppercase tracking-widest mb-4">
-            <BookOpen className="h-4 w-4" />
-            相关著作
-          </h2>
-          <div className="grid gap-3">
+        <section className="mb-10">
+          <div className="flex items-center gap-2 mb-4 pt-8 border-t border-border/40">
+            <BookOpen className="w-4 h-4 text-accent" />
+            <h2 className="text-sm font-semibold text-foreground/70 tracking-wide">相关著作</h2>
+            <span className="text-[10px] text-muted-foreground bg-muted px-1.5 py-0.5 rounded">{books.length}</span>
+          </div>
+          <div className="space-y-2.5">
             {books.map((book) => (
               <div
                 key={book.slug}
-                className="rounded-xl border border-border bg-card p-4 hover:border-accent/20 hover:shadow-sm transition-all duration-200"
+                className="rounded-xl border border-border/60 bg-card px-4 py-3.5 hover:border-accent/20 hover:shadow-sm transition-all duration-200"
               >
-                <div className="flex items-start justify-between gap-3">
-                  <div className="flex-1 min-w-0">
-                    <h3 className="font-medium text-foreground">
+                <div className="flex items-center justify-between gap-3">
+                  <div className="min-w-0">
+                    <h3 className="font-medium text-[15px] text-foreground">
                       {book.doubanLink ? (
                         <a href={book.doubanLink} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
                           {book.title}
@@ -158,19 +181,19 @@ export function WisePersonStubDetail({ person, books }: Props) {
                       ) : book.title}
                     </h3>
                     {book.publisher && (
-                      <p className="text-xs text-muted-foreground mt-1">
+                      <p className="text-xs text-muted-foreground mt-0.5">
                         {book.publisher}{book.year ? ` · ${book.year}` : ""}
                       </p>
                     )}
                   </div>
-                  <div className="flex items-center gap-1 shrink-0">
+                  <div className="flex items-center gap-2 shrink-0">
                     <BookmarkButton targetId={book.slug} targetType="book" />
                     {book.doubanLink && (
                       <a
                         href={book.doubanLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="shrink-0 text-xs text-accent hover:text-accent/80 inline-flex items-center gap-1"
+                        className="text-xs text-accent/70 hover:text-accent inline-flex items-center gap-0.5 transition-colors"
                       >
                         <ExternalLink className="h-3 w-3" />
                         豆瓣
@@ -181,15 +204,16 @@ export function WisePersonStubDetail({ person, books }: Props) {
               </div>
             ))}
           </div>
-        </div>
+        </section>
       )}
 
-      {/* External Links */}
+      {/* ─── External Links ─── */}
       {person.links && person.links.length > 0 && (
-        <div className="mb-10">
-          <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-widest mb-4">
-            延伸阅读
-          </h2>
+        <section className="mb-10">
+          <div className="flex items-center gap-2 mb-4 pt-8 border-t border-border/40">
+            <Layers className="w-4 h-4 text-accent" />
+            <h2 className="text-sm font-semibold text-foreground/70 tracking-wide">延伸阅读</h2>
+          </div>
           <div className="grid gap-2 sm:grid-cols-2">
             {person.links.map((link, i) => (
               <a
@@ -197,7 +221,7 @@ export function WisePersonStubDetail({ person, books }: Props) {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-between gap-3 rounded-xl border border-border bg-card px-4 py-3 hover:border-accent/30 hover:shadow-sm transition-all duration-200 group"
+                className="flex items-center justify-between gap-3 rounded-xl border border-border/60 bg-card px-4 py-3 hover:border-accent/30 hover:shadow-sm transition-all duration-200 group"
               >
                 <div className="min-w-0">
                   <span className="font-medium text-sm text-foreground group-hover:text-accent transition-colors">
@@ -207,15 +231,15 @@ export function WisePersonStubDetail({ person, books }: Props) {
                     <p className="text-xs text-muted-foreground mt-0.5 line-clamp-1">{link.description}</p>
                   )}
                 </div>
-                <ExternalLink className="h-3.5 w-3.5 shrink-0 text-muted-foreground/40 group-hover:text-accent transition-colors" />
+                <ExternalLink className="h-3.5 w-3.5 shrink-0 text-muted-foreground/30 group-hover:text-accent transition-colors" />
               </a>
             ))}
           </div>
-        </div>
+        </section>
       )}
 
-      {/* Back link */}
-      <div className="pt-6 border-t border-border">
+      {/* ─── Back link ─── */}
+      <div className="pt-6 border-t border-border/40">
         <Link
           href="/wise-persons"
           className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-accent transition-colors group"

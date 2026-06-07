@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import Link from "next/link"
 import type { WisePerson, Era } from "@/types"
 import { DISCIPLINE_LABELS, ERA_LABELS, REGION_LABELS, ROUTES } from "@/constants"
@@ -10,11 +11,11 @@ interface WisePersonCardProps {
 }
 
 /** Era-based gradient colors for avatar backgrounds */
-const ERA_STYLES: Record<Era | "default", { bg: string; text: string }> = {
-  ancient: { bg: "from-amber-100 to-orange-100", text: "text-amber-700" },
-  modern: { bg: "from-sky-100 to-indigo-100", text: "text-indigo-700" },
-  contemporary: { bg: "from-emerald-100 to-teal-100", text: "text-teal-700" },
-  default: { bg: "from-gray-100 to-slate-100", text: "text-slate-600" },
+const ERA_STYLES: Record<Era | "default", { bg: string; text: string; ring: string }> = {
+  ancient: { bg: "from-amber-100 to-orange-100", text: "text-amber-700", ring: "ring-amber-200/60" },
+  modern: { bg: "from-sky-100 to-indigo-100", text: "text-indigo-700", ring: "ring-sky-200/60" },
+  contemporary: { bg: "from-emerald-100 to-teal-100", text: "text-teal-700", ring: "ring-emerald-200/60" },
+  default: { bg: "from-gray-100 to-slate-100", text: "text-slate-600", ring: "ring-gray-200/60" },
 }
 
 /**
@@ -38,6 +39,7 @@ export function WisePersonCard({ wisePerson }: WisePersonCardProps) {
   const { primary, secondary } = parseName(wisePerson)
   const initial = primary.charAt(0)
   const avatarStyle = ERA_STYLES[wisePerson.era ?? "default"] ?? ERA_STYLES.default
+  const [imgError, setImgError] = useState(false)
 
   // Coordinate line — only for non-stub users (stub era/discipline/region are hardcoded defaults)
   const coords = !wisePerson.isStub
@@ -63,22 +65,25 @@ export function WisePersonCard({ wisePerson }: WisePersonCardProps) {
       ].filter(Boolean)
     : []
 
+  const showPortrait = wisePerson.portrait && !imgError
+
   return (
     <Link href={ROUTES.wisePersonDetail(wisePerson.slug)} className="group block h-full">
       <div className="relative flex items-start gap-4 rounded-xl border border-border/60 bg-card p-4 transition-all duration-300 hover:border-accent/30 hover:shadow-md hover:shadow-accent/5 hover:-translate-y-0.5 h-full">
-        {/* Portrait */}
+        {/* Portrait — rounded square, 76px */}
         <div className="shrink-0">
-          {wisePerson.portrait ? (
+          {showPortrait ? (
             <img
               src={wisePerson.portrait}
               alt={primary}
-              className="size-14 rounded-full object-cover ring-2 ring-border/50 group-hover:ring-accent/30 transition-all duration-300"
+              onError={() => setImgError(true)}
+              className="size-[76px] rounded-xl object-cover object-top shadow-sm ring-1 ring-black/5 group-hover:shadow-md group-hover:ring-accent/20 transition-all duration-300"
             />
           ) : (
             <div
-              className={`size-14 rounded-full bg-gradient-to-br ${avatarStyle.bg} ring-2 ring-border/50 group-hover:ring-accent/30 flex items-center justify-center transition-all duration-300`}
+              className={`size-[76px] rounded-xl bg-gradient-to-br ${avatarStyle.bg} ring-2 ${avatarStyle.ring} flex items-center justify-center shadow-sm group-hover:shadow-md transition-all duration-300`}
             >
-              <span className={`text-lg font-heading font-bold ${avatarStyle.text}`}>
+              <span className={`text-2xl font-heading font-bold ${avatarStyle.text}`}>
                 {initial}
               </span>
             </div>
@@ -86,7 +91,7 @@ export function WisePersonCard({ wisePerson }: WisePersonCardProps) {
         </div>
 
         {/* Info */}
-        <div className="flex-1 min-w-0">
+        <div className="flex-1 min-w-0 pt-0.5">
           {/* Chinese name as primary */}
           <h3 className="text-base font-semibold text-foreground group-hover:text-accent transition-colors truncate leading-snug">
             {primary}
