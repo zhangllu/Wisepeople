@@ -4,7 +4,7 @@ import Link from "next/link"
 import { ChevronRight, Library } from "lucide-react"
 import { useState } from "react"
 import { getAllQuestions, getWisePersonsByTopicInQuestion } from "@/lib/data"
-import { DIMENSION_LABELS } from "@/constants"
+import { DIMENSION_LABELS, ROUTES } from "@/constants"
 import { Badge } from "@/components/ui/badge"
 import { PageHero } from "@/components/shared/PageHero"
 
@@ -63,7 +63,17 @@ export default function WisePersonsPage() {
                 >
                   <span className="flex items-center gap-2">
                     <span className="font-mono text-xs text-muted-foreground">{q.code}</span>
-                    <span>{q.title}</span>
+                    {isOpen ? (
+                      <Link
+                        href={ROUTES.questionDetail(q.id)}
+                        onClick={(e) => e.stopPropagation()}
+                        className="hover:text-accent underline-offset-2 hover:underline transition-colors"
+                      >
+                        {q.title}
+                      </Link>
+                    ) : (
+                      <span>{q.title}</span>
+                    )}
                     <Badge variant="secondary" className="text-[10px] leading-none px-1.5 py-0.5">
                       {DIMENSION_LABELS[q.dimension]}
                     </Badge>
@@ -93,9 +103,19 @@ export default function WisePersonsPage() {
                             <span className="font-mono text-[10px] text-accent">
                               {topic.code}
                             </span>
-                            <span className="text-xs font-medium">
-                              {topic.title}
-                            </span>
+                            {topicOpen ? (
+                              <Link
+                                href={ROUTES.topicDetail(topic.code)}
+                                onClick={(e) => e.stopPropagation()}
+                                className="text-xs font-medium hover:text-accent underline-offset-2 hover:underline transition-colors"
+                              >
+                                {topic.title}
+                              </Link>
+                            ) : (
+                              <span className="text-xs font-medium">
+                                {topic.title}
+                              </span>
+                            )}
                             <span className="text-[10px] text-muted-foreground/60">
                               {wisePersons.length} 位
                             </span>
