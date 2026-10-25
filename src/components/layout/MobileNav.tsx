@@ -29,8 +29,8 @@ export function MobileNav() {
 
   const bottomLinks = [
     { href: ROUTES.bookLists, label: "书单" },
-    { href: ROUTES.profile, label: "个人中心" },
     { href: ROUTES.story, label: "产品故事" },
+    { href: ROUTES.profile, label: "个人中心" },
   ]
 
   return (

@@ -69,12 +69,12 @@ export function Header() {
             书单
           </Link>
 
-          <Link href={ROUTES.profile} className="nav-link">
-            个人中心
-          </Link>
-
           <Link href={ROUTES.story} className="nav-link">
             产品故事
+          </Link>
+
+          <Link href={ROUTES.profile} className="nav-link">
+            个人中心
           </Link>
         </nav>
 

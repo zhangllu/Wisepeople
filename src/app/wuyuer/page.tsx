@@ -21,7 +21,7 @@ import { ROUTES } from "@/constants"
 export const metadata: Metadata = {
   title: "吾与尔｜共读空间 - 智者网",
   description:
-    "“鸣鹤在阴，其子和之；我有好爵，吾与尔靡之。”吾与尔共读空间是一个共同维护的阅读空间：带着真实的阅读进入现场，与智者对话，与伙伴切磋，在彼此回应中让思想逐渐丰厚。",
+    "“鸣鹤在阴，其子和之；我有好爵，吾与尔靡之。”吾与尔共读空间是一个共同维护的阅读空间：带着真实的阅读进入现场，与智者对话，与同侪切磋，在彼此回应中让思想逐渐丰厚。",
 }
 
 const DOC_LINKS = {
@@ -166,7 +166,7 @@ export default function WuyuerPage() {
               吾与尔共读空间
             </p>
             <p className="mt-1 text-sm leading-6 text-muted-foreground">
-              与智者对话、与伙伴切磋，在彼此回应中让思想和精神逐渐丰厚。
+              与智者对话、与同侪切磋，在彼此回应中让思想和精神逐渐丰厚。
             </p>
           </div>
         </div>
@@ -192,7 +192,7 @@ export default function WuyuerPage() {
           我有好爵，吾与尔靡之。
         </h1>
         <p className="mt-6 max-w-2xl text-sm leading-8 text-muted-foreground">
-          我所读到的、所理解的、所珍视的思想，愿意带来与你共同研讨；你也带着自己的阅读和判断回应于我。共读不是一起完成一本书，而是与智者对话、与伙伴切磋，在彼此回应中让思想和精神逐渐丰厚。
+          我所读到的、所理解的、所珍视的思想，愿意带来与你共同研讨；你也带着自己的阅读和判断回应于我。共读不是一起完成一本书，而是与智者对话、与同侪切磋，在彼此回应中让思想和精神逐渐丰厚。
         </p>
 
         <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-muted-foreground">
