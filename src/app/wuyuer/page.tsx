@@ -148,24 +148,24 @@ export default function WuyuerPage() {
     <div className="container mx-auto max-w-5xl px-4">
       {/* 页头：小 Logo 固定于左上角 */}
       <header className="flex flex-wrap items-center justify-between gap-4 pt-8">
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-4 sm:gap-5">
           <Image
             src="/images/wuyuer-logo.svg"
             alt="吾与尔共读 Logo"
             width={128}
             height={128}
-            className="h-32 w-32"
+            className="h-24 w-24 shrink-0 sm:h-32 sm:w-32"
             priority
             unoptimized
           />
-          <div>
-            <p className="text-xs tracking-[0.3em] text-muted-foreground/60">
+          <div className="min-w-0">
+            <p className="text-[10px] tracking-[0.2em] text-muted-foreground/60 sm:text-xs sm:tracking-[0.3em]">
               WISEPEOPLE · READING SPACE
             </p>
-            <p className="mt-1.5 font-heading text-2xl font-bold tracking-wide md:text-3xl">
+            <p className="mt-1.5 font-heading text-xl font-bold tracking-wide sm:text-2xl md:text-3xl">
               吾与尔共读空间
             </p>
-            <p className="mt-1 text-sm text-muted-foreground">
+            <p className="mt-1 text-sm leading-6 text-muted-foreground">
               与智者对话、与伙伴切磋，在彼此回应中让思想和精神逐渐丰厚。
             </p>
           </div>
@@ -186,7 +186,7 @@ export default function WuyuerPage() {
       {/* Hero */}
       <section className="border-b border-border/70 pb-14 pt-14 md:pb-20 md:pt-20">
         <p className="text-[11px] tracking-[0.3em] text-accent/70">《周易 · 中孚》</p>
-        <h1 className="mt-5 max-w-3xl font-heading text-3xl font-semibold leading-[1.45] tracking-tight md:text-4xl md:leading-[1.4]">
+        <h1 className="mt-5 max-w-3xl font-heading text-2xl font-semibold leading-[1.5] tracking-tight sm:text-3xl sm:leading-[1.45] md:text-4xl md:leading-[1.4]">
           鸣鹤在阴，其子和之；
           <br />
           我有好爵，吾与尔靡之。
@@ -293,28 +293,17 @@ export default function WuyuerPage() {
         id="current"
         index="04"
         title="正在共读"
-        intro="《爱的艺术》· 发起人：漫步 · 共读 3 次"
+        intro="《爱的艺术》· 漫步发起 · 共 3 次"
       >
-        <div className="grid gap-8 sm:grid-cols-[160px_minmax(0,1fr)] md:gap-10">
-          <div className="relative flex aspect-[3/4] flex-col justify-between overflow-hidden rounded-md bg-accent p-5 text-accent-foreground">
-            <div
-              className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_25%_15%,rgba(255,255,255,0.18),transparent_60%)]"
-              aria-hidden
+        <div className="grid gap-6 sm:grid-cols-[150px_minmax(0,1fr)] md:gap-10">
+          <div className="mx-auto w-32 sm:mx-0 sm:w-full">
+            <Image
+              src="/images/wuyuer-art-of-loving-douban.jpg"
+              alt="《爱的艺术》封面"
+              width={616}
+              height={969}
+              className="w-full rounded-sm shadow-[0_10px_28px_-14px_rgba(0,0,0,0.45)]"
             />
-            <p className="relative text-[9px] tracking-[0.3em] text-accent-foreground/70">
-              WU YU ER · NO.01
-            </p>
-            <div className="relative">
-              <p className="font-heading text-xs text-accent-foreground/70">艾里希·弗洛姆</p>
-              <h3 className="mt-1.5 font-heading text-2xl font-bold leading-snug">
-                爱的
-                <br />
-                艺术
-              </h3>
-              <p className="mt-3 text-[9px] tracking-[0.2em] text-accent-foreground/70">
-                THE ART OF LOVING
-              </p>
-            </div>
           </div>
 
           <div>
@@ -451,21 +440,37 @@ export default function WuyuerPage() {
       </Section>
 
       {/* 往期 */}
-      <Section index="07" title="之前读过的书" intro="《第二人生》共读回顾">
-        <div>
-          {pastReads.map((read, index) => (
-            <a
-              key={read.href}
-              href={read.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-baseline gap-4 border-b border-border/60 py-4 transition-colors hover:text-accent"
-            >
-              <span className="font-mono text-xs text-accent/60">0{index + 1}</span>
-              <span className="text-sm leading-7">{read.title}</span>
-              <ArrowRight className="ml-auto h-3.5 w-3.5 shrink-0 text-muted-foreground/50 transition-transform group-hover:translate-x-0.5 group-hover:text-accent" />
-            </a>
-          ))}
+      <Section index="07" title="之前读过的书" intro="《第二人生》· Working Identity">
+        <div className="grid gap-6 sm:grid-cols-[150px_minmax(0,1fr)] md:gap-10">
+          <div className="mx-auto w-32 sm:mx-0 sm:w-full">
+            <Image
+              src="/images/wuyuer-second-life.jpg"
+              alt="《第二人生》封面"
+              width={623}
+              height={800}
+              className="w-full rounded-sm shadow-[0_10px_28px_-14px_rgba(0,0,0,0.45)]"
+            />
+          </div>
+          <div>
+            <p className="text-sm leading-7 text-muted-foreground">
+              [美] 埃米尼亚·伊贝拉 著。转变不只是跳出旧生活，而是走过一段身份之间的路。以下为《第二人生》共读回顾。
+            </p>
+            <div className="mt-4">
+              {pastReads.map((read, index) => (
+                <a
+                  key={read.href}
+                  href={read.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-baseline gap-4 border-b border-border/60 py-4 transition-colors hover:text-accent"
+                >
+                  <span className="font-mono text-xs text-accent/60">0{index + 1}</span>
+                  <span className="text-sm leading-7">{read.title}</span>
+                  <ArrowRight className="ml-auto h-3.5 w-3.5 shrink-0 text-muted-foreground/50 transition-transform group-hover:translate-x-0.5 group-hover:text-accent" />
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
       </Section>
 
