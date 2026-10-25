@@ -72,6 +72,10 @@ export function Header() {
           <Link href={ROUTES.profile} className="nav-link">
             个人中心
           </Link>
+
+          <Link href={ROUTES.story} className="nav-link">
+            产品故事
+          </Link>
         </nav>
 
         {/* Right side */}
