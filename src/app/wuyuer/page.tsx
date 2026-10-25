@@ -163,7 +163,7 @@ export default function WuyuerPage() {
               WISEPEOPLE · READING SPACE
             </p>
             <p className="mt-1.5 font-heading text-2xl font-bold tracking-wide md:text-3xl">
-              吾与尔共读
+              吾与尔共读空间
             </p>
             <p className="mt-1 text-sm text-muted-foreground">
               与智者对话、与伙伴切磋，在彼此回应中让思想和精神逐渐丰厚。
