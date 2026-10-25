@@ -24,9 +24,13 @@ export function Header() {
         </div>
 
         {/* Navigation - Desktop */}
-        <nav className="hidden md:flex items-center gap-6 text-base">
+        <nav className="hidden lg:flex items-center gap-6 text-base">
           <Link href={ROUTES.home} className="nav-link">
             首页
+          </Link>
+
+          <Link href={ROUTES.wuyuer} className="nav-link">
+            吾与尔共读
           </Link>
 
           <Link href={ROUTES.map} className="nav-link">

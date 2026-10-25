@@ -11,6 +11,7 @@ export function MobileNav() {
 
   const mainLinks = [
     { href: ROUTES.home, label: "首页" },
+    { href: ROUTES.wuyuer, label: "吾与尔共读" },
     { href: ROUTES.map, label: "知识地图" },
     { href: ROUTES.questions, label: "十大问题" },
   ]
@@ -34,7 +35,7 @@ export function MobileNav() {
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
-      <SheetTrigger className="md:hidden inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground h-9 w-9">
+      <SheetTrigger className="lg:hidden inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground h-9 w-9">
         <Menu className="h-5 w-5" />
       </SheetTrigger>
       <SheetContent side="left" className="w-60">

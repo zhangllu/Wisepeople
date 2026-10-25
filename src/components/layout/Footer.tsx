@@ -19,6 +19,7 @@ export function Footer() {
               <li><Link href="/wise-persons" className="hover:text-foreground transition-colors">智者库</Link></li>
               <li><Link href="/questions" className="hover:text-foreground transition-colors">十大问题</Link></li>
               <li><Link href="/book-lists" className="hover:text-foreground transition-colors">书单推荐</Link></li>
+              <li><Link href="/wuyuer" className="hover:text-foreground transition-colors">吾与尔共读</Link></li>
             </ul>
           </div>
           <div>
