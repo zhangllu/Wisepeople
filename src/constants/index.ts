@@ -35,6 +35,10 @@ export const SITE_NAME = "智者网"
 export const SITE_TAGLINE = "为终身学习者打造的通识阅读地图"
 export const SITE_DESCRIPTION = "为终身学习者打造的通识阅读地图，助力你生发出自己独特的知识结构。"
 
+// 备案信息
+export const ICP_LICENSE = "浙ICP备2026003187号"
+export const ICP_LINK = "https://beian.miit.gov.cn/"
+
 // 分类筛选选项
 export const ERA_OPTIONS: CategoryOption[] = [
   { id: "all", label: "全部时代", value: "all" },

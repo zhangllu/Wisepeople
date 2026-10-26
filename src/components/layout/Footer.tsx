@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { SITE_NAME } from "@/constants"
+import { ICP_LICENSE, ICP_LINK, SITE_NAME } from "@/constants"
 
 export function Footer() {
   return (
@@ -27,9 +27,20 @@ export function Footer() {
             <ul className="space-y-2 text-xs text-muted-foreground">
               <li>数据来源：《聪明的阅读者》</li>
               <li>AI 生成内容仅供参考</li>
-              <li>&copy; {new Date().getFullYear()} {SITE_NAME}</li>
             </ul>
           </div>
+        </div>
+
+        <div className="mt-8 flex flex-wrap items-center justify-between gap-2 border-t pt-4 text-xs text-muted-foreground">
+          <span>&copy; {new Date().getFullYear()} {SITE_NAME}</span>
+          <a
+            href={ICP_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-foreground transition-colors"
+          >
+            {ICP_LICENSE}
+          </a>
         </div>
       </div>
     </footer>
